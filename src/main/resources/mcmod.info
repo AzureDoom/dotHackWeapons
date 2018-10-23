@@ -1,0 +1,14 @@
+[
+    {
+        "modid": "rcraft",
+        "name": "World RCraft Models",
+        "description": "Adds .hack Models into Minecraft",
+        "mcversion": "${mcversion}",
+        "url": "http://www.cyberconnects2.com/games/rcraft/",
+        "authorList": [
+            "AzureZhen, Galaxtone, d4rsorc"
+        ],
+        "credits": "Code optimized by galaxtone",
+        "logoFile": "pack.png"
+    }
+]

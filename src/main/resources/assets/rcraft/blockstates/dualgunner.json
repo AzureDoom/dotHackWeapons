@@ -1,0 +1,62 @@
+{
+    "forge_marker": 1,
+    "variants": {
+    "type": {
+		"1": {
+			   "model": "rcraft:dualgunner/dualgunner00.obj"
+			},
+		"2": {
+			   "model": "rcraft:dualgunner/dualgunner01.obj"
+			},
+		"3": {
+			   "model": "rcraft:dualgunner/dualgunner02.obj"
+			}
+    }
+	},
+	"defaults" : {
+	
+	"transform": {
+	
+	"thirdperson_righthand": {
+	"rotation": [ 0, 188, 0 ],
+	"translation": [ -0.60, 0.30, -0.40 ],
+	"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"thirdperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 2.00, 2.00, 2.00 ]
+	},
+	"firstperson_righthand": {
+		"rotation": [ 0, 190, 0 ],
+		"translation": [ -0.70, 0.55, -0.50 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"firstperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"gui": {
+		"rotation": [ 96, 50, 216 ],
+		"translation": [ 0.70, -0.40, 0.00 ],
+		"scale": [ 2.00, 2.00, 2.00 ]
+	},
+	"head": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"fixed": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"ground": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.60, 0.20, 0.60 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	}
+	}
+	}
+}

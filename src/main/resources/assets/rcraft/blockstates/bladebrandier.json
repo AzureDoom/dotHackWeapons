@@ -1,0 +1,110 @@
+{
+    "forge_marker": 1,
+	"variants": {
+		"type": {
+			"1": {
+			   "model": "rcraft:bladebrandier/bladebrandier01.obj"
+			},
+			"2": {
+			   "model": "rcraft:bladebrandier/bladebrandier02.obj"
+			},
+			"3": {
+			   "model": "rcraft:bladebrandier/bladebrandier03.obj"
+			},
+			"4": {
+			   "model": "rcraft:bladebrandier/bladebrandier04.obj"
+			},
+			"5": {
+			   "model": "rcraft:bladebrandier/bladebrandier05.obj"
+			},
+			"6": {
+			   "model": "rcraft:bladebrandier/bladebrandier06.obj"
+			},
+			"7": {
+			   "model": "rcraft:bladebrandier/bladebrandier07.obj"
+			},
+			"8": {
+			   "model": "rcraft:bladebrandier/bladebrandier08.obj"
+			},
+			"9": {
+			   "model": "rcraft:bladebrandier/bladebrandier09.obj"
+			},
+			"10": {
+			   "model": "rcraft:bladebrandier/bladebrandier10.obj"
+			},
+			"11": {
+			   "model": "rcraft:bladebrandier/bladebrandier11.obj"
+			},
+			"12": {
+			   "model": "rcraft:bladebrandier/bladebrandier12.obj"
+			},
+			"13": {
+			   "model": "rcraft:bladebrandier/bladebrandier13.obj"
+			},
+			"14": {
+			   "model": "rcraft:bladebrandier/bladebrandier14.obj"
+			},
+			"15": {
+			   "model": "rcraft:bladebrandier/bladebrandier15.obj"
+			},
+			"16": {
+			   "model": "rcraft:bladebrandier/bladebrandier16.obj"
+			},
+			"17": {
+			   "model": "rcraft:bladebrandier/bladebrandier17.obj"
+			},
+			"18": {
+			   "model": "rcraft:bladebrandier/bladebrandierx1.obj"
+			},
+			"19": {
+			   "model": "rcraft:bladebrandier/bladebrandierx2.obj"
+			}
+		}
+	},
+	"defaults" : {
+	
+	"transform": {
+	
+	"thirdperson_righthand": {
+	"rotation": [ 0, 188, 0 ],
+	"translation": [ -0.60, 0.30, -0.40 ],
+	"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"thirdperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"firstperson_righthand": {
+		"rotation": [ 0, 190, 0 ],
+		"translation": [ -0.70, 0.30, -0.50 ],
+		"scale": [ 0.90, 0.90, 0.90 ]
+	},
+	"firstperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"gui": {
+		"rotation": [ 96, 50, 216 ],
+		"translation": [ 0.10, -0.90, 0.00 ],
+		"scale": [ 1.20, 1.20, 1.20 ]
+	},
+	"head": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"fixed": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"ground": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.60, 0.20, 0.60 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	}
+	}
+	}
+}

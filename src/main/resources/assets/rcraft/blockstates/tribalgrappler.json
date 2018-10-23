@@ -1,0 +1,86 @@
+{
+    "forge_marker": 1,
+    "variants": {
+    "type": {
+		"1": {
+			"model": "rcraft:tribalgrappler/tribalgrappler01l.obj"
+		},
+		"2": {
+			"model": "rcraft:tribalgrappler/tribalgrappler02l.obj"
+		},
+		"3": {
+			"model": "rcraft:tribalgrappler/tribalgrappler03l.obj"
+		},
+		"4": {
+			"model": "rcraft:tribalgrappler/tribalgrappler04l.obj"
+		},
+		"5": {
+			"model": "rcraft:tribalgrappler/tribalgrappler05l.obj"
+		},
+		"6": {
+			"model": "rcraft:tribalgrappler/tribalgrappler06l.obj"
+		},
+		"7": {
+			"model": "rcraft:tribalgrappler/tribalgrappler07l.obj"
+		},
+		"8": {
+			"model": "rcraft:tribalgrappler/tribalgrappler08l.obj"
+		},
+		"9": {
+			"model": "rcraft:tribalgrappler/tribalgrappler09l.obj"
+		},
+		"10": {
+			"model": "rcraft:tribalgrappler/tribalgrapplerx1l.obj"
+		},
+		"11": {
+			"model": "rcraft:tribalgrappler/tribalgrapplerx2l.obj"
+		}
+    }
+	},
+	"defaults" : {
+	
+	"transform": {
+	
+	"thirdperson_righthand": {
+	"rotation": [ 0, 188, 0 ],
+	"translation": [ -0.60, 0.30, -0.40 ],
+	"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"thirdperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"firstperson_righthand": {
+		"rotation": [ 0, 190, 0 ],
+		"translation": [ -0.70, 0.30, -0.50 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"firstperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"gui": {
+		"rotation": [ 96, 50, 216 ],
+		"translation": [ 0.50, -0.60, 0.00 ],
+		"scale": [ 1.90, 1.90, 1.90 ]
+	},
+	"head": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"fixed": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"ground": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.60, 0.20, 0.60 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	}
+	}
+	}
+}
