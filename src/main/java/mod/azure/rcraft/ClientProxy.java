@@ -10,8 +10,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class ClientProxy extends CommonProxy {
 	
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event)
+	public void preInit()
     {
-		if (event.getSide() == Side.CLIENT) OBJLoader.INSTANCE.addDomain(RcraftMod.modid);
+		OBJLoader.INSTANCE.addDomain(RcraftMod.modid);
     }
 }
