@@ -1,0 +1,176 @@
+{
+    "forge_marker": 1,
+	"variants": {
+		"type": {
+			"1": {
+			   "model": "rcraft:blademaster/blademaster00.obj"
+			},
+			"2": {
+			   "model": "rcraft:blademaster/blademaster00_1.obj"
+			},
+			"3": {
+			   "model": "rcraft:blademaster/blademaster00_2.obj"
+			},
+			"4": {
+			   "model": "rcraft:blademaster/blademaster00_3.obj"
+			},
+			"5": {
+			   "model": "rcraft:blademaster/blademaster00_4.obj"
+			},
+			"6": {
+			   "model": "rcraft:blademaster/blademaster00_5.obj"
+			},
+			"7": {
+			   "model": "rcraft:blademaster/blademaster00_6.obj"
+			},
+			"8": {
+			   "model": "rcraft:blademaster/blademaster01.obj"
+			},
+			"9": {
+			   "model": "rcraft:blademaster/blademaster01_1.obj"
+			},
+			"10": {
+			   "model": "rcraft:blademaster/blademaster01_2.obj"
+			},
+			"11": {
+			   "model": "rcraft:blademaster/blademaster01_3.obj"
+			},
+			"12": {
+			   "model": "rcraft:blademaster/blademaster01_4.obj"
+			},
+			"13": {
+			   "model": "rcraft:blademaster/blademaster01_5.obj"
+			},
+			"14": {
+			   "model": "rcraft:blademaster/blademaster01_6.obj"
+			},
+			"15": {
+			   "model": "rcraft:blademaster/blademaster02.obj"
+			},
+			"16": {
+			   "model": "rcraft:blademaster/blademaster02_1.obj"
+			},
+			"17": {
+			   "model": "rcraft:blademaster/blademaster02_2.obj"
+			},
+			"18": {
+			   "model": "rcraft:blademaster/blademaster02_3.obj"
+			},
+			"19": {
+			   "model": "rcraft:blademaster/blademaster02_4.obj"
+			},
+			"20": {
+			   "model": "rcraft:blademaster/blademaster02_5.obj"
+			},
+			"21": {
+			   "model": "rcraft:blademaster/blademaster02_6.obj"
+			},
+			"22": {
+			   "model": "rcraft:blademaster/blademaster03.obj"
+			},
+			"23": {
+			   "model": "rcraft:blademaster/blademaster03_1.obj"
+			},
+			"24": {
+			   "model": "rcraft:blademaster/blademaster03_2.obj"
+			},
+			"25": {
+			   "model": "rcraft:blademaster/blademaster03_3.obj"
+			},
+			"26": {
+			   "model": "rcraft:blademaster/blademaster03_4.obj"
+			},
+			"27": {
+			   "model": "rcraft:blademaster/blademaster03_5.obj"
+			},
+			"28": {
+			   "model": "rcraft:blademaster/blademaster03_6.obj"
+			},
+			"29": {
+			   "model": "rcraft:blademaster/blademaster04.obj"
+			},
+			"30": {
+			   "model": "rcraft:blademaster/blademaster04_1.obj"
+			},
+			"31": {
+			   "model": "rcraft:blademaster/blademaster04_2.obj"
+			},
+			"32": {
+			   "model": "rcraft:blademaster/blademaster04_3.obj"
+			},
+			"33": {
+			   "model": "rcraft:blademaster/blademaster04_4.obj"
+			},
+			"34": {
+			   "model": "rcraft:blademaster/blademaster04_5.obj"
+			},
+			"35": {
+			   "model": "rcraft:blademaster/blademaster04_6.obj"
+			},
+			"36": {
+			   "model": "rcraft:blademaster/blademaster05.obj"
+			},
+			"37": {
+			   "model": "rcraft:blademaster/blademaster05_1.obj"
+			},
+			"38": {
+			   "model": "rcraft:blademaster/blademaster06.obj"
+			},
+			"39": {
+			   "model": "rcraft:blademaster/blademaster06_1.obj"
+			},
+			"40": {
+			   "model": "rcraft:blademaster/blademaster07.obj"
+			},
+			"41": {
+			   "model": "rcraft:blademaster/blademaster08.obj"
+			}
+		}
+	},
+	"defaults" : {
+	
+	"transform": {
+	
+	"thirdperson_righthand": {
+	"rotation": [ 0, 188, 0 ],
+	"translation": [ -0.60, 0.10, -0.40 ],
+	"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"thirdperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"firstperson_righthand": {
+		"rotation": [ 0, 190, 0 ],
+		"translation": [ -0.70, 0.10, -0.50 ],
+		"scale": [ 0.90, 0.90, 0.90 ]
+	},
+	"firstperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"gui": {
+		"rotation": [ 96, 50, 216 ],
+		"translation": [ 0.00, -0.85, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"head": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"fixed": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"ground": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.60, 0.20, 0.60 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	}
+	}
+	}
+}

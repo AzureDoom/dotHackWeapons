@@ -59,9 +59,6 @@
     		},
     	  "19": {
     		   "model": "rcraft:edgepunisher/edgepunisher20.obj"
-    		},
-    	  "20": {
-    		   "model": "rcraft:edgepunisher/edgepunisher20.obj"
     		}
         }
 	},
@@ -71,7 +68,7 @@
 	
 	"thirdperson_righthand": {
 	"rotation": [ 0, 188, 0 ],
-	"translation": [ -0.60, 0.30, -0.40 ],
+	"translation": [ -0.60, 0.00, -0.40 ],
 	"scale": [ 1.00, 1.00, 1.00 ]
 	},
 	"thirdperson_lefthand": {

@@ -1,0 +1,189 @@
+{
+    "forge_marker": 1,
+	
+    "variants": {
+        "type": {
+    	  "1": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman00.obj"
+    		},
+    	  "2": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman00_1.obj"
+    		},
+    	  "3": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman00_2.obj"
+    		},
+    	  "4": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman00_3.obj"
+    		},
+    	  "5": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman00_4.obj"
+    		},
+    	  "6": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman00_5.obj"
+    		},
+    	  "7": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman00_6.obj"
+    		},
+    	  "8": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman00_7.obj"
+    		},
+    	  "9": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman00_8.obj"
+    		},
+    	  "10": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman0z.obj"
+    		},
+    	  "11": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman01.obj"
+    		},
+    	  "12": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman01_1.obj"
+    		},
+    	  "13": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman01_2.obj"
+    		},
+    	  "14": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman01_3.obj"
+    		},
+    	  "15": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman01_4.obj"
+    		},
+    	  "16": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman01_5.obj"
+    		},
+    	  "17": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman01_6.obj"
+    		},
+    	  "18": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman02.obj"
+    		},
+    	  "19": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman02_1.obj"
+    		},
+    	  "20": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman02_2.obj"
+    		},
+    	  "21": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman02_3.obj"
+    		},
+    	  "22": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman02_4.obj"
+    		},
+		  "23": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman02_5.obj"
+    		},
+    	  "24": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman02_6.obj"
+    		},
+    	  "25": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman03.obj"
+    		},
+    	  "26": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman03_1.obj"
+    		},
+    	  "27": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman03_2.obj"
+    		},
+    	  "28": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman03_3.obj"
+    		},
+    	  "29": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman03_4.obj"
+    		},
+    	  "30": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman03_5.obj"
+    		},
+    	  "31": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman03_6.obj"
+    		},
+    	  "32": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman04.obj"
+    		},
+    	  "33": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman04_1.obj"
+    		},
+    	  "34": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman04_2.obj"
+    		},
+    	  "35": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman04_3.obj"
+    		},
+    	  "36": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman04_4.obj"
+    		},
+    	  "37": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman04_5.obj"
+    		},
+    	  "38": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman04_6.obj"
+    		},
+    	  "39": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman05.obj"
+    		},
+    	  "40": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman06.obj"
+    		},
+    	  "41": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman06_1.obj"
+    		},
+    	  "42": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman07.obj"
+    		},
+    	  "43": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman07_1.obj"
+    		},
+    	  "44": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman08.obj"
+    		},
+    	  "45": {
+    		   "model": "rcraft:heavyaxeman/heavyaxeman08_1.obj"
+    		}
+        }
+	},
+	"defaults" : {
+	
+	"transform": {
+	
+	"thirdperson_righthand": {
+	"rotation": [ 0, 188, 0 ],
+	"translation": [ -0.60, -0.70, -0.40 ],
+	"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"thirdperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"firstperson_righthand": {
+		"rotation": [ 0, 190, 0 ],
+		"translation": [ -0.70, -0.70, -0.50 ],
+		"scale": [ 0.90, 0.90, 0.90 ]
+	},
+	"firstperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"gui": {
+		"rotation": [ 96, 50, 216 ],
+		"translation": [ -0.30, -0.80, 0.00 ],
+		"scale": [ 0.60, 0.60, 0.60 ]
+	},
+	"head": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"fixed": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"ground": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.60, 0.20, 0.60 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	}
+	}
+	}
+}

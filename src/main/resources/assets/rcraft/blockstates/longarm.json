@@ -1,0 +1,179 @@
+{
+    "forge_marker": 1,
+	"variants": {
+		"type": {
+			"1": {
+			   "model": "rcraft:longarm/longarm00.obj"
+			},
+			"2": {
+			   "model": "rcraft:longarm/longarm00_1.obj"
+			},
+			"3": {
+			   "model": "rcraft:longarm/longarm00_2.obj"
+			},
+			"4": {
+			   "model": "rcraft:longarm/longarm00_3.obj"
+			},
+			"5": {
+			   "model": "rcraft:longarm/longarm00_4.obj"
+			},
+			"6": {
+			   "model": "rcraft:longarm/longarm00_5.obj"
+			},
+			"7": {
+			   "model": "rcraft:longarm/longarm00_6.obj"
+			},
+			"8": {
+			   "model": "rcraft:longarm/longarm01.obj"
+			},
+			"9": {
+			   "model": "rcraft:longarm/longarm01_1.obj"
+			},
+			"10": {
+			   "model": "rcraft:longarm/longarm01_2.obj"
+			},
+			"11": {
+			   "model": "rcraft:longarm/longarm01_3.obj"
+			},
+			"12": {
+			   "model": "rcraft:longarm/longarm01_4.obj"
+			},
+			"13": {
+			   "model": "rcraft:longarm/longarm01_5.obj"
+			},
+			"14": {
+			   "model": "rcraft:longarm/longarm01_6.obj"
+			},
+			"15": {
+			   "model": "rcraft:longarm/longarm02.obj"
+			},
+			"16": {
+			   "model": "rcraft:longarm/longarm02_1.obj"
+			},
+			"17": {
+			   "model": "rcraft:longarm/longarm02_2.obj"
+			},
+			"18": {
+			   "model": "rcraft:longarm/longarm02_3.obj"
+			},
+			"19": {
+			   "model": "rcraft:longarm/longarm02_4.obj"
+			},
+			"20": {
+			   "model": "rcraft:longarm/longarm02_5.obj"
+			},
+			"21": {
+			   "model": "rcraft:longarm/longarm02_6.obj"
+			},
+			"22": {
+			   "model": "rcraft:longarm/longarm03.obj"
+			},
+			"23": {
+			   "model": "rcraft:longarm/longarm03_1.obj"
+			},
+			"24": {
+			   "model": "rcraft:longarm/longarm03_2.obj"
+			},
+			"25": {
+			   "model": "rcraft:longarm/longarm03_3.obj"
+			},
+			"26": {
+			   "model": "rcraft:longarm/longarm03_4.obj"
+			},
+			"27": {
+			   "model": "rcraft:longarm/longarm03_5.obj"
+			},
+			"28": {
+			   "model": "rcraft:longarm/longarm03_6.obj"
+			},
+			"29": {
+			   "model": "rcraft:longarm/longarm04.obj"
+			},
+			"30": {
+			   "model": "rcraft:longarm/longarm04_1.obj"
+			},
+			"31": {
+			   "model": "rcraft:longarm/longarm04_2.obj"
+			},
+			"32": {
+			   "model": "rcraft:longarm/longarm04_3.obj"
+			},
+			"33": {
+			   "model": "rcraft:longarm/longarm04_4.obj"
+			},
+			"34": {
+			   "model": "rcraft:longarm/longarm04_5.obj"
+			},
+			"35": {
+			   "model": "rcraft:longarm/longarm04_6.obj"
+			},
+			"36": {
+			   "model": "rcraft:longarm/longarm05.obj"
+			},
+			"37": {
+			   "model": "rcraft:longarm/longarm06.obj"
+			},
+			"38": {
+			   "model": "rcraft:longarm/longarm06_1.obj"
+			},
+			"39": {
+			   "model": "rcraft:longarm/longarm07.obj"
+			},
+			"40": {
+			   "model": "rcraft:longarm/longarm07_1.obj"
+			},
+			"41": {
+			   "model": "rcraft:longarm/longarm08.obj"
+			},
+			"42": {
+			   "model": "rcraft:longarm/longarm08_1.obj"
+			}
+		}
+	},
+	"defaults" : {
+	
+	"transform": {
+	
+	"thirdperson_righthand": {
+	"rotation": [ 0, 188, 0 ],
+	"translation": [ -0.60, -0.80, -0.40 ],
+	"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"thirdperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"firstperson_righthand": {
+		"rotation": [ 0, 190, 0 ],
+		"translation": [ -0.70, -0.80, -0.50 ],
+		"scale": [ 0.90, 0.90, 0.90 ]
+	},
+	"firstperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"gui": {
+		"rotation": [ 96, 50, 216 ],
+		"translation": [ -0.20, -0.85, 0.00 ],
+		"scale": [ 0.70, 0.70, 0.70 ]
+	},
+	"head": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"fixed": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.30, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"ground": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.60, 0.20, 0.60 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	}
+	}
+	}
+}

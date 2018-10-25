@@ -1,0 +1,14 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl MDL_cw2hkt08_cw2hkt08
+
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+
+
+d 1.000000
+
+map_Kd rcraft:items/cw2hkt08
+map_Ka rcraft:items/cw2hkt08
