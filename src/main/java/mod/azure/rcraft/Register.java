@@ -47,7 +47,8 @@ public class Register {
 	public static final Item heavyAxemanItem =  new ItemSword("heavyaxeman", 45);
 	public static final Item heavyBladeItem =  new ItemSword("heavyblade", 38);
 	public static final Item longArmItem =  new ItemSword("longarm", 42);
-	//public static final Item twinBladeItem =  new ItemSword("twinblade", 82);
+	public static final Item twinBladeItem =  new ItemSword("twinblade", 38);
+	public static final Item twinBlade1Item =  new ItemSword("twinblade1", 41);
 	public static final Item waveMasterItem =  new ItemMagic("wavemaster", 1, Tier.MASTER, null);
 	public static final Item waveMaster1Item =  new ItemMagic("wavemaster1", 1, Tier.MASTER, null);
 	public static final Item waveMaster2Item =  new ItemMagic("wavemaster2", 1, Tier.MASTER, null);
@@ -102,8 +103,8 @@ public class Register {
 			shadowWarlock4Item, shadowWarlock5Item, shadowWarlock6Item, shadowWarlock7Item, 
 			shadowWarlock8Item, shadowWarlock9Item, shadowWarlock10Item, shadowWarlock11Item, 
 			shadowWarlock12Item, shadowWarlock13Item, 
-			lordPartizanItem, tribalGrapplerItem, dualGunnerItem,
-			bladeMasterItem,  heavyAxemanItem, heavyBladeItem, longArmItem, /*twinBladeItem,*/
+			lordPartizanItem, tribalGrapplerItem, dualGunnerItem, twinBlade1Item,
+			bladeMasterItem,  heavyAxemanItem, heavyBladeItem, longArmItem, twinBladeItem,
 			waveMasterItem, waveMaster1Item, waveMaster2Item, waveMaster3Item, 
 			waveMaster4Item, waveMaster5Item, waveMaster6Item, waveMaster7Item, 
 			waveMaster8Item, waveMaster9Item, waveMaster10Item, waveMaster11Item, 

@@ -3,79 +3,118 @@
     "variants": {
 	"type": {
 		"1": {
-		   "model": "rcraft:dualswords/dualswords00l.obj"
+		   "model": "rcraft:twinblade/twinblade00.obj"
 		},
 		"2": {
-		   "model": "rcraft:dualswords/dualswords02l.obj"
+		   "model": "rcraft:twinblade/twinblade00_1.obj"
 		},
 		"3": {
-		   "model": "rcraft:dualswords/dualswords03l.obj"
+		   "model": "rcraft:twinblade/twinblade00_2.obj"
 		},
 		"4": {
-		   "model": "rcraft:dualswords/dualswords04l.obj"
+		   "model": "rcraft:twinblade/twinblade00_3.obj"
 		},
 		"5": {
-		   "model": "rcraft:dualswords/dualswords05l.obj"
+		   "model": "rcraft:twinblade/twinblade00_4.obj"
 		},
 		"6": {
-		   "model": "rcraft:dualswords/dualswords06l.obj"
+		   "model": "rcraft:twinblade/twinblade00_5.obj"
 		},
 		"7": {
-		   "model": "rcraft:dualswords/dualswords07l.obj"
+		   "model": "rcraft:twinblade/twinblade00_6.obj"
 		},
 		"8": {
-		   "model": "rcraft:dualswords/dualswords08l.obj"
+		   "model": "rcraft:twinblade/twinblade01.obj"
 		},
 		"9": {
-		   "model": "rcraft:dualswords/dualswords09l.obj"
+		   "model": "rcraft:twinblade/twinblade01_1.obj"
 		},
 		"10": {
-			"model": "rcraft:dualswords/dualswords10l.obj"
+			"model": "rcraft:twinblade/twinblade01_2.obj"
 		},
 		"11": {
-		   "model": "rcraft:dualswords/dualswordsa0l.obj"
+		   "model": "rcraft:twinblade/twinblade01_3.obj"
 		},
 		"12": {
-		   "model": "rcraft:dualswords/dualswordsa1l.obj"
+		   "model": "rcraft:twinblade/twinblade01_4.obj"
 		},
 		"13": {
-		   "model": "rcraft:dualswords/dualswordsa2l.obj"
+		   "model": "rcraft:twinblade/twinblade01_5.obj"
 		},
 		"14": {
-		   "model": "rcraft:dualswords/dualswordsa3l.obj"
+		   "model": "rcraft:twinblade/twinblade01_6.obj"
 		},
 		"15": {
-		   "model": "rcraft:dualswords/dualswordsa4l.obj"
+		   "model": "rcraft:twinblade/twinblade02.obj"
 		},
 		"16": {
-		   "model": "rcraft:dualswords/dualswordsa5l.obj"
+		   "model": "rcraft:twinblade/twinblade02_1.obj"
 		},
 		"17": {
-		   "model": "rcraft:dualswords/dualswordsa6l.obj"
+		   "model": "rcraft:twinblade/twinblade02_2.obj"
 		},
 		"18": {
-		   "model": "rcraft:dualswords/dualswordsa7l.obj"
+		   "model": "rcraft:twinblade/twinblade02_3.obj"
 		},
 		"19": {
-		   "model": "rcraft:dualswords/dualswordsa8l.obj"
+		   "model": "rcraft:twinblade/twinblade02_4.obj"
 		},
 		"20": {
-		   "model": "rcraft:dualswords/dualswordsa9l.obj"
+		   "model": "rcraft:twinblade/twinblade02_5.obj"
 		},
 		"21": {
-		   "model": "rcraft:dualswords/dualswordsb1l.obj"
+		   "model": "rcraft:twinblade/twinblade02_6.obj"
 		},
 		"22": {
-		   "model": "rcraft:dualswords/dualswordsb2l.obj"
+		   "model": "rcraft:twinblade/twinblade03.obj"
 		},
 		"23": {
-		   "model": "rcraft:dualswords/dualswordsb3l.obj"
+		   "model": "rcraft:twinblade/twinblade03_1.obj"
 		},
 		"24": {
-		   "model": "rcraft:dualswords/dualswordsb4l.obj"
+		   "model": "rcraft:twinblade/twinblade03_2.obj"
 		},
 		"25": {
-		   "model": "rcraft:dualswords/dualswords01l.obj"
+		   "model": "rcraft:twinblade/twinblade03_3.obj"
+		},
+		"26": {
+		   "model": "rcraft:twinblade/twinblade03_4.obj"
+		},
+		"27": {
+		   "model": "rcraft:twinblade/twinblade03_5.obj"
+		},
+		"28": {
+		   "model": "rcraft:twinblade/twinblade03_6.obj"
+		},
+		"29": {
+		   "model": "rcraft:twinblade/twinblade04.obj"
+		},
+		"30": {
+		   "model": "rcraft:twinblade/twinblade04_1.obj"
+		},
+		"31": {
+		   "model": "rcraft:twinblade/twinblade04_2.obj"
+		},
+		"32": {
+		   "model": "rcraft:twinblade/twinblade04_3.obj"
+		},
+		"33": {
+		   "model": "rcraft:twinblade/twinblade04_4.obj"
+		},
+		"34": {
+		   "model": "rcraft:twinblade/twinblade04_5.obj"
+		},
+		"35": {
+			"model": "rcraft:twinblade/twinblade04_6.obj"
+		},
+		"36": {
+		   "model": "rcraft:twinblade/twinblade05.obj"
+		},
+		"37": {
+		   "model": "rcraft:twinblade/twinblade06.obj"
+		},
+		"38": {
+		   "model": "rcraft:twinblade/twinblade06_1.obj"
 		}
 	}
 	},
@@ -105,8 +144,8 @@
 	},
 	"gui": {
 		"rotation": [ 96, 50, 216 ],
-		"translation": [ 0.70, -0.10, 0.00 ],
-		"scale": [ 1.40, 1.40, 1.40 ]
+		"translation": [ 0.90, -0.20, 0.00 ],
+		"scale": [ 2.00, 2.00, 2.00 ]
 	},
 	"head": {
 		"rotation": [ 0, 0, 0 ],

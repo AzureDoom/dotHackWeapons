@@ -17,7 +17,7 @@ import mod.azure.rcraft.CommonProxy;
 public class RcraftMod {
 
 	public static final String modid = "rcraft";
-	public static final String version = "0.8";
+	public static final String version = "1.0";
 	
 	@SidedProxy(clientSide = "mod.azure.rcraft.ClientProxy", serverSide = "mod.azure.rcraft.CommonProxy")
     public static CommonProxy proxy;
