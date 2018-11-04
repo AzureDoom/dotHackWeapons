@@ -92,6 +92,7 @@ public class Register {
 	public static final Item waveMaster40Item =  new ItemMagic("wavemaster40", 1, Tier.MASTER, null);
 	public static final Item waveMaster41Item =  new ItemMagic("wavemaster41", 1, Tier.MASTER, null);
 	public static final Item waveMaster42Item =  new ItemMagic("wavemaster42", 1, Tier.MASTER, null);
+	public static final Item waveMaster43Item = new ItemMagic("wavemaster43", 1, Tier.MASTER, null);
 	
 	public static final Item[] itemList = new Item[] {
 			bladeBrandierItem, dualSwordsItem, edgePunisherItem, edgePunisher1Item,
@@ -115,7 +116,7 @@ public class Register {
 			waveMaster28Item, waveMaster29Item, waveMaster30Item, waveMaster31Item, 
 			waveMaster32Item, waveMaster33Item, waveMaster34Item, waveMaster35Item, 
 			waveMaster36Item, waveMaster37Item, waveMaster38Item, waveMaster39Item, 
-			waveMaster40Item, waveMaster41Item, waveMaster42Item
+			waveMaster40Item, waveMaster41Item, waveMaster42Item, waveMaster43Item
 	};
 
 	public static NonNullList<ItemStack> variantList;

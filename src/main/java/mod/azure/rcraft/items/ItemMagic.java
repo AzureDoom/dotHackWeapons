@@ -43,7 +43,7 @@ public class ItemMagic extends ItemWand implements IMultiType {
 	}
 
 	public String getUnlocalizedName(ItemStack stack) {
-		return super.getUnlocalizedName() + this.getType(stack);
+		return super.getUnlocalizedName();
 	}
 
 }
