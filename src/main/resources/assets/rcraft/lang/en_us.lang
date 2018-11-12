@@ -1,8 +1,3 @@
-tile.gate.name=Gate
-tile.gate1.name=R1 Gate
-tile.gate2.name=R2 Gate
-tile.gate3.name=R2 Field Gate
-
 item.blademaster.name=Blademaster
 item.blademaster1.name=Basic Sword
 item.blademaster2.name=Rondo
@@ -466,5 +461,5 @@ item.wavemaster41.name=Silent Bomber
 item.wavemaster42.name=8 Wise Men
 item.wavemaster43.name=Ludicrous
 
-itemGroup.rcraft=RCraft Items
-tab.rcraft=RCraft Items
+itemGroup.rcraft=dotHack Items
+tab.rcraft=dotHack Items
