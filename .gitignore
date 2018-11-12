@@ -12,10 +12,9 @@ out
 *.iws
 *.iml
 .idea
-
 # gradle
-build
 .gradle
+build 
 
 # other
 eclipse
