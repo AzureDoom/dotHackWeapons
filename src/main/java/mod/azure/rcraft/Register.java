@@ -11,7 +11,7 @@ import net.minecraft.util.NonNullList;
 public class Register {
 
 	public static final Item bladeBrandierItem =  new ItemSword("bladebrandier", 19);
-	public static final Item dualGunnerItem =  new ItemSword("dualgunner", 3);
+	public static final Item dualGunnerItem =  new ItemGun("dualgunner", 3);
 	public static final Item dualSwordsItem =  new ItemSword("dualswords", 25);
 	public static final Item edgePunisherItem =  new ItemSword("edgepunisher", 19);
 	public static final Item edgePunisher1Item =  new ItemSword("edgepunisher1", 1);
@@ -27,6 +27,10 @@ public class Register {
 	public static final Item harvestCleric8Item =  new ItemMagic("harvestcleric8", 1, Tier.MASTER, null);
 	public static final Item lordPartizanItem =  new ItemSword("lordpartizan", 9);
 	public static final Item macabreDancerItem =  new ItemSword("macabredancer", 5);
+	//public static final Item macabreDancer1Item =  new ItemSword("macabredancer1", 1);
+	//public static final Item macabreDancer2Item =  new ItemSword("macabredancer2", 1);
+	//public static final Item macabreDancer3Item =  new ItemSword("macabredancer3", 1);
+	//public static final Item macabreDancer4Item =  new ItemSword("macabredancer4", 1);
 	public static final Item shadowWarlockItem =  new ItemMagic("shadowwarlock", 1, Tier.MASTER, null);
 	public static final Item shadowWarlock1Item =  new ItemMagic("shadowwarlock1", 1, Tier.MASTER, null);
 	public static final Item shadowWarlock2Item =  new ItemMagic("shadowwarlock2", 1, Tier.MASTER, null);
@@ -41,14 +45,16 @@ public class Register {
 	public static final Item shadowWarlock11Item =  new ItemMagic("shadowwarlock11", 1, Tier.MASTER, null);
 	public static final Item shadowWarlock12Item =  new ItemMagic("shadowwarlock12", 1, Tier.MASTER, null);
 	public static final Item shadowWarlock13Item =  new ItemMagic("shadowwarlock13", 1, Tier.MASTER, null);
-	public static final Item steamGunnerItem =  new ItemSword("steamgunner", 19);
+	public static final Item steamGunnerItem =  new ItemGun("steamgunner", 19);
 	public static final Item tribalGrapplerItem =  new ItemSword("tribalgrappler", 11);
 	public static final Item bladeMasterItem =  new ItemSword("blademaster", 41);
 	public static final Item heavyAxemanItem =  new ItemSword("heavyaxeman", 45);
 	public static final Item heavyBladeItem =  new ItemSword("heavyblade", 38);
 	public static final Item longArmItem =  new ItemSword("longarm", 42);
 	public static final Item twinBladeItem =  new ItemSword("twinblade", 38);
-	public static final Item twinBlade1Item =  new ItemSword("twinblade1", 41);
+	public static final Item twinBlade1Item =  new ItemSword("twinblade1", 10);
+	public static final Item twinBlade2Item = new ItemSword("twinblade2", 1);
+	public static final Item twinBlade3Item =  new ItemSword("twinblade3", 30);
 	public static final Item waveMasterItem =  new ItemMagic("wavemaster", 1, Tier.MASTER, null);
 	public static final Item waveMaster1Item =  new ItemMagic("wavemaster1", 1, Tier.MASTER, null);
 	public static final Item waveMaster2Item =  new ItemMagic("wavemaster2", 1, Tier.MASTER, null);
@@ -97,6 +103,7 @@ public class Register {
 	public static final Item[] itemList = new Item[] {
 			bladeBrandierItem, dualSwordsItem, edgePunisherItem, edgePunisher1Item,
 			flickReaperItem, macabreDancerItem, steamGunnerItem,
+			/*macabreDancer1Item, macabreDancer2Item, macabreDancer3Item, macabreDancer4Item,*/
 			harvestClericItem, harvestCleric1Item, harvestCleric2Item, 
 			harvestCleric3Item, harvestCleric4Item, harvestCleric5Item, 
 			harvestCleric6Item, harvestCleric7Item, harvestCleric8Item, 
@@ -104,8 +111,9 @@ public class Register {
 			shadowWarlock4Item, shadowWarlock5Item, shadowWarlock6Item, shadowWarlock7Item, 
 			shadowWarlock8Item, shadowWarlock9Item, shadowWarlock10Item, shadowWarlock11Item, 
 			shadowWarlock12Item, shadowWarlock13Item, 
-			lordPartizanItem, tribalGrapplerItem, dualGunnerItem, twinBlade1Item,
-			bladeMasterItem,  heavyAxemanItem, heavyBladeItem, longArmItem, twinBladeItem,
+			lordPartizanItem, tribalGrapplerItem, dualGunnerItem, 
+			bladeMasterItem,  heavyAxemanItem, heavyBladeItem, longArmItem, 
+			twinBlade1Item, twinBladeItem, twinBlade2Item, twinBlade3Item,
 			waveMasterItem, waveMaster1Item, waveMaster2Item, waveMaster3Item, 
 			waveMaster4Item, waveMaster5Item, waveMaster6Item, waveMaster7Item, 
 			waveMaster8Item, waveMaster9Item, waveMaster10Item, waveMaster11Item, 

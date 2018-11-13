@@ -2,6 +2,7 @@ package mod.azure.rcraft.items;
 
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityLivingBase;
@@ -17,13 +18,16 @@ import net.minecraft.stats.StatList;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.EnumHelper;
 
-public class ItemGun extends ItemBow implements IMultiType {
+public class ItemGun extends net.minecraft.item.ItemSword implements IMultiType {
 	
 	private final int maxTypes;
 
 	public ItemGun(String name, int maxTypes) {
+		super(EnumHelper.addToolMaterial(name, 1, 0, 4F, 5, 4));
 		this.maxTypes = maxTypes;
 		
 		this.setUnlocalizedName(name);
@@ -34,40 +38,13 @@ public class ItemGun extends ItemBow implements IMultiType {
 	}
 
 	@Override
-	public EnumAction getItemUseAction(ItemStack stack) {
-		return EnumAction.BOW;
-	}
-
-	@Override
 	public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
 		return true;
 	}
 
 	@Override
-	public void onPlayerStoppedUsing(ItemStack stack, World world, EntityLivingBase entity, int timeLeft) {
-		if (entity instanceof EntityPlayer) {
-			EntityPlayer player = (EntityPlayer) entity;
-			
-			if (!world.isRemote) {
-		        EntityTippedArrow entityarrow = new EntityTippedArrow(world, player);
-		        entityarrow.shoot(player, player.rotationPitch, player.rotationYaw, 0.0f, 3.0f, 1.0f);
-				entityarrow.setIsCritical(true);
-				
-				int powerLevel = EnchantmentHelper.getEnchantmentLevel(Enchantments.POWER, stack);
-				if (powerLevel > 0) entityarrow.setDamage(entityarrow.getDamage() + (double)powerLevel * 0.5D + 0.5D);
-				
-				int punchLevel = EnchantmentHelper.getEnchantmentLevel(Enchantments.PUNCH, stack);
-				if (punchLevel > 0) entityarrow.setKnockbackStrength(punchLevel);
-				
-				int flameLevel = EnchantmentHelper.getEnchantmentLevel(Enchantments.FLAME, stack);
-				if (flameLevel > 0) entityarrow.setFire(100);
-
-				world.spawnEntity(entityarrow);
-			}
-			
-			world.playSound(null, player.posX, player.posY, player.posZ, SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0f, 1.0f / (itemRand.nextFloat() * 0.4f + 1.2f) + 0.5f);
-			player.addStat(StatList.getObjectUseStats(this));
-		}
+	public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos, EntityLivingBase entityLiving) {
+		return true;
 	}
 
 	public int getMaxTypes() {
