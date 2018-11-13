@@ -131,7 +131,7 @@
 	"thirdperson_lefthand": {
 		"rotation": [ 0, 188, 0 ],
 		"translation": [ 0.45, 0.10, -0.5 ],
-		"scale": [ 1.00, 1.00, 1.00 ]
+		"scale": [ 0.00, 0.00, 0.00 ]
 	},
 	"firstperson_righthand": {
 		"rotation": [ 0, 190, 0 ],
@@ -141,7 +141,7 @@
 	"firstperson_lefthand": {
 		"rotation": [ 0, 190, 0 ],
 		"translation": [ 0.30, 0.15, -0.70 ],
-		"scale": [ 1.00, 1.00, 1.00 ]
+		"scale": [ 0.00, 0.00, 0.00 ]
 	},
 	"gui": {
 		"rotation": [ 96, 50, 216 ],
