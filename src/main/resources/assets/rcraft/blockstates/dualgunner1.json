@@ -3,7 +3,7 @@
     "variants": {
     "type": {
 		"1": {
-			   "model": "rcraft:dualgunner/dualgunner00.obj"
+			   "model": "rcraft:dualgunner/dualgunner01.obj"
 			}
     }
 	},
@@ -33,7 +33,7 @@
 	},
 	"gui": {
 		"rotation": [ 96, 50, 216 ],
-		"translation": [ 0.75, -0.40, 0.20 ],
+		"translation": [ 0.60, -0.65, 0.00 ],
 		"scale": [ 2.00, 2.00, 2.00 ]
 	},
 	"head": {
