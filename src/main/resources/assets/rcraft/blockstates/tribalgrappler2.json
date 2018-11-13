@@ -3,28 +3,7 @@
     "variants": {
     "type": {
 		"1": {
-			"model": "rcraft:tribalgrappler/tribalgrappler01l.obj"
-		},
-		"2": {
-			"model": "rcraft:tribalgrappler/tribalgrappler03l.obj"
-		},
-		"3": {
-			"model": "rcraft:tribalgrappler/tribalgrappler05l.obj"
-		},
-		"4": {
-			"model": "rcraft:tribalgrappler/tribalgrappler06l.obj"
-		},
-		"5": {
-			"model": "rcraft:tribalgrappler/tribalgrappler08l.obj"
-		},
-		"6": {
-			"model": "rcraft:tribalgrappler/tribalgrappler09l.obj"
-		},
-		"7": {
-			"model": "rcraft:tribalgrappler/tribalgrapplerx1l.obj"
-		},
-		"8": {
-			"model": "rcraft:tribalgrappler/tribalgrapplerx2l.obj"
+			"model": "rcraft:tribalgrappler/tribalgrappler04l.obj"
 		}
     }
 	},
@@ -34,12 +13,12 @@
 	
 	"thirdperson_righthand": {
 	"rotation": [ 0, 180, 0 ],
-	"translation": [ -0.50, 0.47, -0.50 ],
+	"translation": [ -0.50, 0.49, -0.40 ],
 	"scale": [ 1.00, 1.00, 1.00 ]
 	},
 	"thirdperson_lefthand": {
 		"rotation": [ 0, 180, 0 ],
-		"translation": [ 0.5, 0.47, -0.50 ],
+		"translation": [ 0.5, 0.49, -0.40 ],
 		"scale": [ 1.00, 1.00, 1.00 ]
 	},
 	"firstperson_righthand": {

@@ -65,7 +65,10 @@ public class Register {
 	public static final Item steamGunner16Item =  new ItemGun("steamgunner16", 1);
 	public static final Item steamGunner17Item =  new ItemGun("steamgunner17", 1);
 	public static final Item steamGunner18Item =  new ItemGun("steamgunner18", 1);
-	public static final Item tribalGrapplerItem =  new ItemSword("tribalgrappler", 11);
+	public static final Item tribalGrapplerItem =  new ItemSword("tribalgrappler", 8);
+	public static final Item tribalGrappler1Item =  new ItemSword("tribalgrappler1", 1);
+	public static final Item tribalGrappler2Item =  new ItemSword("tribalgrappler2", 1);
+	public static final Item tribalGrappler3Item =  new ItemSword("tribalgrappler3", 1);
 	public static final Item bladeMasterItem =  new ItemSword("blademaster", 41);
 	public static final Item heavyAxemanItem =  new ItemSword("heavyaxeman", 45);
 	public static final Item heavyBladeItem =  new ItemSword("heavyblade", 38);
@@ -133,8 +136,9 @@ public class Register {
 			shadowWarlock4Item, shadowWarlock5Item, shadowWarlock6Item, shadowWarlock7Item, 
 			shadowWarlock8Item, shadowWarlock9Item, shadowWarlock10Item, shadowWarlock11Item, 
 			shadowWarlock12Item, shadowWarlock13Item, 
-			lordPartizanItem, tribalGrapplerItem, bladeMasterItem, heavyAxemanItem, heavyBladeItem, longArmItem, 
+			lordPartizanItem, bladeMasterItem, heavyAxemanItem, heavyBladeItem, longArmItem, 
 			dualGunnerItem, dualGunner1Item, dualGunner2Item,
+			tribalGrapplerItem, tribalGrappler1Item, tribalGrappler2Item, tribalGrappler3Item,
 			twinBlade1Item, twinBladeItem, twinBlade2Item, twinBlade3Item,
 			waveMasterItem, waveMaster1Item, waveMaster2Item, waveMaster3Item, 
 			waveMaster4Item, waveMaster5Item, waveMaster6Item, waveMaster7Item, 
