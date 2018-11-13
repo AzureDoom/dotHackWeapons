@@ -11,7 +11,9 @@ import net.minecraft.util.NonNullList;
 public class Register {
 
 	public static final Item bladeBrandierItem =  new ItemSword("bladebrandier", 19);
-	public static final Item dualGunnerItem =  new ItemGun("dualgunner", 3);
+	public static final Item dualGunnerItem =  new ItemGun("dualgunner", 1);
+	public static final Item dualGunner1Item =  new ItemGun("dualgunner1", 1);
+	public static final Item dualGunner2Item =  new ItemGun("dualgunner2", 1);
 	public static final Item dualSwordsItem =  new ItemSword("dualswords", 25);
 	public static final Item edgePunisherItem =  new ItemSword("edgepunisher", 19);
 	public static final Item edgePunisher1Item =  new ItemSword("edgepunisher1", 1);
@@ -45,7 +47,7 @@ public class Register {
 	public static final Item shadowWarlock11Item =  new ItemMagic("shadowwarlock11", 1, Tier.MASTER, null);
 	public static final Item shadowWarlock12Item =  new ItemMagic("shadowwarlock12", 1, Tier.MASTER, null);
 	public static final Item shadowWarlock13Item =  new ItemMagic("shadowwarlock13", 1, Tier.MASTER, null);
-	public static final Item steamGunnerItem =  new ItemGun("steamgunner", 19);
+	public static final Item steamGunnerItem =  new ItemSword("steamgunner", 19);
 	public static final Item tribalGrapplerItem =  new ItemSword("tribalgrappler", 11);
 	public static final Item bladeMasterItem =  new ItemSword("blademaster", 41);
 	public static final Item heavyAxemanItem =  new ItemSword("heavyaxeman", 45);
@@ -111,7 +113,7 @@ public class Register {
 			shadowWarlock4Item, shadowWarlock5Item, shadowWarlock6Item, shadowWarlock7Item, 
 			shadowWarlock8Item, shadowWarlock9Item, shadowWarlock10Item, shadowWarlock11Item, 
 			shadowWarlock12Item, shadowWarlock13Item, 
-			lordPartizanItem, tribalGrapplerItem, dualGunnerItem, 
+			lordPartizanItem, tribalGrapplerItem, dualGunnerItem, dualGunner1Item, dualGunner2Item,
 			bladeMasterItem,  heavyAxemanItem, heavyBladeItem, longArmItem, 
 			twinBlade1Item, twinBladeItem, twinBlade2Item, twinBlade3Item,
 			waveMasterItem, waveMaster1Item, waveMaster2Item, waveMaster3Item, 

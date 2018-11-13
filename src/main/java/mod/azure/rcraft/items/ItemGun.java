@@ -22,12 +22,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class ItemGun extends net.minecraft.item.ItemSword implements IMultiType {
+public class ItemGun extends net.minecraft.item.ItemBow implements IMultiType {
 	
 	private final int maxTypes;
 
 	public ItemGun(String name, int maxTypes) {
-		super(EnumHelper.addToolMaterial(name, 1, 0, 4F, 5, 4));
+		super();
 		this.maxTypes = maxTypes;
 		
 		this.setUnlocalizedName(name);
@@ -35,16 +35,6 @@ public class ItemGun extends net.minecraft.item.ItemSword implements IMultiType 
 		this.setCreativeTab(RcraftMod.tab);
 		
 		this.setHasSubtypes(true);
-	}
-
-	@Override
-	public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
-		return true;
-	}
-
-	@Override
-	public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos, EntityLivingBase entityLiving) {
-		return true;
 	}
 
 	public int getMaxTypes() {
@@ -65,6 +55,6 @@ public class ItemGun extends net.minecraft.item.ItemSword implements IMultiType 
 	}
 
 	public String getUnlocalizedName(ItemStack stack) {
-		return super.getUnlocalizedName() + this.getType(stack);
+		return super.getUnlocalizedName();
 	}
 }
