@@ -28,11 +28,11 @@ public class Register {
 	public static final Item harvestCleric7Item =  new ItemMagic("harvestcleric7", 1, Tier.MASTER, null);
 	public static final Item harvestCleric8Item =  new ItemMagic("harvestcleric8", 1, Tier.MASTER, null);
 	public static final Item lordPartizanItem =  new ItemSword("lordpartizan", 9);
-	public static final Item macabreDancerItem =  new ItemSword("macabredancer", 5);
-	//public static final Item macabreDancer1Item =  new ItemSword("macabredancer1", 1);
-	//public static final Item macabreDancer2Item =  new ItemSword("macabredancer2", 1);
-	//public static final Item macabreDancer3Item =  new ItemSword("macabredancer3", 1);
-	//public static final Item macabreDancer4Item =  new ItemSword("macabredancer4", 1);
+	public static final Item macabreDancerItem =  new ItemMagic("macabredancer", 1, Tier.MASTER, null);
+	public static final Item macabreDancer1Item =  new ItemMagic("macabredancer1", 1, Tier.MASTER, null);
+	public static final Item macabreDancer2Item =  new ItemMagic("macabredancer2", 1, Tier.MASTER, null);
+	public static final Item macabreDancer3Item =  new ItemMagic("macabredancer3", 1, Tier.MASTER, null);
+	public static final Item macabreDancer4Item =  new ItemMagic("macabredancer4", 1, Tier.MASTER, null);
 	public static final Item shadowWarlockItem =  new ItemMagic("shadowwarlock", 1, Tier.MASTER, null);
 	public static final Item shadowWarlock1Item =  new ItemMagic("shadowwarlock1", 1, Tier.MASTER, null);
 	public static final Item shadowWarlock2Item =  new ItemMagic("shadowwarlock2", 1, Tier.MASTER, null);
@@ -47,7 +47,24 @@ public class Register {
 	public static final Item shadowWarlock11Item =  new ItemMagic("shadowwarlock11", 1, Tier.MASTER, null);
 	public static final Item shadowWarlock12Item =  new ItemMagic("shadowwarlock12", 1, Tier.MASTER, null);
 	public static final Item shadowWarlock13Item =  new ItemMagic("shadowwarlock13", 1, Tier.MASTER, null);
-	public static final Item steamGunnerItem =  new ItemSword("steamgunner", 19);
+	public static final Item steamGunnerItem =  new ItemSword("steamgunner", 1);
+	public static final Item steamGunner1Item =  new ItemGun("steamgunner1", 1);
+	public static final Item steamGunner2Item =  new ItemGun("steamgunner2", 1);
+	public static final Item steamGunner3Item =  new ItemGun("steamgunner3", 1);
+	public static final Item steamGunner4Item =  new ItemGun("steamgunner4", 1);
+	public static final Item steamGunner6Item =  new ItemGun("steamgunner6", 1);
+	public static final Item steamGunner7Item =  new ItemGun("steamgunner7", 1);
+	public static final Item steamGunner8Item =  new ItemGun("steamgunner8", 1);
+	public static final Item steamGunner9Item =  new ItemGun("steamgunner9", 1);
+	public static final Item steamGunner10Item =  new ItemGun("steamgunner10", 1);
+	public static final Item steamGunner11Item =  new ItemGun("steamgunner11", 1);
+	public static final Item steamGunner12Item =  new ItemGun("steamgunner12", 1);
+	public static final Item steamGunner13Item =  new ItemGun("steamgunner13", 1);
+	public static final Item steamGunner14Item =  new ItemGun("steamgunner14", 1);
+	public static final Item steamGunner15Item =  new ItemGun("steamgunner15", 1);
+	public static final Item steamGunner16Item =  new ItemGun("steamgunner16", 1);
+	public static final Item steamGunner17Item =  new ItemGun("steamgunner17", 1);
+	public static final Item steamGunner18Item =  new ItemGun("steamgunner18", 1);
 	public static final Item tribalGrapplerItem =  new ItemSword("tribalgrappler", 11);
 	public static final Item bladeMasterItem =  new ItemSword("blademaster", 41);
 	public static final Item heavyAxemanItem =  new ItemSword("heavyaxeman", 45);
@@ -104,17 +121,20 @@ public class Register {
 	
 	public static final Item[] itemList = new Item[] {
 			bladeBrandierItem, dualSwordsItem, edgePunisherItem, edgePunisher1Item,
-			flickReaperItem, macabreDancerItem, steamGunnerItem,
-			/*macabreDancer1Item, macabreDancer2Item, macabreDancer3Item, macabreDancer4Item,*/
-			harvestClericItem, harvestCleric1Item, harvestCleric2Item, 
-			harvestCleric3Item, harvestCleric4Item, harvestCleric5Item, 
-			harvestCleric6Item, harvestCleric7Item, harvestCleric8Item, 
+			flickReaperItem, macabreDancerItem, 
+			steamGunnerItem, steamGunner1Item, steamGunner2Item, steamGunner3Item, steamGunner4Item,
+			steamGunner6Item, steamGunner7Item, steamGunner8Item, steamGunner9Item, steamGunner10Item, 
+			steamGunner11Item, steamGunner12Item, steamGunner13Item, steamGunner14Item,
+			steamGunner15Item, steamGunner16Item, steamGunner17Item, steamGunner18Item, 
+			macabreDancer1Item, macabreDancer2Item, macabreDancer3Item, macabreDancer4Item,
+			harvestClericItem, harvestCleric1Item, harvestCleric2Item, harvestCleric3Item, 
+			harvestCleric4Item, harvestCleric5Item, harvestCleric6Item, harvestCleric7Item, harvestCleric8Item, 
 			shadowWarlockItem, shadowWarlock1Item, shadowWarlock2Item, shadowWarlock3Item, 
 			shadowWarlock4Item, shadowWarlock5Item, shadowWarlock6Item, shadowWarlock7Item, 
 			shadowWarlock8Item, shadowWarlock9Item, shadowWarlock10Item, shadowWarlock11Item, 
 			shadowWarlock12Item, shadowWarlock13Item, 
-			lordPartizanItem, tribalGrapplerItem, dualGunnerItem, dualGunner1Item, dualGunner2Item,
-			bladeMasterItem,  heavyAxemanItem, heavyBladeItem, longArmItem, 
+			lordPartizanItem, tribalGrapplerItem, bladeMasterItem, heavyAxemanItem, heavyBladeItem, longArmItem, 
+			dualGunnerItem, dualGunner1Item, dualGunner2Item,
 			twinBlade1Item, twinBladeItem, twinBlade2Item, twinBlade3Item,
 			waveMasterItem, waveMaster1Item, waveMaster2Item, waveMaster3Item, 
 			waveMaster4Item, waveMaster5Item, waveMaster6Item, waveMaster7Item, 

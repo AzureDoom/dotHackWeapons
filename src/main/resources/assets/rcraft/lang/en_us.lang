@@ -63,7 +63,6 @@ item.bladebrandier17.name=Sarasvati Katana
 item.bladebrandier18.name=Tempting Rose
 item.bladebrandier19.name=Seductive Rose
 
-item.dualgunner.name=Dual Gunner
 item.dualgunner.name=DG-X
 item.dualgunner1.name=DG-Y
 item.dualgunner2.name=DG-Z
@@ -279,12 +278,11 @@ item.lordpartizan7.name=Lance Quake
 item.lordpartizan8.name=Lance Tower
 item.lordpartizan9.name=Lance Rook
 
-item.macabredancer.name=Macabre Dancer
-item.macabredancer1.name=Dark Crow
-item.macabredancer2.name=Fan Jasper
-item.macabredancer3.name=Peach Blossom
-item.macabredancer4.name=Voice Usurper
-item.macabredancer5.name=Voice Cleanser
+item.macabredancer.name=Dark Crow
+item.macabredancer1.name=Fan Jasper
+item.macabredancer2.name=Peach Blossom
+item.macabredancer3.name=Voice Usurper
+item.macabredancer4.name=Voice Cleanser
 
 item.shadowwarlock.name=Ogre's Heaven
 item.shadowwarlock1.name=Magic Amber
