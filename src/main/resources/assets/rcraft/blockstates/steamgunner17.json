@@ -1,9 +1,9 @@
 {
 	"forge_marker": 1,
 	"variants": {
-	"type": {
+				"type": {
 	  "1": {
-		   "model": "rcraft:steamgunner/steamgunnerx3.obj"
+		   "model": "rcraft:steamgunner/steamgunnerx4.obj"
 		}
 	}
 	},
@@ -12,8 +12,8 @@
 	"transform": {
 	
 	"thirdperson_righthand": {
-	"rotation": [ 0, 188, 0 ],
-	"translation": [ -0.60, 0.30, -0.40 ],
+	"rotation": [ 0, 180, 0 ],
+	"translation": [ -0.50, 0.53, -0.22 ],
 	"scale": [ 1.00, 1.00, 1.00 ]
 	},
 	"thirdperson_lefthand": {
