@@ -13,11 +13,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import mod.azure.rcraft.CommonProxy;
 
-@Mod(modid = RcraftMod.modid, version = RcraftMod.version)
+@Mod(modid = RcraftMod.modid, version = RcraftMod.version, dependencies = "required-after:ebwizardry;required-after:forge@[14.23.4.2705,)")
 public class RcraftMod {
 
 	public static final String modid = "rcraft";
-	public static final String version = "1.1.5";
+	public static final String version = "1.1.6";
 	
 	@SidedProxy(clientSide = "mod.azure.rcraft.ClientProxy", serverSide = "mod.azure.rcraft.CommonProxy")
     public static CommonProxy proxy;

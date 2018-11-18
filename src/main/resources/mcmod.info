@@ -6,9 +6,12 @@
         "mcversion": "${mcversion}",
         "url": "http://www.cyberconnects2.com/games/rcraft/",
         "authorList": [
-            "AzureZhen, Galaxtone, d4rsorc"
+            "AzureZhen"
         ],
-        "credits": "Code optimized by galaxtone",
-        "logoFile": "pack.png"
+        "credits": "Code optimized by galaxtone and d4rsorc",
+        "logoFile": "pack.png",
+        "requiredMods": [ "ebwizardry" ],
+        "dependencies": [ "ebwizardry" ],
+        "useDependencyInformation": "true"
     }
 ]
