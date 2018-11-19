@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "rcraft:edgepunisher",
+	"data": 0
+  },
+  "pattern": [
+    " d ",
+    " d ",
+    " d "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:iron_nugget"
+    }
+  }
+}
