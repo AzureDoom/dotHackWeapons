@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "rcraft:dualgunner2",
+	"data": 0
+  },
+  "pattern": [
+    "   ",
+    "eee",
+    "d  "
+  ],
+  "type": "forge:ore_shaped",
+  "group": "tool",
+  "key": {
+    "e": {
+      "item": "minecraft:gold_ingot"
+    },
+    "d": {
+      "item": "minecraft:gold_ingot"
+    }
+  }
+}
