@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "rcraft:macabreDancer4",
+	"data": 0
+  },
+  "pattern": [
+    "   ",
+    "eee",
+    " d "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "e": {
+      "item": "minecraft:obsidian"
+    },
+    "d": {
+      "item": "minecraft:planks",
+	  "data": 0
+    }
+  }
+}

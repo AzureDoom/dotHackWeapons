@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "rcraft:macabreDancer",
+	"data": 0
+  },
+  "pattern": [
+    "   ",
+    "ddd",
+    " d "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:planks",
+	  "data": 0
+    }
+  }
+}
