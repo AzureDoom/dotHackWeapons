@@ -54,27 +54,24 @@
 		   "model": "rcraft:dualswords/dualswordsa6l.obj"
 		},
 		"18": {
-		   "model": "rcraft:dualswords/dualswordsa7l.obj"
-		},
-		"19": {
 		   "model": "rcraft:dualswords/dualswordsa8l.obj"
 		},
-		"20": {
+		"19": {
 		   "model": "rcraft:dualswords/dualswordsa9l.obj"
 		},
-		"21": {
+		"20": {
 		   "model": "rcraft:dualswords/dualswordsb1l.obj"
 		},
-		"22": {
+		"21": {
 		   "model": "rcraft:dualswords/dualswordsb2l.obj"
 		},
-		"23": {
+		"22": {
 		   "model": "rcraft:dualswords/dualswordsb3l.obj"
 		},
-		"24": {
+		"23": {
 		   "model": "rcraft:dualswords/dualswordsb4l.obj"
 		},
-		"25": {
+		"24": {
 		   "model": "rcraft:dualswords/dualswords01l.obj"
 		}
 	}

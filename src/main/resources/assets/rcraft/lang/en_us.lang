@@ -84,14 +84,15 @@ item.dualswords14.name=Binding Chord
 item.dualswords15.name=Spin Ribs
 item.dualswords16.name=Spin Indigo
 item.dualswords17.name=Spin Fang
-item.dualswords18.name=Spin Heaven
-item.dualswords19.name=Lit Honeysuckle
-item.dualswords20.name=Spin Mujin
-item.dualswords21.name=Spin Nezumi
-item.dualswords22.name=Spin Drake
-item.dualswords23.name=Spiral Edge
-item.dualswords24.name=Spin Gorai
-item.dualswords25.name=Empty Skies
+item.dualswords18.name=Lit Honeysuckle
+item.dualswords19.name=Spin Mujin
+item.dualswords20.name=Spin Nezumi
+item.dualswords21.name=Spin Drake
+item.dualswords22.name=Spiral Edge
+item.dualswords23.name=Spin Gorai
+item.dualswords24.name=Empty Skies
+
+item.dualswords11.name=Spin Heaven
 
 item.edgepunsher.name=Edge Punisher
 item.edgepunisher1.name=Broad Wheel

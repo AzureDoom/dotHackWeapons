@@ -14,7 +14,8 @@ public class Register {
 	public static final Item dualGunnerItem =  new ItemGun("dualgunner", 1);
 	public static final Item dualGunner1Item =  new ItemGun("dualgunner1", 1);
 	public static final Item dualGunner2Item =  new ItemGun("dualgunner2", 1);
-	public static final Item dualSwordsItem =  new ItemSword("dualswords", 25);
+	public static final Item dualSwordsItem =  new ItemSword("dualswords", 24);
+	public static final Item dualSwords1Item =  new ItemSword("dualswords1", 1);
 	public static final Item edgePunisherItem =  new ItemSword("edgepunisher", 19);
 	public static final Item edgePunisher1Item =  new ItemSword("edgepunisher1", 1);
 	public static final Item flickReaperItem =  new ItemSword("flickreaper", 9);
@@ -124,7 +125,7 @@ public class Register {
 	
 	public static final Item[] itemList = new Item[] {
 			bladeBrandierItem, dualSwordsItem, edgePunisherItem, edgePunisher1Item,
-			flickReaperItem, macabreDancerItem, 
+			flickReaperItem, macabreDancerItem, dualSwords1Item,
 			steamGunnerItem, steamGunner1Item, steamGunner2Item, steamGunner3Item, steamGunner4Item,
 			steamGunner5Item, steamGunner6Item, steamGunner7Item, steamGunner8Item, steamGunner9Item, 
 			steamGunner10Item, steamGunner11Item, steamGunner12Item, steamGunner13Item, steamGunner14Item,
