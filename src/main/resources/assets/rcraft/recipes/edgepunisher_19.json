@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "rcraft:edgepunisher",
+	"data": 18
+  },
+  "pattern": [
+    " d ",
+    " d ",
+    " e "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:coal",
+	  "data": 1
+    },
+	"e": {
+      "item": "minecraft:stick"
+    }
+  }
+}

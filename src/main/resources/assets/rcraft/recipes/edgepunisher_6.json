@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "rcraft:edgepunisher",
+	"data": 5
+  },
+  "pattern": [
+    " d ",
+    " d ",
+    " e "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:pumpkin_seeds"
+    },
+	"e": {
+      "item": "minecraft:stick"
+    }
+  }
+}

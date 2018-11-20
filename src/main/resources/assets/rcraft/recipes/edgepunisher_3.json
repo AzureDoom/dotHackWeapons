@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "rcraft:edgepunisher",
+	"data": 2
+  },
+  "pattern": [
+    " d ",
+    " d ",
+    " e "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:prismarine_shard"
+    },
+	"e": {
+      "item": "minecraft:stick"
+    }
+  }
+}
