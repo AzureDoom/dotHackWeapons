@@ -1,0 +1,83 @@
+{
+    "forge_marker": 1,
+    "variants": {
+    "type": {
+		"1": {
+		   "model": "rcraft:twinblade1/twinblade100.obj"
+		},
+		"2": {
+		   "model": "rcraft:twinblade1/twinblade100_1.obj"
+		},
+		"3": {
+		   "model": "rcraft:twinblade1/twinblade100_2.obj"
+		},
+		"4": {
+		   "model": "rcraft:twinblade1/twinblade100_3.obj"
+		},
+		"5": {
+		   "model": "rcraft:twinblade1/twinblade100_4.obj"
+		},
+		"6": {
+		   "model": "rcraft:twinblade1/twinblade100_5.obj"
+		},
+		"7": {
+		   "model": "rcraft:twinblade1/twinblade100_6.obj"
+		},
+		"8": {
+		   "model": "rcraft:twinblade1/twinblade106.obj"
+		},
+		"9": {
+		   "model": "rcraft:twinblade1/twinblade106_1.obj"
+		},
+		"10": {
+		   "model": "rcraft:twinblade1/twinblade107.obj"
+		}
+    }
+	},
+	"defaults" : {
+	
+	"transform": {
+	
+	"thirdperson_righthand": {
+	"rotation": [ 0, 0, -90 ],
+	"translation": [ 0.7, -0.77, 0.7 ],
+	"scale": [ 1.30, 1.30, 1.30 ]
+	},
+	"thirdperson_lefthand": {
+		"rotation": [ 0, 0, -90 ],
+		"translation": [ 0.70, 0.52, 0.69 ],
+		"scale": [ 1.30, 1.30, 1.30 ]
+	},
+	"firstperson_righthand": {
+		"rotation": [ 0, 190, 0 ],
+		"translation": [ -0.70, 0.30, -0.50 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"firstperson_lefthand": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"gui": {
+		"rotation": [ 90, 50, 320 ],
+		"translation": [ 1.70, 0.20, 0.00 ],
+		"scale": [ 1.70, 1.70, 1.70 ]
+	},
+	"head": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"fixed": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.00, 0.00, 0.00 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	},
+	"ground": {
+		"rotation": [ 0, 0, 0 ],
+		"translation": [ 0.60, 0.20, 0.60 ],
+		"scale": [ 1.00, 1.00, 1.00 ]
+	}
+	}
+	}
+}

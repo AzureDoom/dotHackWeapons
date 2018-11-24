@@ -15,9 +15,9 @@ public class Register {
 	public static final Item dualGunner1Item =  new ItemGun("dualgunner1", 1);
 	public static final Item dualGunner2Item =  new ItemGun("dualgunner2", 1);
 	public static final Item dualSwordsItem =  new ItemSword("dualswords", 24);
-	public static final Item dualSwords1Item =  new ItemSword("dualswords1", 1);
+	public static final Item dualSwords3Item =  new ItemSword("dualswords3", 1);
 	public static final Item edgePunisherItem =  new ItemSword("edgepunisher", 19);
-	public static final Item edgePunisher1Item =  new ItemSword("edgepunisher1", 1);
+	public static final Item edgePunisher2Item =  new ItemSword("edgepunisher2", 1);
 	public static final Item flickReaperItem =  new ItemSword("flickreaper", 9);
 	public static final Item harvestClericItem =  new ItemMagic("harvestcleric", 1, Tier.MASTER, null);
 	public static final Item harvestCleric1Item =  new ItemMagic("harvestcleric1", 1, Tier.MASTER, null);
@@ -67,17 +67,17 @@ public class Register {
 	public static final Item steamGunner16Item =  new ItemGun("steamgunner16", 1);
 	public static final Item steamGunner17Item =  new ItemGun("steamgunner17", 1);
 	public static final Item tribalGrapplerItem =  new ItemSword("tribalgrappler", 8);
-	public static final Item tribalGrappler1Item =  new ItemSword("tribalgrappler1", 1);
 	public static final Item tribalGrappler2Item =  new ItemSword("tribalgrappler2", 1);
 	public static final Item tribalGrappler3Item =  new ItemSword("tribalgrappler3", 1);
+	public static final Item tribalGrappler4Item =  new ItemSword("tribalgrappler4", 1);
 	public static final Item bladeMasterItem =  new ItemSword("blademaster", 41);
 	public static final Item heavyAxemanItem =  new ItemSword("heavyaxeman", 45);
 	public static final Item heavyBladeItem =  new ItemSword("heavyblade", 38);
 	public static final Item longArmItem =  new ItemSword("longarm", 42);
 	public static final Item twinBladeItem =  new ItemSword("twinblade", 38);
-	public static final Item twinBlade1Item =  new ItemSword("twinblade1", 10);
-	public static final Item twinBlade2Item = new ItemSword("twinblade2", 1);
-	public static final Item twinBlade3Item =  new ItemSword("twinblade3", 30);
+	public static final Item twinBlade61Item =  new ItemSword("twinblade61", 10);
+	public static final Item twinBlade71Item = new ItemSword("twinblade71", 1);
+	public static final Item twinBlade81Item =  new ItemSword("twinblade81", 30);
 	public static final Item waveMasterItem =  new ItemMagic("wavemaster", 1, Tier.MASTER, null);
 	public static final Item waveMaster1Item =  new ItemMagic("wavemaster1", 1, Tier.MASTER, null);
 	public static final Item waveMaster2Item =  new ItemMagic("wavemaster2", 1, Tier.MASTER, null);
@@ -124,8 +124,8 @@ public class Register {
 	public static final Item waveMaster43Item = new ItemMagic("wavemaster43", 1, Tier.MASTER, null);
 	
 	public static final Item[] itemList = new Item[] {
-			bladeBrandierItem, dualSwordsItem, edgePunisherItem, edgePunisher1Item,
-			flickReaperItem, macabreDancerItem, dualSwords1Item,
+			bladeBrandierItem, dualSwordsItem, edgePunisherItem, edgePunisher2Item,
+			flickReaperItem, macabreDancerItem, dualSwords3Item,
 			steamGunnerItem, steamGunner1Item, steamGunner2Item, steamGunner3Item, steamGunner4Item,
 			steamGunner5Item, steamGunner6Item, steamGunner7Item, steamGunner8Item, steamGunner9Item, 
 			steamGunner10Item, steamGunner11Item, steamGunner12Item, steamGunner13Item, steamGunner14Item,
@@ -139,8 +139,8 @@ public class Register {
 			shadowWarlock12Item, shadowWarlock13Item, 
 			lordPartizanItem, bladeMasterItem, heavyAxemanItem, heavyBladeItem, longArmItem, 
 			dualGunnerItem, dualGunner1Item, dualGunner2Item,
-			tribalGrapplerItem, tribalGrappler1Item, tribalGrappler2Item, tribalGrappler3Item,
-			twinBlade1Item, twinBladeItem, twinBlade2Item, twinBlade3Item,
+			tribalGrapplerItem, tribalGrappler2Item, tribalGrappler3Item, tribalGrappler4Item,
+			twinBlade61Item, twinBladeItem, twinBlade71Item, twinBlade81Item,
 			waveMasterItem, waveMaster1Item, waveMaster2Item, waveMaster3Item, 
 			waveMaster4Item, waveMaster5Item, waveMaster6Item, waveMaster7Item, 
 			waveMaster8Item, waveMaster9Item, waveMaster10Item, waveMaster11Item, 
