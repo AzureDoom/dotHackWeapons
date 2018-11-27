@@ -27,7 +27,6 @@ public class RcraftMod {
 	@Instance(modid)
 	public static RcraftMod instance;
 
-	@SideOnly(Side.CLIENT)
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		proxy.preInit();
