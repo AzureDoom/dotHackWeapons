@@ -18,7 +18,7 @@ public class RcraftMod {
 	public static final String modid = "rcraft";
 	public static final String version = "1.2.1";
 	
-	@SidedProxy(clientSide = "mod.azure.rcraft.ClientProxy", serverSide = "mod.azure.rcraft.CommonProxy")
+	@SidedProxy(clientSide = "mod.azure.rcraft.proxy.ClientProxy", serverSide = "mod.azure.rcraft.proxy.CommonProxy")
     public static CommonProxy proxy;
 
 	public static CreativeTabs tab = new Tab(modid);
