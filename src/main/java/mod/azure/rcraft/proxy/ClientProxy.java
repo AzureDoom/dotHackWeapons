@@ -1,5 +1,6 @@
-package mod.azure.rcraft;
+package mod.azure.rcraft.proxy;
 
+import mod.azure.rcraft.RcraftMod;
 import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

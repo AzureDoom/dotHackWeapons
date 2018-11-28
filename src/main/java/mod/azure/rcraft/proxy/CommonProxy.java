@@ -1,4 +1,4 @@
-package mod.azure.rcraft;
+package mod.azure.rcraft.proxy;
 
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 

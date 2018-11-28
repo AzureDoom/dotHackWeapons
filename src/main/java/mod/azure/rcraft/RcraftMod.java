@@ -1,5 +1,6 @@
 package mod.azure.rcraft;
 
+import mod.azure.rcraft.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.client.model.ModelLoaderRegistry;
 import net.minecraftforge.client.model.obj.OBJLoader;
@@ -11,13 +12,11 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import mod.azure.rcraft.CommonProxy;
-
 @Mod(modid = RcraftMod.modid, version = RcraftMod.version, dependencies = "required-after:ebwizardry;required-after:forge@[14.23.4.2705,)")
 public class RcraftMod {
 
 	public static final String modid = "rcraft";
-	public static final String version = "1.2.0";
+	public static final String version = "1.2.1";
 	
 	@SidedProxy(clientSide = "mod.azure.rcraft.ClientProxy", serverSide = "mod.azure.rcraft.CommonProxy")
     public static CommonProxy proxy;
