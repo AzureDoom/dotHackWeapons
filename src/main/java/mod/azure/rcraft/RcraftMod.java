@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod(modid = RcraftMod.modid, version = RcraftMod.version, dependencies = "required-after:ebwizardry;required-after:forge@[14.23.4.2705,)")
+@Mod(modid = RcraftMod.modid, version = RcraftMod.version, dependencies = "required-after:ebwizardry;required-after:forge@[14.23.5.2768,)")
 public class RcraftMod {
 
 	public static final String modid = "rcraft";
