@@ -38,11 +38,9 @@ public class ItemBaseSword extends ItemSword implements IMultiType {
 	public ItemBaseSword(String name, int maxTypes) {
 		super(EnumHelper.addToolMaterial(name, 1, 0, 4F, (4*2), 4));
 		this.maxTypes = maxTypes;
-		
 		this.setUnlocalizedName(name);
 		this.setRegistryName(new ResourceLocation(RcraftMod.modid, name));
 		this.setCreativeTab(RcraftMod.tab);
-		
 		this.setHasSubtypes(true);
 	}
 

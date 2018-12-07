@@ -29,12 +29,9 @@ public class ItemGun extends ItemBow implements IMultiType {
 	public ItemGun(String name, int maxTypes) {
 		super();
 		this.maxTypes = maxTypes;
-		
 		this.setUnlocalizedName(name);
 		this.setRegistryName(new ResourceLocation(RcraftMod.modid, name));
 		this.setCreativeTab(RcraftMod.tab);
-		
-
 	}
 
 	public int getMaxTypes() {
