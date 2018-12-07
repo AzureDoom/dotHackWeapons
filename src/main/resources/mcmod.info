@@ -1,10 +1,10 @@
 [
     {
         "modid": "rcraft",
-        "name": "World RCraft Models",
+        "name": "dotHack Weapons",
         "description": "Adds .hack Models into Minecraft",
         "mcversion": "${mcversion}",
-        "url": "http://www.cyberconnects2.com/games/rcraft/",
+        "url": "https://minecraft.curseforge.com/projects/dothack-hack-models",
         "authorList": [
             "AzureZhen"
         ],

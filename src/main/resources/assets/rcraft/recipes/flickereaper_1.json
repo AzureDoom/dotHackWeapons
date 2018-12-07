@@ -1,21 +1,20 @@
 {
   "result": {
-    "item": "rcraft:edgepunisher2",
+    "item": "rcraft:flickreaper",
 	"data": 0
   },
   "pattern": [
-    " e ",
-    " e ",
-    " d "
+    "ddd",
+    " ed",
+    " e "
   ],
   "type": "forge:ore_shaped",
   "key": {
-    "e": {
+    "d": {
       "item": "minecraft:iron_ingot"
     },
-    "d": {
-      "item": "minecraft:planks",
-	  "data": 0
+	"e": {
+      "item": "minecraft:stick"
     }
   }
 }

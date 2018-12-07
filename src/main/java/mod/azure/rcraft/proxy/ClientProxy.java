@@ -15,4 +15,14 @@ public class ClientProxy extends CommonProxy {
     {
 		OBJLoader.INSTANCE.addDomain(RcraftMod.modid);
     }
+	
+	@EventHandler
+	public void init() {
+		
+	}
+	
+	@EventHandler
+	public void postInit() {
+		
+	}
 }

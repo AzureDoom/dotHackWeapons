@@ -22,7 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class ItemGun extends net.minecraft.item.ItemBow implements IMultiType {
+public class ItemGun extends ItemBow implements IMultiType {
 	
 	private final int maxTypes;
 
@@ -34,7 +34,7 @@ public class ItemGun extends net.minecraft.item.ItemBow implements IMultiType {
 		this.setRegistryName(new ResourceLocation(RcraftMod.modid, name));
 		this.setCreativeTab(RcraftMod.tab);
 		
-		this.setHasSubtypes(true);
+
 	}
 
 	public int getMaxTypes() {

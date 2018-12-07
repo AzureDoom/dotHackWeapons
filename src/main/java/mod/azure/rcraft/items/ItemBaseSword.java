@@ -46,16 +46,6 @@ public class ItemBaseSword extends ItemSword implements IMultiType {
 		this.setHasSubtypes(true);
 	}
 
-	@Override
-	public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
-		return true;
-	}
-
-	@Override
-	public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos, EntityLivingBase entityLiving) {
-		return true;
-	}
-
 	public int getMaxTypes() {
 		return this.maxTypes;
 	}
@@ -63,7 +53,7 @@ public class ItemBaseSword extends ItemSword implements IMultiType {
 	public int getType(ItemStack stack) {
 		return stack.getItemDamage() + 1;
 	}
-
+	
 	@Override
     public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> variants) {
 		if (this.isInCreativeTab(tab)) {

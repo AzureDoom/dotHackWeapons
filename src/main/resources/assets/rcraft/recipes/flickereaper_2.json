@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "rcraft:flickreaper",
+	"data": 1
+  },
+  "pattern": [
+    "ddd",
+    " ed",
+    " e "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:iron_block"
+    },
+	"e": {
+      "item": "minecraft:stick"
+    }
+  }
+}

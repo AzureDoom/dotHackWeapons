@@ -8,6 +8,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -16,6 +18,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class RcraftMod {
 
 	public static final String modid = "rcraft";
+	public static final String MODNAME = "dotHack Weapons";
 	public static final String version = "1.2.1";
 	
 	@SidedProxy(clientSide = "mod.azure.rcraft.proxy.ClientProxy", serverSide = "mod.azure.rcraft.proxy.CommonProxy")
@@ -26,8 +29,18 @@ public class RcraftMod {
 	@Instance(modid)
 	public static RcraftMod instance;
 
-	@EventHandler
-	public void preInit(FMLPreInitializationEvent event) {
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent e) {
 		proxy.preInit();
 	}
+	
+	@Mod.EventHandler
+    public void init(FMLInitializationEvent e) {
+        proxy.init();
+    }
+
+    @Mod.EventHandler
+    public void postInit(FMLPostInitializationEvent e) {
+        proxy.postInit();
+    }
 }
