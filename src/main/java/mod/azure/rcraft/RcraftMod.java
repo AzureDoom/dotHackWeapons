@@ -53,20 +53,4 @@ public class RcraftMod {
         proxy.postInit();
     }
     
-    @Mod.EventBusSubscriber
-	public static class RegistrationHandler {
-    	@SubscribeEvent
-    	public static void registerItems(RegistryEvent.Register<Item> event) {
-    		IForgeRegistry<Item> registry = event.getRegistry();
-    		
-    		for (Item item : Register.itemList) {
-    			registry.register(item);
-    		}
-    		
-    		Register.variantList = NonNullList.create();
-    		for (Item item : Register.itemList) {
-    			item.getSubItems(RcraftMod.tab, Register.variantList);
-    		}
-    	}
-	}
 }
