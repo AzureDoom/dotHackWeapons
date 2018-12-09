@@ -1,5 +1,6 @@
 package mod.azure.rcraft;
 
+import mod.azure.rcraft.proxy.CommonProxy;
 import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -27,9 +28,9 @@ public class Tab extends CreativeTabs {
 		int ticks = Minecraft.getMinecraft().ingameGUI.getUpdateCounter();
 		if (ticks >= this.nextTicks) {
 			this.nextTicks = ticks + 8;
-			if (++this.index >= Register.variantList.size()) this.index = 0;
+			if (++this.index >= CommonProxy.variantList.size()) this.index = 0;
 			
-			this.stack = Register.variantList.get(this.index);
+			this.stack = CommonProxy.variantList.get(this.index);
 		}
 		
 		return this.getTabIconItem();
