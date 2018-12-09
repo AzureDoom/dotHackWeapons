@@ -26,7 +26,7 @@ public class RcraftMod {
 
 	public static CreativeTabs tab = new Tab(modid);
 
-	@Instance(modid)
+	@Mod.Instance
 	public static RcraftMod instance;
 
 	@Mod.EventHandler

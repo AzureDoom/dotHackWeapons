@@ -23,7 +23,7 @@ public class EventHandler {
 		for (Item item : Register.itemList) {
 			registry.register(item);
 		}
-
+		
 		Register.variantList = NonNullList.create();
 		for (Item item : Register.itemList) {
 			item.getSubItems(RcraftMod.tab, Register.variantList);
