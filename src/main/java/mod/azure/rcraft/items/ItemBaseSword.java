@@ -2,7 +2,9 @@ package mod.azure.rcraft.items;
 
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
+import mod.azure.rcraft.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.util.NonNullList;
@@ -43,4 +45,5 @@ public class ItemBaseSword extends ItemSword implements IMultiType {
 	public String getUnlocalizedName(ItemStack stack) {
 		return super.getUnlocalizedName() + this.getType(stack);
 	}
+	
 }
