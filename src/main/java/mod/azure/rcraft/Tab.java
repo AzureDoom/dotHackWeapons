@@ -4,9 +4,11 @@ import mod.azure.rcraft.proxy.CommonProxy;
 import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+@Mod.EventBusSubscriber(Side.CLIENT)
 public class Tab extends CreativeTabs {
 
 	private int nextTicks;
@@ -18,7 +20,6 @@ public class Tab extends CreativeTabs {
 		super(label);
 	}
 
-	@SideOnly(Side.CLIENT)
 	public String getTranslatedTabLabel() {
 		return "tab." + RcraftMod.modid;
 	}

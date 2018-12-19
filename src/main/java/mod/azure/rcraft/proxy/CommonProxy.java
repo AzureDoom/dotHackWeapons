@@ -2,9 +2,11 @@ package mod.azure.rcraft.proxy;
 
 import electroblob.wizardry.constants.Tier;
 import mod.azure.rcraft.RcraftMod;
+import mod.azure.rcraft.items.ItemBase;
 import mod.azure.rcraft.items.ItemBaseSword;
 import mod.azure.rcraft.items.ItemGun;
 import mod.azure.rcraft.items.ItemMagic;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
@@ -32,7 +34,7 @@ public class CommonProxy {
 	
 	@Mod.EventBusSubscriber
 	public static class RegistrationHandler {
-    	@SubscribeEvent
+		@SubscribeEvent
     	public static void registerItems(RegistryEvent.Register<Item> event) {
     		IForgeRegistry<Item> registry = event.getRegistry();
     		
@@ -48,7 +50,8 @@ public class CommonProxy {
 	}
 	
 	public static Item[] itemList = new Item[] {
-		    new ItemBaseSword("bladebrandier", 19),
+		    new ItemBase("r2gate", 1),
+			new ItemBaseSword("bladebrandier", 19),
 		    new ItemBaseSword("dualswords", 24),
 		    new ItemBaseSword("dualswords3", 1),
 		    new ItemBaseSword("edgepunisher", 19),

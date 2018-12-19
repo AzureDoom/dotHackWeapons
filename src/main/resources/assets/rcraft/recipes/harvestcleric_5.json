@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "rcraft:harvestcleric4",
+	"data": 0
+  },
+  "pattern": [
+    "eee",
+    "ed",
+    "ed "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "d": {
+      "item": "minecraft:stick"
+    },
+	"e": {
+	  "item": "ebwizardry:magic_crystal"
+	}
+  }
+}
