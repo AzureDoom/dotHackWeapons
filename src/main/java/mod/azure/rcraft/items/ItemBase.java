@@ -16,7 +16,7 @@ public class ItemBase extends Item implements IMultiType {
 	public ItemBase(String name, int maxTypes) {
 		super();
 		this.maxTypes = maxTypes;
-		this.setUnlocalizedName(name);
+		this.setTranslationKey(name);
 		this.setRegistryName(new ResourceLocation(RcraftMod.modid, name));
 		this.setCreativeTab(RcraftMod.tab);
 		this.setHasSubtypes(true);
@@ -39,8 +39,8 @@ public class ItemBase extends Item implements IMultiType {
 		}
 	}
 
-	public String getUnlocalizedName(ItemStack stack) {
-		return super.getUnlocalizedName() + this.getType(stack);
+	public String setTranslationKey(ItemStack stack) {
+		return super.getTranslationKey() + this.getType(stack);
 	}
 
 }

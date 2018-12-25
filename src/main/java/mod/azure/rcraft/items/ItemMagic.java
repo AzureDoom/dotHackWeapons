@@ -18,7 +18,7 @@ public class ItemMagic extends ItemWand implements IMultiType {
 	public ItemMagic(String name, int maxTypes, Tier tier, Element element) {
 		super(tier, element);
 		this.maxTypes = maxTypes;
-		this.setUnlocalizedName(name);
+		this.setTranslationKey(name);
 		this.setRegistryName(new ResourceLocation(RcraftMod.modid, name));
 		this.setCreativeTab(RcraftMod.tab);
 		this.tier = tier;
@@ -42,8 +42,8 @@ public class ItemMagic extends ItemWand implements IMultiType {
 		}
 	}
 
-	public String getUnlocalizedName(ItemStack stack) {
-		return super.getUnlocalizedName();
+	public String setTranslationKey(ItemStack stack) {
+		return this.getTranslationKey();
 	}
 
 }
