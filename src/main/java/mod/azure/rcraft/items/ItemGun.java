@@ -51,7 +51,7 @@ public class ItemGun extends ItemBow implements IMultiType {
 		}
 	}
 
-	public String setTranslationKey(ItemStack stack) {
+	public String getTranslationKey(ItemStack stack) {
 		return super.getTranslationKey();
 	}
 }

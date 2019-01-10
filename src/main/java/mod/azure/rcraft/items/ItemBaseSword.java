@@ -42,7 +42,7 @@ public class ItemBaseSword extends ItemSword implements IMultiType {
 		}
 	}
 
-	public String setTranslationKey(ItemStack stack) {
+	public String getTranslationKey(ItemStack stack) {
 		return super.getTranslationKey() + this.getType(stack);
 	}
 	

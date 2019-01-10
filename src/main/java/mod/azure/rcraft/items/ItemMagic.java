@@ -42,7 +42,7 @@ public class ItemMagic extends ItemWand implements IMultiType {
 		}
 	}
 
-	public String setTranslationKey(ItemStack stack) {
+	public String getTranslationKey(ItemStack stack) {
 		return this.getTranslationKey();
 	}
 
