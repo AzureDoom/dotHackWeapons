@@ -1,8 +1,7 @@
 package mod.azure.rcraft.items;
 
-import electroblob.wizardry.constants.Element;
-import electroblob.wizardry.constants.Tier;
-import electroblob.wizardry.item.ItemWand;
+import com.robertx22.customitems.gearitems.weapons.ItemStaff;
+
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
 import net.minecraft.creativetab.CreativeTabs;
@@ -11,18 +10,16 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 
-public class ItemMagic extends ItemWand implements IMultiType {
+public class ItemMagic extends ItemStaff implements IMultiType {
 	
 	private final int maxTypes;
 
-	public ItemMagic(String name, int maxTypes, Tier tier, Element element) {
-		super(tier, element);
+	public ItemMagic(String name, int maxTypes) {
+		super();
 		this.maxTypes = maxTypes;
 		this.setTranslationKey(name);
 		this.setRegistryName(new ResourceLocation(RcraftMod.modid, name));
 		this.setCreativeTab(RcraftMod.tab);
-		this.tier = tier;
-		this.element = element;
 	}
 	
 	public int getMaxTypes() {

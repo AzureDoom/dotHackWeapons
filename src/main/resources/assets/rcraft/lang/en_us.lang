@@ -280,11 +280,11 @@ item.lordpartizan7.name=Lance Quake
 item.lordpartizan8.name=Lance Tower
 item.lordpartizan9.name=Lance Rook
 
-item.macabredancer.name=Dark Crow
-item.macabredancer1.name=Fan Jasper
-item.macabredancer2.name=Peach Blossom
-item.macabredancer3.name=Voice Usurper
-item.macabredancer4.name=Voice Cleanser
+item.macabredancer1.name=Dark Crow
+item.macabredancer11.name=Fan Jasper
+item.macabredancer21.name=Peach Blossom
+item.macabredancer31.name=Voice Usurper
+item.macabredancer41.name=Voice Cleanser
 
 item.shadowwarlock.name=Ogre's Heaven
 item.shadowwarlock1.name=Magic Amber
@@ -463,6 +463,6 @@ item.wavemaster41.name=Silent Bomber
 item.wavemaster42.name=8 Wise Men
 item.wavemaster43.name=Ludicrous
 
-item.r2gate.name=R2 Chaos Gate
+item.r2gate1.name=R2 Chaos Gate
 itemGroup.rcraft=dotHack Items
 tab.rcraft=dotHack Items

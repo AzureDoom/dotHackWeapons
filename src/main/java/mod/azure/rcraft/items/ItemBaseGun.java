@@ -1,5 +1,7 @@
 package mod.azure.rcraft.items;
 
+import com.robertx22.customitems.gearitems.weapons.ItemBow;
+
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
 import net.minecraft.block.state.IBlockState;
@@ -12,7 +14,6 @@ import net.minecraft.init.Enchantments;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
 import net.minecraft.util.NonNullList;
@@ -22,11 +23,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class ItemGun extends ItemBow implements IMultiType {
+public class ItemBaseGun extends ItemBow implements IMultiType {
 	
 	private final int maxTypes;
 
-	public ItemGun(String name, int maxTypes) {
+	public ItemBaseGun(String name, int maxTypes) {
 		super();
 		this.maxTypes = maxTypes;
 		this.setTranslationKey(name);

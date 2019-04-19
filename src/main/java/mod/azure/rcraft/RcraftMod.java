@@ -23,12 +23,12 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.registries.IForgeRegistry;
 
-@Mod(modid = RcraftMod.modid, version = RcraftMod.version, dependencies = "required-after:ebwizardry;required-after:forge@[14.23.5.2768,)")
+@Mod(modid = RcraftMod.modid, version = RcraftMod.version, dependencies = "required-after:mmorpg;required-after:forge@[14.23.5.2768,)")
 public class RcraftMod {
 
 	public static final String modid = "rcraft";
 	public static final String MODNAME = "dotHack Weapons";
-	public static final String version = "1.2.5";
+	public static final String version = "1.3.0";
 	
 	@SidedProxy(clientSide = "mod.azure.rcraft.proxy.ClientProxy", serverSide = "mod.azure.rcraft.proxy.CommonProxy")
     public static CommonProxy proxy;
