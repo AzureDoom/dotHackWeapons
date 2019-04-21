@@ -1,5 +1,7 @@
 package mod.azure.rcraft.items;
 
+import com.robertx22.customitems.gearitems.bases.IGearItem;
+import com.robertx22.customitems.gearitems.bases.IWeapon;
 import com.robertx22.customitems.gearitems.weapons.ItemBow;
 
 import mod.azure.rcraft.IMultiType;
@@ -23,7 +25,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class ItemBaseGun extends ItemBow implements IMultiType {
+public class ItemBaseGun extends ItemBow implements IMultiType, IGearItem, IWeapon {
 	
 	private final int maxTypes;
 

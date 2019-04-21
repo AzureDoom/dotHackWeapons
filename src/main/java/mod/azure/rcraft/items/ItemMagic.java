@@ -1,16 +1,19 @@
 package mod.azure.rcraft.items;
 
+import com.robertx22.customitems.gearitems.bases.IGearItem;
+import com.robertx22.customitems.gearitems.bases.IWeapon;
 import com.robertx22.customitems.gearitems.weapons.ItemStaff;
 
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 
-public class ItemMagic extends ItemStaff implements IMultiType {
+public class ItemMagic extends ItemStaff implements IMultiType, IGearItem, IWeapon  {
 	
 	private final int maxTypes;
 
@@ -42,5 +45,13 @@ public class ItemMagic extends ItemStaff implements IMultiType {
 	public String getTranslationKey(ItemStack stack) {
 		return this.getTranslationKey();
 	}
+	
+	@Override
+    public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
+
+	stack.damageItem(1, attacker);
+
+	return true;
+    }
 
 }
