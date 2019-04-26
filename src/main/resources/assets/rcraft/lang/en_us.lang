@@ -280,11 +280,11 @@ item.lordpartizan7.name=Lance Quake
 item.lordpartizan8.name=Lance Tower
 item.lordpartizan9.name=Lance Rook
 
-item.macabredancer1.name=Dark Crow
-item.macabredancer11.name=Fan Jasper
-item.macabredancer21.name=Peach Blossom
-item.macabredancer31.name=Voice Usurper
-item.macabredancer41.name=Voice Cleanser
+item.macabredancer.name=Dark Crow
+item.macabredancer1.name=Fan Jasper
+item.macabredancer2.name=Peach Blossom
+item.macabredancer3.name=Voice Usurper
+item.macabredancer4.name=Voice Cleanser
 
 item.shadowwarlock.name=Ogre's Heaven
 item.shadowwarlock1.name=Magic Amber
