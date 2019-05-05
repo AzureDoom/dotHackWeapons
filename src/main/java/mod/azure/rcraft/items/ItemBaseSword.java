@@ -1,12 +1,5 @@
 package mod.azure.rcraft.items;
 
-import java.util.HashMap;
-
-import com.robertx22.customitems.gearitems.bases.IGearItem;
-import com.robertx22.customitems.gearitems.bases.IWeapon;
-import com.robertx22.customitems.gearitems.bases.WeaponMechanic;
-import com.robertx22.customitems.gearitems.weapon_mechanics.SwordWeaponMechanic;
-
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
 import mod.azure.rcraft.proxy.CommonProxy;
@@ -20,9 +13,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class ItemBaseSword extends ItemSword implements IMultiType, IGearItem, IWeapon {
+public class ItemBaseSword extends ItemSword implements IMultiType {
 	private final int maxTypes;
-	public static HashMap<Integer, Item> Items = new HashMap<Integer, Item>();
 
 	public ItemBaseSword(String name, int maxTypes) {
 		super(EnumHelper.addToolMaterial(name, 1, 0, 4F, (4*2), 4));
@@ -53,10 +45,4 @@ public class ItemBaseSword extends ItemSword implements IMultiType, IGearItem, I
 	public String getTranslationKey(ItemStack stack) {
 		return super.getTranslationKey() + this.getType(stack);
 	}
-
-	@Override
-    public WeaponMechanic mechanic() {
-	return new SwordWeaponMechanic();
-    }
-	
 }
