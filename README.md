@@ -2,6 +2,6 @@ Because I can and because why not, I bring you this neat little mod I'm using in
 
 This mod will be 1.12.2 only, I have no plans on back porting. If anyone wishes to back port this mod, feel free to do a GitHub fork of it and share it with me, I'll gladly upload it and make sure all credits go to you.
 
-This mod REQUIRES Electroblob's Wizardry (https://minecraft.curseforge.com/projects/electroblobs-wizardry)
+This mod REQUIRES [Mine and Slash Reloaded](https://minecraft.curseforge.com/projects/mine-and-slash-reloaded)
 
 *All rights belong to their respective owners*
