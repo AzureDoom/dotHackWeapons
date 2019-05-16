@@ -1,8 +1,8 @@
 package mod.azure.rcraft.items;
 
-import com.robertx22.customitems.gearitems.bases.IGearItem;
-import com.robertx22.customitems.gearitems.bases.IWeapon;
-import com.robertx22.customitems.gearitems.weapons.ItemStaff;
+import com.robertx22.items.gearitems.bases.IGearItem;
+import com.robertx22.items.gearitems.bases.IWeapon;
+import com.robertx22.items.gearitems.weapons.ItemStaff;
 
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
