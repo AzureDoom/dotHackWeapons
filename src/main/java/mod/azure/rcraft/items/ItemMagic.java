@@ -56,9 +56,5 @@ public class ItemMagic extends ItemStaff implements IMultiType, IGearItem, IWeap
 
 	return true;
     }
-	
-	public void MineAndSlashComatibleItem() {
-        MineAndSlashAPI.addCompatibleItem("rcraft:harvestcleric", new StaffConfigItem() );	
-	}
 
 }

@@ -1,11 +1,8 @@
 package mod.azure.rcraft.proxy;
 
-import com.robertx22.api.MineAndSlashAPI;
-import com.robertx22.config.non_mine_items.ConfigItem;
-import com.robertx22.config.non_mine_items.ConfigItems;
-
 import mod.azure.rcraft.RcraftMod;
 import mod.azure.rcraft.config.StaffConfigItem;
+import mod.azure.rcraft.config.MineandSlashItem;
 import mod.azure.rcraft.items.ItemBase;
 import mod.azure.rcraft.items.ItemBaseSword;
 import mod.azure.rcraft.items.ItemBaseGun;
@@ -16,6 +13,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -25,6 +23,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
+
 	
 	public void preInit() {
 		
@@ -35,7 +34,7 @@ public class CommonProxy {
 	}
 	
 	public void postInit() {
-		
+		MinecraftForge.EVENT_BUS.register(new MineandSlashItem());
 	}
 	
 	@Mod.EventBusSubscriber
@@ -54,6 +53,7 @@ public class CommonProxy {
     		}
     	}
 	}
+
 	
 	public static Item[] itemList = new Item[] {
 		    //new ItemBase("r2gate", 1),
