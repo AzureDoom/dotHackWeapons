@@ -2,7 +2,6 @@
 # Material Count: 7
 
 newmtl MDL_w21kt13_bld01_TEX_w21kt13_1
-illum 2
 map_Kd rcraft:items/w21kt13_1
 
 newmtl MDL_w21kt13_bld02_TEX_w21kt13_1
