@@ -2,121 +2,121 @@
 # Material Count: 10
 
 newmtl w2dfnx1l_TEX_w2dfnx1
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dfnx1
-map_Ka rcraft:items/w2dfnx1
+
 
 newmtl w2dfnx1l_TEX_w2dfnx1_001
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dfnx1
-map_Ka rcraft:items/w2dfnx1
+
 
 newmtl w2dfnx1l_TEX_w2dfnx1_002
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dfnx1
-map_Ka rcraft:items/w2dfnx1
+
 
 newmtl w2dfnx1l_TEX_w2dfnx1_003
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dfnx1
-map_Ka rcraft:items/w2dfnx1
+
 
 newmtl w2dfnx1l_TEX_w2dfnx1_004
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dfnx1
-map_Ka rcraft:items/w2dfnx1
+
 
 newmtl w2dfnx1l_TEX_w2dfnx1_1
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dfnx1_1
-map_Ka rcraft:items/w2dfnx1_1
+
 
 newmtl w2dfnx1l_TEX_w2dfnx1_1_001
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dfnx1_1
-map_Ka rcraft:items/w2dfnx1_1
+
 
 newmtl w2dfnx1l_TEX_w2dfnx1_1_002
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dfnx1_1
-map_Ka rcraft:items/w2dfnx1_1
+
 
 newmtl w2dfnx1l_TEX_w2dfnx1_1_003
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dfnx1_1
-map_Ka rcraft:items/w2dfnx1_1
+
 
 newmtl w2dfnx1l_TEX_w2dfnx1_1_004
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dfnx1_1
-map_Ka rcraft:items/w2dfnx1_1
+

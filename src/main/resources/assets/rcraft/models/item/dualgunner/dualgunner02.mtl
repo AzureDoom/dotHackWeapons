@@ -2,37 +2,37 @@
 # Material Count: 3
 
 newmtl TEX_w2dgn02
-Ns 92.156863
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dgn02
-map_Ka rcraft:items/w2dgn02
+
 
 newmtl TEX_w2dgn02_1
-Ns 92.156863
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dgn02_1
-map_Ka rcraft:items/w2dgn02_1
+
 
 newmtl TEX_w2dgn02_1_001
-Ns 92.156863
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w2dgn02_1
-map_Ka rcraft:items/w2dgn02_1g
+

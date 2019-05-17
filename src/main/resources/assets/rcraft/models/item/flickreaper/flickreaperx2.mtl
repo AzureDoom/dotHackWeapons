@@ -2,25 +2,25 @@
 # Material Count: 2
 
 newmtl TEX_w22scx2body
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w22scx2body
-map_Ka rcraft:items/w22scx2body
+
 
 newmtl TEX_w22scx2light
-Ns 94.117647
-Ka 1.000000 1.000000 1.000000
+
+
 Kd 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
+
+
+
 d 1.000000
-illum 2
+
 map_Kd rcraft:items/w22scx2light
-map_Ka rcraft:items/w22scx2light
+
