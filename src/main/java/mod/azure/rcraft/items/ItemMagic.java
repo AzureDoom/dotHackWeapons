@@ -1,11 +1,14 @@
 package mod.azure.rcraft.items;
 
+import com.robertx22.api.MineAndSlashAPI;
+import com.robertx22.config.non_mine_items.ConfigItem;
 import com.robertx22.items.gearitems.bases.IGearItem;
 import com.robertx22.items.gearitems.bases.IWeapon;
 import com.robertx22.items.gearitems.weapons.ItemStaff;
 
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
+import mod.azure.rcraft.config.StaffConfigItem;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
@@ -53,5 +56,9 @@ public class ItemMagic extends ItemStaff implements IMultiType, IGearItem, IWeap
 
 	return true;
     }
+	
+	public void MineAndSlashComatibleItem() {
+        MineAndSlashAPI.addCompatibleItem("rcraft:harvestcleric", new StaffConfigItem() );	
+	}
 
 }

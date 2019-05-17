@@ -1,19 +1,12 @@
 package mod.azure.rcraft.items;
 
-import com.robertx22.api.msg_types.CompatibleItemMSG;
-import com.robertx22.api.msg_types.MineAndSlashMSG;
-import com.robertx22.config.non_mine_items.ConfigItem;
-import com.robertx22.config.non_mine_items.ConfigItems;
-import com.robertx22.items.gearitems.weapons.ItemSword;
-import com.robertx22.mmorpg.Ref;
-import com.robertx22.mmorpg.registers.GearItemRegisters;
-
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
 import mod.azure.rcraft.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
@@ -23,7 +16,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.event.FMLInterModComms;
 import net.minecraftforge.fml.common.eventhandler.Event;
 
-public class ItemBaseSword extends net.minecraft.item.ItemSword implements IMultiType {
+public class ItemBaseSword extends ItemSword implements IMultiType {
 	private final int maxTypes;
 
 	public ItemBaseSword(String name, int maxTypes) {
@@ -51,10 +44,6 @@ public class ItemBaseSword extends net.minecraft.item.ItemSword implements IMult
 			}
 		}
 	}
-
-	public static void sendMSG(MineAndSlashMSG MSG, Event event) {
-        FMLInterModComms.sendMessage(RcraftMod.modid, "register", "Sword");
-    }
 	
 	public String getTranslationKey(ItemStack stack) {
 		return super.getTranslationKey() + this.getType(stack);
