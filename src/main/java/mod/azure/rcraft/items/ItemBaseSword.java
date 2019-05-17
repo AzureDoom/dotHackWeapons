@@ -1,7 +1,10 @@
 package mod.azure.rcraft.items;
 
+import com.robertx22.api.MineAndSlashAPI;
+
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
+import mod.azure.rcraft.RcraftMod.IConfigItem;
 import mod.azure.rcraft.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -15,6 +18,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.event.FMLInterModComms;
 import net.minecraftforge.fml.common.eventhandler.Event;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class ItemBaseSword extends ItemSword implements IMultiType {
 	private final int maxTypes;
