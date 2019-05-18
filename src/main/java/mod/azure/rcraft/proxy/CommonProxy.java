@@ -55,7 +55,6 @@ public class CommonProxy {
 	}
 	
 	public static Item[] itemList = new Item[] {
-		    new ItemBase("r2gate", 1),
 			new ItemBaseSword("bladebrandier", 19),
 			new ItemBaseSword("dualswords", 24),
 			new ItemBaseSword("dualswords3", 1),
