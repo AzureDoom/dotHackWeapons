@@ -4,7 +4,6 @@ import com.robertx22.api.MineAndSlashAPI;
 
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
-import mod.azure.rcraft.RcraftMod.IConfigItem;
 import mod.azure.rcraft.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

@@ -174,13 +174,5 @@ public class RcraftMod {
 	    MineAndSlashAPI.addCompatibleItem("rcraft:dualgunner", new BowConfigItem());
 	    MineAndSlashAPI.addCompatibleItem("rcraft:dualgunner1", new BowConfigItem());
 	    MineAndSlashAPI.addCompatibleItem("rcraft:dualgunner2", new BowConfigItem());
-    }   
-    
-    public interface IConfigItem {
-
-    	  String registryName();
-
-    	  ConfigItem configItem();
-
-    	}
+    }  
 }
