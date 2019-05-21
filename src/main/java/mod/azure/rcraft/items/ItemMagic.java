@@ -11,7 +11,6 @@ import electroblob.wizardry.constants.Tier;
 import electroblob.wizardry.item.ItemWand;
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
-import mod.azure.rcraft.config.StaffConfigItem;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;

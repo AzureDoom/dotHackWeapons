@@ -2,11 +2,11 @@ package mod.azure.rcraft.config;
 
 import com.robertx22.config.non_mine_items.ConfigItem;
 
-public class BowConfigItem extends ConfigItem  {
+public class NoDropBowConfigItem extends ConfigItem  {
 
-	public BowConfigItem() {
+	public NoDropBowConfigItem() {
 	  this.itemType = "Bow";
-	  this.dropWeight = 1000;
+	  this.dropWeight = 1;
 	}
 
 }

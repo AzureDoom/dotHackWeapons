@@ -5,7 +5,6 @@ import com.robertx22.api.MineAndSlashAPI;
 import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;
 import mod.azure.rcraft.RcraftMod;
-import mod.azure.rcraft.config.StaffConfigItem;
 import mod.azure.rcraft.items.ItemBase;
 import mod.azure.rcraft.items.ItemBaseSword;
 import mod.azure.rcraft.items.ItemBaseGun;
