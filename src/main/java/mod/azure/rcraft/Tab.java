@@ -34,7 +34,7 @@ public class Tab extends CreativeTabs {
 			if (++this.index >= CommonProxy.variantList.size()) this.index = 0;
 			
 			this.stack = CommonProxy.variantList.get(this.index);
-		}
+		}setBackgroundImageName("item_search.png");
 		
 		return this.createIcon();
 	}
