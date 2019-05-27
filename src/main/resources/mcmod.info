@@ -3,6 +3,7 @@
         "modid": "rcraft",
         "name": "dotHack Weapons",
         "description": "Adds .hack Models into Minecraft",
+		"version": "${version}",
         "mcversion": "${mcversion}",
         "url": "https://minecraft.curseforge.com/projects/dothack-hack-models",
         "authorList": [
@@ -11,7 +12,7 @@
         "credits": "Code optimized by galaxtone and d4rsorc",
         "logoFile": "pack.png",
         "requiredMods": [ ],
-        "dependencies": [ "forge" ],
+        "dependencies": [ "ebwizardry" ],
         "useDependencyInformation": "true"
     }
 ]
