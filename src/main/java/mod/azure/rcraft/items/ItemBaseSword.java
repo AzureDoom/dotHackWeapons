@@ -1,7 +1,5 @@
 package mod.azure.rcraft.items;
 
-import com.robertx22.api.MineAndSlashAPI;
-
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
 import mod.azure.rcraft.proxy.CommonProxy;

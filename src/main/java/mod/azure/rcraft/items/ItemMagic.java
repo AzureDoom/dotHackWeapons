@@ -1,16 +1,12 @@
 package mod.azure.rcraft.items;
 
-import com.robertx22.api.MineAndSlashAPI;
-import com.robertx22.config.non_mine_items.ConfigItem;
-import com.robertx22.items.gearitems.bases.IGearItem;
-import com.robertx22.items.gearitems.bases.IWeapon;
-import com.robertx22.items.gearitems.weapons.ItemStaff;
-
 import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;
 import electroblob.wizardry.item.ItemWand;
+
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;

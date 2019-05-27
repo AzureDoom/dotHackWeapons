@@ -3,23 +3,8 @@ package mod.azure.rcraft;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.robertx22.api.MineAndSlashAPI;
-import com.robertx22.api.MineAndSlashEvents;
-import com.robertx22.config.non_mine_items.ConfigItem;
-import com.robertx22.uncommon.datasaving.Load;
-
-import mod.azure.rcraft.config.AdvancedStaffConfigItem;
-import mod.azure.rcraft.config.ApprenticeStaffConfigItem;
-import mod.azure.rcraft.config.AxeConfigItem;
-import mod.azure.rcraft.config.BasicStaffConfigItem;
-import mod.azure.rcraft.config.BowConfigItem;
-import mod.azure.rcraft.config.HammerConfigItem;
-import mod.azure.rcraft.config.MasterStaffConfigItem;
-import mod.azure.rcraft.config.NoDropBowConfigItem;
-import mod.azure.rcraft.config.NoDropStaffConfigItem;
-import mod.azure.rcraft.config.RareBowConfigItem;
-import mod.azure.rcraft.config.SwordConfigItem;
 import mod.azure.rcraft.proxy.CommonProxy;
+
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;

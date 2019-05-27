@@ -3,17 +3,15 @@ package mod.azure.rcraft.proxy;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.robertx22.api.MineAndSlashAPI;
-
 import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;
+
 import mod.azure.rcraft.RcraftMod;
 import mod.azure.rcraft.items.ItemBase;
 import mod.azure.rcraft.items.ItemBaseSword;
 import mod.azure.rcraft.items.ItemBaseGun;
 import mod.azure.rcraft.items.ItemMagic;
-import mod.azure.rcraft.items.ItemBaseSword;
-import mod.azure.rcraft.items.ItemBaseSword;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
