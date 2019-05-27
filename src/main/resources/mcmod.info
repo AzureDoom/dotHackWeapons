@@ -10,8 +10,8 @@
         ],
         "credits": "Code optimized by galaxtone and d4rsorc",
         "logoFile": "pack.png",
-        "requiredMods": [ "mmorpg", "ebwizardry" ],
-        "dependencies": [ "mmorpg", "ebwizardry", "forge" ],
+        "requiredMods": [ ],
+        "dependencies": [ "forge" ],
         "useDependencyInformation": "true"
     }
 ]
