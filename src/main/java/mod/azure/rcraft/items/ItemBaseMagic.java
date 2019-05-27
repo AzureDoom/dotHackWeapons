@@ -3,7 +3,6 @@ package mod.azure.rcraft.items;
 import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;
 import electroblob.wizardry.item.ItemWand;
-
 import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
 
@@ -14,11 +13,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 
-public class ItemMagic extends ItemWand implements IMultiType  {
+public class ItemBaseMagic extends ItemWand implements IMultiType  {
 	
 	private final int maxTypes;
 
-	public ItemMagic(String name, int maxTypes, Tier tier, Element element) {
+	public ItemBaseMagic(String name, int maxTypes, Tier tier, Element element) {
 		super(tier, element);
 		this.maxTypes = maxTypes;
 		this.setTranslationKey(name);
