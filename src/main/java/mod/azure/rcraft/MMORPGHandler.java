@@ -10,7 +10,7 @@ import com.robertx22.database.gearitemslots.Sword;
 
 public class MMORPGHandler {
 
-	public static void registerMMORPG() {
+	public MMORPGHandler() {
 		MineAndSlashAPI.addCompatibleItem("rcraft:harvestcleric", new ConfigItem().setType(new Staff()));
 		MineAndSlashAPI.addCompatibleItem("rcraft:harvestcleric1", new ConfigItem().setType(new Staff()));
 		MineAndSlashAPI.addCompatibleItem("rcraft:harvestcleric2", new ConfigItem().setType(new Staff()));
