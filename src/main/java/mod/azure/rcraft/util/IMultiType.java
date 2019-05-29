@@ -1,4 +1,4 @@
-package mod.azure.rcraft;
+package mod.azure.rcraft.util;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

@@ -1,7 +1,7 @@
 package mod.azure.rcraft.items;
 
-import mod.azure.rcraft.IMultiType;
 import mod.azure.rcraft.RcraftMod;
+import mod.azure.rcraft.util.IMultiType;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.EnchantmentHelper;

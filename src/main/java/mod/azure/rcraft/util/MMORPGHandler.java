@@ -1,4 +1,4 @@
-package mod.azure.rcraft;
+package mod.azure.rcraft.util;
 
 import com.robertx22.api.MineAndSlashAPI;
 import com.robertx22.config.non_mine_items.ConfigItem;

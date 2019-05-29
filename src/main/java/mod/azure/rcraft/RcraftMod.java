@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mod.azure.rcraft.proxy.CommonProxy;
-
+import mod.azure.rcraft.util.LootHandler;
+import mod.azure.rcraft.util.MMORPGHandler;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
