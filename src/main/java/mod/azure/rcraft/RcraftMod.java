@@ -17,6 +17,7 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.model.ModelLoaderRegistry;
 import net.minecraftforge.client.model.obj.OBJLoader;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
@@ -57,13 +58,14 @@ public class RcraftMod {
 	@Mod.EventHandler
     public void init(FMLInitializationEvent e) {
         proxy.init();
+        MinecraftForge.EVENT_BUS.register(new LootHandler());
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent e) {
         proxy.postInit();
         if(Loader.isModLoaded("mmorpg")) {
-        	MMORPGHandler.registerMMORPG();
+        	MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
         }
     } 
 }
