@@ -41,8 +41,8 @@ public class CommonProxy {
 	@Mod.EventBusSubscriber
 	public static class RegistrationHandler {
 		@SubscribeEvent
-    	public static void registerItems(RegistryEvent.Register<Item> event) {
-    		IForgeRegistry<Item> registry = event.getRegistry();
+    	public static void registerItems(RegistryEvent.Register<Item> e) {
+    		IForgeRegistry<Item> registry = e.getRegistry();
     		
     		for (Item item : itemList) {
     			registry.register(item);
