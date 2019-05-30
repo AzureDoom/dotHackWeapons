@@ -1,11 +1,12 @@
 {
     "forge_marker": 1,
     "variants": {
-    "type": {
-	  "1": {
+		"normal": [ { } ],
+		"inventory": [
+			{
 		   "model": "rcraft:macabredancer/macabredancer01.obj"
-		} 
-    }
+			}
+		]
 	},
 	"defaults" : {
 	

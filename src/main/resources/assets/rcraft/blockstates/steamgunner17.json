@@ -1,11 +1,12 @@
 {
 	"forge_marker": 1,
-	"variants": {
-				"type": {
-	  "1": {
+    "variants": {
+		"normal": [ { } ],
+		"inventory": [
+			{
 		   "model": "rcraft:steamgunner/steamgunnerx4.obj"
-		}
-	}
+			}
+		]
 	},
 	"defaults" : {
 	

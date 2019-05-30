@@ -1,12 +1,13 @@
 {
     "forge_marker": 1,
     "variants": {
-    "type": {
-		"1": {
+        "normal": [ { } ],
+        "inventory": [
+            {
 			   "model": "rcraft:dualgunner/dualgunner02.obj"
 			}
-    }
-	},
+        ]
+    },
 	"defaults" : {
 	
 	"transform": {

@@ -1,80 +1,12 @@
 {
-    "forge_marker": 1,
+   "forge_marker": 1,
     "variants": {
-	"type": {
-		"1": {
-		   "model": "rcraft:dualswords/dualswords00l.obj"
-		},
-		"2": {
-		   "model": "rcraft:dualswords/dualswords02l.obj"
-		},
-		"3": {
-		   "model": "rcraft:dualswords/dualswords03l.obj"
-		},
-		"4": {
-		   "model": "rcraft:dualswords/dualswords04l.obj"
-		},
-		"5": {
-		   "model": "rcraft:dualswords/dualswords05l.obj"
-		},
-		"6": {
-		   "model": "rcraft:dualswords/dualswords06l.obj"
-		},
-		"7": {
-		   "model": "rcraft:dualswords/dualswords07l.obj"
-		},
-		"8": {
-		   "model": "rcraft:dualswords/dualswords08l.obj"
-		},
-		"9": {
-		   "model": "rcraft:dualswords/dualswords09l.obj"
-		},
-		"10": {
-			"model": "rcraft:dualswords/dualswords10l.obj"
-		},
-		"11": {
-		   "model": "rcraft:dualswords/dualswordsa0l.obj"
-		},
-		"12": {
-		   "model": "rcraft:dualswords/dualswordsa1l.obj"
-		},
-		"13": {
-		   "model": "rcraft:dualswords/dualswordsa2l.obj"
-		},
-		"14": {
-		   "model": "rcraft:dualswords/dualswordsa3l.obj"
-		},
-		"15": {
-		   "model": "rcraft:dualswords/dualswordsa4l.obj"
-		},
-		"16": {
-		   "model": "rcraft:dualswords/dualswordsa5l.obj"
-		},
-		"17": {
-		   "model": "rcraft:dualswords/dualswordsa6l.obj"
-		},
-		"18": {
-		   "model": "rcraft:dualswords/dualswordsa8l.obj"
-		},
-		"19": {
-		   "model": "rcraft:dualswords/dualswordsa9l.obj"
-		},
-		"20": {
-		   "model": "rcraft:dualswords/dualswordsb1l.obj"
-		},
-		"21": {
-		   "model": "rcraft:dualswords/dualswordsb2l.obj"
-		},
-		"22": {
-		   "model": "rcraft:dualswords/dualswordsb3l.obj"
-		},
-		"23": {
-		   "model": "rcraft:dualswords/dualswordsb4l.obj"
-		},
-		"24": {
-		   "model": "rcraft:dualswords/dualswords01l.obj"
-		}
-	}
+		"normal": [ { } ],
+		"inventory": [
+			{
+				"model": "rcraft:dualswords/dualswords00l.obj"
+			}
+		]
 	},
 	"defaults" : {
 	

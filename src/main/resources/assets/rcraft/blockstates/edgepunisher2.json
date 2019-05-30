@@ -1,12 +1,12 @@
 {
     "forge_marker": 1,
-	
     "variants": {
-        "type": {
-    	  "1": {
-    		   "model": "rcraft:edgepunisher/edgepunisher19.obj"
-    		}
-        }
+		"normal": [ { } ],
+		"inventory": [
+			{
+			   "model": "rcraft:edgepunisher/edgepunisher02.obj"
+			}
+		]
 	},
 	"defaults" : {
 	
@@ -14,12 +14,12 @@
 	
 	"thirdperson_righthand": {
 	"rotation": [ 0, 188, 0 ],
-	"translation": [ -0.25, -0.30, -0.10 ],
-	"scale": [ 0.40, 0.40, 0.40 ]
+	"translation": [ -0.60, 0.00, -0.40 ],
+	"scale": [ 1.00, 1.00, 1.00 ]
 	},
 	"thirdperson_lefthand": {
-		"rotation": [ 0, 0, 0 ],
-		"translation": [ 0.00, 0.00, 0.00 ],
+		"rotation": [ 0, 188, 0 ],
+		"translation": [ 0.42, 0.00, -0.50 ],
 		"scale": [ 0.00, 0.00, 0.00 ]
 	},
 	"firstperson_righthand": {
@@ -29,13 +29,13 @@
 	},
 	"firstperson_lefthand": {
 		"rotation": [ 0, 0, 0 ],
-		"translation": [ 0.00, 0.00, 0.00 ],
+		"translation": [ 0.00, -0.30, 0.00 ],
 		"scale": [ 0.00, 0.00, 0.00 ]
 	},
 	"gui": {
 		"rotation": [ 96, 50, 216 ],
-		"translation": [ -0.10, -0.30, 0.00 ],
-		"scale": [ 0.20, 0.20, 0.20 ]
+		"translation": [ -0.10, -0.70, 0.00 ],
+		"scale": [ 0.70, 0.70, 0.70 ]
 	},
 	"head": {
 		"rotation": [ 0, 0, 0 ],
@@ -50,7 +50,7 @@
 	"ground": {
 		"rotation": [ 0, 0, 0 ],
 		"translation": [ 0.60, 0.20, 0.60 ],
-		"scale": [ 0.30, 0.30, 0.30 ]
+		"scale": [ 1.00, 1.00, 1.00 ]
 	}
 	}
 	}

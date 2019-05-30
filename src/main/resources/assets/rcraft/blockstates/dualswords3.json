@@ -1,24 +1,25 @@
 {
-    "forge_marker": 1,
+   "forge_marker": 1,
     "variants": {
-	"type": {
-		"1": {
-		   "model": "rcraft:dualswords/dualswordsa7l.obj"
-		}
-	}
+		"normal": [ { } ],
+		"inventory": [
+			{
+				"model": "rcraft:dualswords/dualswords03l.obj"
+			}
+		]
 	},
 	"defaults" : {
 	
 	"transform": {
 	
 	"thirdperson_righthand": {
-	"rotation": [ 10, 180, 0 ],
-	"translation": [ -0.50, 0.34, -0.40 ],
+	"rotation": [ 0, 188, 0 ],
+	"translation": [ -0.60, 0.50, -0.40 ],
 	"scale": [ 1.00, 1.00, 1.00 ]
 	},
 	"thirdperson_lefthand": {
-		"rotation": [ 10, 180, 0 ],
-		"translation": [ 0.50, 0.34, -0.40 ],
+		"rotation": [ 0, 188, 0 ],
+		"translation": [ 0.45, 0.50, -0.55 ],
 		"scale": [ 1.00, 1.00, 1.00 ]
 	},
 	"firstperson_righthand": {
@@ -33,7 +34,7 @@
 	},
 	"gui": {
 		"rotation": [ 96, 50, 216 ],
-		"translation": [ 0.40, -0.39, 0.00 ],
+		"translation": [ 0.70, -0.10, 0.00 ],
 		"scale": [ 1.40, 1.40, 1.40 ]
 	},
 	"head": {

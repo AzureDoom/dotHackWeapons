@@ -1,32 +1,12 @@
 {
-    "forge_marker": 1,
+	"forge_marker": 1,
     "variants": {
-    "type": {
-		"1": {
-			"model": "rcraft:tribalgrappler/tribalgrappler01l.obj"
-		},
-		"2": {
-			"model": "rcraft:tribalgrappler/tribalgrappler03l.obj"
-		},
-		"3": {
-			"model": "rcraft:tribalgrappler/tribalgrappler05l.obj"
-		},
-		"4": {
-			"model": "rcraft:tribalgrappler/tribalgrappler06l.obj"
-		},
-		"5": {
-			"model": "rcraft:tribalgrappler/tribalgrappler08l.obj"
-		},
-		"6": {
-			"model": "rcraft:tribalgrappler/tribalgrappler09l.obj"
-		},
-		"7": {
-			"model": "rcraft:tribalgrappler/tribalgrapplerx1l.obj"
-		},
-		"8": {
-			"model": "rcraft:tribalgrappler/tribalgrapplerx2l.obj"
-		}
-    }
+		"normal": [ { } ],
+		"inventory": [
+			{
+				"model": "rcraft:tribalgrappler/tribalgrappler01l.obj"
+			}
+		]
 	},
 	"defaults" : {
 	

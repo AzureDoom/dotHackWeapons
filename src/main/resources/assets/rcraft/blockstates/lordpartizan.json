@@ -1,35 +1,12 @@
 {
     "forge_marker": 1,
     "variants": {
-    "type": {
-		"1": {
-			"model": "rcraft:lordpartizan/lordpartizan00.obj"
-		},
-		"2": {
-			"model": "rcraft:lordpartizan/lordpartizan01.obj"
-		},
-		"3": {
-			"model": "rcraft:lordpartizan/lordpartizan02.obj"
-		},
-		"4": {
-			"model": "rcraft:lordpartizan/lordpartizan03.obj"
-		},
-		"5": {
-			"model": "rcraft:lordpartizan/lordpartizan04.obj"
-		},
-		"6": {
-			"model": "rcraft:lordpartizan/lordpartizan05.obj"
-		},
-		"7": {
-			"model": "rcraft:lordpartizan/lordpartizan06.obj"
-		},
-		"8": {
-			"model": "rcraft:lordpartizan/lordpartizan07.obj"
-		},
-		"9": {
-			"model": "rcraft:lordpartizan/lordpartizan08.obj"
-		}
-    }
+		"normal": [ { } ],
+		"inventory": [
+			{
+				"model": "rcraft:lordpartizan/lordpartizan00.obj"
+			}
+		]
 	},
 	"defaults" : {
 	

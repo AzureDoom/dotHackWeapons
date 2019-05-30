@@ -1,24 +1,25 @@
 {
-    "forge_marker": 1,
+	"forge_marker": 1,
     "variants": {
-    "type": {
-		"1": {
-			"model": "rcraft:tribalgrappler/tribalgrappler02l.obj"
-		}
-    }
+		"normal": [ { } ],
+		"inventory": [
+			{
+				"model": "rcraft:tribalgrappler/tribalgrappler03l.obj"
+			}
+		]
 	},
 	"defaults" : {
 	
 	"transform": {
 	
 	"thirdperson_righthand": {
-	"rotation": [ 10, 180, 0 ],
-	"translation": [ -0.50, 0.54, -0.36 ],
+	"rotation": [ 0, 180, 0 ],
+	"translation": [ -0.50, 0.47, -0.50 ],
 	"scale": [ 1.00, 1.00, 1.00 ]
 	},
 	"thirdperson_lefthand": {
-		"rotation": [ 10, 180, 0 ],
-		"translation": [ 0.5, 0.54, -0.36 ],
+		"rotation": [ 0, 180, 0 ],
+		"translation": [ 0.5, 0.47, -0.50 ],
 		"scale": [ 1.00, 1.00, 1.00 ]
 	},
 	"firstperson_righthand": {
@@ -33,7 +34,7 @@
 	},
 	"gui": {
 		"rotation": [ 96, 50, 216 ],
-		"translation": [ 0.50, -0.75, 0.00 ],
+		"translation": [ 0.50, -0.60, 0.00 ],
 		"scale": [ 1.90, 1.90, 1.90 ]
 	},
 	"head": {

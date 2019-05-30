@@ -1,66 +1,12 @@
 {
     "forge_marker": 1,
-	
     "variants": {
-        "type": {
-    	  "1": {
-    		   "model": "rcraft:edgepunisher/edgepunisher01.obj"
-    		},
-    	  "2": {
-    		   "model": "rcraft:edgepunisher/edgepunisher02.obj"
-    		},
-    	  "3": {
-    		   "model": "rcraft:edgepunisher/edgepunisher03.obj"
-    		},
-    	  "4": {
-    		   "model": "rcraft:edgepunisher/edgepunisher04.obj"
-    		},
-    	  "5": {
-    		   "model": "rcraft:edgepunisher/edgepunisher05.obj"
-    		},
-    	  "6": {
-    		   "model": "rcraft:edgepunisher/edgepunisher06.obj"
-    		},
-    	  "7": {
-    		   "model": "rcraft:edgepunisher/edgepunisher07.obj"
-    		},
-    	  "8": {
-    		   "model": "rcraft:edgepunisher/edgepunisher08.obj"
-    		},
-    	  "9": {
-    		   "model": "rcraft:edgepunisher/edgepunisher09.obj"
-    		},
-    	  "10": {
-    		   "model": "rcraft:edgepunisher/edgepunisher10.obj"
-    		},
-    	  "11": {
-    		   "model": "rcraft:edgepunisher/edgepunisher11.obj"
-    		},
-    	  "12": {
-    		   "model": "rcraft:edgepunisher/edgepunisher12.obj"
-    		},
-    	  "13": {
-    		   "model": "rcraft:edgepunisher/edgepunisher13.obj"
-    		},
-    	  "14": {
-    		   "model": "rcraft:edgepunisher/edgepunisher14.obj"
-    		},
-    	  "15": {
-    		   "model": "rcraft:edgepunisher/edgepunisher15.obj"
-    		},
-    	  "16": {
-    		   "model": "rcraft:edgepunisher/edgepunisher16.obj"
-    		},
-    	  "17": {
-    		   "model": "rcraft:edgepunisher/edgepunisher17.obj"
-    		},
-    	  "18": {
-    		   "model": "rcraft:edgepunisher/edgepunisher18.obj"
-    		},
-    	  "19": {
-    		   "model": "rcraft:edgepunisher/edgepunisher20.obj"
-    		}
-        }
+		"normal": [ { } ],
+		"inventory": [
+			{
+			   "model": "rcraft:edgepunisher/edgepunisher01.obj"
+			}
+		]
 	},
 	"defaults" : {
 	
