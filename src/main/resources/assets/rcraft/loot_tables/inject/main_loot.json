@@ -1,0 +1,2030 @@
+{
+    "pools": [
+        {
+            "name": "main",
+			"rolls": 3,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:bladebrandier19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualgunner"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualgunner1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualgunner2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:steamgunner17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:tribalgrappler"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:tribalgrappler2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:tribalgrappler3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:tribalgrappler4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:harvestcleric"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:harvestcleric1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:harvestcleric2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:harvestcleric3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:harvestcleric4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:harvestcleric5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:harvestcleric6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:harvestcleric7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:harvestcleric8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:macabredancer"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:macabredancer1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:macabredancer2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:macabredancer3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:macabredancer4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:shadowwarlock13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster39"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster40"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster41"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster42"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:wavemaster43"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster39"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster40"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster41"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm39"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm40"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm41"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:longarm42"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyblade38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:flickreaper"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:flickreaper2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:flickreaper3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:flickreaper4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:flickreaper5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:flickreaper6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:flickreaper7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:flickreaper8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:flickreaper9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:dualswords25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:edgepunisher20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:lordpartizan"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:lordpartizan2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:lordpartizan3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:lordpartizan4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:lordpartizan5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:lordpartizan6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:lordpartizan7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:lordpartizan8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:lordpartizan9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavyaxeman25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade39"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade40"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade41"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade42"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade43"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade44"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade45"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade46"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade47"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade48"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade49"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade50"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade51"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade52"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade53"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade54"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade55"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade56"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade57"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade58"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade59"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade60"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade61"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade62"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade63"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade64"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade65"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade66"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade67"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade68"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade69"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade70"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade71"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade72"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade73"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade74"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade75"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade76"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade77"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade78"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:twinblade79"
+                }
+            ]
+        }
+    ]
+}
