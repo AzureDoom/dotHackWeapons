@@ -1,14 +1,11 @@
 package mod.azure.rcraft;
 
-import mod.azure.rcraft.proxy.CommonProxy;
+import mod.azure.rcraft.util.Register;
 import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class Tab extends CreativeTabs {
@@ -31,9 +28,9 @@ public class Tab extends CreativeTabs {
 		int ticks = Minecraft.getMinecraft().ingameGUI.getUpdateCounter();
 		if (ticks >= this.nextTicks) {
 			this.nextTicks = ticks + 8;
-			if (++this.index >= CommonProxy.variantList.size()) this.index = 0;
+			if (++this.index >= Register.variantList.size()) this.index = 0;
 			
-			this.stack = CommonProxy.variantList.get(this.index);
+			this.stack = Register.variantList.get(this.index);
 		}setBackgroundImageName("item_search.png");
 		
 		return this.createIcon();
