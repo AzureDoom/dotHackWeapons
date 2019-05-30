@@ -1,7 +1,6 @@
 package mod.azure.rcraft.proxy;
 
 import mod.azure.rcraft.RcraftMod;
-import mod.azure.rcraft.util.IMultiType;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -35,9 +34,8 @@ public class ClientProxy extends CommonProxy {
 	
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
-		for (ItemStack variant : variantList) {
-			Item item = variant.getItem();
-			ModelLoader.setCustomModelResourceLocation(item, variant.getItemDamage(), new ModelResourceLocation(item.getRegistryName(), String.format("type=%d", ((IMultiType) item).getType(variant))));
+		for (Item item : itemList) {
+			ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 		}
 	}
 }
