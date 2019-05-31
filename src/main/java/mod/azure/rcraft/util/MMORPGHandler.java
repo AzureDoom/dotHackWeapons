@@ -12,8 +12,6 @@ import com.robertx22.database.gearitemslots.Staff;
 import com.robertx22.database.gearitemslots.Sword;
 
 import mod.azure.rcraft.RcraftMod;
-import mod.azure.rcraft.items.ItemBaseGun;
-import mod.azure.rcraft.items.ItemBaseSword;
 
 public class MMORPGHandler {
 
