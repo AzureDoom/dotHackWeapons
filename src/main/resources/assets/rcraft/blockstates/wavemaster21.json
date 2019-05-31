@@ -3,7 +3,7 @@
     "variants": {
     "normal": [ { } ],"inventory": [
 		{
-			"model": "rcraft:wavemaster/wavemaster03.obj"
+			"model": "rcraft:wavemaster/wavemaster02_6.obj"
 		}
     ]
 	},
