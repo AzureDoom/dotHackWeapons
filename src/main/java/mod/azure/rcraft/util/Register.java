@@ -74,10 +74,11 @@ public class Register {
 		for (int i = 1; i <= 38; i ++) items.add(new ItemBaseSword("heavyblade" + i, 4 * i));
 		for (int i = 1; i <= 42; i ++) items.add(new ItemBaseSword("longarm" + i, 4 * i));
 		for (int i = 1; i <= 79; i ++) items.add(new ItemBaseSword("twinblade" + i, 2 * i));
+		items.add(new ItemBaseGun("dualgunner1"));
+		items.add(new ItemBaseGun("dualgunner2"));
+		items.add(new ItemBaseGun("dualgunner3"));
+		for (int i = 1; i <= 18; i ++) items.add(new ItemBaseGun("steamgunner" + i));
 		if(Loader.isModLoaded("ebwizardry")) {
-			items.add(new ItemBaseGun("dualgunner1"));
-			items.add(new ItemBaseGun("dualgunner2"));
-			items.add(new ItemBaseGun("dualgunner3"));
 			for (String s : EARTH ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.EARTH));};
 			for (String s : LIGHTNING ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.LIGHTNING));};
 			for (String s : HEALING ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.HEALING));};
@@ -89,10 +90,6 @@ public class Register {
 			itemList = items.toArray(new Item[items.size()]);
 			LOGGER.debug("Registered with EB");
 		} else {
-			items.add(new ItemBaseGun("dualgunner1"));
-			items.add(new ItemBaseGun("dualgunner2"));
-			items.add(new ItemBaseGun("dualgunner3"));
-			for (int i = 1; i <= 18; i ++) items.add(new ItemBaseGun("steamgunner" + i));
 			for (int i = 1; i <= 9; i ++) items.add(new ItemBaseGun("harvestcleric" + i));
 			for (int i = 1; i <= 5; i ++) items.add(new ItemBaseGun("macabredancer" + i));
 			for (int i = 1; i <= 14; i ++) items.add(new ItemBaseGun("shadowwarlock" + i));
