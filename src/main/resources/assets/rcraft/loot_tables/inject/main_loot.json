@@ -7,7 +7,7 @@
                 {
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:bladebrandier"
+                    "name": "rcraft:bladebrandier1"
                 },
 				{
                     "type": "item",
@@ -102,7 +102,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:dualgunner"
+                    "name": "rcraft:dualgunner18"
                 },
 				{
                     "type": "item",
@@ -207,7 +207,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:tribalgrappler"
+                    "name": "rcraft:tribalgrappler1"
                 },
 				{
                     "type": "item",
@@ -227,7 +227,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:harvestcleric"
+                    "name": "rcraft:harvestcleric9"
                 },
 				{
                     "type": "item",
@@ -272,7 +272,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:macabredancer"
+                    "name": "rcraft:macabredancer5"
                 },
 				{
                     "type": "item",
@@ -297,7 +297,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:shadowwarlock"
+                    "name": "rcraft:shadowwarlock14"
                 },
 				{
                     "type": "item",
@@ -367,7 +367,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:wavemaster"
+                    "name": "rcraft:wavemaster44"
                 },
 				{
                     "type": "item",
@@ -587,7 +587,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:blademaster"
+                    "name": "rcraft:blademaster1"
                 },
 				{
                     "type": "item",
@@ -792,7 +792,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:longarm"
+                    "name": "rcraft:longarm1"
                 },
 				{
                     "type": "item",
@@ -1002,7 +1002,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:heavyblade"
+                    "name": "rcraft:heavyblade1"
                 },
 				{
                     "type": "item",
@@ -1192,7 +1192,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:flickreaper"
+                    "name": "rcraft:flickreaper1"
                 },
 				{
                     "type": "item",
@@ -1237,7 +1237,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:dualswords"
+                    "name": "rcraft:dualswords1"
                 },
 				{
                     "type": "item",
@@ -1632,7 +1632,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:twinblade"
+                    "name": "rcraft:twinblade1"
                 },
 				{
                     "type": "item",
