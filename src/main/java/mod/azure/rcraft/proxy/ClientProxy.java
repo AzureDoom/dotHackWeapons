@@ -21,8 +21,7 @@ public class ClientProxy extends CommonProxy {
 	private static final Logger LOGGER = LogManager.getLogger();
 	
 	@EventHandler
-	public void preInit()
-    {
+	public void preInit() {
 		OBJLoader.INSTANCE.addDomain(RcraftMod.modid);
     }
 	
@@ -37,15 +36,12 @@ public class ClientProxy extends CommonProxy {
 	}
 	
 	@SubscribeEvent
-	public static void onRegisterModelsEvent(ModelRegistryEvent event) {
-
+	public static void onRegisterModelsEvent(ModelRegistryEvent e) {
 		ForgeRegistries.ITEMS.getValuesCollection().stream()
 		.filter(item -> item.getRegistryName().getNamespace().equals(RcraftMod.modid))
 		.forEach(item -> {
 				ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 		});
-		
 		LOGGER.debug("Registered models");
-
 	}
 }
