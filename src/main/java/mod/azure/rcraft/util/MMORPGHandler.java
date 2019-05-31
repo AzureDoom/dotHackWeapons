@@ -2,6 +2,9 @@ package mod.azure.rcraft.util;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.google.common.collect.ImmutableList;
 import com.robertx22.api.MineAndSlashAPI;
 import com.robertx22.config.non_mine_items.ConfigItem;
@@ -15,6 +18,8 @@ import mod.azure.rcraft.RcraftMod;
 
 public class MMORPGHandler {
 
+	private static final Logger LOGGER = LogManager.getLogger();
+	
 	private static final List<String> STAFF = ImmutableList.of(
 			"harvestcleric", "macabredancer", "shadowwarlock", 
 			"wavemaster"
@@ -42,22 +47,27 @@ public class MMORPGHandler {
 		for (int i = 1; i <= 44; i ++)
 		for (String s : STAFF ) {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Staff()));
+			LOGGER.debug("Registered staffs");
 		}
 		for (int i = 1; i <= 45; i ++)
 		for (String s : AXE) {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Axe()));
+			LOGGER.debug("Registered Axes");
 		}
 		for (int i = 1; i <= 38; i ++)
 		for (String s : HAMMER) {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Hammer()));
+			LOGGER.debug("Registered Hammers");
 		}
 		for (int i = 1; i <= 18; i ++)
 		for (String s : BOW) {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Bow()));
+			LOGGER.debug("Registered Bows");
 		}
 		for (int i = 1; i <= 79; i ++)
 		for (String s : SWORD) {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Sword()));
+			LOGGER.debug("Registered Swords");
 		}
 	}
 }
