@@ -21,54 +21,21 @@ public class Register {
 	static {
 		if(Loader.isModLoaded("ebwizardry")) {
 			List<Item> items = new ArrayList<Item>();
-			for (int i = 1; i <= 19; i ++)
-			{
-				items.add(new ItemBaseSword("bladebrandier" + i, 3 * i));
-			}
+			for (int i = 1; i <= 19; i ++) items.add(new ItemBaseSword("bladebrandier" + i, 3 * i));
 			items.add(new ItemBaseGun("dualgunner1"));
 			items.add(new ItemBaseGun("dualgunner2"));
 			items.add(new ItemBaseGun("dualgunner3"));
-			for (int i = 1; i <= 25; i ++)
-			{
-				items.add(new ItemBaseSword("dualswords" + i, 2 * i));
-			}
-			for (int i = 1; i <= 20; i ++)
-			{
-				items.add(new ItemBaseSword("edgepunisher" + i, 4 * i));
-			}
-			for (int i = 1; i <= 9; i ++)
-			{
-				items.add(new ItemBaseSword("flickreaper" + i, 4 * i));
-				items.add(new ItemBaseSword("lordpartizan" + i, 4 * i));
-			}
-			for (int i = 1; i <= 18; i ++)
-			{
-				items.add(new ItemBaseGun("steamgunner" + i));
-			}
-			for (int i = 1; i <= 11; i ++)
-			{
-				items.add(new ItemBaseSword("tribalgrappler" + i, 3 * i));
-			} 
-			for (int i = 1; i <= 41; i ++)
-			{
-				items.add(new ItemBaseSword("blademaster" + i, 3 * i));
-			}
-			for (int i = 1; i <= 45; i ++)
-			{
-				items.add(new ItemBaseSword("heavyaxeman" + i, 4 * i));
-			} 
-			for (int i = 1; i <= 38; i ++)
-			{
-				items.add(new ItemBaseSword("heavyblade" + i, 4 * i));
-			} 
-			for (int i = 1; i <= 42; i ++)
-			{
-				items.add(new ItemBaseSword("longarm" + i, 4 * i));
-			} 
-			for (int i = 1; i <= 79; i ++)
-			{
-				items.add(new ItemBaseSword("twinblade" + i, 2 * i));
-			} 
+			for (int i = 1; i <= 25; i ++) items.add(new ItemBaseSword("dualswords" + i, 2 * i));
+			for (int i = 1; i <= 20; i ++) items.add(new ItemBaseSword("edgepunisher" + i, 4 * i));
+			for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("flickreaper" + i, 4 * i));
+			for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("lordpartizan" + i, 4 * i));
+			for (int i = 1; i <= 18; i ++) items.add(new ItemBaseGun("steamgunner" + i));
+			for (int i = 1; i <= 11; i ++) items.add(new ItemBaseSword("tribalgrappler" + i, 3 * i));
+			for (int i = 1; i <= 41; i ++) items.add(new ItemBaseSword("blademaster" + i, 3 * i));
+			for (int i = 1; i <= 45; i ++) items.add(new ItemBaseSword("heavyaxeman" + i, 4 * i));
+			for (int i = 1; i <= 38; i ++) items.add(new ItemBaseSword("heavyblade" + i, 4 * i));
+			for (int i = 1; i <= 42; i ++) items.add(new ItemBaseSword("longarm" + i, 4 * i));
+			for (int i = 1; i <= 79; i ++) items.add(new ItemBaseSword("twinblade" + i, 2 * i));
 			items.add(new ItemBaseMagic("harvestcleric1", Tier.BASIC, Element.EARTH));
 			items.add(new ItemBaseMagic("harvestcleric2", Tier.BASIC, Element.LIGHTNING));
 			items.add(new ItemBaseMagic("harvestcleric3", Tier.BASIC, Element.HEALING));
@@ -144,67 +111,25 @@ public class Register {
 			itemList = items.toArray(new Item[items.size()]);
 		} else {
 			List<Item> items = new ArrayList<Item>();
-			for (int i = 1; i <= 19; i ++)
-			{
-				items.add(new ItemBaseSword("bladebrandier" + i, 3 * i));
-			}
+			for (int i = 1; i <= 19; i ++) items.add(new ItemBaseSword("bladebrandier" + i, 3 * i));
 			items.add(new ItemBaseGun("dualgunner"));
 			items.add(new ItemBaseGun("dualgunner1"));
-			items.add(new ItemBaseGun("dualgunner2"));
-			for (int i = 1; i <= 25; i ++)
-			{
-				items.add(new ItemBaseSword("dualswords" + i, 2 * i));
-			}
-			for (int i = 1; i <= 20; i ++)
-			{
-				items.add(new ItemBaseSword("edgepunisher" + i, 4 * i));
-			}
-			for (int i = 1; i <= 9; i ++)
-			{
-				items.add(new ItemBaseSword("flickreaper" + i, 4 * i));
-				items.add(new ItemBaseSword("lordpartizan" + i, 4 * i));
-				items.add(new ItemBaseGun("harvestcleric" + i));
-			}  
-			for (int i = 1; i <= 18; i ++)
-			{
-				items.add(new ItemBaseGun("steamgunner" + i));
-			}
-			for (int i = 1; i <= 4; i ++)
-			{
-				items.add(new ItemBaseSword("tribalgrappler" + i, 3 * i));
-			} 
-			for (int i = 1; i <= 41; i ++)
-			{
-				items.add(new ItemBaseSword("blademaster" + i, 3 * i));
-			} 
-			for (int i = 1; i <= 45; i ++)
-			{
-				items.add(new ItemBaseSword("heavyaxeman" + i, 4 * i));
-			} 
-			for (int i = 1; i <= 38; i ++)
-			{
-				items.add(new ItemBaseSword("heavyblade" + i, 4 * i));
-			} 
-			for (int i = 1; i <= 42; i ++)
-			{
-				items.add(new ItemBaseSword("longarm" + i, 4 * i));
-			} 
-			for (int i = 1; i <= 79; i ++)
-			{
-				items.add(new ItemBaseSword("twinblade" + i, 2 * i));
-			} 
-			for (int i = 1; i <= 5; i ++)
-			{
-				items.add(new ItemBaseGun("macabredancer" + i));
-			}
-			for (int i = 1; i <= 14; i ++)
-			{
-				items.add(new ItemBaseGun("shadowwarlock" + i));
-			}
-			for (int i = 1; i <= 44; i ++)
-			{
-				items.add(new ItemBaseGun("wavemaster" + i));
-			}
+			items.add(new ItemBaseGun("dualgunner2")); 
+			for (int i = 1; i <= 25; i ++) items.add(new ItemBaseSword("dualswords" + i, 2 * i)); 
+			for (int i = 1; i <= 20; i ++) items.add(new ItemBaseSword("edgepunisher" + i, 4 * i));
+			for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("flickreaper" + i, 4 * i));
+			for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("lordpartizan" + i, 4 * i));
+			for (int i = 1; i <= 9; i ++) items.add(new ItemBaseGun("harvestcleric" + i));
+			for (int i = 1; i <= 18; i ++) items.add(new ItemBaseGun("steamgunner" + i));
+			for (int i = 1; i <= 4; i ++) items.add(new ItemBaseSword("tribalgrappler" + i, 3 * i));
+			for (int i = 1; i <= 41; i ++) items.add(new ItemBaseSword("blademaster" + i, 3 * i)); 
+			for (int i = 1; i <= 45; i ++) items.add(new ItemBaseSword("heavyaxeman" + i, 4 * i));
+			for (int i = 1; i <= 38; i ++) items.add(new ItemBaseSword("heavyblade" + i, 4 * i));
+			for (int i = 1; i <= 42; i ++) items.add(new ItemBaseSword("longarm" + i, 4 * i));
+			for (int i = 1; i <= 79; i ++) items.add(new ItemBaseSword("twinblade" + i, 2 * i));
+			for (int i = 1; i <= 5; i ++) items.add(new ItemBaseGun("macabredancer" + i));
+			for (int i = 1; i <= 14; i ++) items.add(new ItemBaseGun("shadowwarlock" + i));
+			for (int i = 1; i <= 44; i ++) items.add(new ItemBaseGun("wavemaster" + i));
 			itemList = items.toArray(new Item[items.size()]);
 		}
 	}
