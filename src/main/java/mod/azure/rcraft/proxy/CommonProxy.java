@@ -1,5 +1,7 @@
 package mod.azure.rcraft.proxy;
 
+import static net.minecraftforge.fml.relauncher.Side.SERVER;
+
 import mod.azure.rcraft.RcraftMod;
 import mod.azure.rcraft.util.Register;
 import net.minecraft.item.Item;
@@ -9,7 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 
-@Mod.EventBusSubscriber
+@Mod.EventBusSubscriber(modid = RcraftMod.modid, value = SERVER)
 public class CommonProxy {
 
 
