@@ -13,6 +13,8 @@ import electroblob.wizardry.constants.Tier;
 import mod.azure.rcraft.items.ItemBaseGun;
 import mod.azure.rcraft.items.ItemBaseMagic;
 import mod.azure.rcraft.items.ItemBaseSword;
+import mod.azure.rcraft.items.ItemMSBow;
+import mod.azure.rcraft.items.ItemMSStaff;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
@@ -92,15 +94,29 @@ public class Register {
 			for (String s : FIRE ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.FIRE));};
 			for (String s : NECROMANCY ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.NECROMANCY));};
 			for (String s : MAGIC ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.MAGIC));};
-			itemList = items.toArray(new Item[items.size()]);
 			LOGGER.debug("Registered with EB");
+		} else if(Loader.isModLoaded("mmorpg")) {
+			for (int i = 1; i <= 9; i ++) items.add(new ItemMSStaff("harvestcleric" + i));
+			for (int i = 1; i <= 5; i ++) items.add(new ItemMSStaff("macabredancer" + i));
+			for (int i = 1; i <= 14; i ++) items.add(new ItemMSStaff("shadowwarlock" + i));
+			for (int i = 1; i <= 44; i ++) items.add(new ItemMSStaff("wavemaster" + i));
+			LOGGER.debug("Registered with M&S");
 		} else {
 			for (int i = 1; i <= 9; i ++) items.add(new ItemBaseGun("harvestcleric" + i));
 			for (int i = 1; i <= 5; i ++) items.add(new ItemBaseGun("macabredancer" + i));
 			for (int i = 1; i <= 14; i ++) items.add(new ItemBaseGun("shadowwarlock" + i));
 			for (int i = 1; i <= 44; i ++) items.add(new ItemBaseGun("wavemaster" + i));
-			itemList = items.toArray(new Item[items.size()]);
-			LOGGER.debug("Registered without EB");
+			LOGGER.debug("Registered without EB or M&S");
 		}
+		if(Loader.isModLoaded("mmorpg")) {
+			for (int i = 1; i <= 3; i ++) items.add(new ItemMSBow("dualgunner" + i));
+			for (int i = 1; i <= 18; i ++) items.add(new ItemMSBow("steamgunner" + i));
+			LOGGER.debug("Registered with M&S");
+		} else {
+			for (int i = 1; i <= 3; i ++) items.add(new ItemBaseGun("dualgunner" + i));
+			for (int i = 1; i <= 18; i ++) items.add(new ItemBaseGun("steamgunner" + i));
+			LOGGER.debug("Registered without M&S");
+		}
+		itemList = items.toArray(new Item[items.size()]);
 	}
 }
