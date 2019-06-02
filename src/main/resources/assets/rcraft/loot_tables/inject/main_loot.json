@@ -102,7 +102,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:dualgunner18"
+                    "name": "rcraft:dualgunner3"
                 },
 				{
                     "type": "item",
@@ -117,7 +117,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:steamgunner"
+                    "name": "rcraft:steamgunner18"
                 },
 				{
                     "type": "item",
@@ -1362,7 +1362,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:edgepunisher"
+                    "name": "rcraft:edgepunisher1"
                 },
 				{
                     "type": "item",
@@ -1462,7 +1462,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:lordpartizan"
+                    "name": "rcraft:lordpartizan1"
                 },
 				{
                     "type": "item",
@@ -1507,7 +1507,7 @@
 				{
                     "type": "item",
                     "weight": 1,
-                    "name": "rcraft:heavyaxeman"
+                    "name": "rcraft:heavyaxeman1"
                 },
 				{
                     "type": "item",

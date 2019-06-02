@@ -47,7 +47,7 @@ public class MMORPGHandler {
 		for (int i = 1; i <= 44; i ++)
 		for (String s : STAFF ) {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Staff()));
-			LOGGER.debug("Registered staffs");
+			LOGGER.debug("Registered Staffs");
 		}
 		for (int i = 1; i <= 45; i ++)
 		for (String s : AXE) {
