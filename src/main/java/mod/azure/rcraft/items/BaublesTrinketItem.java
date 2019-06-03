@@ -1,8 +1,7 @@
-package mod.azure.rcraft.items.baubles;
+package mod.azure.rcraft.items;
 
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
-import mod.azure.rcraft.items.ItemBase;
 import net.minecraft.item.ItemStack;
 
 public class BaublesTrinketItem extends ItemBase implements IBauble {

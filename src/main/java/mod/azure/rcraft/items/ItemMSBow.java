@@ -1,16 +1,16 @@
-package mod.azure.rcraft.items.weapons;
+package mod.azure.rcraft.items;
+
+import com.robertx22.items.gearitems.weapons.ItemBow;
 
 import mod.azure.rcraft.RcraftMod;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class ItemBaseSword extends ItemSword {
+public class ItemMSBow extends ItemBow {
 
-	public ItemBaseSword(String name, int damage) {
-		super(EnumHelper.addToolMaterial(name, 1, 1561, 4F, damage, 4));
+	public ItemMSBow(String name) {
+		super();
 		this.setTranslationKey(name);
 		this.setRegistryName(new ResourceLocation(RcraftMod.modid, name));
 		this.setCreativeTab(RcraftMod.tab);

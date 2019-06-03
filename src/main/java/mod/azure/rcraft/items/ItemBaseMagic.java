@@ -1,4 +1,4 @@
-package mod.azure.rcraft.items.weapons;
+package mod.azure.rcraft.items;
 
 import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;
