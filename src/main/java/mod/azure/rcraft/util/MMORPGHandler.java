@@ -11,6 +11,7 @@ import com.robertx22.config.non_mine_items.ConfigItem;
 import com.robertx22.database.gearitemslots.Axe;
 import com.robertx22.database.gearitemslots.Bow;
 import com.robertx22.database.gearitemslots.Hammer;
+import com.robertx22.database.gearitemslots.Necklace;
 import com.robertx22.database.gearitemslots.Staff;
 import com.robertx22.database.gearitemslots.Sword;
 
@@ -69,5 +70,6 @@ public class MMORPGHandler {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Sword()));
 			LOGGER.debug("Registered Swords");
 		}
+		MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":datadrain", new ConfigItem().setType(new Necklace()));
 	}
 }
