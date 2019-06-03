@@ -75,23 +75,23 @@ public class Register {
 	public static NonNullList<ItemStack> variantList;
 	static {
 		List<Item> items = new ArrayList<Item>();
-		for (int i = 1; i <= 19; i ++) items.add(new ItemBaseSword("bladebrandier" + i, 3 * i));
-		for (int i = 1; i <= 25; i ++) items.add(new ItemBaseSword("dualswords" + i, 2 * i));
-		for (int i = 1; i <= 20; i ++) items.add(new ItemBaseSword("edgepunisher" + i, 4 * i));
-		for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("flickreaper" + i, 4 * i));
-		for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("lordpartizan" + i, 4 * i));
-		for (int i = 1; i <= 11; i ++) items.add(new ItemBaseSword("tribalgrappler" + i, 3 * i));
-		for (int i = 1; i <= 41; i ++) items.add(new ItemBaseSword("blademaster" + i, 3 * i));
-		for (int i = 1; i <= 45; i ++) items.add(new ItemBaseSword("heavyaxeman" + i, 4 * i));
-		for (int i = 1; i <= 38; i ++) items.add(new ItemBaseSword("heavyblade" + i, 4 * i));
-		for (int i = 1; i <= 42; i ++) items.add(new ItemBaseSword("longarm" + i, 4 * i));
-		for (int i = 1; i <= 79; i ++) items.add(new ItemBaseSword("twinblade" + i, 2 * i));
+		for (int i = 1; i <= 19; i ++) items.add(new ItemBaseSword("bladebrandier" + i, (3+i)/10));
+		for (int i = 1; i <= 25; i ++) items.add(new ItemBaseSword("dualswords" + i, (2+i)/10));
+		for (int i = 1; i <= 20; i ++) items.add(new ItemBaseSword("edgepunisher" + i, (4+i)/10));
+		for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("flickreaper" + i, (4+i)/10));
+		for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("lordpartizan" + i, (4+i)/10));
+		for (int i = 1; i <= 11; i ++) items.add(new ItemBaseSword("tribalgrappler" + i, (3+i)/10));
+		for (int i = 1; i <= 41; i ++) items.add(new ItemBaseSword("blademaster" + i, (3+i)/10));
+		for (int i = 1; i <= 45; i ++) items.add(new ItemBaseSword("heavyaxeman" + i, (4+i)/10));
+		for (int i = 1; i <= 38; i ++) items.add(new ItemBaseSword("heavyblade" + i, (4+i)/10));
+		for (int i = 1; i <= 42; i ++) items.add(new ItemBaseSword("longarm" + i, (4+i)/10));
+		for (int i = 1; i <= 79; i ++) items.add(new ItemBaseSword("twinblade" + i, (2+i)/10));
 		LOGGER.debug("Registered normal items");
 		if(Loader.isModLoaded("baubles")) {
-			items.add(new ItemBase("datadrain"));
+			items.add(new BaublesCharmItem("datadrain"));
 			LOGGER.debug("Registered with Baubles");
 		} else {
-			items.add(new BaublesCharmItem("datadrain"));
+			items.add(new ItemBase("datadrain"));
 			LOGGER.debug("Registered without Baubles");
 		}
 		if(Loader.isModLoaded("ebwizardry")) {
