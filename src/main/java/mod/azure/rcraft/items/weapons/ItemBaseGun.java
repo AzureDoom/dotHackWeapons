@@ -1,4 +1,4 @@
-package mod.azure.rcraft.items;
+package mod.azure.rcraft.items.weapons;
 
 import mod.azure.rcraft.RcraftMod;
 import net.minecraft.item.ItemBow;

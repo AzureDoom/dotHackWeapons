@@ -1,4 +1,4 @@
-package mod.azure.rcraft.items;
+package mod.azure.rcraft.items.mineandslash;
 
 import com.robertx22.items.gearitems.weapons.ItemStaff;
 
