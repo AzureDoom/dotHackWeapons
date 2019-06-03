@@ -1,0 +1,55 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "normal": [ { } ],
+        "inventory": [
+            {
+			   "model": "rcraft:datadrain.obj"
+			}
+        ]
+    },
+	"defaults" : {
+    	"transform": {
+        	"thirdperson_righthand": {
+            	"rotation": [ 0, 180, 0 ],
+            	"translation": [ -0.05, -0.08, 0.10 ],
+            	"scale": [ 0.10, 0.10, 0.10 ]
+        	},
+        	"thirdperson_lefthand": {
+        		"rotation": [ 0, 180, 0 ],
+        		"translation": [ 0.06, -0.08, 0.10 ],
+        		"scale": [ 0.10, 0.10, 0.10 ]
+        	},
+        	"firstperson_righthand": {
+        		"rotation": [ 0, 190, 0 ],
+        		"translation": [ -0.70, 0.20, -0.50 ],
+        		"scale": [ 0.00, 0.00, 0.00 ]
+        	},
+        	"firstperson_lefthand": {
+        		"rotation": [ 0, 190, 0 ],
+        		"translation": [ 0.30, 0.20, -0.50 ],
+        		"scale": [ 0.00, 0.00, 0.00 ]
+        	},
+        	"gui": {
+        		"rotation": [ 96, 50, 216 ],
+        		"translation": [ 0.10, -0.15, 0.00 ],
+        		"scale": [ 0.08, 0.08, 0.08 ]
+        	},
+        	"head": {
+        		"rotation": [ 0, 0, 0 ],
+        		"translation": [ 0.00, 0.00, 0.00 ],
+        		"scale": [ 1.00, 1.00, 1.00 ]
+        	},
+        	"fixed": {
+        		"rotation": [ 0, 0, 0 ],
+        		"translation": [ 0.00, 0.00, 0.00 ],
+        		"scale": [ 1.00, 1.00, 1.00 ]
+        	},
+        	"ground": {
+        		"rotation": [ 0, 0, 0 ],
+        		"translation": [ 0.00, 0.00, 0.00 ],
+        		"scale": [ 0.10, 0.10, 0.10 ]
+        	}
+    	}
+	}
+}

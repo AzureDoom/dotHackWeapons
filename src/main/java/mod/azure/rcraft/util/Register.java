@@ -87,6 +87,13 @@ public class Register {
 		for (int i = 1; i <= 42; i ++) items.add(new ItemBaseSword("longarm" + i, 4 * i));
 		for (int i = 1; i <= 79; i ++) items.add(new ItemBaseSword("twinblade" + i, 2 * i));
 		LOGGER.debug("Registered normal items");
+		if(Loader.isModLoaded("baubles")) {
+			items.add(new ItemBase("datadrain"));
+			LOGGER.debug("Registered with Baubles");
+		} else {
+			items.add(new BaublesCharmItem("datadrain"));
+			LOGGER.debug("Registered without Baubles");
+		}
 		if(Loader.isModLoaded("ebwizardry")) {
 			for (String s : EARTH ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.EARTH));};
 			for (String s : LIGHTNING ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.LIGHTNING));};
