@@ -12,7 +12,7 @@
         "credits": "Code optimized by galaxtone and d4rsorc",
         "logoFile": "pack.png",
         "requiredMods": [ ],
-        "dependencies": [ "ebwizardry" ],
+        "dependencies": [ "ebwizardry", "mmorpg", "baubles" ],
         "useDependencyInformation": "true"
     }
 ]

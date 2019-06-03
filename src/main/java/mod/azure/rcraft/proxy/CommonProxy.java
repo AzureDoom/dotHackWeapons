@@ -24,6 +24,7 @@ public class CommonProxy {
 	}
 
 	public void postInit() {
+		
 	}
 
 	@Mod.EventBusSubscriber

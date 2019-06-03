@@ -10,9 +10,11 @@ import com.google.common.collect.ImmutableList;
 
 import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;
+import mod.azure.rcraft.items.ItemBase;
 import mod.azure.rcraft.items.ItemBaseGun;
 import mod.azure.rcraft.items.ItemBaseMagic;
 import mod.azure.rcraft.items.ItemBaseSword;
+import mod.azure.rcraft.items.BaublesCharmItem;
 import mod.azure.rcraft.items.ItemMSBow;
 import mod.azure.rcraft.items.ItemMSStaff;
 import net.minecraft.item.Item;
