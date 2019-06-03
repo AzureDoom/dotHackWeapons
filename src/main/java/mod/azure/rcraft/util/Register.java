@@ -12,6 +12,7 @@ import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;
 import mod.azure.rcraft.items.ItemBase;
 import mod.azure.rcraft.items.baubles.BaublesCharmItem;
+import mod.azure.rcraft.items.baubles.BaublesHeadItem;
 import mod.azure.rcraft.items.mineandslash.ItemMSBow;
 import mod.azure.rcraft.items.mineandslash.ItemMSStaff;
 import mod.azure.rcraft.items.weapons.ItemBaseGun;
@@ -88,7 +89,7 @@ public class Register {
 		for (int i = 1; i <= 79; i ++) items.add(new ItemBaseSword("twinblade" + i, (2+i)/10));
 		LOGGER.debug("Registered normal items");
 		if(Loader.isModLoaded("baubles")) {
-			items.add(new BaublesCharmItem("datadrain"));
+			items.add(new BaublesHeadItem("datadrain"));
 			LOGGER.debug("Registered with Baubles");
 		} else {
 			items.add(new ItemBase("datadrain"));
