@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 
-@Mod.EventBusSubscriber(value = Side.SERVER)
+@Mod.EventBusSubscriber(modid = RcraftMod.modid, value = Side.SERVER)
 public class CommonProxy {
 
 
@@ -26,6 +26,7 @@ public class CommonProxy {
 		
 	}
 
+	@Mod.EventBusSubscriber
 	public static class RegistrationHandler {
 		@SubscribeEvent
 		public static void registerItems(RegistryEvent.Register<Item> e) {

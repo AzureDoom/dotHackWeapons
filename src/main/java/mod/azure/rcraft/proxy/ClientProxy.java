@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.relauncher.Side;
 
-@Mod.EventBusSubscriber(value = Side.CLIENT)
+@Mod.EventBusSubscriber(modid = RcraftMod.modid, value = Side.CLIENT)
 public class ClientProxy extends CommonProxy {
 	
 	private static final Logger LOGGER = LogManager.getLogger();
