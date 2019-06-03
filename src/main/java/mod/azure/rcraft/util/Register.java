@@ -78,9 +78,9 @@ public class Register {
 		for (int i = 1; i <= 19; i ++) items.add(new ItemBaseSword("bladebrandier" + i, (3+i)/10));
 		for (int i = 1; i <= 25; i ++) items.add(new ItemBaseSword("dualswords" + i, (2+i)/10));
 		for (int i = 1; i <= 20; i ++) items.add(new ItemBaseSword("edgepunisher" + i, (4+i)/10));
-		for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("flickreaper" + i, (4+i)/10));
-		for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("lordpartizan" + i, (4+i)/10));
-		for (int i = 1; i <= 11; i ++) items.add(new ItemBaseSword("tribalgrappler" + i, (3+i)/10));
+		for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("flickreaper" + i, (20+i)/3));
+		for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("lordpartizan" + i, (20+i)/3));
+		for (int i = 1; i <= 11; i ++) items.add(new ItemBaseSword("tribalgrappler" + i, (20+i)/3));
 		for (int i = 1; i <= 41; i ++) items.add(new ItemBaseSword("blademaster" + i, (3+i)/10));
 		for (int i = 1; i <= 45; i ++) items.add(new ItemBaseSword("heavyaxeman" + i, (4+i)/10));
 		for (int i = 1; i <= 38; i ++) items.add(new ItemBaseSword("heavyblade" + i, (4+i)/10));
