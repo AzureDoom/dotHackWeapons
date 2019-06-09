@@ -1,14 +1,13 @@
-package mod.azure.rcraft.items;
-
-import com.robertx22.items.gearitems.weapons.ItemStaff;
+package mod.azure.rcraft.items.base;
 
 import mod.azure.rcraft.RcraftMod;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 
-public class ItemMSStaff extends ItemStaff {
+public class ItemBase extends Item {
 
-	public ItemMSStaff(String name) {
+	public ItemBase(String name) {
 		super();
 		this.setTranslationKey(name);
 		this.setRegistryName(new ResourceLocation(RcraftMod.modid, name));
@@ -18,4 +17,5 @@ public class ItemMSStaff extends ItemStaff {
 	public String getTranslationKey(ItemStack stack) {
 		return super.getTranslationKey();
 	}
+
 }

@@ -1,14 +1,16 @@
-package mod.azure.rcraft.items;
+package mod.azure.rcraft.items.base;
 
 import mod.azure.rcraft.RcraftMod;
-import net.minecraft.item.Item;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.util.EnumHelper;
 
-public class ItemBase extends Item {
+public class ItemBaseSword extends ItemSword {
 
-	public ItemBase(String name) {
-		super();
+	public ItemBaseSword(String name, int damage) {
+		super(EnumHelper.addToolMaterial(name, 1, 1561, 4F, damage, 4));
 		this.setTranslationKey(name);
 		this.setRegistryName(new ResourceLocation(RcraftMod.modid, name));
 		this.setCreativeTab(RcraftMod.tab);
@@ -17,5 +19,4 @@ public class ItemBase extends Item {
 	public String getTranslationKey(ItemStack stack) {
 		return super.getTranslationKey();
 	}
-
 }

@@ -10,14 +10,13 @@ import com.google.common.collect.ImmutableList;
 
 import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;
-import mod.azure.rcraft.items.BaublesCharmItem;
-import mod.azure.rcraft.items.BaublesHeadItem;
-import mod.azure.rcraft.items.ItemBase;
-import mod.azure.rcraft.items.ItemBaseGun;
-import mod.azure.rcraft.items.ItemBaseMagic;
-import mod.azure.rcraft.items.ItemBaseSword;
-import mod.azure.rcraft.items.ItemMSBow;
-import mod.azure.rcraft.items.ItemMSStaff;
+import mod.azure.rcraft.items.base.ItemBase;
+import mod.azure.rcraft.items.base.ItemBaseGun;
+import mod.azure.rcraft.items.base.ItemBaseSword;
+import mod.azure.rcraft.items.baubles.BaublesHeadItem;
+import mod.azure.rcraft.items.ebwizadry.ItemEBWand;
+import mod.azure.rcraft.items.mineandslash.ItemMSBow;
+import mod.azure.rcraft.items.mineandslash.ItemMSStaff;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
@@ -96,14 +95,14 @@ public class Register {
 			LOGGER.debug("Registered without Baubles");
 		}
 		if(Loader.isModLoaded("ebwizardry")) {
-			for (String s : EARTH ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.EARTH));};
-			for (String s : LIGHTNING ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.LIGHTNING));};
-			for (String s : HEALING ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.HEALING));};
-			for (String s : SORCERY ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.SORCERY));};
-			for (String s : ICE ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.ICE));};
-			for (String s : FIRE ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.FIRE));};
-			for (String s : NECROMANCY ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.NECROMANCY));};
-			for (String s : MAGIC ) {items.add(new ItemBaseMagic(s, Tier.MASTER, Element.MAGIC));};
+			for (String s : EARTH ) {items.add(new ItemEBWand(s, Tier.MASTER, Element.EARTH));};
+			for (String s : LIGHTNING ) {items.add(new ItemEBWand(s, Tier.MASTER, Element.LIGHTNING));};
+			for (String s : HEALING ) {items.add(new ItemEBWand(s, Tier.MASTER, Element.HEALING));};
+			for (String s : SORCERY ) {items.add(new ItemEBWand(s, Tier.MASTER, Element.SORCERY));};
+			for (String s : ICE ) {items.add(new ItemEBWand(s, Tier.MASTER, Element.ICE));};
+			for (String s : FIRE ) {items.add(new ItemEBWand(s, Tier.MASTER, Element.FIRE));};
+			for (String s : NECROMANCY ) {items.add(new ItemEBWand(s, Tier.MASTER, Element.NECROMANCY));};
+			for (String s : MAGIC ) {items.add(new ItemEBWand(s, Tier.MASTER, Element.MAGIC));};
 			LOGGER.debug("Registered with EB");
 		} else if(Loader.isModLoaded("mmorpg")) {
 			for (int i = 1; i <= 9; i ++) items.add(new ItemMSStaff("harvestcleric" + i));

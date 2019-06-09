@@ -1,15 +1,13 @@
-package mod.azure.rcraft.items;
-
-import com.robertx22.items.gearitems.weapons.ItemBow;
+package mod.azure.rcraft.items.base;
 
 import mod.azure.rcraft.RcraftMod;
+import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.common.util.EnumHelper;
 
-public class ItemMSBow extends ItemBow {
+public class ItemBaseGun extends ItemBow {
 
-	public ItemMSBow(String name) {
+	public ItemBaseGun(String name) {
 		super();
 		this.setTranslationKey(name);
 		this.setRegistryName(new ResourceLocation(RcraftMod.modid, name));

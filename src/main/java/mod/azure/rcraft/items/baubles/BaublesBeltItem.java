@@ -1,7 +1,8 @@
-package mod.azure.rcraft.items;
+package mod.azure.rcraft.items.baubles;
 
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
+import mod.azure.rcraft.items.base.ItemBase;
 import net.minecraft.item.ItemStack;
 
 public class BaublesBeltItem extends ItemBase implements IBauble {
