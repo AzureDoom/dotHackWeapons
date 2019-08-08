@@ -2,31 +2,31 @@
 # Material Count: 5
 
 newmtl Ring_1
-Ka 1.000000 1.000000 1.000000
+
 Kd 1.000000 1.000000 1.000000
 d 1.000000
 map_Kd rcraft:items/datadrain
 
 newmtl Ring_2
-Ka 1.000000 1.000000 1.000000
+
 Kd 1.000000 1.000000 1.000000
 d 1.000000
 map_Kd rcraft:items/datadrain
 
 newmtl Ring_3
-Ka 1.000000 1.000000 1.000000
+
 Kd 1.000000 1.000000 1.000000
 d 1.000000
 map_Kd rcraft:items/datadrain
 
 newmtl Ring_4
-Ka 1.000000 1.000000 1.000000
+
 Kd 1.000000 1.000000 1.000000
 d 1.000000
 map_Kd rcraft:items/datadrain
 
 newmtl Ring_5
-Ka 1.000000 1.000000 1.000000
+
 Kd 1.000000 1.000000 1.000000
 d 1.000000
 map_Kd rcraft:items/datadrain
