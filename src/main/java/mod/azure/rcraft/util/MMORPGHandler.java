@@ -32,7 +32,7 @@ public class MMORPGHandler {
 
 	private static final List<String> HAMMER = ImmutableList.of(
 			"lordpartizan", "edgepunisher",
-			"flickreaper", "longarm", "heavyblade"
+			"flickreaper", "longarm", "heavyblade", "heavybladev"
 			);
 
 	private static final List<String> BOW = ImmutableList.of(
@@ -55,7 +55,7 @@ public class MMORPGHandler {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Axe()));
 			LOGGER.debug("Registered Axes");
 		}
-		for (int i = 1; i <= 38; i ++)
+		for (int i = 1; i <= 39; i ++)
 		for (String s : HAMMER) {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Hammer()));
 			LOGGER.debug("Registered Hammers");
