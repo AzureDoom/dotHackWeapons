@@ -25,8 +25,7 @@ public class LootHandler {
 			"inject/abandoned_mineshaft", "inject/desert_pyramid",
 			"inject/jungle_temple", "inject/simple_dungeon",
 			"inject/stronghold_crossing", "inject/stronghold_corridor",
-			"inject/stronghold_library", "underwater_ruin_big",
-			"inject/underwater_ruin_small", "inject/village_blacksmith",
+			"inject/stronghold_library", "inject/village_blacksmith",
 			"inject/main_loot"
 			);
 
@@ -53,8 +52,6 @@ public class LootHandler {
 			case "stronghold_crossing":
 			case "stronghold_corridor":
 			case "stronghold_library":
-			case "underwater_ruin_big":
-			case "underwater_ruin_small":
 			case "village_blacksmith": 
 			case "main_loot" :
 			evt.getTable().addPool(getInjectPool(file)); break;
