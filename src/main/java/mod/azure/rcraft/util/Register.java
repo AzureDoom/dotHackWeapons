@@ -68,7 +68,7 @@ public class Register {
 
 	private static final List<String> MAGIC = ImmutableList.of(
 			"shadowwarlock1", "wavemaster1", "wavemaster13", "wavemaster15",
-			"wavemaster16"
+			"wavemaster16", "redwand1"
 			);
 
 	public static Item[] itemList;
@@ -110,12 +110,14 @@ public class Register {
 			for (int i = 1; i <= 5; i ++) items.add(new ItemMSStaff("macabredancer" + i));
 			for (int i = 1; i <= 14; i ++) items.add(new ItemMSStaff("shadowwarlock" + i));
 			for (int i = 1; i <= 44; i ++) items.add(new ItemMSStaff("wavemaster" + i));
+			items.add(new ItemMSStaff("redwand1"));
 			LOGGER.debug("Registered with M&S");
 		} else {
 			for (int i = 1; i <= 9; i ++) items.add(new ItemBaseGun("harvestcleric" + i));
 			for (int i = 1; i <= 5; i ++) items.add(new ItemBaseGun("macabredancer" + i));
 			for (int i = 1; i <= 14; i ++) items.add(new ItemBaseGun("shadowwarlock" + i));
 			for (int i = 1; i <= 44; i ++) items.add(new ItemBaseGun("wavemaster" + i));
+			items.add(new ItemBaseGun("redwand1"));
 			LOGGER.debug("Registered without EB or M&S");
 		}
 		if(Loader.isModLoaded("mmorpg")) {

@@ -23,7 +23,7 @@ public class MMORPGHandler {
 	
 	private static final List<String> STAFF = ImmutableList.of(
 			"harvestcleric", "macabredancer", "shadowwarlock", 
-			"wavemaster"
+			"wavemaster", "redwand"
 			);
 
 	private static final List<String> AXE = ImmutableList.of(
