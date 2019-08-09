@@ -2028,6 +2028,206 @@
                     "type": "item",
                     "weight": 1,
                     "name": "rcraft:datadrain"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:redwand1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:heavybladev39"
                 }
             ]
         }
