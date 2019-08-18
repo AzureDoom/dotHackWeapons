@@ -2,7 +2,6 @@
 # Material Count: 1
 
 newmtl TEX_ex11bod1
-Ns 94.117647
 Kd 1.000000 1.000000 1.000000
 d 1.000000
 map_Kd rcraft:items/ex11bod1
