@@ -1,7 +1,7 @@
 # Blender MTL File: 'None'
 # Material Count: 1
 
-newmtl cw2hkt00
+newmtl TEX_cw1hsw00
 
 
 Kd 1.000000 1.000000 1.000000
@@ -10,5 +10,5 @@ Kd 1.000000 1.000000 1.000000
 
 d 1.000000
 
-map_Kd rcraft:items/cw2hkt00
+map_Kd rcraft:items/cw1hsw00
 

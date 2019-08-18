@@ -792,6 +792,21 @@
 				{
                     "type": "item",
                     "weight": 1,
+                    "name": "rcraft:blademaster42"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster43"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "rcraft:blademaster44"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
                     "name": "rcraft:longarm1"
                 },
 				{
