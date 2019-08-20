@@ -1,3 +1,4 @@
+#done#
 item.blademaster1.name=Basic Sword
 item.blademaster2.name=Rondo
 item.blademaster3.name=Ensui
@@ -12,37 +13,69 @@ item.blademaster11.name=Scarlet Cross
 item.blademaster12.name=Glitter
 item.blademaster13.name=Eternity
 item.blademaster14.name=Unicorn Blade
-item.blademaster15.name=Corpseblade
+item.blademaster15.name=Brave Sword
 item.blademaster16.name=Fugaku
 item.blademaster17.name=Mercury Sword
 item.blademaster18.name=Soujin
-item.blademaster19.name=UNUSED
-item.blademaster20.name=Pegasus Comet
-item.blademaster21.name=Evil Eyes
-item.blademaster22.name=Strange Blade
-item.blademaster23.name=Heaven & Earth
-item.blademaster24.name=Mizuchi
-item.blademaster25.name=Gakaku
-item.blademaster26.name=Oval Sword
-item.blademaster27.name=Singing Blade
-item.blademaster28.name=Bloody Pain
-item.blademaster29.name=Tenkafuubu
-item.blademaster30.name=Skysweeper
-item.blademaster31.name=Nataku
-item.blademaster32.name=Honor's Breath
-item.blademaster33.name=Trickster
-item.blademaster34.name=Steelblade
-item.blademaster35.name=6 Side Blade
-item.blademaster36.name=Jinsaran
-item.blademaster37.name=Bureido
-item.blademaster38.name=SWORD
-item.blademaster39.name=Phoenix's Fire
-item.blademaster40.name=Gimme Life
-item.blademaster41.name=Chaos Sword
-item.blademaster42.name=Maniac Sword
-item.blademaster43.name=Bear's Sword
-item.blademaster44.name=SK's Sword
+item.blademaster19.name=Pegasus Comet
+item.blademaster20.name=Evil Eyes
+item.blademaster21.name=Strange Blade
+item.blademaster22.name=Heaven & Earth
+item.blademaster23.name=Mizuchi
+item.blademaster24.name=Gakaku
+item.blademaster25.name=Oval Sword
+item.blademaster26.name=Singing Blade
+item.blademaster27.name=Bloody Pain
+item.blademaster28.name=Tenkafuubu
+item.blademaster29.name=Skysweeper
+item.blademaster30.name=Nataku
+item.blademaster31.name=Honor's Breath
+item.blademaster32.name=Trickster
+item.blademaster33.name=Steelblade
+item.blademaster34.name=6 Side Blade
+item.blademaster35.name=Jinsaran
+item.blademaster36.name=Bureido
+item.blademaster37.name=SWORD
+item.blademaster38.name=Phoenix's Fire
+item.blademaster39.name=Gimme Life
+item.blademaster40.name=Chaos Sword
+item.blademaster41.name=Maniac Sword
+item.blademaster42.name=Bear's Sword
+item.blademaster43.name=SK's Sword
+item.blademaster44.name=Siegfried
+item.blademaster45.name=8 Phase Sword
+item.blademaster46.name=Ends of Earth
+item.blademaster47.name=Heavenly Sword
+item.blademaster48.name=Houraiken
+item.blademaster49.name=Fire & Sky
+item.blademaster50.name=Shichiyou
+item.blademaster51.name=Seal Sword
+item.blademaster52.name=Lion's Blade
+item.blademaster53.name=Lake & Sea
+item.blademaster54.name=Mars Sword
+item.blademaster55.name=Phantom Blade
+item.blademaster56.name=NeedleBlade
+item.blademaster57.name=Guillotine
+item.blademaster58.name=7 Star Sword
+item.blademaster59.name=Jormungand
+item.blademaster60.name=Patriot
+item.blademaster61.name=Seventh Seal
+item.blademaster62.name=Saturn Sword
+item.blademaster63.name=Comet Blade
+item.blademaster64.name=Corpseblade
+item.blademaster65.name=Dogman's Sword
+item.blademaster66.name=Demon Killer
+item.blademaster67.name=Fair Soul
+item.blademaster68.name=Menhir Sword
+item.blademaster69.name=Rising Sun
+item.blademaster70.name=Banished Blade
+item.blademaster71.name=Executioner
+item.blademaster72.name=Komura
+item.blademaster73.name=Godslayer
+item.blademaster74.name=Phantom Pain
+item.blademaster75.name=Phoenix's Wing
 
+#done#
 item.bladebrandier1.name=Blade Thorns
 item.bladebrandier2.name=Spider's Karma
 item.bladebrandier3.name=Princess Blade
@@ -63,12 +96,15 @@ item.bladebrandier17.name=Sarasvati Katana
 item.bladebrandier18.name=Tempting Rose
 item.bladebrandier19.name=Seductive Rose
 
+#done#
 item.datadrain.name=Data Drain
 
+#done#
 item.dualgunner1.name=DG-X
 item.dualgunner2.name=DG-Y
 item.dualgunner3.name=DG-Z
 
+#done#
 item.dualswords1.name=Spin Gai Gu
 item.dualswords2.name=Dorje Hatchet
 item.dualswords3.name=Spin Man Que
@@ -95,6 +131,7 @@ item.dualswords23.name=Spin Gorai
 item.dualswords24.name=Empty Skies
 item.dualswords25.name=Spin Heaven
 
+#done#
 item.edgepunisher1.name=Broad Wheel
 item.edgepunisher2.name=Broad Demon
 item.edgepunisher3.name=Broad Legged
@@ -116,6 +153,7 @@ item.edgepunisher18.name=Silad
 item.edgepunisher19.name=Gate of Ouroboros
 item.edgepunisher20.name=Broad Dowan
 
+#done#
 item.flickreaper1.name=Scythe Hook
 item.flickreaper2.name=Scythe Bite
 item.flickreaper3.name=Scythe Shouxiao
@@ -126,6 +164,7 @@ item.flickreaper7.name=Goddess Scythe
 item.flickreaper8.name=Shadowy Death
 item.flickreaper9.name=Ticking Death
 
+#done#
 item.harvestcleric1.name=Spell Xialin
 item.harvestcleric2.name=Spell Xinzhu
 item.harvestcleric3.name=Spell Baiyan
@@ -137,6 +176,7 @@ item.harvestcleric8.name=Dancing Haze
 item.harvestcleric9.name=Flame Dancer
 item.harvestcleric10.name=Summer's Staff
 
+#done#
 item.heavyaxeman1.name=Hatchet
 item.heavyaxeman2.name=Battle Axe
 item.heavyaxeman3.name=Over Swing
@@ -291,6 +331,7 @@ item.heavybladev37.name=Blade 3000
 item.heavybladev38.name=Five Stars
 item.heavybladev39.name=Dreams of Yore
 
+#done#
 item.longarm1.name=Bronze Spear
 item.longarm2.name=Sacred Spear
 item.longarm3.name=Awful Spear
@@ -363,6 +404,7 @@ item.longarm69.name=Dhampir Lance
 item.longarm70.name=Demon Spear
 item.longarm71.name=Scarlet Autumn
 
+#done#
 item.lordpartizan1.name=Lance Tulong
 item.lordpartizan2.name=Golden Spear
 item.lordpartizan3.name=Lance Law
@@ -373,14 +415,17 @@ item.lordpartizan7.name=Lance Quake
 item.lordpartizan8.name=Lance Tower
 item.lordpartizan9.name=Lance Rook
 
+#done#
 item.macabredancer1.name=Dark Crow
 item.macabredancer2.name=Fan Jasper
 item.macabredancer3.name=Peach Blossom
 item.macabredancer4.name=Voice Usurper
 item.macabredancer5.name=Voice Cleanser
 
+#done#
 item.redwand1.name=Red Wand
 
+#done#
 item.shadowwarlock1.name=Ogre's Heaven
 item.shadowwarlock2.name=Magic Amber
 item.shadowwarlock3.name=Magic Hosei
@@ -396,6 +441,7 @@ item.shadowwarlock12.name=Infinite Spiral B
 item.shadowwarlock13.name=Eternal Light A
 item.shadowwarlock14.name=Eternal Light B
 
+#done#
 item.steamgunner1.name=Demon Slice
 item.steamgunner2.name=Gun Steel
 item.steamgunner3.name=Water Bayonet
@@ -415,6 +461,7 @@ item.steamgunner16.name=Silent Eden
 item.steamgunner17.name=Twinstar Rift A
 item.steamgunner18.name=Twinstar Rift B
 
+#done#
 item.tribalgrappler1.name=Tiger Fist
 item.tribalgrappler2.name=Fist Talon
 item.tribalgrappler3.name=Fist Fairy
@@ -507,6 +554,7 @@ item.twinblade77.name=Kurogane
 item.twinblade78.name=Crimson Raid
 item.twinblade79.name=Fishskin
 
+#done#
 item.wavemaster1.name=Moonstruck
 item.wavemaster2.name=Earth Wand
 item.wavemaster3.name=Rod of the Sea
