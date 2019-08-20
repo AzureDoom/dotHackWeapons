@@ -45,12 +45,12 @@ public class MMORPGHandler {
 			);
 
 	public MMORPGHandler() {
-		for (int i = 1; i <= 44; i ++)
+		for (int i = 1; i <= 74; i ++)
 		for (String s : STAFF ) {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Staff()));
 			LOGGER.debug("Registered Staffs");
 		}
-		for (int i = 1; i <= 45; i ++)
+		for (int i = 1; i <= 46; i ++)
 		for (String s : AXE) {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Axe()));
 			LOGGER.debug("Registered Axes");
