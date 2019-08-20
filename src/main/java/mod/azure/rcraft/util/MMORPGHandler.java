@@ -55,7 +55,7 @@ public class MMORPGHandler {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Axe()));
 			LOGGER.debug("Registered Axes");
 		}
-		for (int i = 1; i <= 39; i ++)
+		for (int i = 1; i <= 71; i ++)
 		for (String s : HAMMER) {
 			MineAndSlashAPI.addCompatibleItem(RcraftMod.modid + ":" + s + i, new ConfigItem().setType(new Hammer()));
 			LOGGER.debug("Registered Hammers");
