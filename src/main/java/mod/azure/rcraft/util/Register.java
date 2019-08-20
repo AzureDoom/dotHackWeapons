@@ -174,7 +174,7 @@ public class Register {
 		for (int i = 1; i <= 9; i ++) items.add(new ItemBaseSword("lordpartizan" + i, (20+i)/3));
 		for (int i = 1; i <= 11; i ++) items.add(new ItemBaseSword("tribalgrappler" + i, (20+i)/3));
 		for (int i = 1; i <= 44; i ++) items.add(new ItemBaseSword("blademaster" + i, (3+i)/10));
-		for (int i = 1; i <= 46; i ++) items.add(new ItemBaseSword("heavyaxeman" + i, (4+i)/10));
+		for (int i = 1; i <= 73; i ++) items.add(new ItemBaseSword("heavyaxeman" + i, (4+i)/10));
 		for (int i = 1; i <= 39; i ++) items.add(new ItemBaseSword("heavyblade" + i, (4+i)/10));
 		for (int i = 1; i <= 39; i ++) items.add(new ItemBaseSword("heavybladev" + i, (4+i)/10));
 		for (int i = 1; i <= 71; i ++) items.add(new ItemBaseSword("longarm" + i, (4+i)/10));
