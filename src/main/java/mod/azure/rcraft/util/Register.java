@@ -175,10 +175,10 @@ public class Register {
 		for (int i = 1; i <= 11; i ++) items.add(new ItemBaseSword("tribalgrappler" + i, (20+i)/3));
 		for (int i = 1; i <= 75; i ++) items.add(new ItemBaseSword("blademaster" + i, (3+i)/10));
 		for (int i = 1; i <= 73; i ++) items.add(new ItemBaseSword("heavyaxeman" + i, (4+i)/10));
-		for (int i = 1; i <= 39; i ++) items.add(new ItemBaseSword("heavyblade" + i, (4+i)/10));
-		for (int i = 1; i <= 39; i ++) items.add(new ItemBaseSword("heavybladev" + i, (4+i)/10));
+		for (int i = 1; i <= 54; i ++) items.add(new ItemBaseSword("heavyblade" + i, (4+i)/10));
+		for (int i = 1; i <= 41; i ++) items.add(new ItemBaseSword("heavybladev" + i, (4+i)/10));
 		for (int i = 1; i <= 71; i ++) items.add(new ItemBaseSword("longarm" + i, (4+i)/10));
-		for (int i = 1; i <= 79; i ++) items.add(new ItemBaseSword("twinblade" + i, (2+i)/10));
+		for (int i = 1; i <= 81; i ++) items.add(new ItemBaseSword("twinblade" + i, (2+i)/10));
 		LOGGER.debug("Registered normal items");
 		if(Loader.isModLoaded("baubles")) {
 			items.add(new BaublesHeadItem("datadrain"));
