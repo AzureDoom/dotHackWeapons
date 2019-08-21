@@ -1,4 +1,3 @@
-#done#
 item.blademaster1.name=Basic Sword
 item.blademaster2.name=Rondo
 item.blademaster3.name=Ensui
@@ -75,7 +74,6 @@ item.blademaster73.name=Godslayer
 item.blademaster74.name=Phantom Pain
 item.blademaster75.name=Phoenix's Wing
 
-#done#
 item.bladebrandier1.name=Blade Thorns
 item.bladebrandier2.name=Spider's Karma
 item.bladebrandier3.name=Princess Blade
@@ -96,15 +94,12 @@ item.bladebrandier17.name=Sarasvati Katana
 item.bladebrandier18.name=Tempting Rose
 item.bladebrandier19.name=Seductive Rose
 
-#done#
 item.datadrain.name=Data Drain
 
-#done#
 item.dualgunner1.name=DG-X
 item.dualgunner2.name=DG-Y
 item.dualgunner3.name=DG-Z
 
-#done#
 item.dualswords1.name=Spin Gai Gu
 item.dualswords2.name=Dorje Hatchet
 item.dualswords3.name=Spin Man Que
@@ -131,7 +126,6 @@ item.dualswords23.name=Spin Gorai
 item.dualswords24.name=Empty Skies
 item.dualswords25.name=Spin Heaven
 
-#done#
 item.edgepunisher1.name=Broad Wheel
 item.edgepunisher2.name=Broad Demon
 item.edgepunisher3.name=Broad Legged
@@ -153,7 +147,6 @@ item.edgepunisher18.name=Silad
 item.edgepunisher19.name=Gate of Ouroboros
 item.edgepunisher20.name=Broad Dowan
 
-#done#
 item.flickreaper1.name=Scythe Hook
 item.flickreaper2.name=Scythe Bite
 item.flickreaper3.name=Scythe Shouxiao
@@ -164,7 +157,6 @@ item.flickreaper7.name=Goddess Scythe
 item.flickreaper8.name=Shadowy Death
 item.flickreaper9.name=Ticking Death
 
-#done#
 item.harvestcleric1.name=Spell Xialin
 item.harvestcleric2.name=Spell Xinzhu
 item.harvestcleric3.name=Spell Baiyan
@@ -176,7 +168,6 @@ item.harvestcleric8.name=Dancing Haze
 item.harvestcleric9.name=Flame Dancer
 item.harvestcleric10.name=Summer's Staff
 
-#done#
 item.heavyaxeman1.name=Hatchet
 item.heavyaxeman2.name=Battle Axe
 item.heavyaxeman3.name=Over Swing
@@ -331,7 +322,6 @@ item.heavybladev37.name=Blade 3000
 item.heavybladev38.name=Five Stars
 item.heavybladev39.name=Dreams of Yore
 
-#done#
 item.longarm1.name=Bronze Spear
 item.longarm2.name=Sacred Spear
 item.longarm3.name=Awful Spear
@@ -404,7 +394,6 @@ item.longarm69.name=Dhampir Lance
 item.longarm70.name=Demon Spear
 item.longarm71.name=Scarlet Autumn
 
-#done#
 item.lordpartizan1.name=Lance Tulong
 item.lordpartizan2.name=Golden Spear
 item.lordpartizan3.name=Lance Law
@@ -415,17 +404,14 @@ item.lordpartizan7.name=Lance Quake
 item.lordpartizan8.name=Lance Tower
 item.lordpartizan9.name=Lance Rook
 
-#done#
 item.macabredancer1.name=Dark Crow
 item.macabredancer2.name=Fan Jasper
 item.macabredancer3.name=Peach Blossom
 item.macabredancer4.name=Voice Usurper
 item.macabredancer5.name=Voice Cleanser
 
-#done#
 item.redwand1.name=Red Wand
 
-#done#
 item.shadowwarlock1.name=Ogre's Heaven
 item.shadowwarlock2.name=Magic Amber
 item.shadowwarlock3.name=Magic Hosei
@@ -441,7 +427,6 @@ item.shadowwarlock12.name=Infinite Spiral B
 item.shadowwarlock13.name=Eternal Light A
 item.shadowwarlock14.name=Eternal Light B
 
-#done#
 item.steamgunner1.name=Demon Slice
 item.steamgunner2.name=Gun Steel
 item.steamgunner3.name=Water Bayonet
@@ -461,7 +446,6 @@ item.steamgunner16.name=Silent Eden
 item.steamgunner17.name=Twinstar Rift A
 item.steamgunner18.name=Twinstar Rift B
 
-#done#
 item.tribalgrappler1.name=Tiger Fist
 item.tribalgrappler2.name=Fist Talon
 item.tribalgrappler3.name=Fist Fairy
@@ -504,57 +488,58 @@ item.twinblade27.name=Raikoumaru
 item.twinblade28.name=Black Chapter
 item.twinblade29.name=Dante's Blades
 item.twinblade30.name=Spiral Edge
-item.twinblade31.name=UNUSED
-item.twinblade32.name=Bloody Blades
-item.twinblade33.name=Mokuren
-item.twinblade34.name=Mizuchi
-item.twinblade35.name=Diablo Blades
-item.twinblade36.name=Hyakkidouran
-item.twinblade37.name=Golden Yasha
-item.twinblade38.name=Two Together
-item.twinblade39.name=Cats Blades
-item.twinblade40.name=Tiger King
-item.twinblade41.name=Assassin
-item.twinblade42.name=Akatsuki
-item.twinblade43.name=Ryokugun
-item.twinblade44.name=Fuse Blades
-item.twinblade45.name=Soul Blades
-item.twinblade46.name=Sin of Hades
-item.twinblade47.name=Prepare to Die
-item.twinblade48.name=Grizzly
-item.twinblade49.name=Last Betrayal
-item.twinblade50.name=Slayers
-item.twinblade51.name=Phantom Blades
-item.twinblade52.name=Rei
-item.twinblade53.name=Lady Killers
-item.twinblade54.name=Hachiyou
-item.twinblade55.name=Raian
-item.twinblade56.name=Mukuro
-item.twinblade57.name=Hell's Gate
-item.twinblade58.name=Kikoku
-item.twinblade59.name=UNUSED
-item.twinblade60.name=Enou
-item.twinblade61.name=Saburo
-item.twinblade62.name=Vampire Blades
-item.twinblade63.name=Shadow Blades
-item.twinblade64.name=Yosetu & Fuyou
-item.twinblade65.name=Moon Knives
-item.twinblade66.name=UNUSED
-item.twinblade67.name=Kurenai
-item.twinblade68.name=Kiki & Lala
-item.twinblade69.name=Mikazuchi
-item.twinblade70.name=Baian
-item.twinblade71.name=Spell Blades
-item.twinblade72.name=Sublimer
-item.twinblade73.name=Suigetsu
-item.twinblade74.name=Enja
-item.twinblade75.name=Kokoro
-item.twinblade76.name=Shirogane
-item.twinblade77.name=Kurogane
-item.twinblade78.name=Crimson Raid
-item.twinblade79.name=Fishskin
+item.twinblade31.name=Bloody Blades
+item.twinblade32.name=Mokuren
+item.twinblade33.name=Mizuchi
+item.twinblade34.name=Diablo Blades
+item.twinblade35.name=Hyakkidouran
+item.twinblade36.name=Golden Yasha
+item.twinblade37.name=Two Together
+item.twinblade38.name=Cats Blades
+item.twinblade39.name=Tiger King
+item.twinblade40.name=Assassin
+item.twinblade41.name=Akatsuki
+item.twinblade42.name=Ryokugun
+item.twinblade43.name=Fuse Blades
+item.twinblade44.name=Soul Blades
+item.twinblade45.name=Sin of Hades
+item.twinblade46.name=Prepare to Die
+item.twinblade47.name=Grizzly
+item.twinblade48.name=Last Betrayal
+item.twinblade49.name=Slayers
+item.twinblade50.name=Phantom Blades
+item.twinblade51.name=Rei
+item.twinblade52.name=Lady Killers
+item.twinblade53.name=Hachiyou
+item.twinblade54.name=Raian
+item.twinblade55.name=Mukuro
+item.twinblade56.name=Hell's Gate
+item.twinblade57.name=Kikoku
+item.twinblade58.name=Enou
+item.twinblade59.name=Saburo
+item.twinblade60.name=Vampire Blades
+item.twinblade61.name=Shadow Blades
+item.twinblade62.name=Yosetu & Fuyou
+item.twinblade63.name=Moon Knives
+item.twinblade64.name=Kurenai
+item.twinblade65.name=Kiki & Lala
+item.twinblade66.name=Mikazuchi
+item.twinblade67.name=Baian
+item.twinblade68.name=Spell Blades
+item.twinblade69.name=Sublimer
+item.twinblade70.name=Suigetsu
+item.twinblade71.name=Enja
+item.twinblade72.name=Kokoro
+item.twinblade73.name=Shirogane
+item.twinblade74.name=Kurogane
+item.twinblade75.name=Crimson Raid
+item.twinblade76.name=Fishskin
+item.twinblade77.name=Kai
+item.twinblade78.name=Kyoura
+item.twinblade79.name=Bom-Ba-Ye
+item.twinblade80.name=Gemini Soul
+item.twinblade81.name=Professional
 
-#done#
 item.wavemaster1.name=Moonstruck
 item.wavemaster2.name=Earth Wand
 item.wavemaster3.name=Rod of the Sea

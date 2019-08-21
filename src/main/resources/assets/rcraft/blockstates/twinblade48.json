@@ -1,10 +1,10 @@
 {
-    "forge_marker": 1,
+   "forge_marker": 1,
     "variants": {
 		"normal": [ { } ],
 		"inventory": [
 			{
-				"model": "rcraft:twinblade1/twinblade107.obj"
+		   "model": "rcraft:twinblade1/twinblade10z.obj"
 			}
 		]
 	},
@@ -14,13 +14,13 @@
 	
 	"thirdperson_righthand": {
 	"rotation": [ 0, 0, -90 ],
-	"translation": [ 0.7, -0.77, 0.7 ],
-	"scale": [ 1.30, 1.30, 1.30 ]
+	"translation": [ 1.05, -1.12, 1.4 ],
+	"scale": [ 2.00, 2.00, 2.00 ]
 	},
 	"thirdperson_lefthand": {
 		"rotation": [ 0, 0, -90 ],
-		"translation": [ 0.70, 0.52, 0.69 ],
-		"scale": [ 1.30, 1.30, 1.30 ]
+		"translation": [ 1.05, 0.88, 1.4 ],
+		"scale": [ 2.00, 2.00, 2.00 ]
 	},
 	"firstperson_righthand": {
 		"rotation": [ 0, 190, 0 ],
@@ -34,8 +34,8 @@
 	},
 	"gui": {
 		"rotation": [ 90, 50, 320 ],
-		"translation": [ 1.70, 0.20, 0.00 ],
-		"scale": [ 1.70, 1.70, 1.70 ]
+		"translation": [ 3.30, -0.00, 0.00 ],
+		"scale": [ 3.00, 3.00, 3.00 ]
 	},
 	"head": {
 		"rotation": [ 0, 0, 0 ],
