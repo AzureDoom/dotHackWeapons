@@ -237,11 +237,11 @@ public class Register {
 			LOGGER.debug("Registered without EB or M&S");
 		}
 		if(Loader.isModLoaded("mmorpg")) {
-			for (int i = 1; i <= 3; i ++) items.add(new ItemMSBow("dualgunner" + i));
+			for (int i = 1; i <= 4; i ++) items.add(new ItemMSBow("dualgunner" + i));
 			for (int i = 1; i <= 18; i ++) items.add(new ItemMSBow("steamgunner" + i));
 			LOGGER.debug("Registered with M&S");
 		} else {
-			for (int i = 1; i <= 3; i ++) items.add(new ItemBaseGun("dualgunner" + i));
+			for (int i = 1; i <= 4; i ++) items.add(new ItemBaseGun("dualgunner" + i));
 			for (int i = 1; i <= 18; i ++) items.add(new ItemBaseGun("steamgunner" + i));
 			LOGGER.debug("Registered without M&S");
 		}
