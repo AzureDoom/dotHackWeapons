@@ -20,8 +20,8 @@ public class RcraftMod {
 
 	public static final String modid = "rcraft";
 	public static final String MODNAME = "dotHack Weapons";
-	public static final String version = "2.0.0";
-	public static final String dependencies = "required-after:ebwizardry;required-after:mmorpg;required-after:baubles";
+	public static final String version = "2.0.1";
+	public static final String dependencies = "required-after:ebwizardry@4.2;required-after:mmorpg;required-after:baubles";
 
 	@SidedProxy(clientSide = "mod.azure.rcraft.proxy.ClientProxy", serverSide = "mod.azure.rcraft.proxy.CommonProxy")
 	public static CommonProxy proxy;
@@ -45,8 +45,8 @@ public class RcraftMod {
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 		proxy.postInit();
-		if(Loader.isModLoaded("mmorpg")) {
+		if (Loader.isModLoaded("mmorpg")) {
 			MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
 		}
-	} 
+	}
 }
