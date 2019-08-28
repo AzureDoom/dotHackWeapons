@@ -108,29 +108,29 @@ public class Register {
 	static {
 		List<Item> items = new ArrayList<Item>();
 		for (int i = 1; i <= 19; i++)
-			items.add(new ItemBaseSword("bladebrandier" + i, (3 + i) / 10));
+			items.add(new ItemBaseSword("bladebrandier" + i, (3 + i) / 8));
 		for (int i = 1; i <= 25; i++)
-			items.add(new ItemBaseSword("dualswords" + i, (2 + i) / 10));
+			items.add(new ItemBaseSword("dualswords" + i, (2 + i) / 8));
 		for (int i = 1; i <= 20; i++)
-			items.add(new ItemBaseSword("edgepunisher" + i, (4 + i) / 10));
+			items.add(new ItemBaseSword("edgepunisher" + i, (4 + i) / 8));
 		for (int i = 1; i <= 9; i++)
-			items.add(new ItemBaseSword("flickreaper" + i, (20 + i) / 3));
+			items.add(new ItemBaseSword("flickreaper" + i, (20 + i) / 8));
 		for (int i = 1; i <= 9; i++)
-			items.add(new ItemBaseSword("lordpartizan" + i, (20 + i) / 3));
+			items.add(new ItemBaseSword("lordpartizan" + i, (20 + i) / 8));
 		for (int i = 1; i <= 11; i++)
-			items.add(new ItemBaseSword("tribalgrappler" + i, (20 + i) / 3));
+			items.add(new ItemBaseSword("tribalgrappler" + i, (20 + i) / 8));
 		for (int i = 1; i <= 75; i++)
-			items.add(new ItemBaseSword("blademaster" + i, (3 + i) / 10));
+			items.add(new ItemBaseSword("blademaster" + i, (3 + i) / 25));
 		for (int i = 1; i <= 73; i++)
-			items.add(new ItemBaseSword("heavyaxeman" + i, (4 + i) / 10));
+			items.add(new ItemBaseSword("heavyaxeman" + i, (4 + i) / 25));
 		for (int i = 1; i <= 54; i++)
-			items.add(new ItemBaseSword("heavyblade" + i, (4 + i) / 10));
+			items.add(new ItemBaseSword("heavyblade" + i, (4 + i) / 15));
 		for (int i = 1; i <= 41; i++)
-			items.add(new ItemBaseSword("heavybladev" + i, (4 + i) / 10));
+			items.add(new ItemBaseSword("heavybladev" + i, (4 + i) / 15));
 		for (int i = 1; i <= 71; i++)
-			items.add(new ItemBaseSword("longarm" + i, (4 + i) / 10));
+			items.add(new ItemBaseSword("longarm" + i, (4 + i) / 25));
 		for (int i = 1; i <= 81; i++)
-			items.add(new ItemBaseSword("twinblade" + i, (2 + i) / 10));
+			items.add(new ItemBaseSword("twinblade" + i, (2 + i) / 25));
 		LOGGER.debug("Registered normal items");
 		if (Loader.isModLoaded("baubles")) {
 			items.add(new BaublesHeadItem("datadrain"));

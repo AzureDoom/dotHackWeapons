@@ -20,7 +20,7 @@ public class RcraftMod {
 
 	public static final String modid = "rcraft";
 	public static final String MODNAME = "dotHack Weapons";
-	public static final String version = "2.0.1";
+	public static final String version = "2.0.2";
 	public static final String dependencies = "required-after:ebwizardry@4.2;required-after:mmorpg;required-after:baubles";
 
 	@SidedProxy(clientSide = "mod.azure.rcraft.proxy.ClientProxy", serverSide = "mod.azure.rcraft.proxy.CommonProxy")
