@@ -14,7 +14,6 @@ import static net.minecraftforge.fml.relauncher.Side.SERVER;
 @Mod.EventBusSubscriber(modid = RcraftMod.modid, value = SERVER)
 public class CommonProxy {
 
-
 	public void preInit() {
 
 	}
@@ -24,7 +23,7 @@ public class CommonProxy {
 	}
 
 	public void postInit() {
-		
+
 	}
 
 	@Mod.EventBusSubscriber
@@ -38,7 +37,7 @@ public class CommonProxy {
 			}
 
 			Register.variantList = NonNullList.create();
-			for (Item item :  Register.itemList) {
+			for (Item item : Register.itemList) {
 				item.getSubItems(RcraftMod.tab, Register.variantList);
 			}
 		}

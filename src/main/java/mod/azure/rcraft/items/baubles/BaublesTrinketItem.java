@@ -12,8 +12,8 @@ public class BaublesTrinketItem extends ItemBase implements IBauble {
 	}
 
 	@Override
-    public BaubleType getBaubleType(ItemStack itemstack) {
+	public BaubleType getBaubleType(ItemStack itemstack) {
 		return BaubleType.TRINKET;
-    }
+	}
 
 }

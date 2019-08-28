@@ -18,31 +18,31 @@ import static net.minecraftforge.fml.relauncher.Side.CLIENT;
 
 @Mod.EventBusSubscriber(modid = RcraftMod.modid, value = CLIENT)
 public class ClientProxy extends CommonProxy {
-	
+
 	private static final Logger LOGGER = LogManager.getLogger();
-	
+
 	@EventHandler
 	public void preInit() {
 		OBJLoader.INSTANCE.addDomain(RcraftMod.modid);
-    }
-	
+	}
+
 	@EventHandler
 	public void init() {
-		
+
 	}
-	
+
 	@EventHandler
 	public void postInit() {
-		
+
 	}
-	
+
 	@SubscribeEvent
 	public static void onRegisterModelsEvent(ModelRegistryEvent e) {
 		ForgeRegistries.ITEMS.getValuesCollection().stream()
-		.filter(item -> item.getRegistryName().getNamespace().equals(RcraftMod.modid))
-		.forEach(item -> {
-				ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
-		});
+				.filter(item -> item.getRegistryName().getNamespace().equals(RcraftMod.modid)).forEach(item -> {
+					ModelLoader.setCustomModelResourceLocation(item, 0,
+							new ModelResourceLocation(item.getRegistryName(), "inventory"));
+				});
 		LOGGER.debug("Registered models");
 	}
 }

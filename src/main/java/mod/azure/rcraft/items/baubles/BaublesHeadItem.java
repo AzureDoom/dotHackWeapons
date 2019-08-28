@@ -12,8 +12,8 @@ public class BaublesHeadItem extends ItemBase implements IBauble {
 	}
 
 	@Override
-    public BaubleType getBaubleType(ItemStack itemstack) {
+	public BaubleType getBaubleType(ItemStack itemstack) {
 		return BaubleType.HEAD;
-    }
+	}
 
 }

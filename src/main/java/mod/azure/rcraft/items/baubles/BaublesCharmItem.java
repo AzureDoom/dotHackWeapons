@@ -12,8 +12,8 @@ public class BaublesCharmItem extends ItemBase implements IBauble {
 	}
 
 	@Override
-    public BaubleType getBaubleType(ItemStack itemstack) {
+	public BaubleType getBaubleType(ItemStack itemstack) {
 		return BaubleType.CHARM;
-    }
+	}
 
 }
