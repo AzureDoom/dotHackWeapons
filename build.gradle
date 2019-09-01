@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 
-version = "2.0.3"
+version = "2.0.4"
 group = "mod.azure.rcraft"
 archivesBaseName = "dotHack Weapons"
 
