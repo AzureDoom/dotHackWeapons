@@ -3,6 +3,7 @@ package mod.azure.rcraft;
 import java.util.ArrayList;
 import java.util.List;
 
+import mod.azure.rcraft.config.ModConfig;
 import mod.azure.rcraft.proxy.CommonProxy;
 import mod.azure.rcraft.util.LootHandler;
 import mod.azure.rcraft.util.MMORPGHandler;
@@ -45,8 +46,10 @@ public class RcraftMod {
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 		proxy.postInit();
-		if (Loader.isModLoaded("mmorpg")) {
-			MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
+		if (ModConfig.USE_COMPATIBILITY_ITEMS) {
+			if (Loader.isModLoaded("mmorpg")) {
+				MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
+			}
 		}
 	}
 }
