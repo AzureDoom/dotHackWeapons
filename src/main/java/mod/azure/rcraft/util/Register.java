@@ -270,14 +270,14 @@ public class Register {
 			;
 			LOGGER.debug("Registered with EB");
 		} else if (Loader.isModLoaded("mmorpg")) {
-			for (int i = 1; i <= 10; i++)
-				items.add(new ItemMSStaff("harvestcleric" + i));
-			for (int i = 1; i <= 5; i++)
-				items.add(new ItemMSStaff("macabredancer" + i));
-			for (int i = 1; i <= 14; i++)
-				items.add(new ItemMSStaff("shadowwarlock" + i));
-			for (int i = 1; i <= 74; i++)
-				items.add(new ItemMSStaff("wavemaster" + i));
+			for (int y = 1; y <= 10; y++)
+				items.add(new ItemMSStaff("harvestcleric" + y));
+			for (int y = 1; y <= 5; y++)
+				items.add(new ItemMSStaff("macabredancer" + y));
+			for (int y = 1; y <= 14; y++)
+				items.add(new ItemMSStaff("shadowwarlock" + y));
+			for (int y = 1; y <= 74; y++)
+				items.add(new ItemMSStaff("wavemaster" + y));
 			items.add(new ItemMSStaff("redwand1"));
 			LOGGER.debug("Registered with M&S");
 		} else {
@@ -293,10 +293,10 @@ public class Register {
 			LOGGER.debug("Registered without EB or M&S");
 		}
 		if (Loader.isModLoaded("mmorpg")) {
-			for (int i = 1; i <= 4; i++)
-				items.add(new ItemMSBow("dualgunner" + i));
-			for (int i = 1; i <= 18; i++)
-				items.add(new ItemMSBow("steamgunner" + i));
+			for (int y = 1; y <= 4; y++)
+				items.add(new ItemMSBow("dualgunner" + y));
+			for (int y = 1; y <= 18; y++)
+				items.add(new ItemMSBow("steamgunner" + y));
 			LOGGER.debug("Registered with M&S");
 		} else {
 			for (int i = 1; i <= 4; i++)
