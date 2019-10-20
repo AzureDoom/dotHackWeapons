@@ -3,14 +3,21 @@ package mod.azure.rcraft.util;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.annotation.Nonnull;
+
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 
 import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.constants.Tier;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
+import mod.azure.rcraft.RcraftMod;
 
-public class EBWandMap {
+@ObjectHolder(RcraftMod.modid)
+@EventBusSubscriber
+public final class EBWandMap {
 	
 	public static Item getWand(Tier tier, Element element){
 		if(tier == null) throw new NullPointerException("The given tier cannot be null.");
@@ -20,6 +27,7 @@ public class EBWandMap {
 	
 	private static final Map<Pair<Tier, Element>, Item> WAND_MAP = new HashMap<>();
 	
+	@Nonnull
 	private static <T> T placeholder(){ return null; }
 	
 	public static final Item wavemaster42 = placeholder();

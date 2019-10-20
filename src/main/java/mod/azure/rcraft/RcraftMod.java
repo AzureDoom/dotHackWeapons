@@ -7,6 +7,7 @@ import mod.azure.rcraft.config.ModConfig;
 import mod.azure.rcraft.proxy.CommonProxy;
 import mod.azure.rcraft.util.LootHandler;
 import mod.azure.rcraft.util.MMORPGHandler;
+import mod.azure.rcraft.util.EBWandMap;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Loader;
@@ -41,6 +42,8 @@ public class RcraftMod {
 	public void init(FMLInitializationEvent e) {
 		proxy.init();
 		MinecraftForge.EVENT_BUS.register(new LootHandler());
+		
+		EBWandMap.populateWandMap();
 	}
 
 	@Mod.EventHandler

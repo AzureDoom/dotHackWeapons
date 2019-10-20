@@ -1,5 +1,7 @@
 package mod.azure.rcraft.items.ebwizadry;
 
+import java.util.Random;
+
 import electroblob.wizardry.Wizardry;
 import electroblob.wizardry.constants.Constants;
 import electroblob.wizardry.constants.Element;
@@ -10,16 +12,24 @@ import electroblob.wizardry.item.ItemWand;
 import electroblob.wizardry.registry.Spells;
 import electroblob.wizardry.registry.WizardryAdvancementTriggers;
 import electroblob.wizardry.registry.WizardryItems;
+import electroblob.wizardry.registry.WizardrySounds;
 import electroblob.wizardry.spell.Spell;
+import electroblob.wizardry.util.ParticleBuilder;
 import electroblob.wizardry.util.SpellProperties;
 import electroblob.wizardry.util.WandHelper;
+import electroblob.wizardry.util.ParticleBuilder.Type;
 import mod.azure.rcraft.RcraftMod;
 import mod.azure.rcraft.util.EBWandMap;
+import mod.azure.rcraft.util.Register;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.math.Vec3d;
+import net.minecraftforge.event.entity.player.AttackEntityEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class ItemEBWand extends ItemWand {
 
@@ -37,7 +47,7 @@ public class ItemEBWand extends ItemWand {
 		return this.getTranslationKey();
 	}
 
-	@Override
+	@SubscribeEvent
 	public boolean onApplyButtonPressed(EntityPlayer player, Slot centre, Slot crystals, Slot upgrade, Slot[] spellBooks){
 		
 		boolean changed = false;
@@ -119,5 +129,42 @@ public class ItemEBWand extends ItemWand {
 		}
 		
 		return changed;
+	}
+	
+	@SubscribeEvent
+	public static void onAttackEntityEvent(AttackEntityEvent event){
+
+		EntityPlayer player = event.getEntityPlayer();
+		ItemStack stack = player.getHeldItemMainhand(); // Can't melee with offhand items
+
+		if(stack.getItem() instanceof IManaStoringItem){
+
+			// Nobody said it had to be a wand, as long as it's got a melee upgrade it counts
+			int level = WandHelper.getUpgradeLevel(stack, WizardryItems.melee_upgrade);
+			int mana = ((IManaStoringItem)stack.getItem()).getMana(stack);
+
+			if(level > 0 && mana > 0){
+
+				Random random = player.world.rand;
+
+				player.world.playSound(player.posX, player.posY, player.posZ, WizardrySounds.ITEM_WAND_MELEE, SoundCategory.PLAYERS, 0.75f, 1, false);
+
+				if(player.world.isRemote){
+
+					Vec3d origin = new Vec3d(player.posX, player.getEntityBoundingBox().minY + player.getEyeHeight(), player.posZ);
+					Vec3d hit = origin.add(player.getLookVec().scale(player.getDistance(event.getTarget())));
+					// Generate two perpendicular vectors in the plane perpendicular to the look vec
+					Vec3d vec1 = player.getLookVec().rotatePitch(90);
+					Vec3d vec2 = player.getLookVec().crossProduct(vec1);
+
+					for(int i = 0; i < 15; i++){
+						ParticleBuilder.create(Type.SPARKLE).pos(hit)
+								.vel(vec1.scale(random.nextFloat() * 0.3f - 0.15f).add(vec2.scale(random.nextFloat() * 0.3f - 0.15f)))
+								.clr(1f, 1f, 1f).fade(0.3f, 0.5f, 1)
+								.time(8 + random.nextInt(4)).spawn(player.world);
+					}
+				}
+			}
+		}
 	}
 }
