@@ -30,14 +30,18 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.Vec3d;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 
 public class ItemEBWand extends ItemWand {
 
-	public ItemEBWand(Tier tier, Element element) {
+	private static Integer number = 0;
+
+	public ItemEBWand(Integer number, Tier tier, Element element) {
 		super(tier, element);
 		this.setCreativeTab(DotHackMod.tab);
 		this.tier = tier;
 		this.element = element;
+		this.number = number;
 
 	}
 
@@ -52,7 +56,7 @@ public class ItemEBWand extends ItemWand {
 					|| WandHelper.getProgression(centre.getStack()) >= tier.progression)
 					&& tier.ordinal() - 1 == this.tier.ordinal()){
 				WandHelper.setProgression(centre.getStack(), 0);
-				ItemStack newWand = new ItemStack(DotHackItems.getWand(tier, this.element));
+				ItemStack newWand = new ItemStack(DotHackItems.getWand(number, tier, this.element));
 				newWand.setTagCompound(centre.getStack().getTagCompound());
 				((IManaStoringItem)newWand.getItem()).setMana(newWand, this.getMana(centre.getStack()));
 				centre.putStack(newWand);
