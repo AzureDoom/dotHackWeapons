@@ -3,6 +3,9 @@ package mod.azure.dothack;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import mod.azure.dothack.config.ModConfig;
 import mod.azure.dothack.proxy.CommonProxy;
 import mod.azure.dothack.util.LootHandler;
@@ -22,12 +25,11 @@ public class DotHackMod {
 	public static final String MODID = "rcraft";
 	public static final String MODNAME = "dotHack Weapons";
 	public static final String VERSION = "2.1.0";
-	public static final String DEPENDENCIES = "required-after:ebwizardry@4.2;required-after:mmorpg;required-after:baubles";
+	public static final String DEPENDENCIES = "required:forge@[14.23.5.2838,);required-after:ebwizardry@[4.2,);required-after:mmorpg;required-after:baubles";
+	private static final Logger LOGGER = LogManager.getLogger();
 
 	@SidedProxy(clientSide = "mod.azure.dothack.proxy.ClientProxy", serverSide = "mod.azure.dothack.proxy.CommonProxy")
 	public static CommonProxy proxy;
-
-	public static CreativeTabs tab = new DotHackTabs(MODID);
 
 	@Mod.Instance
 	public static DotHackMod instance;
@@ -35,19 +37,26 @@ public class DotHackMod {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
 		proxy.preInit();
+		LOGGER.debug("Loading Data Drain...");
 	}
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent e) {
 		proxy.init();
+		LOGGER.debug("Firing Data Drain...");
+		
 		MinecraftForge.EVENT_BUS.register(new LootHandler());
 		
-		DotHackItems.populateWandMap();
+		if (Loader.isModLoaded("ebwizardry")) {
+			DotHackItems.populateWandMap();
+		}
 	}
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 		proxy.postInit();
+		LOGGER.debug("No Data Bugs Found");
+		
 		if (ModConfig.USE_COMPATIBILITY_ITEMS) {
 			if (Loader.isModLoaded("mmorpg")) {
 				MinecraftForge.EVENT_BUS.register(new MineSlashHandler());
