@@ -13,6 +13,7 @@
         "logoFile": "pack.png",
         "requiredMods": [ ],
         "dependencies": [ "ebwizardry", "mmorpg", "baubles" ],
-        "useDependencyInformation": "true"
+        "useDependencyInformation": "true",
+        "acceptedMinecraftVersions": "1.12.2"
     }
 ]
