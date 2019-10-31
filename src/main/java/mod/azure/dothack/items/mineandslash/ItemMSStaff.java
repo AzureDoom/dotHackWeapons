@@ -9,7 +9,6 @@ import net.minecraft.util.ResourceLocation;
 public class ItemMSStaff extends ItemStaff {
 
 	public ItemMSStaff() {
-		super();
-		this.setCreativeTab(DotHackMod.tab);
+		super();;
 	}
 }

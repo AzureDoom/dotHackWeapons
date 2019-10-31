@@ -20,7 +20,7 @@ import electroblob.wizardry.util.WandHelper;
 import electroblob.wizardry.util.ParticleBuilder.Type;
 import mod.azure.dothack.DotHackItems;
 import mod.azure.dothack.DotHackMod;
-import mod.azure.dothack.DotHackTabs;
+import mod.azure.dothack.tabs.DotHackTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
@@ -38,7 +38,6 @@ public class ItemEBWand extends ItemWand {
 
 	public ItemEBWand(Integer number, Tier tier, Element element) {
 		super(tier, element);
-		this.setCreativeTab(DotHackMod.tab);
 		this.tier = tier;
 		this.element = element;
 		this.number = number;

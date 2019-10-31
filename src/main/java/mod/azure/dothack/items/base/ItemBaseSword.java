@@ -1,7 +1,7 @@
 package mod.azure.dothack.items.base;
 
 import mod.azure.dothack.DotHackMod;
-import mod.azure.dothack.DotHackTabs;
+import mod.azure.dothack.tabs.DotHackTabs;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
@@ -12,6 +12,5 @@ public class ItemBaseSword extends ItemSword {
 
 	public ItemBaseSword(String name, int damage) {
 		super(EnumHelper.addToolMaterial(name, 1, 1561, 4F, damage, 4));
-		this.setCreativeTab(DotHackMod.tab);
 	}
 }

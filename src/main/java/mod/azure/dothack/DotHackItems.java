@@ -25,47 +25,20 @@ import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import net.minecraftforge.registries.IForgeRegistry;
 import mod.azure.dothack.items.base.ItemBaseSword;
 import mod.azure.dothack.items.baubles.BaublesHeadItem;
-import mod.azure.dothack.items.ebwizadry.ItemEBWand;
+import mod.azure.dothack.items.ebwizadry.ItemMacabreDancer;
+import mod.azure.dothack.items.ebwizadry.ItemHarvestCleric;
+import mod.azure.dothack.items.ebwizadry.ItemMacabreDancer;
+import mod.azure.dothack.items.ebwizadry.ItemShadowWarlock;
+import mod.azure.dothack.items.ebwizadry.ItemWavemaster;
 import mod.azure.dothack.items.mineandslash.ItemMSStaff;
+import mod.azure.dothack.tabs.DotHackTabs;
+import mod.azure.dothack.tabs.DotHackTabs.CreativeTabListed;
 import net.minecraftforge.fml.common.Loader;
 
-@ObjectHolder(DotHackMod.MODID)
 @EventBusSubscriber
 public final class DotHackItems {
 
 	private static final Logger LOGGER = LogManager.getLogger();
-
-	private static final List<String> EARTH = ImmutableList.of("wavemaster45", "wavemaster47", "harvestcleric2",
-			"wavemaster56", "wavemaster46", "wavemaster48", "harvestcleric5", "macabredancer3", "harvestcleric7");
-
-	private static final List<String> LIGHTNING = ImmutableList.of("wavemaster72", "wavemaster73", "harvestcleric1",
-			"wavemaster20", "wavemaster34", "shadowwarlock10");
-
-	private static final List<String> HEALING = ImmutableList.of("wavemaster49", "wavemaster63", "wavemaster64",
-			"wavemaster30", "wavemaster4", "macabredancer2", "wavemaster5", "harvestcleric4", "harvestcleric3",
-			"wavemaster33", "shadowwarlock11", "shadowwarlock12", "shadowwarlock13", "shadowwarlock14",
-			"shadowwarlock9", "harvestcleric10");
-
-	private static final List<String> SORCERY = ImmutableList.of("wavemaster26", "wavemaster21", "wavemaster19",
-			"wavemaster16", "wavemaster15", "wavemaster14", "wavemaster13", "wavemaster12", "wavemaster9",
-			"wavemaster8", "wavemaster2", "shadowwarlock3", "shadowwarlock4", "shadowwarlock5", "shadowwarlock6",
-			"macabredancer4", "macabredancer5", "shadowwarlock7", "harvestcleric6", "redwand1");
-
-	private static final List<String> ICE = ImmutableList.of("wavemaster27", "wavemaster17", "wavemaster10",
-			"wavemaster6", "wavemaster3", "wavemaster58", "wavemaster53", "wavemaster66", "harvestcleric8");
-
-	private static final List<String> FIRE = ImmutableList.of("wavemaster59", "wavemaster70", "wavemaster25",
-			"wavemaster18", "wavemaster11", "wavemaster32", "wavemaster39", "wavemaster67", "harvestcleric9");
-
-	private static final List<String> NECROMANCY = ImmutableList.of("wavemaster60", "wavemaster68", "wavemaster28",
-			"wavemaster7", "wavemaster40", "wavemaster54", "wavemaster55", "shadowwarlock1", "shadowwarlock8",
-			"macabredancer1");
-
-	private static final List<String> MAGIC = ImmutableList.of("wavemaster42", "wavemaster38", "wavemaster74",
-			"wavemaster43", "wavemaster57", "wavemaster61", "wavemaster62", "wavemaster69", "wavemaster71",
-			"wavemaster24", "wavemaster1", "shadowwarlock2", "wavemaster36", "wavemaster37", "wavemaster50",
-			"wavemaster52", "wavemaster65", "wavemaster29", "wavemaster22", "wavemaster35", "wavemaster23",
-			"wavemaster44", "wavemaster41", "wavemaster51", "wavemaster31");
 
 	public static Item getWand(Integer number, Tier tier, Element element) {
 		if (tier == null)
@@ -86,6 +59,10 @@ public final class DotHackItems {
 		item.setRegistryName(DotHackMod.MODID, name);
 		item.setTranslationKey(name);
 		registry.register(item);
+
+		if (setTabIcon && item.getCreativeTab() instanceof CreativeTabListed) {
+			((CreativeTabListed) item.getCreativeTab()).setIconItem(new ItemStack(item));
+		}
 	}
 
 	public static void registerItem(IForgeRegistry<Item> registry, String name, Item item) {
@@ -98,497 +75,534 @@ public final class DotHackItems {
 		IForgeRegistry<Item> registry = event.getRegistry();
 
 		for (int i = 1; i <= 19; i++)
-			registerItem(registry, "bladebrandier" + i, new ItemBaseSword("bladebrandier" + i, (3 + i) / 3));
+			registerItem(registry, "bladebrandier" + i,
+					new ItemBaseSword("bladebrandier" + i, (3 + i) / 3).setCreativeTab(DotHackTabs.tabbb), true);
 		for (int i = 1; i <= 25; i++)
-			registerItem(registry, "dualswords" + i, new ItemBaseSword("dualswords" + i, (2 + i) / 5));
+			registerItem(registry, "dualswords" + i,
+					new ItemBaseSword("dualswords" + i, (2 + i) / 5).setCreativeTab(DotHackTabs.tabds), true);
 		for (int i = 1; i <= 20; i++)
-			registerItem(registry, "edgepunisher" + i, new ItemBaseSword("edgepunisher" + i, (5 + i) / 2));
+			registerItem(registry, "edgepunisher" + i,
+					new ItemBaseSword("edgepunisher" + i, (5 + i) / 2).setCreativeTab(DotHackTabs.tabe), true);
 		for (int i = 1; i <= 9; i++)
-			registerItem(registry, "flickreaper" + i, new ItemBaseSword("flickreaper" + i, (20 + i) / 3));
+			registerItem(registry, "flickreaper" + i,
+					new ItemBaseSword("flickreaper" + i, (20 + i) / 3).setCreativeTab(DotHackTabs.tabf), true);
 		for (int i = 1; i <= 9; i++)
-			registerItem(registry, "lordpartizan" + i, new ItemBaseSword("lordpartizan" + i, (16 + i) / 2));
+			registerItem(registry, "lordpartizan" + i,
+					new ItemBaseSword("lordpartizan" + i, (16 + i) / 2).setCreativeTab(DotHackTabs.tablp), true);
 		for (int i = 1; i <= 11; i++)
-			registerItem(registry, "tribalgrappler" + i, new ItemBaseSword("tribalgrappler" + i, (20 + i) / 5));
+			registerItem(registry, "tribalgrappler" + i,
+					new ItemBaseSword("tribalgrappler" + i, (20 + i) / 5).setCreativeTab(DotHackTabs.tabt), true);
 		for (int i = 1; i <= 75; i++)
-			registerItem(registry, "blademaster" + i, new ItemBaseSword("blademaster" + i, (3 + i) / 10));
+			registerItem(registry, "blademaster" + i,
+					new ItemBaseSword("blademaster" + i, (3 + i) / 10).setCreativeTab(DotHackTabs.tabbm), true);
 		for (int i = 1; i <= 73; i++)
-			registerItem(registry, "heavyaxeman" + i, new ItemBaseSword("heavyaxeman" + i, (11 + i) / 7));
+			registerItem(registry, "heavyaxeman" + i,
+					new ItemBaseSword("heavyaxeman" + i, (11 + i) / 7).setCreativeTab(DotHackTabs.tabha), true);
 		for (int i = 1; i <= 54; i++)
-			registerItem(registry, "heavyblade" + i, new ItemBaseSword("heavyblade" + i, (81 + i) / 15));
+			registerItem(registry, "heavyblade" + i,
+					new ItemBaseSword("heavyblade" + i, (81 + i) / 15).setCreativeTab(DotHackTabs.tabhb), true);
 		for (int i = 1; i <= 41; i++)
-			registerItem(registry, "heavybladev" + i, new ItemBaseSword("heavybladev" + i, (94 + i) / 15));
+			registerItem(registry, "heavybladev" + i,
+					new ItemBaseSword("heavybladev" + i, (94 + i) / 15).setCreativeTab(DotHackTabs.tabhb), true);
 		for (int i = 1; i <= 71; i++)
-			registerItem(registry, "longarm" + i, new ItemBaseSword("longarm" + i, (4 + i) / 9));
+			registerItem(registry, "longarm" + i,
+					new ItemBaseSword("longarm" + i, (4 + i) / 9).setCreativeTab(DotHackTabs.tabla), true);
 		for (int i = 1; i <= 81; i++)
-			registerItem(registry, "twinblade" + i, new ItemBaseSword("twinblade" + i, (2 + i) / 15));
+			registerItem(registry, "twinblade" + i,
+					new ItemBaseSword("twinblade" + i, (2 + i) / 15).setCreativeTab(DotHackTabs.tabtb), true);
 		LOGGER.debug("Registered normal items");
 		if (Loader.isModLoaded("baubles")) {
-			registerItem(registry, "datadrain", new BaublesHeadItem());
+			registerItem(registry, "datadrain", new BaublesHeadItem().setCreativeTab(DotHackTabs.taba), true);
 			LOGGER.debug("Registered with Baubles");
 		} else {
-			registerItem(registry, "datadrain", new Item());
+			registerItem(registry, "datadrain", new Item().setCreativeTab(DotHackTabs.taba), true);
 			LOGGER.debug("Registered without Baubles");
 		}
 		if (Loader.isModLoaded("ebwizardry")) {
-			registerItem(registry, "wavemaster26", new ItemEBWand(1, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "wavemaster21", new ItemEBWand(2, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "wavemaster19", new ItemEBWand(3, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "wavemaster16", new ItemEBWand(4, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "wavemaster15", new ItemEBWand(5, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "wavemaster14", new ItemEBWand(6, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "wavemaster13", new ItemEBWand(7, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "wavemaster12", new ItemEBWand(8, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "wavemaster9", new ItemEBWand(9, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "wavemaster8", new ItemEBWand(10, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "wavemaster2", new ItemEBWand(11, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "shadowwarlock3", new ItemEBWand(12, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "shadowwarlock4", new ItemEBWand(13, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "shadowwarlock5", new ItemEBWand(14, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "shadowwarlock6", new ItemEBWand(15, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "macabredancer4", new ItemEBWand(16, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "macabredancer5", new ItemEBWand(17, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "shadowwarlock7", new ItemEBWand(18, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "harvestcleric6", new ItemEBWand(19, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "redwand1", new ItemEBWand(20, Tier.NOVICE, Element.SORCERY));
-			registerItem(registry, "wavemaster26p", new ItemEBWand(1, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "wavemaster21p", new ItemEBWand(2, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "wavemaster19p", new ItemEBWand(3, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "wavemaster16p", new ItemEBWand(4, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "wavemaster15p", new ItemEBWand(5, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "wavemaster14p", new ItemEBWand(6, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "wavemaster13p", new ItemEBWand(7, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "wavemaster12p", new ItemEBWand(8, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "wavemaster9p", new ItemEBWand(9, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "wavemaster8p", new ItemEBWand(10, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "wavemaster2p", new ItemEBWand(11, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "shadowwarlock3p", new ItemEBWand(12, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "shadowwarlock4p", new ItemEBWand(13, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "shadowwarlock5p", new ItemEBWand(14, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "shadowwarlock6p", new ItemEBWand(15, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "macabredancer4p", new ItemEBWand(16, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "macabredancer5p", new ItemEBWand(17, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "shadowwarlock7p", new ItemEBWand(18, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "harvestcleric6p", new ItemEBWand(19, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "redwand1p", new ItemEBWand(20, Tier.APPRENTICE, Element.SORCERY));
-			registerItem(registry, "wavemaster26a", new ItemEBWand(1, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "wavemaster21a", new ItemEBWand(2, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "wavemaster19a", new ItemEBWand(3, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "wavemaster16a", new ItemEBWand(4, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "wavemaster15a", new ItemEBWand(5, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "wavemaster14a", new ItemEBWand(6, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "wavemaster13a", new ItemEBWand(7, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "wavemaster12a", new ItemEBWand(8, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "wavemaster9a", new ItemEBWand(9, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "wavemaster8a", new ItemEBWand(10, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "wavemaster2a", new ItemEBWand(11, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "shadowwarlock3a", new ItemEBWand(12, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "shadowwarlock4a", new ItemEBWand(13, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "shadowwarlock5a", new ItemEBWand(14, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "shadowwarlock6a", new ItemEBWand(15, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "macabredancer4a", new ItemEBWand(16, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "macabredancer5a", new ItemEBWand(17, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "shadowwarlock7a", new ItemEBWand(18, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "harvestcleric6a", new ItemEBWand(19, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "redwand1a", new ItemEBWand(20, Tier.ADVANCED, Element.SORCERY));
-			registerItem(registry, "wavemaster26m", new ItemEBWand(1, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "wavemaster21m", new ItemEBWand(2, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "wavemaster19m", new ItemEBWand(3, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "wavemaster16m", new ItemEBWand(4, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "wavemaster15m", new ItemEBWand(5, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "wavemaster14m", new ItemEBWand(6, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "wavemaster13m", new ItemEBWand(7, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "wavemaster12m", new ItemEBWand(8, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "wavemaster9m", new ItemEBWand(9, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "wavemaster8m", new ItemEBWand(10, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "wavemaster2m", new ItemEBWand(11, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "shadowwarlock3m", new ItemEBWand(12, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "shadowwarlock4m", new ItemEBWand(13, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "shadowwarlock5m", new ItemEBWand(14, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "shadowwarlock6m", new ItemEBWand(15, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "macabredancer4m", new ItemEBWand(16, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "macabredancer5m", new ItemEBWand(17, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "shadowwarlock7m", new ItemEBWand(18, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "harvestcleric6m", new ItemEBWand(19, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "redwand1m", new ItemEBWand(20, Tier.MASTER, Element.SORCERY));
-			registerItem(registry, "wavemaster42", new ItemEBWand(1, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster38", new ItemEBWand(2, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster74", new ItemEBWand(3, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster43", new ItemEBWand(4, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster57", new ItemEBWand(5, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster61", new ItemEBWand(6, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster62", new ItemEBWand(7, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster69", new ItemEBWand(8, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster71", new ItemEBWand(9, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster24", new ItemEBWand(10, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster1", new ItemEBWand(11, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "shadowwarlock2", new ItemEBWand(12, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster36", new ItemEBWand(13, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster37", new ItemEBWand(14, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster50", new ItemEBWand(15, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster52", new ItemEBWand(16, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster65", new ItemEBWand(17, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster29", new ItemEBWand(18, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster22", new ItemEBWand(19, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster35", new ItemEBWand(20, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster23", new ItemEBWand(21, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster44", new ItemEBWand(22, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster41", new ItemEBWand(23, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster51", new ItemEBWand(24, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster31", new ItemEBWand(25, Tier.NOVICE, Element.MAGIC));
-			registerItem(registry, "wavemaster42p", new ItemEBWand(1, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster38p", new ItemEBWand(2, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster74p", new ItemEBWand(3, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster43p", new ItemEBWand(4, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster57p", new ItemEBWand(5, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster61p", new ItemEBWand(6, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster62p", new ItemEBWand(7, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster69p", new ItemEBWand(8, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster71p", new ItemEBWand(9, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster24p", new ItemEBWand(10, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster1p", new ItemEBWand(11, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "shadowwarlock2p", new ItemEBWand(12, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster36p", new ItemEBWand(13, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster37p", new ItemEBWand(14, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster50p", new ItemEBWand(15, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster52p", new ItemEBWand(16, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster65p", new ItemEBWand(17, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster29p", new ItemEBWand(18, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster22p", new ItemEBWand(19, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster35p", new ItemEBWand(20, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster23p", new ItemEBWand(21, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster44p", new ItemEBWand(22, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster41p", new ItemEBWand(23, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster51p", new ItemEBWand(24, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster31p", new ItemEBWand(25, Tier.APPRENTICE, Element.MAGIC));
-			registerItem(registry, "wavemaster42a", new ItemEBWand(1, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster38a", new ItemEBWand(2, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster74a", new ItemEBWand(3, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster43a", new ItemEBWand(4, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster57a", new ItemEBWand(5, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster61a", new ItemEBWand(6, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster62a", new ItemEBWand(7, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster69a", new ItemEBWand(8, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster71a", new ItemEBWand(9, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster24a", new ItemEBWand(10, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster1a", new ItemEBWand(11, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "shadowwarlock2a", new ItemEBWand(12, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster36a", new ItemEBWand(13, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster37a", new ItemEBWand(14, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster50a", new ItemEBWand(15, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster52a", new ItemEBWand(16, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster65a", new ItemEBWand(17, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster29a", new ItemEBWand(18, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster22a", new ItemEBWand(19, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster35a", new ItemEBWand(20, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster23a", new ItemEBWand(21, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster44a", new ItemEBWand(22, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster41a", new ItemEBWand(23, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster51a", new ItemEBWand(24, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster31a", new ItemEBWand(25, Tier.ADVANCED, Element.MAGIC));
-			registerItem(registry, "wavemaster42m", new ItemEBWand(1, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster38m", new ItemEBWand(2, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster74m", new ItemEBWand(3, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster43m", new ItemEBWand(4, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster57m", new ItemEBWand(5, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster61m", new ItemEBWand(6, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster62m", new ItemEBWand(7, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster69m", new ItemEBWand(8, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster71m", new ItemEBWand(9, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster24m", new ItemEBWand(10, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster1m", new ItemEBWand(11, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "shadowwarlock2m", new ItemEBWand(12, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster36m", new ItemEBWand(13, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster37m", new ItemEBWand(14, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster50m", new ItemEBWand(15, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster52m", new ItemEBWand(16, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster65m", new ItemEBWand(17, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster29m", new ItemEBWand(18, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster22m", new ItemEBWand(19, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster35m", new ItemEBWand(20, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster23m", new ItemEBWand(21, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster44m", new ItemEBWand(22, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster41m", new ItemEBWand(23, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster51m", new ItemEBWand(24, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster31m", new ItemEBWand(25, Tier.MASTER, Element.MAGIC));
-			registerItem(registry, "wavemaster27", new ItemEBWand(1, Tier.NOVICE, Element.ICE));
-			registerItem(registry, "wavemaster17", new ItemEBWand(2, Tier.NOVICE, Element.ICE));
-			registerItem(registry, "wavemaster10", new ItemEBWand(3, Tier.NOVICE, Element.ICE));
-			registerItem(registry, "wavemaster6", new ItemEBWand(4, Tier.NOVICE, Element.ICE));
-			registerItem(registry, "wavemaster3", new ItemEBWand(5, Tier.NOVICE, Element.ICE));
-			registerItem(registry, "wavemaster58", new ItemEBWand(6, Tier.NOVICE, Element.ICE));
-			registerItem(registry, "wavemaster53", new ItemEBWand(7, Tier.NOVICE, Element.ICE));
-			registerItem(registry, "wavemaster66", new ItemEBWand(8, Tier.NOVICE, Element.ICE));
-			registerItem(registry, "harvestcleric8", new ItemEBWand(9, Tier.NOVICE, Element.ICE));			
-			registerItem(registry, "wavemaster27p", new ItemEBWand(1, Tier.APPRENTICE, Element.ICE));
-			registerItem(registry, "wavemaster17p", new ItemEBWand(2, Tier.APPRENTICE, Element.ICE));
-			registerItem(registry, "wavemaster10p", new ItemEBWand(3, Tier.APPRENTICE, Element.ICE));
-			registerItem(registry, "wavemaster6p", new ItemEBWand(4, Tier.APPRENTICE, Element.ICE));
-			registerItem(registry, "wavemaster3p", new ItemEBWand(5, Tier.APPRENTICE, Element.ICE));
-			registerItem(registry, "wavemaster58p", new ItemEBWand(6, Tier.APPRENTICE, Element.ICE));
-			registerItem(registry, "wavemaster53p", new ItemEBWand(7, Tier.APPRENTICE, Element.ICE));
-			registerItem(registry, "wavemaster66p", new ItemEBWand(8, Tier.APPRENTICE, Element.ICE));
-			registerItem(registry, "harvestcleric8p", new ItemEBWand(9, Tier.APPRENTICE, Element.ICE));			
-			registerItem(registry, "wavemaster27a", new ItemEBWand(1, Tier.ADVANCED, Element.ICE));
-			registerItem(registry, "wavemaster17a", new ItemEBWand(2, Tier.ADVANCED, Element.ICE));
-			registerItem(registry, "wavemaster10a", new ItemEBWand(3, Tier.ADVANCED, Element.ICE));
-			registerItem(registry, "wavemaster6a", new ItemEBWand(4, Tier.ADVANCED, Element.ICE));
-			registerItem(registry, "wavemaster3a", new ItemEBWand(5, Tier.ADVANCED, Element.ICE));
-			registerItem(registry, "wavemaster58a", new ItemEBWand(6, Tier.ADVANCED, Element.ICE));
-			registerItem(registry, "wavemaster53a", new ItemEBWand(7, Tier.ADVANCED, Element.ICE));
-			registerItem(registry, "wavemaster66a", new ItemEBWand(8, Tier.ADVANCED, Element.ICE));
-			registerItem(registry, "harvestcleric8a", new ItemEBWand(9, Tier.ADVANCED, Element.ICE));
-			registerItem(registry, "wavemaster27m", new ItemEBWand(1, Tier.MASTER, Element.ICE));
-			registerItem(registry, "wavemaster17m", new ItemEBWand(2, Tier.MASTER, Element.ICE));
-			registerItem(registry, "wavemaster10m", new ItemEBWand(3, Tier.MASTER, Element.ICE));
-			registerItem(registry, "wavemaster6m", new ItemEBWand(4, Tier.MASTER, Element.ICE));
-			registerItem(registry, "wavemaster3m", new ItemEBWand(5, Tier.MASTER, Element.ICE));
-			registerItem(registry, "wavemaster58m", new ItemEBWand(6, Tier.MASTER, Element.ICE));
-			registerItem(registry, "wavemaster53m", new ItemEBWand(7, Tier.MASTER, Element.ICE));
-			registerItem(registry, "wavemaster66m", new ItemEBWand(8, Tier.MASTER, Element.ICE));
-			registerItem(registry, "harvestcleric8m", new ItemEBWand(9, Tier.MASTER, Element.ICE));
-			registerItem(registry, "wavemaster60", new ItemEBWand(1, Tier.NOVICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster68", new ItemEBWand(2, Tier.NOVICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster28", new ItemEBWand(3, Tier.NOVICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster7", new ItemEBWand(4, Tier.NOVICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster40", new ItemEBWand(5, Tier.NOVICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster54", new ItemEBWand(6, Tier.NOVICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster55", new ItemEBWand(7, Tier.NOVICE, Element.NECROMANCY));
-			registerItem(registry, "shadowwarlock1", new ItemEBWand(8, Tier.NOVICE, Element.NECROMANCY));
-			registerItem(registry, "shadowwarlock8", new ItemEBWand(9, Tier.NOVICE, Element.NECROMANCY));
-			registerItem(registry, "macabredancer1", new ItemEBWand(10, Tier.NOVICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster60p", new ItemEBWand(1, Tier.APPRENTICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster68p", new ItemEBWand(2, Tier.APPRENTICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster28p", new ItemEBWand(3, Tier.APPRENTICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster7p", new ItemEBWand(4, Tier.APPRENTICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster40p", new ItemEBWand(5, Tier.APPRENTICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster54p", new ItemEBWand(6, Tier.APPRENTICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster55p", new ItemEBWand(7, Tier.APPRENTICE, Element.NECROMANCY));
-			registerItem(registry, "shadowwarlock1p", new ItemEBWand(8, Tier.APPRENTICE, Element.NECROMANCY));
-			registerItem(registry, "shadowwarlock8p", new ItemEBWand(9, Tier.APPRENTICE, Element.NECROMANCY));
-			registerItem(registry, "macabredancer1p", new ItemEBWand(10, Tier.APPRENTICE, Element.NECROMANCY));
-			registerItem(registry, "wavemaster60a", new ItemEBWand(1, Tier.ADVANCED, Element.NECROMANCY));
-			registerItem(registry, "wavemaster68a", new ItemEBWand(2, Tier.ADVANCED, Element.NECROMANCY));
-			registerItem(registry, "wavemaster28a", new ItemEBWand(3, Tier.ADVANCED, Element.NECROMANCY));
-			registerItem(registry, "wavemaster7a", new ItemEBWand(4, Tier.ADVANCED, Element.NECROMANCY));
-			registerItem(registry, "wavemaster40a", new ItemEBWand(5, Tier.ADVANCED, Element.NECROMANCY));
-			registerItem(registry, "wavemaster54a", new ItemEBWand(6, Tier.ADVANCED, Element.NECROMANCY));
-			registerItem(registry, "wavemaster55a", new ItemEBWand(7, Tier.ADVANCED, Element.NECROMANCY));
-			registerItem(registry, "shadowwarlock1a", new ItemEBWand(8, Tier.ADVANCED, Element.NECROMANCY));
-			registerItem(registry, "shadowwarlock8a", new ItemEBWand(9, Tier.ADVANCED, Element.NECROMANCY));
-			registerItem(registry, "macabredancer1a", new ItemEBWand(10, Tier.ADVANCED, Element.NECROMANCY));
-			registerItem(registry, "wavemaster60m", new ItemEBWand(1, Tier.MASTER, Element.NECROMANCY));
-			registerItem(registry, "wavemaster68m", new ItemEBWand(2, Tier.MASTER, Element.NECROMANCY));
-			registerItem(registry, "wavemaster28m", new ItemEBWand(3, Tier.MASTER, Element.NECROMANCY));
-			registerItem(registry, "wavemaster7m", new ItemEBWand(4, Tier.MASTER, Element.NECROMANCY));
-			registerItem(registry, "wavemaster40m", new ItemEBWand(5, Tier.MASTER, Element.NECROMANCY));
-			registerItem(registry, "wavemaster54m", new ItemEBWand(6, Tier.MASTER, Element.NECROMANCY));
-			registerItem(registry, "wavemaster55m", new ItemEBWand(7, Tier.MASTER, Element.NECROMANCY));
-			registerItem(registry, "shadowwarlock1m", new ItemEBWand(8, Tier.MASTER, Element.NECROMANCY));
-			registerItem(registry, "shadowwarlock8m", new ItemEBWand(9, Tier.MASTER, Element.NECROMANCY));
-			registerItem(registry, "macabredancer1m", new ItemEBWand(10, Tier.MASTER, Element.NECROMANCY));
-			registerItem(registry, "wavemaster59", new ItemEBWand(1, Tier.NOVICE, Element.FIRE));
-			registerItem(registry, "wavemaster70", new ItemEBWand(2, Tier.NOVICE, Element.FIRE));
-			registerItem(registry, "wavemaster25", new ItemEBWand(3, Tier.NOVICE, Element.FIRE));
-			registerItem(registry, "wavemaster18", new ItemEBWand(4, Tier.NOVICE, Element.FIRE));
-			registerItem(registry, "wavemaster11", new ItemEBWand(5, Tier.NOVICE, Element.FIRE));
-			registerItem(registry, "wavemaster32", new ItemEBWand(6, Tier.NOVICE, Element.FIRE));
-			registerItem(registry, "wavemaster39", new ItemEBWand(7, Tier.NOVICE, Element.FIRE));
-			registerItem(registry, "wavemaster67", new ItemEBWand(8, Tier.NOVICE, Element.FIRE));
-			registerItem(registry, "harvestcleric9", new ItemEBWand(9, Tier.NOVICE, Element.FIRE));
-			registerItem(registry, "wavemaster59p", new ItemEBWand(1, Tier.APPRENTICE, Element.FIRE));
-			registerItem(registry, "wavemaster70p", new ItemEBWand(2, Tier.APPRENTICE, Element.FIRE));
-			registerItem(registry, "wavemaster25p", new ItemEBWand(3, Tier.APPRENTICE, Element.FIRE));
-			registerItem(registry, "wavemaster18p", new ItemEBWand(4, Tier.APPRENTICE, Element.FIRE));
-			registerItem(registry, "wavemaster11p", new ItemEBWand(5, Tier.APPRENTICE, Element.FIRE));
-			registerItem(registry, "wavemaster32p", new ItemEBWand(6, Tier.APPRENTICE, Element.FIRE));
-			registerItem(registry, "wavemaster39p", new ItemEBWand(7, Tier.APPRENTICE, Element.FIRE));
-			registerItem(registry, "wavemaster67p", new ItemEBWand(8, Tier.APPRENTICE, Element.FIRE));
-			registerItem(registry, "harvestcleric9p", new ItemEBWand(9, Tier.APPRENTICE, Element.FIRE));
-			registerItem(registry, "wavemaster59a", new ItemEBWand(1, Tier.ADVANCED, Element.FIRE));
-			registerItem(registry, "wavemaster70a", new ItemEBWand(2, Tier.ADVANCED, Element.FIRE));
-			registerItem(registry, "wavemaster25a", new ItemEBWand(3, Tier.ADVANCED, Element.FIRE));
-			registerItem(registry, "wavemaster18a", new ItemEBWand(4, Tier.ADVANCED, Element.FIRE));
-			registerItem(registry, "wavemaster11a", new ItemEBWand(5, Tier.ADVANCED, Element.FIRE));
-			registerItem(registry, "wavemaster32a", new ItemEBWand(6, Tier.ADVANCED, Element.FIRE));
-			registerItem(registry, "wavemaster39a", new ItemEBWand(7, Tier.ADVANCED, Element.FIRE));
-			registerItem(registry, "wavemaster67a", new ItemEBWand(8, Tier.ADVANCED, Element.FIRE));
-			registerItem(registry, "harvestcleric9a", new ItemEBWand(9, Tier.ADVANCED, Element.FIRE));
-			registerItem(registry, "wavemaster59m", new ItemEBWand(1, Tier.MASTER, Element.FIRE));
-			registerItem(registry, "wavemaster70m", new ItemEBWand(2, Tier.MASTER, Element.FIRE));
-			registerItem(registry, "wavemaster25m", new ItemEBWand(3, Tier.MASTER, Element.FIRE));
-			registerItem(registry, "wavemaster18m", new ItemEBWand(4, Tier.MASTER, Element.FIRE));
-			registerItem(registry, "wavemaster11m", new ItemEBWand(5, Tier.MASTER, Element.FIRE));
-			registerItem(registry, "wavemaster32m", new ItemEBWand(6, Tier.MASTER, Element.FIRE));
-			registerItem(registry, "wavemaster39m", new ItemEBWand(7, Tier.MASTER, Element.FIRE));
-			registerItem(registry, "wavemaster67m", new ItemEBWand(8, Tier.MASTER, Element.FIRE));
-			registerItem(registry, "harvestcleric9m", new ItemEBWand(9, Tier.MASTER, Element.FIRE));
-			registerItem(registry, "wavemaster45", new ItemEBWand(1, Tier.NOVICE, Element.EARTH));
-			registerItem(registry, "wavemaster47", new ItemEBWand(2, Tier.NOVICE, Element.EARTH));
-			registerItem(registry, "harvestcleric2", new ItemEBWand(3, Tier.NOVICE, Element.EARTH));
-			registerItem(registry, "wavemaster56", new ItemEBWand(4, Tier.NOVICE, Element.EARTH));
-			registerItem(registry, "wavemaster46", new ItemEBWand(5, Tier.NOVICE, Element.EARTH));
-			registerItem(registry, "wavemaster48", new ItemEBWand(6, Tier.NOVICE, Element.EARTH));
-			registerItem(registry, "harvestcleric5", new ItemEBWand(7, Tier.NOVICE, Element.EARTH));
-			registerItem(registry, "macabredancer3", new ItemEBWand(8, Tier.NOVICE, Element.EARTH));
-			registerItem(registry, "harvestcleric7", new ItemEBWand(9, Tier.NOVICE, Element.EARTH));
-			registerItem(registry, "wavemaster45p", new ItemEBWand(1, Tier.APPRENTICE, Element.EARTH));
-			registerItem(registry, "wavemaster47p", new ItemEBWand(2, Tier.APPRENTICE, Element.EARTH));
-			registerItem(registry, "harvestcleric2p", new ItemEBWand(3, Tier.APPRENTICE, Element.EARTH));
-			registerItem(registry, "wavemaster56p", new ItemEBWand(4, Tier.APPRENTICE, Element.EARTH));
-			registerItem(registry, "wavemaster46p", new ItemEBWand(5, Tier.APPRENTICE, Element.EARTH));
-			registerItem(registry, "wavemaster48p", new ItemEBWand(6, Tier.APPRENTICE, Element.EARTH));
-			registerItem(registry, "harvestcleric5p", new ItemEBWand(7, Tier.APPRENTICE, Element.EARTH));
-			registerItem(registry, "macabredancer3p", new ItemEBWand(8, Tier.APPRENTICE, Element.EARTH));
-			registerItem(registry, "harvestcleric7p", new ItemEBWand(9, Tier.APPRENTICE, Element.EARTH));
-			registerItem(registry, "wavemaster45a", new ItemEBWand(1, Tier.ADVANCED, Element.EARTH));
-			registerItem(registry, "wavemaster47a", new ItemEBWand(2, Tier.ADVANCED, Element.EARTH));
-			registerItem(registry, "harvestcleric2a", new ItemEBWand(3, Tier.ADVANCED, Element.EARTH));
-			registerItem(registry, "wavemaster56a", new ItemEBWand(4, Tier.ADVANCED, Element.EARTH));
-			registerItem(registry, "wavemaster46a", new ItemEBWand(5, Tier.ADVANCED, Element.EARTH));
-			registerItem(registry, "wavemaster48a", new ItemEBWand(6, Tier.ADVANCED, Element.EARTH));
-			registerItem(registry, "harvestcleric5a", new ItemEBWand(7, Tier.ADVANCED, Element.EARTH));
-			registerItem(registry, "macabredancer3a", new ItemEBWand(8, Tier.ADVANCED, Element.EARTH));
-			registerItem(registry, "harvestcleric7a", new ItemEBWand(9, Tier.ADVANCED, Element.EARTH));
-			registerItem(registry, "wavemaster45m", new ItemEBWand(1, Tier.MASTER, Element.EARTH));
-			registerItem(registry, "wavemaster47m", new ItemEBWand(2, Tier.MASTER, Element.EARTH));
-			registerItem(registry, "harvestcleric2m", new ItemEBWand(3, Tier.MASTER, Element.EARTH));
-			registerItem(registry, "wavemaster56m", new ItemEBWand(4, Tier.MASTER, Element.EARTH));
-			registerItem(registry, "wavemaster46m", new ItemEBWand(5, Tier.MASTER, Element.EARTH));
-			registerItem(registry, "wavemaster48m", new ItemEBWand(6, Tier.MASTER, Element.EARTH));
-			registerItem(registry, "harvestcleric5m", new ItemEBWand(7, Tier.MASTER, Element.EARTH));
-			registerItem(registry, "macabredancer3m", new ItemEBWand(8, Tier.MASTER, Element.EARTH));
-			registerItem(registry, "harvestcleric7m", new ItemEBWand(9, Tier.MASTER, Element.EARTH));
-			registerItem(registry, "wavemaster72", new ItemEBWand(1, Tier.NOVICE, Element.LIGHTNING));
-			registerItem(registry, "wavemaster73", new ItemEBWand(2, Tier.NOVICE, Element.LIGHTNING));
-			registerItem(registry, "harvestcleric1", new ItemEBWand(3, Tier.NOVICE, Element.LIGHTNING));
-			registerItem(registry, "wavemaster20", new ItemEBWand(4, Tier.NOVICE, Element.LIGHTNING));
-			registerItem(registry, "wavemaster34", new ItemEBWand(5, Tier.NOVICE, Element.LIGHTNING));
-			registerItem(registry, "shadowwarlock10", new ItemEBWand(6, Tier.NOVICE, Element.LIGHTNING));
-			registerItem(registry, "wavemaster72p", new ItemEBWand(1, Tier.APPRENTICE, Element.LIGHTNING));
-			registerItem(registry, "wavemaster73p", new ItemEBWand(2, Tier.APPRENTICE, Element.LIGHTNING));
-			registerItem(registry, "harvestcleric1p", new ItemEBWand(3, Tier.APPRENTICE, Element.LIGHTNING));
-			registerItem(registry, "wavemaster20p", new ItemEBWand(4, Tier.APPRENTICE, Element.LIGHTNING));
-			registerItem(registry, "wavemaster34p", new ItemEBWand(5, Tier.APPRENTICE, Element.LIGHTNING));
-			registerItem(registry, "shadowwarlock10p", new ItemEBWand(6, Tier.APPRENTICE, Element.LIGHTNING));
-			registerItem(registry, "wavemaster72a", new ItemEBWand(1, Tier.ADVANCED, Element.LIGHTNING));
-			registerItem(registry, "wavemaster73a", new ItemEBWand(2, Tier.ADVANCED, Element.LIGHTNING));
-			registerItem(registry, "harvestcleric1a", new ItemEBWand(3, Tier.ADVANCED, Element.LIGHTNING));
-			registerItem(registry, "wavemaster20a", new ItemEBWand(4, Tier.ADVANCED, Element.LIGHTNING));
-			registerItem(registry, "wavemaster34a", new ItemEBWand(5, Tier.ADVANCED, Element.LIGHTNING));
-			registerItem(registry, "shadowwarlock10a", new ItemEBWand(6, Tier.ADVANCED, Element.LIGHTNING));
-			registerItem(registry, "wavemaster72m", new ItemEBWand(1, Tier.MASTER, Element.LIGHTNING));
-			registerItem(registry, "wavemaster73m", new ItemEBWand(2, Tier.MASTER, Element.LIGHTNING));
-			registerItem(registry, "harvestcleric1m", new ItemEBWand(3, Tier.MASTER, Element.LIGHTNING));
-			registerItem(registry, "wavemaster20m", new ItemEBWand(4, Tier.MASTER, Element.LIGHTNING));
-			registerItem(registry, "wavemaster34m", new ItemEBWand(5, Tier.MASTER, Element.LIGHTNING));
-			registerItem(registry, "shadowwarlock10m", new ItemEBWand(6, Tier.MASTER, Element.LIGHTNING));
-			registerItem(registry, "wavemaster49", new ItemEBWand(1, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "wavemaster63", new ItemEBWand(2, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "wavemaster64", new ItemEBWand(3, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "wavemaster30", new ItemEBWand(4, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "wavemaster4", new ItemEBWand(5, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "macabredancer2", new ItemEBWand(6, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "wavemaster5", new ItemEBWand(7, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "harvestcleric4", new ItemEBWand(8, Tier.NOVICE, Element.HEALING));
-			;
-			registerItem(registry, "harvestcleric3", new ItemEBWand(9, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "wavemaster33", new ItemEBWand(10, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "shadowwarlock11", new ItemEBWand(11, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "shadowwarlock12", new ItemEBWand(12, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "shadowwarlock13", new ItemEBWand(13, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "shadowwarlock14", new ItemEBWand(14, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "shadowwarlock9", new ItemEBWand(15, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "harvestcleric10", new ItemEBWand(16, Tier.NOVICE, Element.HEALING));
-			registerItem(registry, "wavemaster49p", new ItemEBWand(1, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "wavemaster63p", new ItemEBWand(2, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "wavemaster64p", new ItemEBWand(3, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "wavemaster30p", new ItemEBWand(4, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "wavemaster4p", new ItemEBWand(5, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "macabredancer2p", new ItemEBWand(6, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "wavemaster5p", new ItemEBWand(7, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "harvestcleric4p", new ItemEBWand(8, Tier.APPRENTICE, Element.HEALING));
-			;
-			registerItem(registry, "harvestcleric3p", new ItemEBWand(9, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "wavemaster33p", new ItemEBWand(10, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "shadowwarlock11p", new ItemEBWand(11, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "shadowwarlock12p", new ItemEBWand(12, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "shadowwarlock13p", new ItemEBWand(13, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "shadowwarlock14p", new ItemEBWand(14, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "shadowwarlock9p", new ItemEBWand(15, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "harvestcleric10p", new ItemEBWand(16, Tier.APPRENTICE, Element.HEALING));
-			registerItem(registry, "wavemaster49a", new ItemEBWand(1, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "wavemaster63a", new ItemEBWand(2, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "wavemaster64a", new ItemEBWand(3, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "wavemaster30a", new ItemEBWand(4, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "wavemaster4a", new ItemEBWand(5, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "macabredancer2a", new ItemEBWand(6, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "wavemaster5a", new ItemEBWand(7, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "harvestcleric4a", new ItemEBWand(8, Tier.ADVANCED, Element.HEALING));
-			;
-			registerItem(registry, "harvestcleric3a", new ItemEBWand(9, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "wavemaster33a", new ItemEBWand(10, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "shadowwarlock11a", new ItemEBWand(11, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "shadowwarlock12a", new ItemEBWand(12, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "shadowwarlock13a", new ItemEBWand(13, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "shadowwarlock14a", new ItemEBWand(14, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "shadowwarlock9a", new ItemEBWand(15, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "harvestcleric10a", new ItemEBWand(16, Tier.ADVANCED, Element.HEALING));
-			registerItem(registry, "wavemaster49m", new ItemEBWand(1, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "wavemaster63m", new ItemEBWand(2, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "wavemaster64m", new ItemEBWand(3, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "wavemaster30m", new ItemEBWand(4, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "wavemaster4m", new ItemEBWand(5, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "macabredancer2m", new ItemEBWand(6, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "wavemaster5m", new ItemEBWand(7, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "harvestcleric4m", new ItemEBWand(8, Tier.MASTER, Element.HEALING));
-			;
-			registerItem(registry, "harvestcleric3m", new ItemEBWand(9, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "wavemaster33m", new ItemEBWand(10, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "shadowwarlock11m", new ItemEBWand(11, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "shadowwarlock12m", new ItemEBWand(12, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "shadowwarlock13m", new ItemEBWand(13, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "shadowwarlock14m", new ItemEBWand(14, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "shadowwarlock9m", new ItemEBWand(15, Tier.MASTER, Element.HEALING));
-			registerItem(registry, "harvestcleric10m", new ItemEBWand(16, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "wavemaster26", new ItemWavemaster(1, Tier.NOVICE, Element.SORCERY), true);
+			registerItem(registry, "wavemaster21", new ItemWavemaster(2, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "wavemaster19", new ItemWavemaster(3, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "wavemaster16", new ItemWavemaster(4, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "wavemaster15", new ItemWavemaster(5, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "wavemaster14", new ItemWavemaster(6, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "wavemaster13", new ItemWavemaster(7, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "wavemaster12", new ItemWavemaster(8, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "wavemaster9", new ItemWavemaster(9, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "wavemaster8", new ItemWavemaster(10, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "wavemaster2", new ItemWavemaster(11, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "shadowwarlock3", new ItemShadowWarlock(12, Tier.NOVICE, Element.SORCERY), true);
+			registerItem(registry, "shadowwarlock4", new ItemShadowWarlock(13, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "shadowwarlock5", new ItemShadowWarlock(14, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "shadowwarlock6", new ItemShadowWarlock(15, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "macabredancer4", new ItemMacabreDancer(16, Tier.NOVICE, Element.SORCERY), true);
+			registerItem(registry, "macabredancer5", new ItemMacabreDancer(17, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "shadowwarlock7", new ItemShadowWarlock(18, Tier.NOVICE, Element.SORCERY));
+			registerItem(registry, "harvestcleric6", new ItemHarvestCleric(19, Tier.NOVICE, Element.SORCERY), true);
+			registerItem(registry, "redwand1",
+					new ItemMacabreDancer(20, Tier.NOVICE, Element.SORCERY).setCreativeTab(DotHackTabs.taba));
+			registerItem(registry, "wavemaster26p", new ItemWavemaster(1, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "wavemaster21p", new ItemWavemaster(2, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "wavemaster19p", new ItemWavemaster(3, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "wavemaster16p", new ItemWavemaster(4, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "wavemaster15p", new ItemWavemaster(5, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "wavemaster14p", new ItemWavemaster(6, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "wavemaster13p", new ItemWavemaster(7, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "wavemaster12p", new ItemWavemaster(8, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "wavemaster9p", new ItemWavemaster(9, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "wavemaster8p", new ItemWavemaster(10, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "wavemaster2p", new ItemWavemaster(11, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "shadowwarlock3p", new ItemShadowWarlock(12, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "shadowwarlock4p", new ItemShadowWarlock(13, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "shadowwarlock5p", new ItemShadowWarlock(14, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "shadowwarlock6p", new ItemShadowWarlock(15, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "macabredancer4p", new ItemMacabreDancer(16, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "macabredancer5p", new ItemMacabreDancer(17, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "shadowwarlock7p", new ItemShadowWarlock(18, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "harvestcleric6p", new ItemHarvestCleric(19, Tier.APPRENTICE, Element.SORCERY));
+			registerItem(registry, "redwand1p",
+					new ItemMacabreDancer(20, Tier.APPRENTICE, Element.SORCERY).setCreativeTab(DotHackTabs.taba));
+			registerItem(registry, "wavemaster26a", new ItemWavemaster(1, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "wavemaster21a", new ItemWavemaster(2, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "wavemaster19a", new ItemWavemaster(3, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "wavemaster16a", new ItemWavemaster(4, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "wavemaster15a", new ItemWavemaster(5, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "wavemaster14a", new ItemWavemaster(6, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "wavemaster13a", new ItemWavemaster(7, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "wavemaster12a", new ItemWavemaster(8, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "wavemaster9a", new ItemWavemaster(9, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "wavemaster8a", new ItemWavemaster(10, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "wavemaster2a", new ItemWavemaster(11, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "shadowwarlock3a", new ItemShadowWarlock(12, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "shadowwarlock4a", new ItemShadowWarlock(13, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "shadowwarlock5a", new ItemShadowWarlock(14, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "shadowwarlock6a", new ItemShadowWarlock(15, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "macabredancer4a", new ItemMacabreDancer(16, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "macabredancer5a", new ItemMacabreDancer(17, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "shadowwarlock7a", new ItemShadowWarlock(18, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "harvestcleric6a", new ItemHarvestCleric(19, Tier.ADVANCED, Element.SORCERY));
+			registerItem(registry, "redwand1a",
+					new ItemMacabreDancer(20, Tier.ADVANCED, Element.SORCERY).setCreativeTab(DotHackTabs.taba));
+			registerItem(registry, "wavemaster26m", new ItemWavemaster(1, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "wavemaster21m", new ItemWavemaster(2, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "wavemaster19m", new ItemWavemaster(3, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "wavemaster16m", new ItemWavemaster(4, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "wavemaster15m", new ItemWavemaster(5, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "wavemaster14m", new ItemWavemaster(6, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "wavemaster13m", new ItemWavemaster(7, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "wavemaster12m", new ItemWavemaster(8, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "wavemaster9m", new ItemWavemaster(9, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "wavemaster8m", new ItemWavemaster(10, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "wavemaster2m", new ItemWavemaster(11, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "shadowwarlock3m", new ItemShadowWarlock(12, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "shadowwarlock4m", new ItemShadowWarlock(13, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "shadowwarlock5m", new ItemShadowWarlock(14, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "shadowwarlock6m", new ItemShadowWarlock(15, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "macabredancer4m", new ItemMacabreDancer(16, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "macabredancer5m", new ItemMacabreDancer(17, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "shadowwarlock7m", new ItemShadowWarlock(18, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "harvestcleric6m", new ItemHarvestCleric(19, Tier.MASTER, Element.SORCERY));
+			registerItem(registry, "redwand1m",
+					new ItemMacabreDancer(20, Tier.MASTER, Element.SORCERY).setCreativeTab(DotHackTabs.taba));
+			registerItem(registry, "wavemaster42", new ItemWavemaster(1, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster38", new ItemWavemaster(2, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster74", new ItemWavemaster(3, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster43", new ItemWavemaster(4, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster57", new ItemWavemaster(5, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster61", new ItemWavemaster(6, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster62", new ItemWavemaster(7, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster69", new ItemWavemaster(8, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster71", new ItemWavemaster(9, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster24", new ItemWavemaster(10, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster1", new ItemWavemaster(11, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "shadowwarlock2", new ItemShadowWarlock(12, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster36", new ItemWavemaster(13, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster37", new ItemWavemaster(14, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster50", new ItemWavemaster(15, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster52", new ItemWavemaster(16, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster65", new ItemWavemaster(17, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster29", new ItemWavemaster(18, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster22", new ItemWavemaster(19, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster35", new ItemWavemaster(20, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster23", new ItemWavemaster(21, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster44", new ItemWavemaster(22, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster41", new ItemWavemaster(23, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster51", new ItemWavemaster(24, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster31", new ItemWavemaster(25, Tier.NOVICE, Element.MAGIC));
+			registerItem(registry, "wavemaster42p", new ItemWavemaster(1, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster38p", new ItemWavemaster(2, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster74p", new ItemWavemaster(3, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster43p", new ItemWavemaster(4, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster57p", new ItemWavemaster(5, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster61p", new ItemWavemaster(6, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster62p", new ItemWavemaster(7, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster69p", new ItemWavemaster(8, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster71p", new ItemWavemaster(9, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster24p", new ItemWavemaster(10, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster1p", new ItemWavemaster(11, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "shadowwarlock2p", new ItemShadowWarlock(12, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster36p", new ItemWavemaster(13, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster37p", new ItemWavemaster(14, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster50p", new ItemWavemaster(15, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster52p", new ItemWavemaster(16, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster65p", new ItemWavemaster(17, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster29p", new ItemWavemaster(18, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster22p", new ItemWavemaster(19, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster35p", new ItemWavemaster(20, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster23p", new ItemWavemaster(21, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster44p", new ItemWavemaster(22, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster41p", new ItemWavemaster(23, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster51p", new ItemWavemaster(24, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster31p", new ItemWavemaster(25, Tier.APPRENTICE, Element.MAGIC));
+			registerItem(registry, "wavemaster42a", new ItemWavemaster(1, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster38a", new ItemWavemaster(2, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster74a", new ItemWavemaster(3, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster43a", new ItemWavemaster(4, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster57a", new ItemWavemaster(5, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster61a", new ItemWavemaster(6, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster62a", new ItemWavemaster(7, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster69a", new ItemWavemaster(8, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster71a", new ItemWavemaster(9, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster24a", new ItemWavemaster(10, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster1a", new ItemWavemaster(11, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "shadowwarlock2a", new ItemShadowWarlock(12, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster36a", new ItemWavemaster(13, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster37a", new ItemWavemaster(14, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster50a", new ItemWavemaster(15, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster52a", new ItemWavemaster(16, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster65a", new ItemWavemaster(17, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster29a", new ItemWavemaster(18, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster22a", new ItemWavemaster(19, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster35a", new ItemWavemaster(20, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster23a", new ItemWavemaster(21, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster44a", new ItemWavemaster(22, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster41a", new ItemWavemaster(23, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster51a", new ItemWavemaster(24, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster31a", new ItemWavemaster(25, Tier.ADVANCED, Element.MAGIC));
+			registerItem(registry, "wavemaster42m", new ItemWavemaster(1, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster38m", new ItemWavemaster(2, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster74m", new ItemWavemaster(3, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster43m", new ItemWavemaster(4, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster57m", new ItemWavemaster(5, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster61m", new ItemWavemaster(6, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster62m", new ItemWavemaster(7, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster69m", new ItemWavemaster(8, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster71m", new ItemWavemaster(9, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster24m", new ItemWavemaster(10, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster1m", new ItemWavemaster(11, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "shadowwarlock2m", new ItemShadowWarlock(12, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster36m", new ItemWavemaster(13, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster37m", new ItemWavemaster(14, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster50m", new ItemWavemaster(15, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster52m", new ItemWavemaster(16, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster65m", new ItemWavemaster(17, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster29m", new ItemWavemaster(18, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster22m", new ItemWavemaster(19, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster35m", new ItemWavemaster(20, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster23m", new ItemWavemaster(21, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster44m", new ItemWavemaster(22, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster41m", new ItemWavemaster(23, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster51m", new ItemWavemaster(24, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster31m", new ItemWavemaster(25, Tier.MASTER, Element.MAGIC));
+			registerItem(registry, "wavemaster27", new ItemWavemaster(1, Tier.NOVICE, Element.ICE));
+			registerItem(registry, "wavemaster17", new ItemWavemaster(2, Tier.NOVICE, Element.ICE));
+			registerItem(registry, "wavemaster10", new ItemWavemaster(3, Tier.NOVICE, Element.ICE));
+			registerItem(registry, "wavemaster6", new ItemWavemaster(4, Tier.NOVICE, Element.ICE));
+			registerItem(registry, "wavemaster3", new ItemWavemaster(5, Tier.NOVICE, Element.ICE));
+			registerItem(registry, "wavemaster58", new ItemWavemaster(6, Tier.NOVICE, Element.ICE));
+			registerItem(registry, "wavemaster53", new ItemWavemaster(7, Tier.NOVICE, Element.ICE));
+			registerItem(registry, "wavemaster66", new ItemWavemaster(8, Tier.NOVICE, Element.ICE));
+			registerItem(registry, "harvestcleric8", new ItemHarvestCleric(9, Tier.NOVICE, Element.ICE));
+			registerItem(registry, "wavemaster27p", new ItemWavemaster(1, Tier.APPRENTICE, Element.ICE));
+			registerItem(registry, "wavemaster17p", new ItemWavemaster(2, Tier.APPRENTICE, Element.ICE));
+			registerItem(registry, "wavemaster10p", new ItemWavemaster(3, Tier.APPRENTICE, Element.ICE));
+			registerItem(registry, "wavemaster6p", new ItemWavemaster(4, Tier.APPRENTICE, Element.ICE));
+			registerItem(registry, "wavemaster3p", new ItemWavemaster(5, Tier.APPRENTICE, Element.ICE));
+			registerItem(registry, "wavemaster58p", new ItemWavemaster(6, Tier.APPRENTICE, Element.ICE));
+			registerItem(registry, "wavemaster53p", new ItemWavemaster(7, Tier.APPRENTICE, Element.ICE));
+			registerItem(registry, "wavemaster66p", new ItemWavemaster(8, Tier.APPRENTICE, Element.ICE));
+			registerItem(registry, "harvestcleric8p", new ItemHarvestCleric(9, Tier.APPRENTICE, Element.ICE));
+			registerItem(registry, "wavemaster27a", new ItemWavemaster(1, Tier.ADVANCED, Element.ICE));
+			registerItem(registry, "wavemaster17a", new ItemWavemaster(2, Tier.ADVANCED, Element.ICE));
+			registerItem(registry, "wavemaster10a", new ItemWavemaster(3, Tier.ADVANCED, Element.ICE));
+			registerItem(registry, "wavemaster6a", new ItemWavemaster(4, Tier.ADVANCED, Element.ICE));
+			registerItem(registry, "wavemaster3a", new ItemWavemaster(5, Tier.ADVANCED, Element.ICE));
+			registerItem(registry, "wavemaster58a", new ItemWavemaster(6, Tier.ADVANCED, Element.ICE));
+			registerItem(registry, "wavemaster53a", new ItemWavemaster(7, Tier.ADVANCED, Element.ICE));
+			registerItem(registry, "wavemaster66a", new ItemWavemaster(8, Tier.ADVANCED, Element.ICE));
+			registerItem(registry, "harvestcleric8a", new ItemHarvestCleric(9, Tier.ADVANCED, Element.ICE));
+			registerItem(registry, "wavemaster27m", new ItemWavemaster(1, Tier.MASTER, Element.ICE));
+			registerItem(registry, "wavemaster17m", new ItemWavemaster(2, Tier.MASTER, Element.ICE));
+			registerItem(registry, "wavemaster10m", new ItemWavemaster(3, Tier.MASTER, Element.ICE));
+			registerItem(registry, "wavemaster6m", new ItemWavemaster(4, Tier.MASTER, Element.ICE));
+			registerItem(registry, "wavemaster3m", new ItemWavemaster(5, Tier.MASTER, Element.ICE));
+			registerItem(registry, "wavemaster58m", new ItemWavemaster(6, Tier.MASTER, Element.ICE));
+			registerItem(registry, "wavemaster53m", new ItemWavemaster(7, Tier.MASTER, Element.ICE));
+			registerItem(registry, "wavemaster66m", new ItemWavemaster(8, Tier.MASTER, Element.ICE));
+			registerItem(registry, "harvestcleric8m", new ItemHarvestCleric(9, Tier.MASTER, Element.ICE));
+			registerItem(registry, "wavemaster60", new ItemWavemaster(1, Tier.NOVICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster68", new ItemWavemaster(2, Tier.NOVICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster28", new ItemWavemaster(3, Tier.NOVICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster7", new ItemWavemaster(4, Tier.NOVICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster40", new ItemWavemaster(5, Tier.NOVICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster54", new ItemWavemaster(6, Tier.NOVICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster55", new ItemWavemaster(7, Tier.NOVICE, Element.NECROMANCY));
+			registerItem(registry, "shadowwarlock1", new ItemShadowWarlock(8, Tier.NOVICE, Element.NECROMANCY));
+			registerItem(registry, "shadowwarlock8", new ItemShadowWarlock(9, Tier.NOVICE, Element.NECROMANCY));
+			registerItem(registry, "macabredancer1", new ItemMacabreDancer(10, Tier.NOVICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster60p", new ItemWavemaster(1, Tier.APPRENTICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster68p", new ItemWavemaster(2, Tier.APPRENTICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster28p", new ItemWavemaster(3, Tier.APPRENTICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster7p", new ItemWavemaster(4, Tier.APPRENTICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster40p", new ItemWavemaster(5, Tier.APPRENTICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster54p", new ItemWavemaster(6, Tier.APPRENTICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster55p", new ItemWavemaster(7, Tier.APPRENTICE, Element.NECROMANCY));
+			registerItem(registry, "shadowwarlock1p", new ItemShadowWarlock(8, Tier.APPRENTICE, Element.NECROMANCY));
+			registerItem(registry, "shadowwarlock8p", new ItemShadowWarlock(9, Tier.APPRENTICE, Element.NECROMANCY));
+			registerItem(registry, "macabredancer1p", new ItemMacabreDancer(10, Tier.APPRENTICE, Element.NECROMANCY));
+			registerItem(registry, "wavemaster60a", new ItemWavemaster(1, Tier.ADVANCED, Element.NECROMANCY));
+			registerItem(registry, "wavemaster68a", new ItemWavemaster(2, Tier.ADVANCED, Element.NECROMANCY));
+			registerItem(registry, "wavemaster28a", new ItemWavemaster(3, Tier.ADVANCED, Element.NECROMANCY));
+			registerItem(registry, "wavemaster7a", new ItemWavemaster(4, Tier.ADVANCED, Element.NECROMANCY));
+			registerItem(registry, "wavemaster40a", new ItemWavemaster(5, Tier.ADVANCED, Element.NECROMANCY));
+			registerItem(registry, "wavemaster54a", new ItemWavemaster(6, Tier.ADVANCED, Element.NECROMANCY));
+			registerItem(registry, "wavemaster55a", new ItemWavemaster(7, Tier.ADVANCED, Element.NECROMANCY));
+			registerItem(registry, "shadowwarlock1a", new ItemShadowWarlock(8, Tier.ADVANCED, Element.NECROMANCY));
+			registerItem(registry, "shadowwarlock8a", new ItemShadowWarlock(9, Tier.ADVANCED, Element.NECROMANCY));
+			registerItem(registry, "macabredancer1a", new ItemMacabreDancer(10, Tier.ADVANCED, Element.NECROMANCY));
+			registerItem(registry, "wavemaster60m", new ItemWavemaster(1, Tier.MASTER, Element.NECROMANCY));
+			registerItem(registry, "wavemaster68m", new ItemWavemaster(2, Tier.MASTER, Element.NECROMANCY));
+			registerItem(registry, "wavemaster28m", new ItemWavemaster(3, Tier.MASTER, Element.NECROMANCY));
+			registerItem(registry, "wavemaster7m", new ItemWavemaster(4, Tier.MASTER, Element.NECROMANCY));
+			registerItem(registry, "wavemaster40m", new ItemWavemaster(5, Tier.MASTER, Element.NECROMANCY));
+			registerItem(registry, "wavemaster54m", new ItemWavemaster(6, Tier.MASTER, Element.NECROMANCY));
+			registerItem(registry, "wavemaster55m", new ItemWavemaster(7, Tier.MASTER, Element.NECROMANCY));
+			registerItem(registry, "shadowwarlock1m", new ItemShadowWarlock(8, Tier.MASTER, Element.NECROMANCY));
+			registerItem(registry, "shadowwarlock8m", new ItemShadowWarlock(9, Tier.MASTER, Element.NECROMANCY));
+			registerItem(registry, "macabredancer1m", new ItemMacabreDancer(10, Tier.MASTER, Element.NECROMANCY));
+			registerItem(registry, "wavemaster59", new ItemWavemaster(1, Tier.NOVICE, Element.FIRE));
+			registerItem(registry, "wavemaster70", new ItemWavemaster(2, Tier.NOVICE, Element.FIRE));
+			registerItem(registry, "wavemaster25", new ItemWavemaster(3, Tier.NOVICE, Element.FIRE));
+			registerItem(registry, "wavemaster18", new ItemWavemaster(4, Tier.NOVICE, Element.FIRE));
+			registerItem(registry, "wavemaster11", new ItemWavemaster(5, Tier.NOVICE, Element.FIRE));
+			registerItem(registry, "wavemaster32", new ItemWavemaster(6, Tier.NOVICE, Element.FIRE));
+			registerItem(registry, "wavemaster39", new ItemWavemaster(7, Tier.NOVICE, Element.FIRE));
+			registerItem(registry, "wavemaster67", new ItemWavemaster(8, Tier.NOVICE, Element.FIRE));
+			registerItem(registry, "harvestcleric9", new ItemHarvestCleric(9, Tier.NOVICE, Element.FIRE));
+			registerItem(registry, "wavemaster59p", new ItemWavemaster(1, Tier.APPRENTICE, Element.FIRE));
+			registerItem(registry, "wavemaster70p", new ItemWavemaster(2, Tier.APPRENTICE, Element.FIRE));
+			registerItem(registry, "wavemaster25p", new ItemWavemaster(3, Tier.APPRENTICE, Element.FIRE));
+			registerItem(registry, "wavemaster18p", new ItemWavemaster(4, Tier.APPRENTICE, Element.FIRE));
+			registerItem(registry, "wavemaster11p", new ItemWavemaster(5, Tier.APPRENTICE, Element.FIRE));
+			registerItem(registry, "wavemaster32p", new ItemWavemaster(6, Tier.APPRENTICE, Element.FIRE));
+			registerItem(registry, "wavemaster39p", new ItemWavemaster(7, Tier.APPRENTICE, Element.FIRE));
+			registerItem(registry, "wavemaster67p", new ItemWavemaster(8, Tier.APPRENTICE, Element.FIRE));
+			registerItem(registry, "harvestcleric9p", new ItemHarvestCleric(9, Tier.APPRENTICE, Element.FIRE));
+			registerItem(registry, "wavemaster59a", new ItemWavemaster(1, Tier.ADVANCED, Element.FIRE));
+			registerItem(registry, "wavemaster70a", new ItemWavemaster(2, Tier.ADVANCED, Element.FIRE));
+			registerItem(registry, "wavemaster25a", new ItemWavemaster(3, Tier.ADVANCED, Element.FIRE));
+			registerItem(registry, "wavemaster18a", new ItemWavemaster(4, Tier.ADVANCED, Element.FIRE));
+			registerItem(registry, "wavemaster11a", new ItemWavemaster(5, Tier.ADVANCED, Element.FIRE));
+			registerItem(registry, "wavemaster32a", new ItemWavemaster(6, Tier.ADVANCED, Element.FIRE));
+			registerItem(registry, "wavemaster39a", new ItemWavemaster(7, Tier.ADVANCED, Element.FIRE));
+			registerItem(registry, "wavemaster67a", new ItemWavemaster(8, Tier.ADVANCED, Element.FIRE));
+			registerItem(registry, "harvestcleric9a", new ItemHarvestCleric(9, Tier.ADVANCED, Element.FIRE));
+			registerItem(registry, "wavemaster59m", new ItemWavemaster(1, Tier.MASTER, Element.FIRE));
+			registerItem(registry, "wavemaster70m", new ItemWavemaster(2, Tier.MASTER, Element.FIRE));
+			registerItem(registry, "wavemaster25m", new ItemWavemaster(3, Tier.MASTER, Element.FIRE));
+			registerItem(registry, "wavemaster18m", new ItemWavemaster(4, Tier.MASTER, Element.FIRE));
+			registerItem(registry, "wavemaster11m", new ItemWavemaster(5, Tier.MASTER, Element.FIRE));
+			registerItem(registry, "wavemaster32m", new ItemWavemaster(6, Tier.MASTER, Element.FIRE));
+			registerItem(registry, "wavemaster39m", new ItemWavemaster(7, Tier.MASTER, Element.FIRE));
+			registerItem(registry, "wavemaster67m", new ItemWavemaster(8, Tier.MASTER, Element.FIRE));
+			registerItem(registry, "harvestcleric9m", new ItemHarvestCleric(9, Tier.MASTER, Element.FIRE));
+			registerItem(registry, "wavemaster45", new ItemWavemaster(1, Tier.NOVICE, Element.EARTH));
+			registerItem(registry, "wavemaster47", new ItemWavemaster(2, Tier.NOVICE, Element.EARTH));
+			registerItem(registry, "harvestcleric2", new ItemHarvestCleric(3, Tier.NOVICE, Element.EARTH));
+			registerItem(registry, "wavemaster56", new ItemWavemaster(4, Tier.NOVICE, Element.EARTH));
+			registerItem(registry, "wavemaster46", new ItemWavemaster(5, Tier.NOVICE, Element.EARTH));
+			registerItem(registry, "wavemaster48", new ItemWavemaster(6, Tier.NOVICE, Element.EARTH));
+			registerItem(registry, "harvestcleric5", new ItemHarvestCleric(7, Tier.NOVICE, Element.EARTH));
+			registerItem(registry, "macabredancer3", new ItemMacabreDancer(8, Tier.NOVICE, Element.EARTH));
+			registerItem(registry, "harvestcleric7", new ItemHarvestCleric(9, Tier.NOVICE, Element.EARTH));
+			registerItem(registry, "wavemaster45p", new ItemWavemaster(1, Tier.APPRENTICE, Element.EARTH));
+			registerItem(registry, "wavemaster47p", new ItemWavemaster(2, Tier.APPRENTICE, Element.EARTH));
+			registerItem(registry, "harvestcleric2p", new ItemHarvestCleric(3, Tier.APPRENTICE, Element.EARTH));
+			registerItem(registry, "wavemaster56p", new ItemWavemaster(4, Tier.APPRENTICE, Element.EARTH));
+			registerItem(registry, "wavemaster46p", new ItemWavemaster(5, Tier.APPRENTICE, Element.EARTH));
+			registerItem(registry, "wavemaster48p", new ItemWavemaster(6, Tier.APPRENTICE, Element.EARTH));
+			registerItem(registry, "harvestcleric5p", new ItemHarvestCleric(7, Tier.APPRENTICE, Element.EARTH));
+			registerItem(registry, "macabredancer3p", new ItemMacabreDancer(8, Tier.APPRENTICE, Element.EARTH));
+			registerItem(registry, "harvestcleric7p", new ItemHarvestCleric(9, Tier.APPRENTICE, Element.EARTH));
+			registerItem(registry, "wavemaster45a", new ItemWavemaster(1, Tier.ADVANCED, Element.EARTH));
+			registerItem(registry, "wavemaster47a", new ItemWavemaster(2, Tier.ADVANCED, Element.EARTH));
+			registerItem(registry, "harvestcleric2a", new ItemHarvestCleric(3, Tier.ADVANCED, Element.EARTH));
+			registerItem(registry, "wavemaster56a", new ItemWavemaster(4, Tier.ADVANCED, Element.EARTH));
+			registerItem(registry, "wavemaster46a", new ItemWavemaster(5, Tier.ADVANCED, Element.EARTH));
+			registerItem(registry, "wavemaster48a", new ItemWavemaster(6, Tier.ADVANCED, Element.EARTH));
+			registerItem(registry, "harvestcleric5a", new ItemHarvestCleric(7, Tier.ADVANCED, Element.EARTH));
+			registerItem(registry, "macabredancer3a", new ItemMacabreDancer(8, Tier.ADVANCED, Element.EARTH));
+			registerItem(registry, "harvestcleric7a", new ItemHarvestCleric(9, Tier.ADVANCED, Element.EARTH));
+			registerItem(registry, "wavemaster45m", new ItemWavemaster(1, Tier.MASTER, Element.EARTH));
+			registerItem(registry, "wavemaster47m", new ItemWavemaster(2, Tier.MASTER, Element.EARTH));
+			registerItem(registry, "harvestcleric2m", new ItemHarvestCleric(3, Tier.MASTER, Element.EARTH));
+			registerItem(registry, "wavemaster56m", new ItemWavemaster(4, Tier.MASTER, Element.EARTH));
+			registerItem(registry, "wavemaster46m", new ItemWavemaster(5, Tier.MASTER, Element.EARTH));
+			registerItem(registry, "wavemaster48m", new ItemWavemaster(6, Tier.MASTER, Element.EARTH));
+			registerItem(registry, "harvestcleric5m", new ItemHarvestCleric(7, Tier.MASTER, Element.EARTH));
+			registerItem(registry, "macabredancer3m", new ItemMacabreDancer(8, Tier.MASTER, Element.EARTH));
+			registerItem(registry, "harvestcleric7m", new ItemHarvestCleric(9, Tier.MASTER, Element.EARTH));
+			registerItem(registry, "wavemaster72", new ItemWavemaster(1, Tier.NOVICE, Element.LIGHTNING));
+			registerItem(registry, "wavemaster73", new ItemWavemaster(2, Tier.NOVICE, Element.LIGHTNING));
+			registerItem(registry, "harvestcleric1", new ItemHarvestCleric(3, Tier.NOVICE, Element.LIGHTNING));
+			registerItem(registry, "wavemaster20", new ItemWavemaster(4, Tier.NOVICE, Element.LIGHTNING));
+			registerItem(registry, "wavemaster34", new ItemWavemaster(5, Tier.NOVICE, Element.LIGHTNING));
+			registerItem(registry, "shadowwarlock10", new ItemShadowWarlock(6, Tier.NOVICE, Element.LIGHTNING));
+			registerItem(registry, "wavemaster72p", new ItemWavemaster(1, Tier.APPRENTICE, Element.LIGHTNING));
+			registerItem(registry, "wavemaster73p", new ItemWavemaster(2, Tier.APPRENTICE, Element.LIGHTNING));
+			registerItem(registry, "harvestcleric1p", new ItemHarvestCleric(3, Tier.APPRENTICE, Element.LIGHTNING));
+			registerItem(registry, "wavemaster20p", new ItemWavemaster(4, Tier.APPRENTICE, Element.LIGHTNING));
+			registerItem(registry, "wavemaster34p", new ItemWavemaster(5, Tier.APPRENTICE, Element.LIGHTNING));
+			registerItem(registry, "shadowwarlock10p", new ItemShadowWarlock(6, Tier.APPRENTICE, Element.LIGHTNING));
+			registerItem(registry, "wavemaster72a", new ItemWavemaster(1, Tier.ADVANCED, Element.LIGHTNING));
+			registerItem(registry, "wavemaster73a", new ItemWavemaster(2, Tier.ADVANCED, Element.LIGHTNING));
+			registerItem(registry, "harvestcleric1a", new ItemHarvestCleric(3, Tier.ADVANCED, Element.LIGHTNING));
+			registerItem(registry, "wavemaster20a", new ItemWavemaster(4, Tier.ADVANCED, Element.LIGHTNING));
+			registerItem(registry, "wavemaster34a", new ItemWavemaster(5, Tier.ADVANCED, Element.LIGHTNING));
+			registerItem(registry, "shadowwarlock10a", new ItemShadowWarlock(6, Tier.ADVANCED, Element.LIGHTNING));
+			registerItem(registry, "wavemaster72m", new ItemWavemaster(1, Tier.MASTER, Element.LIGHTNING));
+			registerItem(registry, "wavemaster73m", new ItemWavemaster(2, Tier.MASTER, Element.LIGHTNING));
+			registerItem(registry, "harvestcleric1m", new ItemHarvestCleric(3, Tier.MASTER, Element.LIGHTNING));
+			registerItem(registry, "wavemaster20m", new ItemWavemaster(4, Tier.MASTER, Element.LIGHTNING));
+			registerItem(registry, "wavemaster34m", new ItemWavemaster(5, Tier.MASTER, Element.LIGHTNING));
+			registerItem(registry, "shadowwarlock10m", new ItemShadowWarlock(6, Tier.MASTER, Element.LIGHTNING));
+			registerItem(registry, "wavemaster49", new ItemWavemaster(1, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "wavemaster63", new ItemWavemaster(2, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "wavemaster64", new ItemWavemaster(3, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "wavemaster30", new ItemWavemaster(4, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "wavemaster4", new ItemWavemaster(5, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "macabredancer2", new ItemMacabreDancer(6, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "wavemaster5", new ItemWavemaster(7, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "harvestcleric4", new ItemHarvestCleric(8, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "harvestcleric3", new ItemHarvestCleric(9, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "wavemaster33", new ItemWavemaster(10, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "shadowwarlock11", new ItemShadowWarlock(11, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "shadowwarlock12", new ItemShadowWarlock(12, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "shadowwarlock13", new ItemShadowWarlock(13, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "shadowwarlock14", new ItemShadowWarlock(14, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "shadowwarlock9", new ItemShadowWarlock(15, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "harvestcleric10", new ItemHarvestCleric(16, Tier.NOVICE, Element.HEALING));
+			registerItem(registry, "wavemaster49p", new ItemWavemaster(1, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "wavemaster63p", new ItemWavemaster(2, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "wavemaster64p", new ItemWavemaster(3, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "wavemaster30p", new ItemWavemaster(4, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "wavemaster4p", new ItemWavemaster(5, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "macabredancer2p", new ItemMacabreDancer(6, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "wavemaster5p", new ItemWavemaster(7, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "harvestcleric4p", new ItemHarvestCleric(8, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "harvestcleric3p", new ItemHarvestCleric(9, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "wavemaster33p", new ItemWavemaster(10, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "shadowwarlock11p", new ItemShadowWarlock(11, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "shadowwarlock12p", new ItemShadowWarlock(12, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "shadowwarlock13p", new ItemShadowWarlock(13, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "shadowwarlock14p", new ItemShadowWarlock(14, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "shadowwarlock9p", new ItemShadowWarlock(15, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "harvestcleric10p", new ItemHarvestCleric(16, Tier.APPRENTICE, Element.HEALING));
+			registerItem(registry, "wavemaster49a", new ItemWavemaster(1, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "wavemaster63a", new ItemWavemaster(2, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "wavemaster64a", new ItemWavemaster(3, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "wavemaster30a", new ItemWavemaster(4, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "wavemaster4a", new ItemWavemaster(5, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "macabredancer2a", new ItemMacabreDancer(6, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "wavemaster5a", new ItemWavemaster(7, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "harvestcleric4a", new ItemHarvestCleric(8, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "harvestcleric3a", new ItemHarvestCleric(9, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "wavemaster33a", new ItemWavemaster(10, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "shadowwarlock11a", new ItemShadowWarlock(11, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "shadowwarlock12a", new ItemShadowWarlock(12, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "shadowwarlock13a", new ItemShadowWarlock(13, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "shadowwarlock14a", new ItemShadowWarlock(14, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "shadowwarlock9a", new ItemShadowWarlock(15, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "harvestcleric10a", new ItemHarvestCleric(16, Tier.ADVANCED, Element.HEALING));
+			registerItem(registry, "wavemaster49m", new ItemWavemaster(1, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "wavemaster63m", new ItemWavemaster(2, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "wavemaster64m", new ItemWavemaster(3, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "wavemaster30m", new ItemWavemaster(4, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "wavemaster4m", new ItemWavemaster(5, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "macabredancer2m", new ItemMacabreDancer(6, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "wavemaster5m", new ItemWavemaster(7, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "harvestcleric4m", new ItemHarvestCleric(8, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "harvestcleric3m", new ItemHarvestCleric(9, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "wavemaster33m", new ItemWavemaster(10, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "shadowwarlock11m", new ItemShadowWarlock(11, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "shadowwarlock12m", new ItemShadowWarlock(12, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "shadowwarlock13m", new ItemShadowWarlock(13, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "shadowwarlock14m", new ItemShadowWarlock(14, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "shadowwarlock9m", new ItemShadowWarlock(15, Tier.MASTER, Element.HEALING));
+			registerItem(registry, "harvestcleric10m", new ItemHarvestCleric(16, Tier.MASTER, Element.HEALING));
 			LOGGER.debug("Registered with EB");
 		} else if (Loader.isModLoaded("mmorpg")) {
-			for (int i = 1; i <= 10; i++)
-				registerItem(registry, "harvestcleric" + i, new ItemMSStaff());
-			for (int i = 1; i <= 5; i++)
-				registerItem(registry, "macabredancer" + i, new ItemMSStaff());
-			for (int i = 1; i <= 14; i++)
-				registerItem(registry, "shadowwarlock" + i, new ItemMSStaff());
-			for (int i = 1; i <= 74; i++)
-				registerItem(registry, "wavemaster" + i, new ItemMSStaff());
-			registerItem(registry, "redwand1", new ItemMSStaff());
+			registerItem(registry, "harvestcleric1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabh), true);
+			for (int i = 2; i <= 10; i++)
+				registerItem(registry, "harvestcleric" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabh));
+			registerItem(registry, "macabredancer1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabd), true);
+			for (int i = 2; i <= 5; i++)
+				registerItem(registry, "macabredancer" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabd));
+			registerItem(registry, "shadowwarlock1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabsw), true);
+			for (int i = 2; i <= 14; i++)
+				registerItem(registry, "shadowwarlock" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabsw));
+			registerItem(registry, "wavemaster1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabw), true);
+			for (int i = 2; i <= 74; i++)
+				registerItem(registry, "wavemaster" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabw));
+			registerItem(registry, "redwand1", new ItemMSStaff().setCreativeTab(DotHackTabs.taba));
 			LOGGER.debug("Registered with M&S");
 		} else {
-			for (int i = 1; i <= 9; i++)
-				registerItem(registry, "harvestcleric" + i, new ItemBow());
-			for (int i = 1; i <= 5; i++)
-				registerItem(registry, "macabredancer" + i, new ItemBow());
-			for (int i = 1; i <= 14; i++)
-				registerItem(registry, "shadowwarlock" + i, new ItemBow());
-			for (int i = 1; i <= 74; i++)
-				registerItem(registry, "wavemaster" + i, new ItemBow());
-			registerItem(registry, "redwand1", new ItemBow());
+			registerItem(registry, "harvestcleric1", new ItemBow().setCreativeTab(DotHackTabs.tabh), true);
+			for (int i = 2; i <= 9; i++)
+				registerItem(registry, "harvestcleric" + i, new ItemBow().setCreativeTab(DotHackTabs.tabh));
+			registerItem(registry, "macabredancer1", new ItemBow().setCreativeTab(DotHackTabs.tabd), true);
+			for (int i = 2; i <= 5; i++)
+				registerItem(registry, "macabredancer" + i, new ItemBow().setCreativeTab(DotHackTabs.tabd));
+			registerItem(registry, "shadowwarlock1", new ItemBow().setCreativeTab(DotHackTabs.tabsw), true);
+			for (int i = 2; i <= 14; i++)
+				registerItem(registry, "shadowwarlock" + i, new ItemBow().setCreativeTab(DotHackTabs.tabsw));
+			registerItem(registry, "wavemaster1", new ItemBow().setCreativeTab(DotHackTabs.tabw), true);
+			for (int i = 2; i <= 74; i++)
+				registerItem(registry, "wavemaster" + i, new ItemBow().setCreativeTab(DotHackTabs.tabw));
+			registerItem(registry, "redwand1", new ItemBow().setCreativeTab(DotHackTabs.taba));
 			LOGGER.debug("Registered without EB or M&S");
 		}
 		if (Loader.isModLoaded("mmorpg")) {
-			for (int i = 1; i <= 4; i++)
-				registerItem(registry, "dualgunner" + i, new ItemBow());
-			for (int i = 1; i <= 18; i++)
-				registerItem(registry, "steamgunner" + i, new ItemBow());
+			registerItem(registry, "dualgunner1", new ItemBow().setCreativeTab(DotHackTabs.tabdg), true);
+			for (int i = 2; i <= 4; i++)
+				registerItem(registry, "dualgunner" + i, new ItemBow().setCreativeTab(DotHackTabs.tabdg));
+			registerItem(registry, "steamgunner1", new ItemBow().setCreativeTab(DotHackTabs.tabsg), true);
+			for (int i = 2; i <= 18; i++)
+				registerItem(registry, "steamgunner" + i, new ItemBow().setCreativeTab(DotHackTabs.tabsg));
 			LOGGER.debug("Registered with M&S");
 		} else {
-			for (int i = 1; i <= 4; i++)
-				registerItem(registry, "dualgunner" + i, new ItemBow());
-			for (int i = 1; i <= 18; i++)
-				registerItem(registry, "steamgunner" + i, new ItemBow());
+			registerItem(registry, "dualgunner1", new ItemBow().setCreativeTab(DotHackTabs.tabdg), true);
+			for (int i = 2; i <= 4; i++)
+				registerItem(registry, "dualgunner" + i, new ItemBow().setCreativeTab(DotHackTabs.tabdg));
+			registerItem(registry, "steamgunner1", new ItemBow().setCreativeTab(DotHackTabs.tabsg), true);
+			for (int i = 2; i <= 18; i++)
+				registerItem(registry, "steamgunner" + i, new ItemBow().setCreativeTab(DotHackTabs.tabsg));
 			LOGGER.debug("Registered without M&S");
 		}
 
 	}
+
+	public static final Item datadrain = placeholder();
+	public static final ItemStack twinblade1 = placeholder();
+	public static final ItemStack heavyblade1 = placeholder();
+	public static final ItemStack bladebrandier1 = placeholder();
+	public static final ItemStack dualswords1 = placeholder();
+	public static final ItemStack edgepunisher1 = placeholder();
+	public static final ItemStack flickreaper1 = placeholder();
+	public static final ItemStack lordpartizan1 = placeholder();
+	public static final ItemStack tribalgrappler1 = placeholder();
+	public static final ItemStack blademaster1 = placeholder();
+	public static final ItemStack heavyaxeman1 = placeholder();
+	public static final ItemStack longarm1 = placeholder();
 
 	public static final Item harvestcleric1 = placeholder();
 	public static final Item harvestcleric2 = placeholder();
