@@ -22,27 +22,31 @@ public class DotHackTabs {
 	private DotHackTabs() {
 	}
 
-	public static CreativeTabs taba = new CreativeTabListed("accessories");
-	public static CreativeTabs tabw = new CreativeTabListed("wands");
-	public static CreativeTabs tabtb = new CreativeTabListed("twinblade");
-	public static CreativeTabs tabhb = new CreativeTabListed("heavyblade");
-	public static CreativeTabs tabdg = new CreativeTabListed("dualgun");
-	public static CreativeTabs tabbb = new CreativeTabListed("bladebrandier");
-	public static CreativeTabs tabds = new CreativeTabListed("dualswords");
-	public static CreativeTabs tabe = new CreativeTabListed("edgepunisher");
-	public static CreativeTabs tabf = new CreativeTabListed("flickreaper");
-	public static CreativeTabs tablp = new CreativeTabListed("lordpartizan");
-	public static CreativeTabs tabt = new CreativeTabListed("tribalgrappler");
-	public static CreativeTabs tabbm = new CreativeTabListed("blademaster");
-	public static CreativeTabs tabha = new CreativeTabListed("heavyaxeman");
-	public static CreativeTabs tabla = new CreativeTabListed("longarm");
-	public static CreativeTabs tabsg = new CreativeTabListed("steamgunner");;
+	public static CreativeTabs taba = new DotHackCreativeTab("accessories");
+	public static CreativeTabs tabw = new DotHackCreativeTab("wands");
+	public static CreativeTabs tabtb = new DotHackCreativeTab("twinblade");
+	public static CreativeTabs tabhb = new DotHackCreativeTab("heavyblade");
+	public static CreativeTabs tabdg = new DotHackCreativeTab("dualgun");
+	public static CreativeTabs tabbb = new DotHackCreativeTab("bladebrandier");
+	public static CreativeTabs tabds = new DotHackCreativeTab("dualswords");
+	public static CreativeTabs tabe = new DotHackCreativeTab("edgepunisher");
+	public static CreativeTabs tabf = new DotHackCreativeTab("flickreaper");
+	public static CreativeTabs tablp = new DotHackCreativeTab("lordpartizan");
+	public static CreativeTabs tabt = new DotHackCreativeTab("tribalgrappler");
+	public static CreativeTabs tabbm = new DotHackCreativeTab("blademaster");
+	public static CreativeTabs tabha = new DotHackCreativeTab("heavyaxeman");
+	public static CreativeTabs tabla = new DotHackCreativeTab("longarm");
+	public static CreativeTabs tabsg = new DotHackCreativeTab("steamgunner");;
+	public static CreativeTabs tabwm = new DotHackCreativeTab("wavemaster");
+	public static CreativeTabs tabhc = new DotHackCreativeTab("harvestcleric");
+	public static CreativeTabs tabmd = new DotHackCreativeTab("macabredancer");
+	public static CreativeTabs tabsw = new DotHackCreativeTab("shadowwarlock");;
 
-	public static class CreativeTabListed extends CreativeTabs {
+	public static class DotHackCreativeTab extends CreativeTabs {
 
 		private ItemStack iconItem;
 
-		public CreativeTabListed(String label) {
+		public DotHackCreativeTab(String label) {
 			super(label);
 		}
 

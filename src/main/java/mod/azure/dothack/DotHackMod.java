@@ -45,7 +45,9 @@ public class DotHackMod {
 	public void init(FMLInitializationEvent e) {
 		proxy.init();
 		LOGGER.debug("Firing Data Drain...");
-		DotHackItems.populateWandMap();
+		if (Loader.isModLoaded("ebwizardry")) {
+			DotHackItems.populateWandMap();
+		}
 		MinecraftForge.EVENT_BUS.register(new LootHandler());		
 	}
 

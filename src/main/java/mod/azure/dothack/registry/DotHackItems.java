@@ -30,7 +30,7 @@ import mod.azure.dothack.items.base.ItemBaseSword;
 import mod.azure.dothack.items.baubles.BaublesHeadItem;
 import mod.azure.dothack.items.ebwizadry.ItemEBWand;
 import mod.azure.dothack.items.mineandslash.ItemMSStaff;
-import mod.azure.dothack.registry.DotHackTabs.CreativeTabListed;
+import mod.azure.dothack.registry.DotHackTabs.DotHackCreativeTab;
 import net.minecraftforge.fml.common.Loader;
 
 @ObjectHolder(DotHackMod.MODID)
@@ -497,52 +497,16 @@ public final class DotHackItems {
 			element = Element.MAGIC;
 		return WAND_MAP.get(ImmutablePair.of(tier, element));
 	}
-	
-	public static Item getWaveWand(Tier tier, Element element) {
-		if (tier == null)
-			throw new NullPointerException("The given tier cannot be null.");
-		if (element == null)
-			element = Element.MAGIC;
-		return WAVE_WAND_MAP.get(ImmutablePair.of(tier, element));
-	}
-	
-	public static Item getShadowWand(Tier tier, Element element) {
-		if (tier == null)
-			throw new NullPointerException("The given tier cannot be null.");
-		if (element == null)
-			element = Element.MAGIC;
-		return SHADOW_WAND_MAP.get(ImmutablePair.of(tier, element));
-	}
-	
-	public static Item getHarvestWand(Tier tier, Element element) {
-		if (tier == null)
-			throw new NullPointerException("The given tier cannot be null.");
-		if (element == null)
-			element = Element.MAGIC;
-		return HARVEST_WAND_MAP.get(ImmutablePair.of(tier, element));
-	}
-	
-	public static Item getDancerWand(Tier tier, Element element) {
-		if (tier == null)
-			throw new NullPointerException("The given tier cannot be null.");
-		if (element == null)
-			element = Element.MAGIC;
-		return DANCER_WAND_MAP.get(ImmutablePair.of(tier, element));
-	}
 
 	private static final Map<Pair<Tier, Element>, Item> WAND_MAP = new HashMap<>();
-	private static final Map<Pair<Tier, Element>, Item> WAVE_WAND_MAP = new HashMap<>();
-	private static final Map<Pair<Tier, Element>, Item> SHADOW_WAND_MAP = new HashMap<>();
-	private static final Map<Pair<Tier, Element>, Item> HARVEST_WAND_MAP = new HashMap<>();
-	private static final Map<Pair<Tier, Element>, Item> DANCER_WAND_MAP = new HashMap<>();
 
 	public static void registerItem(IForgeRegistry<Item> registry, String name, Item item, boolean setTabIcon) {
 		item.setRegistryName(DotHackMod.MODID, name);
 		item.setTranslationKey(name);
 		registry.register(item);
 
-		if (setTabIcon && item.getCreativeTab() instanceof CreativeTabListed) {
-			((CreativeTabListed) item.getCreativeTab()).setIconItem(new ItemStack(item));
+		if (setTabIcon && item.getCreativeTab() instanceof DotHackCreativeTab) {
+			((DotHackCreativeTab) item.getCreativeTab()).setIconItem(new ItemStack(item));
 		}
 	}
 
@@ -1018,33 +982,33 @@ public final class DotHackItems {
 			registerItem(registry, "harvestcleric10m", new ItemEBWand(Tier.MASTER, Element.HEALING));
 			LOGGER.debug("Registered with EB");
 		} else if (Loader.isModLoaded("mmorpg")) {
-			registerItem(registry, "harvestcleric1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabw), true);
+			registerItem(registry, "harvestcleric1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabhc), true);
 			for (int i = 2; i <= 10; i++)
-				registerItem(registry, "harvestcleric" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabw));
-			registerItem(registry, "macabredancer1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabw), true);
+				registerItem(registry, "harvestcleric" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabhc));
+			registerItem(registry, "macabredancer1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabmd), true);
 			for (int i = 2; i <= 5; i++)
-				registerItem(registry, "macabredancer" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabw));
-			registerItem(registry, "shadowwarlock1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabw), true);
+				registerItem(registry, "macabredancer" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabmd));
+			registerItem(registry, "shadowwarlock1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabsw), true);
 			for (int i = 2; i <= 14; i++)
-				registerItem(registry, "shadowwarlock" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabw));
-			registerItem(registry, "wavemaster1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabw), true);
+				registerItem(registry, "shadowwarlock" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabsw));
+			registerItem(registry, "wavemaster1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabwm), true);
 			for (int i = 2; i <= 74; i++)
-				registerItem(registry, "wavemaster" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabw));
+				registerItem(registry, "wavemaster" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabwm));
 			registerItem(registry, "redwand1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabw));
 			LOGGER.debug("Registered with M&S");
 		} else {
-			registerItem(registry, "harvestcleric1", new ItemBow().setCreativeTab(DotHackTabs.tabw), true);
+			registerItem(registry, "harvestcleric1", new ItemBow().setCreativeTab(DotHackTabs.tabhc), true);
 			for (int i = 2; i <= 9; i++)
-				registerItem(registry, "harvestcleric" + i, new ItemBow().setCreativeTab(DotHackTabs.tabw));
-			registerItem(registry, "macabredancer1", new ItemBow().setCreativeTab(DotHackTabs.tabw), true);
+				registerItem(registry, "harvestcleric" + i, new ItemBow().setCreativeTab(DotHackTabs.tabhc));
+			registerItem(registry, "macabredancer1", new ItemBow().setCreativeTab(DotHackTabs.tabmd), true);
 			for (int i = 2; i <= 5; i++)
-				registerItem(registry, "macabredancer" + i, new ItemBow().setCreativeTab(DotHackTabs.tabw));
-			registerItem(registry, "shadowwarlock1", new ItemBow().setCreativeTab(DotHackTabs.tabw), true);
+				registerItem(registry, "macabredancer" + i, new ItemBow().setCreativeTab(DotHackTabs.tabmd));
+			registerItem(registry, "shadowwarlock1", new ItemBow().setCreativeTab(DotHackTabs.tabsw), true);
 			for (int i = 2; i <= 14; i++)
-				registerItem(registry, "shadowwarlock" + i, new ItemBow().setCreativeTab(DotHackTabs.tabw));
-			registerItem(registry, "wavemaster1", new ItemBow().setCreativeTab(DotHackTabs.tabw), true);
+				registerItem(registry, "shadowwarlock" + i, new ItemBow().setCreativeTab(DotHackTabs.tabsw));
+			registerItem(registry, "wavemaster1", new ItemBow().setCreativeTab(DotHackTabs.tabwm), true);
 			for (int i = 2; i <= 74; i++)
-				registerItem(registry, "wavemaster" + i, new ItemBow().setCreativeTab(DotHackTabs.tabw));
+				registerItem(registry, "wavemaster" + i, new ItemBow().setCreativeTab(DotHackTabs.tabwm));
 			registerItem(registry, "redwand1", new ItemBow().setCreativeTab(DotHackTabs.tabw));
 			LOGGER.debug("Registered without EB or M&S");
 		}
