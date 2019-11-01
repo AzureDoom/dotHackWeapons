@@ -1,10 +1,9 @@
-package mod.azure.dothack.tabs;
+package mod.azure.dothack.registry;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import mod.azure.dothack.DotHackItems;
 import mod.azure.dothack.DotHackMod;
 import mod.azure.dothack.items.ebwizadry.ItemEBWand;
 import mod.azure.dothack.items.mineandslash.ItemMSStaff;
@@ -24,8 +23,7 @@ public class DotHackTabs {
 	}
 
 	public static CreativeTabs taba = new CreativeTabListed("accessories");
-	public static CreativeTabs tabw = new CreativeTabListed("wavemaster");
-	public static CreativeTabs tabh = new CreativeTabListed("harvestcleric");
+	public static CreativeTabs tabw = new CreativeTabListed("wands");
 	public static CreativeTabs tabtb = new CreativeTabListed("twinblade");
 	public static CreativeTabs tabhb = new CreativeTabListed("heavyblade");
 	public static CreativeTabs tabdg = new CreativeTabListed("dualgun");
@@ -38,8 +36,6 @@ public class DotHackTabs {
 	public static CreativeTabs tabbm = new CreativeTabListed("blademaster");
 	public static CreativeTabs tabha = new CreativeTabListed("heavyaxeman");
 	public static CreativeTabs tabla = new CreativeTabListed("longarm");
-	public static CreativeTabs tabd = new CreativeTabListed("macabredancer");
-	public static CreativeTabs tabsw = new CreativeTabListed("shadowwarlock");
 	public static CreativeTabs tabsg = new CreativeTabListed("steamgunner");;
 
 	public static class CreativeTabListed extends CreativeTabs {
