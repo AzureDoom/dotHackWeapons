@@ -46,9 +46,9 @@ public class MineSlashHandler {
 					MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i,
 							new ConfigItem().setType(new Staff()).setMaxLevel(37).setGenerationWeights(100, 0, 0));
 					MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i + "p", new ConfigItem().setType(new Staff())
-							.setMaxLevel(74).setMinLevel(38).setGenerationWeights(100, 100, 0));
+							.setMaxLevel(74).setMinLevel(38).setMaxLevel(74).setGenerationWeights(100, 100, 0));
 					MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i + "a", new ConfigItem().setType(new Staff())
-							.setMaxLevel(111).setMinLevel(75).setGenerationWeights(100, 100, 0));
+							.setMaxLevel(111).setMinLevel(75).setMaxLevel(111).setGenerationWeights(100, 100, 0));
 					MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i + "m", new ConfigItem().setType(new Staff())
 							.setMaxLevel(150).setMinLevel(112).setGenerationWeights(100, 100, 10));
 					LOGGER.debug("Registered Staffs");
