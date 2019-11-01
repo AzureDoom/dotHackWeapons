@@ -964,5 +964,6 @@ itemGroup.harvestcleric=Harvest Cleric
 itemGroup.macabredancer=Macabre Dancer
 itemGroup.shadowwarlock=Shadow Warlock
 itemGroup.steamgunner=Steam Gunner
+itemGroup.wands=.Hack Magic
 
 rcraft.config.title=dotHack Weapons Config
