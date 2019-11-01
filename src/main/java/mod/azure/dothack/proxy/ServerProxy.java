@@ -12,7 +12,7 @@ import static net.minecraftforge.fml.relauncher.Side.SERVER;
 import mod.azure.dothack.DotHackMod;
 
 @Mod.EventBusSubscriber(modid = DotHackMod.MODID, value = SERVER)
-public class CommonProxy {
+public class ServerProxy extends IProxy{
 
 	public void preInit() {
 

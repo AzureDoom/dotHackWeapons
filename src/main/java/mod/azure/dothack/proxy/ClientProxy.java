@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import static net.minecraftforge.fml.relauncher.Side.CLIENT;
 
 @Mod.EventBusSubscriber(modid = DotHackMod.MODID, value = CLIENT)
-public class ClientProxy extends CommonProxy {
+public class ClientProxy extends IProxy {
 
 	private static final Logger LOGGER = LogManager.getLogger();
 
