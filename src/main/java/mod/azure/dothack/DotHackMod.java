@@ -7,7 +7,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import mod.azure.dothack.config.ModConfig;
-import mod.azure.dothack.proxy.CommonProxy;
+import mod.azure.dothack.proxy.IProxy;
+import mod.azure.dothack.registry.DotHackItems;
 import mod.azure.dothack.util.LootHandler;
 import mod.azure.dothack.util.MineSlashHandler;
 import net.minecraft.creativetab.CreativeTabs;
@@ -28,8 +29,8 @@ public class DotHackMod {
 	public static final String DEPENDENCIES = "required:forge@[14.23.5.2838,);required-after:ebwizardry@[4.2,);required-after:mmorpg;required-after:baubles";
 	private static final Logger LOGGER = LogManager.getLogger();
 
-	@SidedProxy(clientSide = "mod.azure.dothack.proxy.ClientProxy", serverSide = "mod.azure.dothack.proxy.CommonProxy")
-	public static CommonProxy proxy;
+	@SidedProxy(clientSide = "mod.azure.dothack.proxy.ClientProxy", serverSide = "mod.azure.dothack.proxy.ServerProxy")
+	public static IProxy proxy;
 
 	@Mod.Instance
 	public static DotHackMod instance;
@@ -44,19 +45,14 @@ public class DotHackMod {
 	public void init(FMLInitializationEvent e) {
 		proxy.init();
 		LOGGER.debug("Firing Data Drain...");
-		
-		MinecraftForge.EVENT_BUS.register(new LootHandler());
-		
-		if (Loader.isModLoaded("ebwizardry")) {
-			DotHackItems.populateWandMap();
-		}
+		DotHackItems.populateWandMap();
+		MinecraftForge.EVENT_BUS.register(new LootHandler());		
 	}
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 		proxy.postInit();
-		LOGGER.debug("No Data Bugs Found");
-		
+		LOGGER.debug("No Data Bugs Found");		
 		if (ModConfig.USE_COMPATIBILITY_ITEMS) {
 			if (Loader.isModLoaded("mmorpg")) {
 				MinecraftForge.EVENT_BUS.register(new MineSlashHandler());

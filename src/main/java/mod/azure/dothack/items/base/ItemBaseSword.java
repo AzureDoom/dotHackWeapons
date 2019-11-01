@@ -1,7 +1,7 @@
 package mod.azure.dothack.items.base;
 
 import mod.azure.dothack.DotHackMod;
-import mod.azure.dothack.tabs.DotHackTabs;
+import mod.azure.dothack.registry.DotHackTabs;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;

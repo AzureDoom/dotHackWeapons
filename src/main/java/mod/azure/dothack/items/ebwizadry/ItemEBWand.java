@@ -18,9 +18,9 @@ import electroblob.wizardry.util.ParticleBuilder;
 import electroblob.wizardry.util.SpellProperties;
 import electroblob.wizardry.util.WandHelper;
 import electroblob.wizardry.util.ParticleBuilder.Type;
-import mod.azure.dothack.DotHackItems;
 import mod.azure.dothack.DotHackMod;
-import mod.azure.dothack.tabs.DotHackTabs;
+import mod.azure.dothack.registry.DotHackItems;
+import mod.azure.dothack.registry.DotHackTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
@@ -30,32 +30,27 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.Vec3d;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 
 public class ItemEBWand extends ItemWand {
 
-	private static Integer number = 0;
-
-	public ItemEBWand(Integer number, Tier tier, Element element) {
+	public ItemEBWand(Tier tier, Element element) {
 		super(tier, element);
 		this.tier = tier;
 		this.element = element;
-		this.number = number;
+		this.setCreativeTab(DotHackTabs.tabw);
 
 	}
 
 	@SubscribeEvent
-	public boolean onApplyButtonPressed(EntityPlayer player, Slot centre, Slot crystals, Slot upgrade, Slot[] spellBooks){
-		
+	public boolean onApplyButtonPressed(EntityPlayer player, Slot centre, Slot crystals, Slot upgrade, Slot[] spellBooks){		
 		boolean changed = false;
 		if(upgrade.getStack().getItem() == WizardryItems.arcane_tome){
-
 			Tier tier = Tier.values()[upgrade.getStack().getItemDamage()];
 			if((player.isCreative() || Wizardry.settings.legacyWandLevelling
 					|| WandHelper.getProgression(centre.getStack()) >= tier.progression)
 					&& tier.ordinal() - 1 == this.tier.ordinal()){
 				WandHelper.setProgression(centre.getStack(), 0);
-				ItemStack newWand = new ItemStack(DotHackItems.getWand(number, tier, this.element));
+				ItemStack newWand = new ItemStack(DotHackItems.getWand(tier, this.element));
 				newWand.setTagCompound(centre.getStack().getTagCompound());
 				((IManaStoringItem)newWand.getItem()).setMana(newWand, this.getMana(centre.getStack()));
 				centre.putStack(newWand);
@@ -98,7 +93,6 @@ public class ItemEBWand extends ItemWand {
 		if(spells.length <= 0){
 			spells = new Spell[BASE_SPELL_SLOTS];
 		}
-		
 		for(int i = 0; i < spells.length; i++){
 			if(spellBooks[i].getStack() != ItemStack.EMPTY){
 				Spell spell = Spell.byMetadata(spellBooks[i].getStack().getItemDamage());
@@ -108,7 +102,6 @@ public class ItemEBWand extends ItemWand {
 				}
 			}
 		}
-		
 		WandHelper.setSpells(centre.getStack(), spells);
 		if(crystals.getStack() != ItemStack.EMPTY && !this.isManaFull(centre.getStack())){
 			int chargeDepleted = this.getManaCapacity(centre.getStack()) - this.getMana(centre.getStack());
@@ -124,44 +117,6 @@ public class ItemEBWand extends ItemWand {
 			}
 			changed = true;
 		}
-		
 		return changed;
-	}
-	
-	@SubscribeEvent
-	public static void onAttackEntityEvent(AttackEntityEvent event){
-
-		EntityPlayer player = event.getEntityPlayer();
-		ItemStack stack = player.getHeldItemMainhand(); // Can't melee with offhand items
-
-		if(stack.getItem() instanceof IManaStoringItem){
-
-			// Nobody said it had to be a wand, as long as it's got a melee upgrade it counts
-			int level = WandHelper.getUpgradeLevel(stack, WizardryItems.melee_upgrade);
-			int mana = ((IManaStoringItem)stack.getItem()).getMana(stack);
-
-			if(level > 0 && mana > 0){
-
-				Random random = player.world.rand;
-
-				player.world.playSound(player.posX, player.posY, player.posZ, WizardrySounds.ITEM_WAND_MELEE, SoundCategory.PLAYERS, 0.75f, 1, false);
-
-				if(player.world.isRemote){
-
-					Vec3d origin = new Vec3d(player.posX, player.getEntityBoundingBox().minY + player.getEyeHeight(), player.posZ);
-					Vec3d hit = origin.add(player.getLookVec().scale(player.getDistance(event.getTarget())));
-					// Generate two perpendicular vectors in the plane perpendicular to the look vec
-					Vec3d vec1 = player.getLookVec().rotatePitch(90);
-					Vec3d vec2 = player.getLookVec().crossProduct(vec1);
-
-					for(int i = 0; i < 15; i++){
-						ParticleBuilder.create(Type.SPARKLE).pos(hit)
-								.vel(vec1.scale(random.nextFloat() * 0.3f - 0.15f).add(vec2.scale(random.nextFloat() * 0.3f - 0.15f)))
-								.clr(1f, 1f, 1f).fade(0.3f, 0.5f, 1)
-								.time(8 + random.nextInt(4)).spawn(player.world);
-					}
-				}
-			}
-		}
 	}
 }
