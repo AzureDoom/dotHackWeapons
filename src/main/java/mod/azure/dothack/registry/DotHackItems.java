@@ -1221,33 +1221,33 @@ public final class DotHackItems {
 			registerItem(registry, "harvestcleric10m", new ItemEBWand16(Tier.MASTER, Element.HEALING));
 			LOGGER.debug("Registered with EB");
 		} else if (Loader.isModLoaded("mmorpg")) {
-			registerItem(registry, "harvestcleric1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabhc), true);
+			registerItem(registry, "harvestcleric1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabw), true);
 			for (int i = 2; i <= 10; i++)
-				registerItem(registry, "harvestcleric" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabhc));
-			registerItem(registry, "macabredancer1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabmd), true);
+				registerItem(registry, "harvestcleric" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabw));
+			registerItem(registry, "macabredancer1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabw), true);
 			for (int i = 2; i <= 5; i++)
-				registerItem(registry, "macabredancer" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabmd));
-			registerItem(registry, "shadowwarlock1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabsw), true);
+				registerItem(registry, "macabredancer" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabw));
+			registerItem(registry, "shadowwarlock1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabw), true);
 			for (int i = 2; i <= 14; i++)
-				registerItem(registry, "shadowwarlock" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabsw));
-			registerItem(registry, "wavemaster1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabwm), true);
+				registerItem(registry, "shadowwarlock" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabw));
+			registerItem(registry, "wavemaster1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabw), true);
 			for (int i = 2; i <= 74; i++)
-				registerItem(registry, "wavemaster" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabwm));
+				registerItem(registry, "wavemaster" + i, new ItemMSStaff().setCreativeTab(DotHackTabs.tabw));
 			registerItem(registry, "redwand1", new ItemMSStaff().setCreativeTab(DotHackTabs.tabw));
 			LOGGER.debug("Registered with M&S");
 		} else {
-			registerItem(registry, "harvestcleric1", new ItemBow().setCreativeTab(DotHackTabs.tabhc), true);
+			registerItem(registry, "harvestcleric1", new ItemBow().setCreativeTab(DotHackTabs.tabw), true);
 			for (int i = 2; i <= 9; i++)
-				registerItem(registry, "harvestcleric" + i, new ItemBow().setCreativeTab(DotHackTabs.tabhc));
-			registerItem(registry, "macabredancer1", new ItemBow().setCreativeTab(DotHackTabs.tabmd), true);
+				registerItem(registry, "harvestcleric" + i, new ItemBow().setCreativeTab(DotHackTabs.tabw));
+			registerItem(registry, "macabredancer1", new ItemBow().setCreativeTab(DotHackTabs.tabw), true);
 			for (int i = 2; i <= 5; i++)
-				registerItem(registry, "macabredancer" + i, new ItemBow().setCreativeTab(DotHackTabs.tabmd));
-			registerItem(registry, "shadowwarlock1", new ItemBow().setCreativeTab(DotHackTabs.tabsw), true);
+				registerItem(registry, "macabredancer" + i, new ItemBow().setCreativeTab(DotHackTabs.tabw));
+			registerItem(registry, "shadowwarlock1", new ItemBow().setCreativeTab(DotHackTabs.tabw), true);
 			for (int i = 2; i <= 14; i++)
-				registerItem(registry, "shadowwarlock" + i, new ItemBow().setCreativeTab(DotHackTabs.tabsw));
-			registerItem(registry, "wavemaster1", new ItemBow().setCreativeTab(DotHackTabs.tabwm), true);
+				registerItem(registry, "shadowwarlock" + i, new ItemBow().setCreativeTab(DotHackTabs.tabw));
+			registerItem(registry, "wavemaster1", new ItemBow().setCreativeTab(DotHackTabs.tabw), true);
 			for (int i = 2; i <= 74; i++)
-				registerItem(registry, "wavemaster" + i, new ItemBow().setCreativeTab(DotHackTabs.tabwm));
+				registerItem(registry, "wavemaster" + i, new ItemBow().setCreativeTab(DotHackTabs.tabw));
 			registerItem(registry, "redwand1", new ItemBow().setCreativeTab(DotHackTabs.tabw));
 			LOGGER.debug("Registered without EB or M&S");
 		}

@@ -35,11 +35,7 @@ public class DotHackTabs {
 	public static CreativeTabs tabbm = new DotHackCreativeTab("blademaster");
 	public static CreativeTabs tabha = new DotHackCreativeTab("heavyaxeman");
 	public static CreativeTabs tabla = new DotHackCreativeTab("longarm");
-	public static CreativeTabs tabsg = new DotHackCreativeTab("steamgunner");;
-	public static CreativeTabs tabwm = new DotHackCreativeTab("wavemaster");
-	public static CreativeTabs tabhc = new DotHackCreativeTab("harvestcleric");
-	public static CreativeTabs tabmd = new DotHackCreativeTab("macabredancer");
-	public static CreativeTabs tabsw = new DotHackCreativeTab("shadowwarlock");;
+	public static CreativeTabs tabsg = new DotHackCreativeTab("steamgunner");
 
 	public static class DotHackCreativeTab extends CreativeTabs {
 
