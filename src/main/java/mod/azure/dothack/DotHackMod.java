@@ -25,7 +25,7 @@ public class DotHackMod {
 
 	public static final String MODID = "rcraft";
 	public static final String MODNAME = "dotHack Weapons";
-	public static final String VERSION = "2.1.0";
+	public static final String VERSION = "2.1.1";
 	public static final String DEPENDENCIES = "required:forge@[14.23.5.2838,);required-after:ebwizardry@[4.2,);required-after:mmorpg;required-after:baubles";
 	private static final Logger LOGGER = LogManager.getLogger();
 
