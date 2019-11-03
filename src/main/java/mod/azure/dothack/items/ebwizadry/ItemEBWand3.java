@@ -31,9 +31,9 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-public class ItemEBWand extends ItemWand {
+public class ItemEBWand3 extends ItemWand {
 
-	public ItemEBWand(Tier tier, Element element) {
+	public ItemEBWand3(Tier tier, Element element) {
 		super(tier, element);
 		this.tier = tier;
 		this.element = element;
@@ -50,7 +50,7 @@ public class ItemEBWand extends ItemWand {
 					|| WandHelper.getProgression(centre.getStack()) >= tier.progression)
 					&& tier.ordinal() - 1 == this.tier.ordinal()){
 				WandHelper.setProgression(centre.getStack(), 0);
-				ItemStack newWand = new ItemStack(DotHackItems.getWand(tier, this.element));
+				ItemStack newWand = new ItemStack(DotHackItems.get3Wand(tier, this.element));
 				newWand.setTagCompound(centre.getStack().getTagCompound());
 				((IManaStoringItem)newWand.getItem()).setMana(newWand, this.getMana(centre.getStack()));
 				centre.putStack(newWand);

@@ -5,7 +5,6 @@ import java.util.Comparator;
 import java.util.List;
 
 import mod.azure.dothack.DotHackMod;
-import mod.azure.dothack.items.ebwizadry.ItemEBWand;
 import mod.azure.dothack.items.mineandslash.ItemMSStaff;
 import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
