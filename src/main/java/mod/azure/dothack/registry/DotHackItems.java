@@ -508,7 +508,7 @@ public final class DotHackItems {
 	public static final Item wavemaster72m = placeholder();
 	public static final Item wavemaster73m = placeholder();
 	public static final Item wavemaster74m = placeholder();
-
+	
 	public static final Item redwand1 = placeholder();
 	public static final Item redwand1p = placeholder();
 	public static final Item redwand1a = placeholder();
