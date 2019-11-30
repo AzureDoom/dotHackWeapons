@@ -2,18 +2,17 @@
     {
         "modid": "rcraft",
         "name": "dotHack Weapons",
-		"version": "2.1.2",
-        "mcversion": "1.12.2",
+        "description": "Adds .hack Models into Minecraft",
+		"version": "${version}",
+        "mcversion": "${mcversion}",
         "url": "https://www.curseforge.com/minecraft/mc-mods/dothack-hack-weapons",
         "authorList": [
-            "AzureDoomC"
+            "AzureZhen"
         ],
-        "credits": "\nDesigned and coded by AzureDoomC.\nCode contributed by: galaxtone and d4rsorc",
-        "description" : "",
+        "credits": "Code optimized by galaxtone and d4rsorc",
         "logoFile": "pack.png",
-        "requiredMods": [ "ebwizardry" ],
-        "dependencies": [ "forge", "ebwizardry", "mmorpg", "baubles" ],
-        "useDependencyInformation": "true",
-        "acceptedMinecraftVersions": "1.12.2"
+        "requiredMods": [ ],
+        "dependencies": [ "ebwizardry", "mmorpg", "baubles" ],
+        "useDependencyInformation": "true"
     }
 ]

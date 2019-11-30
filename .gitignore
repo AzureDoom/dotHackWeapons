@@ -15,7 +15,10 @@ out
 # gradle
 .gradle
 build 
+Build.bat
 
 # other
 eclipse
 run
+
+blockstates

@@ -1,0 +1,68 @@
+# Blender MTL File: 'None'
+# Material Count: 6
+
+newmtl XCG.CCS.4
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd rcraft:blocks/xcg_ccs_2
+
+newmtl XCG.CCS.5
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd rcraft:blocks/xcg.ccs.1
+
+newmtl XCG.CCS.6
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd rcraft:blocks/xcg_ccs_2
+
+newmtl XCG.CCS.7
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd rcraft:blocks/xcg.ccs.0
+
+newmtl XCG.CCS.8
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd rcraft:blocks/xcg.ccs.0
+
+newmtl XCG.CCS.9
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd rcraft:blocks/xcg.ccs.0

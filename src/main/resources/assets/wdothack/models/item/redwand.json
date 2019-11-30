@@ -1,0 +1,143 @@
+{
+  "parent": "forge:item/default",
+  "loader": "forge:obj",
+  "model": "wdothack:models/item/redwand.obj",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        188,
+        0
+      ],
+      "translation": [
+        -8.9,
+        -20.3,
+        -5.3
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        188,
+        0
+      ],
+      "translation": [
+        6.9,
+        -20.3,
+        -7.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        190,
+        0
+      ],
+      "translation": [
+        -0.7,
+        -1.7,
+        -0.5
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        190,
+        0
+      ],
+      "translation": [
+        0.4,
+        -0.3,
+        -0.5
+      ],
+      "scale": [
+        0,
+        0,
+        0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        96,
+        50,
+        216
+      ],
+      "translation": [
+        -3.2,
+        -9.0,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    }
+  }
+}

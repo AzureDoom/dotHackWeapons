@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[28,)"
+issueTrackerURL="https://github.com/AzureZhen/dotHackWeapons-1.14/issues"
+logoFile="logo.png"
+[[mods]] 
+modId="wdothack"
+version="${file.jarVersion}" 
+displayName="dotHack Weapons"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/dothack-hack-weapons" 
+authors="AzureZhen" 
+description='''
+Adds dotHack Weapons into Minecraft
+'''

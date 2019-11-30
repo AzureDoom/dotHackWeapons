@@ -1,0 +1,23 @@
+# Blender MTL File: 'None'
+# Material Count: 7
+
+newmtl MDL_w21kt13_bld01_TEX_w21kt13_1
+map_Kd wdothack:items/w21kt13_1
+
+newmtl MDL_w21kt13_bld02_TEX_w21kt13_1
+map_Kd wdothack:items/w21kt13_1
+
+newmtl MDL_w21kt13_bld03_TEX_w21kt13_1
+map_Kd wdothack:items/w21kt13_1
+
+newmtl MDL_w21kt13_bld04_TEX_w21kt13_1
+map_Kd wdothack:items/w21kt13_1
+
+newmtl MDL_w21kt13_bld05_TEX_w21kt13_1
+map_Kd wdothack:items/w21kt13_1
+
+newmtl MDL_w21kt13_bld06_TEX_w21kt13_1
+map_Kd wdothack:items/w21kt13_1
+
+newmtl MDL_w21kt13_bod00_TEX_w21kt13
+map_Kd wdothack:items/w21kt13

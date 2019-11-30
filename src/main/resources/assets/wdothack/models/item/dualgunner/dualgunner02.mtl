@@ -1,0 +1,38 @@
+# Blender MTL File: 'None'
+# Material Count: 3
+
+newmtl TEX_w2dgn02
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd rcraft:items/w2dgn02
+
+
+newmtl TEX_w2dgn02_1
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd rcraft:items/w2dgn02_1
+
+
+newmtl TEX_w2dgn02_1_001
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd rcraft:items/w2dgn02_1
+
