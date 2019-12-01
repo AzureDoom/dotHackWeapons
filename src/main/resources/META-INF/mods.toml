@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[28,)"
-issueTrackerURL="https://github.com/AzureZhen/dotHackWeapons-1.14/issues"
+issueTrackerURL="https://github.com/AzureZhen/dotHackWeapons/issues"
 logoFile="logo.png"
 [[mods]] 
 modId="wdothack"
