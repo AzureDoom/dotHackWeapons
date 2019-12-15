@@ -1,17 +1,13 @@
 package mod.azure.dothack;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import mod.azure.dothack.config.ModConfig;
 import mod.azure.dothack.proxy.IProxy;
-import mod.azure.dothack.registry.DotHackItems;
 import mod.azure.dothack.util.LootHandler;
 import mod.azure.dothack.util.MineSlashHandler;
-import net.minecraft.creativetab.CreativeTabs;
+import mod.azure.dothack.util.WandMap;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
@@ -38,23 +34,23 @@ public class DotHackMod {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
 		proxy.preInit();
-		LOGGER.debug("Loading Data Drain...");
+		LOGGER.info("Loading Data Drain...");
 	}
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent e) {
 		proxy.init();
-		LOGGER.debug("Firing Data Drain...");
+		LOGGER.info("Firing Data Drain...");
 		if (Loader.isModLoaded("ebwizardry")) {
-			DotHackItems.populateWandMap();
+			WandMap.populateWandMap();
 		}
-		MinecraftForge.EVENT_BUS.register(new LootHandler());		
+		MinecraftForge.EVENT_BUS.register(new LootHandler());
 	}
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 		proxy.postInit();
-		LOGGER.debug("No Data Bugs Found");		
+		LOGGER.info("No Data Bugs Found");
 		if (ModConfig.USE_COMPATIBILITY_ITEMS) {
 			if (Loader.isModLoaded("mmorpg")) {
 				MinecraftForge.EVENT_BUS.register(new MineSlashHandler());
