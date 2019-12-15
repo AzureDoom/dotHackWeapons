@@ -9,6 +9,9 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
+import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+
 version = "2.1.2"
 group = "mod.azure.dothack"
 archivesBaseName = "dotHack Weapons"
@@ -38,5 +41,23 @@ processResources {
     }
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
+    }
+	
+    doLast {
+    
+        def jsonMinifyStart = System.currentTimeMillis()
+        def jsonMinified = 0
+        def jsonBytesSaved = 0
+        
+        fileTree(dir: outputs.files.asPath, include: '**/*.json').each {
+        
+            File file = it
+            jsonMinified++
+            def oldLength = file.length()
+            file.text = JsonOutput.toJson(new JsonSlurper().parse(file))
+            jsonBytesSaved += oldLength - file.length()
+        }
+        
+        println('Minified ' + jsonMinified + ' json files. Saved ' + jsonBytesSaved + ' bytes. Took ' + (System.currentTimeMillis() - jsonMinifyStart) + 'ms.')
     }
 }
