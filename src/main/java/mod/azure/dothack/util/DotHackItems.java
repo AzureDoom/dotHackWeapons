@@ -38,60 +38,60 @@ public class DotHackItems {
 		public static void registerItems(final RegistryEvent.Register<Item> event) {
 			for (int i = 1; i <= 19; i++)
 				event.getRegistry()
-						.register(bladebrandier = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						.register(bladebrandier = new SwordItem(ItemTier.DIAMOND, (3 + i) / 3, -2.4F,
 								new Item.Properties().group(DotHackTabs.BladebrandierItemGroup))
 										.setRegistryName(location("bladebrandier" + i)));
 			for (int i = 1; i <= 25; i++)
 				event.getRegistry()
-						.register(dualswords = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						.register(dualswords = new SwordItem(ItemTier.DIAMOND, (2 + i) / 5, -2.4F,
 								new Item.Properties().group(DotHackTabs.DualswordsItemGroup))
 										.setRegistryName(location("dualswords" + i)));
 			for (int i = 1; i <= 20; i++)
 				event.getRegistry()
-						.register(edgepunisher = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						.register(edgepunisher = new SwordItem(ItemTier.DIAMOND, (5 + i) / 2, -2.4F,
 								new Item.Properties().group(DotHackTabs.EdgepunisherItemGroup))
 										.setRegistryName(location("edgepunisher" + i)));
 			for (int i = 1; i <= 9; i++)
 				event.getRegistry().registerAll(
-						flickreaper = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						flickreaper = new SwordItem(ItemTier.DIAMOND, (20 + i) / 3, -2.4F,
 								new Item.Properties().group(DotHackTabs.FlickreaperItemGroup))
 										.setRegistryName(location("flickreaper" + i)),
-						lordpartizan = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						lordpartizan = new SwordItem(ItemTier.DIAMOND, (16 + i) / 2, -2.4F,
 								new Item.Properties().group(DotHackTabs.LordpartizanItemGroup))
 										.setRegistryName(location("lordpartizan" + i)));
 			for (int i = 1; i <= 11; i++)
 				event.getRegistry()
-						.register(tribalgrappler = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						.register(tribalgrappler = new SwordItem(ItemTier.DIAMOND, (20 + i) / 5, -2.4F,
 								new Item.Properties().group(DotHackTabs.TribalgrapplerItemGroup))
 										.setRegistryName(location("tribalgrappler" + i)));
 			for (int i = 1; i <= 75; i++)
 				event.getRegistry()
-						.register(blademaster = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						.register(blademaster = new SwordItem(ItemTier.DIAMOND, (3 + i) / 10, -2.4F,
 								new Item.Properties().group(DotHackTabs.BlademasterItemGroup))
 										.setRegistryName(location("blademaster" + i)));
 			for (int i = 1; i <= 73; i++)
 				event.getRegistry()
-						.register(heavyaxeman = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						.register(heavyaxeman = new SwordItem(ItemTier.DIAMOND, (11 + i) / 7, -2.4F,
 								new Item.Properties().group(DotHackTabs.HeavyaxeItemGroup))
 										.setRegistryName(location("heavyaxeman" + i)));
 			for (int i = 1; i <= 54; i++)
 				event.getRegistry()
-						.register(heavyblade = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						.register(heavyblade = new SwordItem(ItemTier.DIAMOND, (81 + i) / 15, -2.4F,
 								new Item.Properties().group(DotHackTabs.HeavybladeItemGroup))
 										.setRegistryName(location("heavyblade" + i)));
 			for (int i = 1; i <= 41; i++)
 				event.getRegistry()
-						.register(heavyblade = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						.register(heavyblade = new SwordItem(ItemTier.DIAMOND, (94 + i) / 15, -2.4F,
 								new Item.Properties().group(DotHackTabs.HeavybladeItemGroup))
 										.setRegistryName(location("heavybladev" + i)));
 			for (int i = 1; i <= 71; i++)
 				event.getRegistry()
-						.register(longarm = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						.register(longarm = new SwordItem(ItemTier.DIAMOND, (4 + i) / 9, -2.4F,
 								new Item.Properties().group(DotHackTabs.LongarmItemGroup))
 										.setRegistryName(location("longarm" + i)));
 			for (int i = 1; i <= 81; i++)
 				event.getRegistry()
-						.register(twinblade = new SwordItem(ItemTier.DIAMOND, 8, 6.0f,
+						.register(twinblade = new SwordItem(ItemTier.DIAMOND, (2 + i) / 15, -2.4F,
 								new Item.Properties().group(DotHackTabs.TwinbladeItemGroup))
 										.setRegistryName(location("twinblade" + i)));
 			for (int i = 1; i <= 4; i++)
