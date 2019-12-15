@@ -125,4 +125,11 @@ public class DotHackTabs {
 			return new ItemStack(DotHackItems.steamgunner);
 		}
 	});
+	
+	public static final ItemGroup AccessoriesItemGroup = (new ItemGroup("accessories") {
+		@OnlyIn(Dist.CLIENT)
+		public ItemStack createIcon() {
+			return new ItemStack(DotHackItems.datadrain);
+		}
+	});
 }

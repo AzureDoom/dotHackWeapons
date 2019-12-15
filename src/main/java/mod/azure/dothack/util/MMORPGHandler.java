@@ -2,6 +2,7 @@ package mod.azure.dothack.util;
 
 import com.robertx22.mine_and_slash.api.MineAndSlashAPI;
 import com.robertx22.mine_and_slash.config.compatible_items.ConfigItem;
+import com.robertx22.mine_and_slash.database.gearitemslots.curios.Necklace;
 import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Axe;
 import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Bow;
 import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Hammer;
@@ -67,5 +68,7 @@ public class MMORPGHandler {
 		for (int i = 1; i <= 11; i++)
 			MineAndSlashAPI.addCompatibleItem("dothack:tribalgrappler" + i,
 					new ConfigItem().setType(Sword.INSTANCE).setSalvagable(true));
+		MineAndSlashAPI.addCompatibleItem("dothack:datadrain",
+				new ConfigItem().setType(Necklace.INSTANCE).setSalvagable(true).setAlwaysUnique());
 	}
 }

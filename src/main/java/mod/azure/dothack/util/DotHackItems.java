@@ -31,6 +31,7 @@ public class DotHackItems {
 	public static Item redwand;
 	public static Item dualgunner;
 	public static Item steamgunner;
+	public static Item datadrain;
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	public static class RegistryEvents {
@@ -142,6 +143,9 @@ public class DotHackItems {
 						.register(redwand = new BowItem(new Item.Properties().group(DotHackTabs.WavemasterItemGroup))
 								.setRegistryName(location("redwand")));
 			}
+			event.getRegistry().register(
+					datadrain = new Item(new Item.Properties().group(DotHackTabs.AccessoriesItemGroup).maxStackSize(1))
+							.setRegistryName(location("datadrain")));
 		}
 
 		public static ResourceLocation location(String name) {
