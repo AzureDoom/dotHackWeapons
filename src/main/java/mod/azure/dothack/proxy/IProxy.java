@@ -5,7 +5,7 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = DotHackMod.MODID)
 public class IProxy {
-	
+
 	public void preInit() {
 
 	}

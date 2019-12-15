@@ -1,11 +1,6 @@
 package mod.azure.dothack.items.base;
 
-import mod.azure.dothack.DotHackMod;
-import mod.azure.dothack.registry.DotHackTabs;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ItemBaseSword extends ItemSword {

@@ -14,7 +14,7 @@ public class ModConfig {
 	@Config.Name("Default Mine and Slash Stats")
 	@Config.Comment("Auto Compat with Mine and Slash")
 	public static boolean USE_COMPATIBILITY_ITEMS = true;
-	
+
 	@Mod.EventBusSubscriber(modid = DotHackMod.MODID)
 	private static class EventHandler {
 

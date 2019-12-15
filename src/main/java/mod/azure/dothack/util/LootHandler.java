@@ -2,9 +2,6 @@ package mod.azure.dothack.util;
 
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import com.google.common.collect.ImmutableList;
 
 import mod.azure.dothack.DotHackMod;
@@ -19,7 +16,6 @@ import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class LootHandler {
-	private static final Logger LOGGER = LogManager.getLogger();
 
 	private static final List<String> TABLES = ImmutableList.of("inject/abandoned_mineshaft", "inject/desert_pyramid",
 			"inject/jungle_temple", "inject/simple_dungeon", "inject/stronghold_crossing", "inject/stronghold_corridor",
@@ -28,7 +24,7 @@ public class LootHandler {
 	public LootHandler() {
 		for (String s : TABLES) {
 			LootTableList.register(new ResourceLocation(DotHackMod.MODID, s));
-			LOGGER.debug("Registered Loot Tables");
+			DotHackMod.LOGGER.debug("Registered Loot Tables");
 		}
 
 	}

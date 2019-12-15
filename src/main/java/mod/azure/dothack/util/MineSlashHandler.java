@@ -2,9 +2,6 @@ package mod.azure.dothack.util;
 
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import com.google.common.collect.ImmutableList;
 import com.robertx22.api.MineAndSlashAPI;
 import com.robertx22.config.non_mine_items.ConfigItem;
@@ -17,12 +14,8 @@ import com.robertx22.database.gearitemslots.Sword;
 
 import mod.azure.dothack.DotHackMod;
 import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 
 public class MineSlashHandler {
-
-	private static final Logger LOGGER = LogManager.getLogger();
 
 	private static String MODID = DotHackMod.MODID;
 
@@ -51,35 +44,33 @@ public class MineSlashHandler {
 							.setMaxLevel(111).setMinLevel(75).setMaxLevel(111).setGenerationWeights(100, 100, 0));
 					MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i + "m", new ConfigItem().setType(new Staff())
 							.setMaxLevel(150).setMinLevel(112).setGenerationWeights(100, 100, 10));
-					LOGGER.debug("Registered Staffs");
+					DotHackMod.LOGGER.debug("Registered Staffs");
 				}
 			} else {
 				for (String s : STAFF) {
 					MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i, new ConfigItem().setType(new Staff()));
-					LOGGER.debug("Registered Staffs");
+					DotHackMod.LOGGER.debug("Registered Staffs");
 				}
 			}
 		for (int i = 1; i <= 73; i++)
 			for (String s : AXE) {
 				MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i, new ConfigItem().setType(new Axe()));
-				LOGGER.debug("Registered Axes");
+				DotHackMod.LOGGER.debug("Registered Axes");
 			}
 		for (int i = 1; i <= 71; i++)
 			for (String s : HAMMER) {
-				MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i,
-						new ConfigItem().setType(new Hammer()));
-				LOGGER.debug("Registered Hammers");
+				MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i, new ConfigItem().setType(new Hammer()));
+				DotHackMod.LOGGER.debug("Registered Hammers");
 			}
 		for (int i = 1; i <= 18; i++)
 			for (String s : BOW) {
 				MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i, new ConfigItem().setType(new Bow()));
-				LOGGER.debug("Registered Bows");
+				DotHackMod.LOGGER.debug("Registered Bows");
 			}
 		for (int i = 1; i <= 81; i++)
 			for (String s : SWORD) {
-				MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i,
-						new ConfigItem().setType(new Sword()));
-				LOGGER.debug("Registered Swords");
+				MineAndSlashAPI.addCompatibleItem(MODID + ":" + s + i, new ConfigItem().setType(new Sword()));
+				DotHackMod.LOGGER.debug("Registered Swords");
 			}
 		MineAndSlashAPI.addCompatibleItem(DotHackMod.MODID + ":datadrain", new ConfigItem().setType(new Necklace()));
 	}
