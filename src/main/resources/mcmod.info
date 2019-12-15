@@ -11,8 +11,8 @@
         "credits": "\nDesigned and coded by AzureDoomC.\nCode contributed by: galaxtone and d4rsorc",
         "description" : "",
         "logoFile": "pack.png",
-        "requiredMods": [ "ebwizardry" ],
-        "dependencies": [ "forge", "ebwizardry", "mmorpg", "baubles" ],
+        "requiredMods": [ ],
+        "dependencies": [ ],
         "useDependencyInformation": "true",
         "acceptedMinecraftVersions": "1.12.2"
     }
