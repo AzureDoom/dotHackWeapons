@@ -1,0 +1,14 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl cwdhsw01_6_cwdhsw01_6
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/twinblade01_6
+

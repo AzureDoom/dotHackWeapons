@@ -3,7 +3,7 @@ loaderVersion="[28,)"
 issueTrackerURL="https://github.com/AzureZhen/dotHackWeapons/issues"
 logoFile="logo.png"
 [[mods]] 
-modId="wdothack"
+modId="dothack"
 version="${file.jarVersion}" 
 displayName="dotHack Weapons"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/dothack-hack-weapons" 

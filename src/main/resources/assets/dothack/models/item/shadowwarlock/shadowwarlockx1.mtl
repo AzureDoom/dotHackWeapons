@@ -1,0 +1,38 @@
+# Blender MTL File: 'None'
+# Material Count: 3
+
+newmtl w2dbkx1_TEX_w2dbkx1
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dbkx1
+
+
+newmtl w2dbkx1_TEX_w2dbkx1_1
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dbkx1_1
+
+
+newmtl w2dbkx1_TEX_w2dbkx3
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dbkx3
+

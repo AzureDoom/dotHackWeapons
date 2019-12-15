@@ -1,0 +1,14 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl w22sw11_TEX_w22sw11
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w22sw11
+

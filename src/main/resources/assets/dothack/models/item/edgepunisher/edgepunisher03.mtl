@@ -1,0 +1,122 @@
+# Blender MTL File: 'None'
+# Material Count: 10
+
+newmtl TEX_w22sw03
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w22sw03
+
+
+newmtl TEX_w22sw03_001
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w22sw03
+
+
+newmtl TEX_w22sw03_002
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w22sw03
+
+
+newmtl TEX_w22sw03_003
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w22sw03
+
+
+newmtl TEX_w22sw03_004
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w22sw03
+
+
+newmtl TEX_w22sw03_005
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w22sw03
+
+
+newmtl TEX_w22sw03_006
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w22sw03
+
+
+newmtl TEX_w22sw03_007
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w22sw03
+
+
+newmtl TEX_w22sw03_008
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w22sw03
+
+
+newmtl TEX_w22sw03_009
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w22sw03
+

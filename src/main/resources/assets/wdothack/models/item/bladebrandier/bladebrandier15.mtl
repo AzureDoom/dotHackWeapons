@@ -1,8 +1,0 @@
-# Blender MTL File: 'None'
-# Material Count: 2
-
-newmtl MDL_w21kt15_bod00_TEX_w21kt15
-map_Kd wdothack:items/w21kt15
-
-newmtl MDL_w21kt15_bod01_TEX_w21kt15_1
-map_Kd wdothack:items/w21kt15_1

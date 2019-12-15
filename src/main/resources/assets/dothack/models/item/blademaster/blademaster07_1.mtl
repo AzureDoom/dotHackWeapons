@@ -1,0 +1,12 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl MDL_cw1hsw07_1_TEX_cw1hsw07_1
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dothack:items/cw1hsw07_1
+
+newmtl MDL_cw1hsw07_1_TEX_cw1hsw07_1.001
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dothack:items/cw1hsw07_1
