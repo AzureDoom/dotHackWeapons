@@ -2,8 +2,8 @@
     {
         "modid": "rcraft",
         "name": "dotHack Weapons",
-		"version": "2.1.2",
-        "mcversion": "1.12.2",
+		"version": "${version}",
+        "mcversion": "${mcversion}",
         "url": "https://www.curseforge.com/minecraft/mc-mods/dothack-hack-weapons",
         "authorList": [
             "AzureDoomC"
