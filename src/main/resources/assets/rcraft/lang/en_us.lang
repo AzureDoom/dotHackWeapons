@@ -945,6 +945,9 @@ item.wavemaster72m.name=Electric Wand Master
 item.wavemaster73m.name=Bolt Rod Master
 item.wavemaster74m.name=Dark History Master
 
-itemGroup.rcraft.tabRCraft=.Hack Gear
+itemGroup.swords=.Hack Swords
+itemGroup.magic=.Hack Magic
+itemGroup.guns=.Hack Guns
+itemGroup.extra=.Hack Extra
 
 rcraft.config.title=dotHack Weapons Config
