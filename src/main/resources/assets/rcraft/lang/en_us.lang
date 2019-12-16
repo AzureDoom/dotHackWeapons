@@ -945,25 +945,6 @@ item.wavemaster72m.name=Electric Wand Master
 item.wavemaster73m.name=Bolt Rod Master
 item.wavemaster74m.name=Dark History Master
 
-itemGroup.accessories=.Hack Accessories
-itemGroup.dothack=.Hack Weapons
-itemGroup.wavemaster=Wavemaster
-itemGroup.twinblade=Twinblade
-itemGroup.heavyblade=Heavyblade
-itemGroup.dualgun=Dual Guns
-itemGroup.bladebrandier=Blade Brandier
-itemGroup.dualswords=Dual Swords
-itemGroup.edgepunisher=Edge Punisher
-itemGroup.flickreaper=Flick Reaper
-itemGroup.lordpartizan=Lord Partizan
-itemGroup.tribalgrappler=Tribal Grappler
-itemGroup.blademaster=Blademaster
-itemGroup.heavyaxeman=Heavy Axeman
-itemGroup.longarm=Long Arm
-itemGroup.harvestcleric=Harvest Cleric
-itemGroup.macabredancer=Macabre Dancer
-itemGroup.shadowwarlock=Shadow Warlock
-itemGroup.steamgunner=Steam Gunner
-itemGroup.wands=.Hack Magic
+itemGroup.rcraft.tabRCraft=.Hack Gear
 
 rcraft.config.title=dotHack Weapons Config

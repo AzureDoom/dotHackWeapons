@@ -12,7 +12,6 @@ import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.Spell;
 import electroblob.wizardry.util.SpellProperties;
 import electroblob.wizardry.util.WandHelper;
-import mod.azure.dothack.registry.DotHackTabs;
 import mod.azure.dothack.util.WandMap;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
@@ -26,7 +25,6 @@ public class ItemEBWand18 extends ItemWand {
 		super(tier, element);
 		this.tier = tier;
 		this.element = element;
-		this.setCreativeTab(DotHackTabs.tabw);
 
 	}
 
