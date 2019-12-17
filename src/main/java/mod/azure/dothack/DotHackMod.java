@@ -1,58 +1,41 @@
 package mod.azure.dothack;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import mod.azure.dothack.config.ModConfig;
-import mod.azure.dothack.proxy.IProxy;
-import mod.azure.dothack.util.LootHandler;
-import mod.azure.dothack.util.MineSlashHandler;
-import mod.azure.dothack.util.WandMap;
+import mod.azure.dothack.config.Config;
+//import mod.azure.dothack.util.MMORPGHandler;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.Loader;
+//import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
+//import top.theillusivec4.curios.api.CuriosAPI;
+//import top.theillusivec4.curios.api.imc.CurioIMCMessage;
 
-@Mod(modid = DotHackMod.MODID)
+@Mod("dothack")
 public class DotHackMod {
 
-	public static final String MODID = "rcraft";
-	public static final String MODNAME = "dotHack Weapons";
-	public static final Logger LOGGER = LogManager.getLogger();
-
-	@SidedProxy(clientSide = "mod.azure.dothack.proxy.ClientProxy", serverSide = "mod.azure.dothack.proxy.ServerProxy")
-	public static IProxy proxy;
-
-	@Mod.Instance
 	public static DotHackMod instance;
+	public static final String MODID = "dothack";
 
-	@Mod.EventHandler
-	public void preInit(FMLPreInitializationEvent e) {
-		proxy.preInit();
-		LOGGER.info("Loading Data Drain...");
-	}
-
-	@Mod.EventHandler
-	public void init(FMLInitializationEvent e) {
-		proxy.init();
-		LOGGER.info("Firing Data Drain...");
-		if (Loader.isModLoaded("ebwizardry")) {
-			WandMap.populateWandMap();
+	public DotHackMod() {
+		{
+			instance = this;
+			ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.spec, "dothack-config.toml");
+			Config.loadConfig(Config.spec, FMLPaths.CONFIGDIR.get().resolve("dothack-config.toml").toString());
+			MinecraftForge.EVENT_BUS.register(this);
 		}
-		MinecraftForge.EVENT_BUS.register(new LootHandler());
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
 	}
 
-	@Mod.EventHandler
-	public void postInit(FMLPostInitializationEvent e) {
-		proxy.postInit();
-		LOGGER.info("No Data Bugs Found");
-		if (ModConfig.USE_COMPATIBILITY_ITEMS) {
-			if (Loader.isModLoaded("mmorpg")) {
-				MinecraftForge.EVENT_BUS.register(new MineSlashHandler());
-			}
+	private void enqueueIMC(final InterModProcessEvent event) {
+		if (ModList.get().isLoaded("curios")) {
+			//InterModComms.sendTo("curios", CuriosAPI.IMC.REGISTER_TYPE, () -> new CurioIMCMessage("bracelet"));
+		}
+		if (ModList.get().isLoaded("mmorpg") && Config.INSTANCE.USE_COMPATIBILITY_ON_ITEMS.get()) {
+			//MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
 		}
 	}
 }

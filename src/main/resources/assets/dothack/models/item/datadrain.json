@@ -1,0 +1,47 @@
+{
+    "parent": "forge:item/default",
+	"loader": "forge:obj",
+	"model": "dothack:models/item/datadrain.obj",
+	"display" : {
+    	"thirdperson_righthand": {
+            	"rotation": [ 0, 188, 0 ],
+            	"translation": [ -8.60, 2.0, -5.7 ],
+            	"scale": [ 0.00, 0.00, 0.00 ]
+        	},
+        	"thirdperson_lefthand": {
+        		"rotation": [ 0, 188, 0 ],
+        		"translation": [ 0.42, 0.15, -0.53 ],
+        		"scale": [ 0.00, 0.00, 0.00 ]
+        	},
+        	"firstperson_righthand": {
+        		"rotation": [ 0, 190, 0 ],
+        		"translation": [ -9.70, 0.20, -0.50 ],
+        		"scale": [ 0.00, 0.00, 0.0 ]
+        	},
+        	"firstperson_lefthand": {
+        		"rotation": [ 0, 190, 0 ],
+        		"translation": [ 0.30, 0.20, -0.50 ],
+        		"scale": [ 0.00, 0.00, 0.00 ]
+        	},
+        	"gui": {
+        		"rotation": [ 96, 50, 216 ],
+        		"translation": [ 0.50, -0.40, 0.00 ],
+        		"scale": [ 0.07, 0.07, 0.07 ]
+        	},
+        	"head": {
+        		"rotation": [ 0, 0, 0 ],
+        		"translation": [ 0.00, 0.00, 0.00 ],
+        		"scale": [ 0.00, 0.00, 0.00 ]
+        	},
+        	"fixed": {
+        		"rotation": [ 0, 0, 0 ],
+        		"translation": [ 0.00, 0.00, 0.00 ],
+        		"scale": [ 1.00, 1.00, 1.00 ]
+        	},
+        	"ground": {
+        		"rotation": [ 0, 0, 0 ],
+        		"translation": [ 10.00, 2.00, 5.00 ],
+        		"scale": [ 1.00, 1.00, 1.00 ]
+        	}
+	}
+}

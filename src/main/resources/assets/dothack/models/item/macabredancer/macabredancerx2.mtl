@@ -1,0 +1,122 @@
+# Blender MTL File: 'None'
+# Material Count: 10
+
+newmtl w2dfnx2l_TEX_w2dfnx2
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfnx2
+
+
+newmtl w2dfnx2l_TEX_w2dfnx2_001
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfnx2
+
+
+newmtl w2dfnx2l_TEX_w2dfnx2_002
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfnx2
+
+
+newmtl w2dfnx2l_TEX_w2dfnx2_003
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfnx2
+
+
+newmtl w2dfnx2l_TEX_w2dfnx2_004
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfnx2
+
+
+newmtl w2dfnx2l_TEX_w2dfnx2_1
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfnx2_1
+
+
+newmtl w2dfnx2l_TEX_w2dfnx2_1_001
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfnx2_1
+
+
+newmtl w2dfnx2l_TEX_w2dfnx2_1_002
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfnx2_1
+
+
+newmtl w2dfnx2l_TEX_w2dfnx2_1_003
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfnx2_1
+
+
+newmtl w2dfnx2l_TEX_w2dfnx2_1_004
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfnx2_1
+

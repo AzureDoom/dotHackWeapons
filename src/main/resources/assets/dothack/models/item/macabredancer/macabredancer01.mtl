@@ -1,0 +1,62 @@
+# Blender MTL File: 'None'
+# Material Count: 5
+
+newmtl w2dfn01l_TEX_w2dfn01l
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfn01l
+
+
+newmtl w2dfn01l_TEX_w2dfn01l_001
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfn01l
+
+
+newmtl w2dfn01l_TEX_w2dfn01l_002
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfn01l
+
+
+newmtl w2dfn01l_TEX_w2dfn01l_003
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfn01l
+
+
+newmtl w2dfn01l_TEX_w2dfn01l_004
+
+
+Kd 1.000000 1.000000 1.000000
+
+
+
+d 1.000000
+
+map_Kd dothack:items/w2dfn01l
+

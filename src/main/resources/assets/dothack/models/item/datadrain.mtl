@@ -1,0 +1,32 @@
+# Blender MTL File: 'None'
+# Material Count: 5
+
+newmtl Ring_1
+
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dothack:items/datadrain
+
+newmtl Ring_2
+
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dothack:items/datadrain
+
+newmtl Ring_3
+
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dothack:items/datadrain
+
+newmtl Ring_4
+
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dothack:items/datadrain
+
+newmtl Ring_5
+
+Kd 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd dothack:items/datadrain

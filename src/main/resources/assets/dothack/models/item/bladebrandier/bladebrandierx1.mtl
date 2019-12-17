@@ -1,0 +1,8 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl MDL_w21ktx1_bod00_TEX_w21ktx1
+map_Kd dothack:items/w21ktx1
+
+newmtl MDL_w21ktx1_bod01_TEX_w21ktx1_1
+map_Kd dothack:items/w21ktx1_1

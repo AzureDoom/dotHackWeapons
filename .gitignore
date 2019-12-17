@@ -6,16 +6,22 @@ bin
 .classpath
 .project
 
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
 # gradle
+build
 .gradle
-build 
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+build.bat
+gradle.properties
 
 # other
 eclipse
 run
+
+Build.bat
+gradle/wrapper
+gradlew
+gradlew.bat
+gradle.properties
