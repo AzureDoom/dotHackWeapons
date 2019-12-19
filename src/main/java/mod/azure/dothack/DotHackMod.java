@@ -32,10 +32,11 @@ public class DotHackMod {
 
 	private void enqueueIMC(final InterModProcessEvent event) {
 		if (ModList.get().isLoaded("curios")) {
-			//InterModComms.sendTo("curios", CuriosAPI.IMC.REGISTER_TYPE, () -> new CurioIMCMessage("bracelet"));
+			// InterModComms.sendTo("curios", CuriosAPI.IMC.REGISTER_TYPE, () -> new
+			// CurioIMCMessage("bracelet"));
 		}
 		if (ModList.get().isLoaded("mmorpg") && Config.INSTANCE.USE_COMPATIBILITY_ON_ITEMS.get()) {
-			//MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
+			// MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
 		}
 	}
 }

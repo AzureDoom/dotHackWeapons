@@ -157,4 +157,5 @@ public class DotHackItems {
 			return new ResourceLocation(DotHackMod.MODID, name);
 		}
 	}
+
 }

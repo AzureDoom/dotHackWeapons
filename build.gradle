@@ -12,9 +12,9 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = "0.0.1"
+version = "0.0.2"
 group = "mod.azure.dothackweapons"
-archivesBaseName = "dotHack-Weapons-1.15"
+archivesBaseName = "dotHack-Weapons-1.15.1"
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
@@ -56,9 +56,10 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.15-29.0.2'
-    //compile fg.deobf(files("libs/curios-FORGE-1.14.4-1.0.2-deobf.jar"))
-	//compile fg.deobf(files("libs/Mine+and+Slash-1.14.4-2.9.3-deobf.jar"))
+    minecraft 'net.minecraftforge:forge:1.15.1-30.0.7'
+    
+	//compile fg.deobf(files("libs/curios-FORGE-1.14.4-1.0.2-deobf.jar"))
+	//compile fg.deobf(files("libs/Mine+and+Slash-1.14.4-2.9.4-deobf.jar"))
 }
 
 jar {
