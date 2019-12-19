@@ -17,7 +17,7 @@ public class DotHackTabs {
 			return true;
 		}
 
-	}).setBackgroundImageName("item_search.png");;
+	}).setBackgroundImageName("item_search.png");
 
 	public static final ItemGroup MagicItemGroup = (new ItemGroup("magic") {
 		@OnlyIn(Dist.CLIENT)
@@ -29,7 +29,7 @@ public class DotHackTabs {
 			return true;
 		}
 
-	}).setBackgroundImageName("item_search.png");;
+	}).setBackgroundImageName("item_search.png");
 
 	public static final ItemGroup GunsItemGroup = (new ItemGroup("guns") {
 		@OnlyIn(Dist.CLIENT)
@@ -41,7 +41,7 @@ public class DotHackTabs {
 			return true;
 		}
 
-	}).setBackgroundImageName("item_search.png");;
+	}).setBackgroundImageName("item_search.png");
 
 	public static final ItemGroup AccessoriesItemGroup = (new ItemGroup("accessories") {
 		@OnlyIn(Dist.CLIENT)
