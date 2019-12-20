@@ -1,7 +1,7 @@
 {
     "parent": "forge:item/default",
 	"loader": "forge:obj",
-	"model": "dothack:models/item/datadrain.obj",
+	"model": "dothack:models/item/others/datadrain.obj",
 	"display" : {
     	"thirdperson_righthand": {
             	"rotation": [ 0, 188, 0 ],
