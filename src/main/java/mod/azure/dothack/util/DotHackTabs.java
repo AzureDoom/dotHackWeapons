@@ -22,7 +22,7 @@ public class DotHackTabs {
 	public static final ItemGroup MagicItemGroup = (new ItemGroup("magic") {
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack createIcon() {
-			return new ItemStack(DotHackItems.harvestcleric);
+			return new ItemStack(DotHackItems.redwand);
 		}
 
 		public boolean hasSearchBar() {
