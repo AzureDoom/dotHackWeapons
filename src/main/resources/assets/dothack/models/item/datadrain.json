@@ -4,24 +4,24 @@
 	"model": "dothack:models/item/others/datadrain.obj",
 	"display" : {
     	"thirdperson_righthand": {
-            	"rotation": [ 0, 188, 0 ],
-            	"translation": [ -8.60, 2.0, -5.7 ],
-            	"scale": [ 0.00, 0.00, 0.00 ]
+            	"rotation": [ 0, 180, 0 ],
+            	"translation": [ -1.00, -1.0, -0.7 ],
+            	"scale": [ 0.10, 0.10, 0.10 ]
         	},
         	"thirdperson_lefthand": {
         		"rotation": [ 0, 188, 0 ],
-        		"translation": [ 0.42, 0.15, -0.53 ],
-        		"scale": [ 0.00, 0.00, 0.00 ]
+        		"translation": [ 0.50, -1.0, -0.7 ],
+        		"scale": [ 0.10, 0.10, 0.10 ]
         	},
         	"firstperson_righthand": {
-        		"rotation": [ 0, 190, 0 ],
-        		"translation": [ -9.70, 0.20, -0.50 ],
-        		"scale": [ 0.00, 0.00, 0.0 ]
+        		"rotation": [ 0, 180, 0 ],
+        		"translation": [ -0.70, 0.20, -10.50 ],
+        		"scale": [ 0.10, 0.10, 0.10 ]
         	},
         	"firstperson_lefthand": {
         		"rotation": [ 0, 190, 0 ],
-        		"translation": [ 0.30, 0.20, -0.50 ],
-        		"scale": [ 0.00, 0.00, 0.00 ]
+        		"translation": [ -0.70, 0.20, -10.50 ],
+        		"scale": [ 0.10, 0.10, 0.10 ]
         	},
         	"gui": {
         		"rotation": [ 96, 50, 216 ],
@@ -34,14 +34,14 @@
         		"scale": [ 0.00, 0.00, 0.00 ]
         	},
         	"fixed": {
-        		"rotation": [ 0, 0, 0 ],
-        		"translation": [ 0.00, 0.00, 0.00 ],
-        		"scale": [ 1.00, 1.00, 1.00 ]
+        		"rotation": [ 0, 180, 0 ],
+        		"translation": [ -1.00, 1.00, -4.00 ],
+        		"scale": [ 0.08, 0.08, 0.08 ]
         	},
         	"ground": {
         		"rotation": [ 0, 0, 0 ],
-        		"translation": [ 10.00, 2.00, 5.00 ],
-        		"scale": [ 1.00, 1.00, 1.00 ]
+        		"translation": [ 0.00, 4.00, 0.00 ],
+        		"scale": [ 0.03, 0.03, 0.03 ]
         	}
 	}
 }
