@@ -1,0 +1,47 @@
+{
+    "parent": "forge:item/default",
+	"loader": "forge:obj",
+	"model": "dothack:models/item/tribalgrappler/tribalgrappler07l.obj",
+	"display" : {
+    	"thirdperson_righthand": {
+            	"rotation": [ 0, 180, 0 ],
+            	"translation": [ -26.00, 21.2, -20.00 ],
+            	"scale": [ 3.00, 3.00, 3.00 ]
+        	},
+        	"thirdperson_lefthand": {
+        		"rotation": [ 180, 0, 0 ],
+            	"translation": [ -26.00, -26.2, -20.00 ],
+            	"scale": [ 3.00, 3.00, 3.00 ]
+        	},
+        	"firstperson_righthand": {
+        		"rotation": [ 0, 190, 90 ],
+        		"translation": [ 0.00, 0.00, -30.50 ],
+        		"scale": [ 0.00, 0.00, 0.00 ]
+        	},
+        	"firstperson_lefthand": {
+        		"rotation": [ 0, 190, 0 ],
+        		"translation": [ 0.30, 0.20, -0.50 ],
+        		"scale": [ 0.00, 0.00, 0.00 ]
+        	},
+        	"gui": {
+        		"rotation": [ 90, 180, 90 ],
+        		"translation": [ 25.10, 22.00, 0.00 ],
+        		"scale": [ 3.00, 3.00, 3.00 ]
+        	},
+        	"head": {
+        		"rotation": [ 0, 0, 0 ],
+        		"translation": [ 0.00, 0.00, 0.00 ],
+        		"scale": [ 1.00, 1.00, 1.00 ]
+        	},
+        	"fixed": {
+        		"rotation": [ 0, 90, 180 ],
+        		"translation": [ 18.50, -20.00, 20.00 ],
+        		"scale": [ 2.50, 2.50, 2.50 ]
+        	},
+        	"ground": {
+        		"rotation": [ 0, 0, 0 ],
+        		"translation": [ 5.00, 5.00, 10.00 ],
+        		"scale": [ 1.00, 1.00, 1.00 ]
+        	}
+	}
+}
