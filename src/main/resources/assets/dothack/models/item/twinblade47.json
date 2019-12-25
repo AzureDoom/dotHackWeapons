@@ -1,0 +1,47 @@
+{
+    "parent": "forge:item/default",
+	"loader": "forge:obj",
+	"model": "dothack:models/item/twinblade1/twinblade107.obj",
+	"display" : {
+    	"thirdperson_righthand": {
+            	"rotation": [ 0, 0, 180 ],
+            	"translation": [ -16.00, -14.50, 19.00 ],
+            	"scale": [ 2.00, 2.00, 2.00 ]
+        	},
+        	"thirdperson_lefthand": {
+        		"rotation": [ 0, 0, 180 ],
+            	"translation": [ 16.00, -14.50, 19.00 ],
+            	"scale": [ 2.00, 2.00, 2.00 ]
+        	},
+        	"firstperson_righthand": {
+        		"rotation": [ 0, 190, 90 ],
+        		"translation": [ 0.00, 0.00, -30.50 ],
+        		"scale": [ 0.00, 0.00, 0.00 ]
+        	},
+        	"firstperson_lefthand": {
+        		"rotation": [ 0, 190, 0 ],
+        		"translation": [ 0.30, 0.20, -0.50 ],
+        		"scale": [ 0.00, 0.00, 0.00 ]
+        	},
+        	"gui": {
+        		"rotation": [ 96, 50, 216 ],
+        		"translation": [ 10.10, -11.00, 0.00 ],
+        		"scale": [ 1.50, 1.50, 1.50 ]
+        	},
+        	"head": {
+        		"rotation": [ 0, 0, 0 ],
+        		"translation": [ 0.00, 0.00, 0.00 ],
+        		"scale": [ 1.00, 1.00, 1.00 ]
+        	},
+        	"fixed": {
+        		"rotation": [ 0, 90, 90 ],
+        		"translation": [ 16.50, 12.50, 12.00 ],
+        		"scale": [ 1.50, 1.50, 1.50 ]
+        	},
+        	"ground": {
+        		"rotation": [ 0, 90, 180 ],
+        		"translation": [ 10.00, -5.00, 5.00 ],
+        		"scale": [ 1.00, 1.00, 1.00 ]
+        	}
+	}
+}

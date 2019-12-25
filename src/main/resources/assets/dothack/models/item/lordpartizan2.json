@@ -1,0 +1,47 @@
+{
+    "parent": "forge:item/default",
+	"loader": "forge:obj",
+	"model": "dothack:models/item/lordpartizan/lordpartizan01.obj",
+	"display" : {
+    	"thirdperson_righthand": {
+            	"rotation": [ 0, 188, 0 ],
+            	"translation": [ -8.60, 14.00, -5.7 ],
+            	"scale": [ 1.00, 1.00, 1.00 ]
+        	},
+        	"thirdperson_lefthand": {
+        		"rotation": [ 0, 188, 0 ],
+        		"translation": [ 7.0, 14.15, -7.53 ],
+        		"scale": [ 1.00, 1.00, 1.00 ]
+        	},
+        	"firstperson_righthand": {
+        		"rotation": [ 0, 190, 0 ],
+        		"translation": [ -9.70, 0.20, -0.50 ],
+        		"scale": [ 0.90, 0.90, 0.90 ]
+        	},
+        	"firstperson_lefthand": {
+        		"rotation": [ 0, 170, 0 ],
+        		"translation": [ 7.30, 0.20, -0.50 ],
+        		"scale": [ 0.90, 0.90, 0.90 ]
+        	},
+        	"gui": {
+        		"rotation": [ 96, 50, 216 ],
+        		"translation": [ 0.10, -5.00, 0.00 ],
+        		"scale": [ 0.50, 0.50, 0.50 ]
+        	},
+        	"head": {
+        		"rotation": [ 0, 0, 0 ],
+        		"translation": [ 0.00, 0.00, 0.00 ],
+        		"scale": [ 1.00, 1.00, 1.00 ]
+        	},
+        	"fixed": {
+        		"rotation": [ 0, 90, 0 ],
+        		"translation": [ 2.00, -0.50, -3.00 ],
+        		"scale": [ 0.35, 0.35, 0.35 ]
+        	},
+        	"ground": {
+        		"rotation": [ 0, 0, 0 ],
+        		"translation": [ 5.00, 13.00, 5.00 ],
+        		"scale": [ 0.50, 0.50, 0.50 ]
+        	}
+	}
+}
