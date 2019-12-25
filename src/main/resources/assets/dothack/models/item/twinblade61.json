@@ -1,16 +1,16 @@
 {
     "parent": "forge:item/default",
 	"loader": "forge:obj",
-	"model": "dothack:models/item/twinblade1/twinblade106_1.obj",
+	"model": "dothack:models/item/twinblade1/twinblade102_6.obj",
 	"display" : {
     	"thirdperson_righthand": {
             	"rotation": [ 0, 0, 0 ],
-            	"translation": [ 8.00, 8.30, 10.70 ],
+            	"translation": [ 8.00, 6.30, 8.70 ],
             	"scale": [ 1.00, 1.00, 1.00 ]
         	},
         	"thirdperson_lefthand": {
         		"rotation": [ 0, 0, 0 ],
-            	"translation": [ -8.00, 8.30, 10.70 ],
+            	"translation": [ -8.00, 6.30, 8.70 ],
             	"scale": [ 1.00, 1.00, 1.00 ]
         	},
         	"firstperson_righthand": {
@@ -25,7 +25,7 @@
         	},
         	"gui": {
         		"rotation": [ 96, 50, 0 ],
-        		"translation": [ 20.10, -4.00, 0.00 ],
+        		"translation": [ 20.10, -1.00, 0.00 ],
         		"scale": [ 1.50, 1.50, 1.50 ]
         	},
         	"head": {
