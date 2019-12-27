@@ -15,7 +15,7 @@ import net.minecraftforge.fml.common.Mod;
 public class DotHackItems {
 
 	public static Item bladebrandier;
-	public static Item harvestcleric;
+	public static Item redwand;
 	public static Item dualgunner;
 	public static Item datadrain;
 
@@ -37,7 +37,12 @@ public class DotHackItems {
 						.register(new SwordItem(ItemTier.DIAMOND, (3 + i) / 3, -2.4F,
 								new Item.Properties().group(DotHackTabs.SwordItemGroup).maxDamage(10000))
 										.setRegistryName(location("bladebrandier" + i)));
-			for (int i = 1; i <= 25; i++)
+			for (int i = 1; i <= 8; i++)
+				event.getRegistry()
+						.register(new SwordItem(ItemTier.DIAMOND, (2 + i) / 5, -2.4F,
+								new Item.Properties().group(DotHackTabs.SwordItemGroup).maxDamage(10000))
+										.setRegistryName(location("dualswords" + i)));
+			for (int i = 10; i <= 25; i++)
 				event.getRegistry()
 						.register(new SwordItem(ItemTier.DIAMOND, (2 + i) / 5, -2.4F,
 								new Item.Properties().group(DotHackTabs.SwordItemGroup).maxDamage(10000))
@@ -102,10 +107,9 @@ public class DotHackItems {
 
 			if (ModList.get().isLoaded("mmorpg")) {
 				for (int i = 1; i <= 10; i++)
-					event.getRegistry()
-							.register(harvestcleric = new StaffItem(
-									new Item.Properties().maxDamage(10000).group(DotHackTabs.MagicItemGroup), 0)
-											.setRegistryName(location("harvestcleric" + i)));
+					event.getRegistry().register(
+							new StaffItem(new Item.Properties().maxDamage(10000).group(DotHackTabs.MagicItemGroup), 0)
+									.setRegistryName(location("harvestcleric" + i)));
 				for (int i = 1; i <= 5; i++)
 					event.getRegistry().register(
 							new StaffItem(new Item.Properties().maxDamage(10000).group(DotHackTabs.MagicItemGroup), 0)
@@ -117,30 +121,30 @@ public class DotHackItems {
 				for (int i = 1; i <= 74; i++)
 					event.getRegistry().register(
 							new StaffItem(new Item.Properties().maxDamage(10000).group(DotHackTabs.MagicItemGroup), 0)
-									.setRegistryName(location("wavemaster" + i)));
-				event.getRegistry().register(
-						new StaffItem(new Item.Properties().maxDamage(10000).group(DotHackTabs.MagicItemGroup), 0)
-								.setRegistryName(location("redwand")));
-			} else {
-				for (int i = 1; i <= 10; i++)
-					event.getRegistry()
-							.register(harvestcleric = new BowItem(
-									new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
-											.setRegistryName(location("harvestcleric" + i)));
-				for (int i = 1; i <= 5; i++)
-					event.getRegistry().register(
-							new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
-									.setRegistryName(location("macabredancer" + i)));
-				for (int i = 1; i <= 14; i++)
-					event.getRegistry().register(
-							new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
-									.setRegistryName(location("shadowwarlock" + i)));
-				for (int i = 1; i <= 74; i++)
-					event.getRegistry().register(
-							new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
 									.setRegistryName(location("wavemaster" + i)));
 				event.getRegistry()
-						.register(new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
+						.register(redwand = new StaffItem(
+								new Item.Properties().maxDamage(10000).group(DotHackTabs.MagicItemGroup), 0)
+										.setRegistryName(location("redwand")));
+			} else {
+				for (int i = 1; i <= 10; i++)
+					event.getRegistry().register(
+							new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
+									.setRegistryName(location("harvestcleric" + i)));
+				for (int i = 1; i <= 5; i++)
+					event.getRegistry().register(
+							new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
+									.setRegistryName(location("macabredancer" + i)));
+				for (int i = 1; i <= 14; i++)
+					event.getRegistry().register(
+							new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
+									.setRegistryName(location("shadowwarlock" + i)));
+				for (int i = 1; i <= 74; i++)
+					event.getRegistry().register(
+							new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
+									.setRegistryName(location("wavemaster" + i)));
+				event.getRegistry().register(
+						redwand = new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
 								.setRegistryName(location("redwand")));
 			}
 			event.getRegistry().register(datadrain = new Item(
@@ -152,4 +156,5 @@ public class DotHackItems {
 			return new ResourceLocation(DotHackMod.MODID, name);
 		}
 	}
+
 }

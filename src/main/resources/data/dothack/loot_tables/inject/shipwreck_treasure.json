@@ -1,0 +1,3080 @@
+{
+    "pools": [
+        {
+            "name": "main",
+			"rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:bladebrandier19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualgunner3"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualgunner4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualgunner1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualgunner2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:steamgunner17"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:tribalgrappler1"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:tribalgrappler2"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:tribalgrappler3"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:tribalgrappler4"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:tribalgrappler5"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:tribalgrappler6"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:tribalgrappler7"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:tribalgrappler8"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:tribalgrappler9"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:tribalgrappler10"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:tribalgrappler11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:harvestcleric9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:harvestcleric1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:harvestcleric2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:harvestcleric3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:harvestcleric4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:harvestcleric5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:harvestcleric6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:harvestcleric7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:harvestcleric8"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:harvestcleric10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:macabredancer5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:macabredancer1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:macabredancer2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:macabredancer3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:macabredancer4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:shadowwarlock13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster44"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster45"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster46"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster47"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster48"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster49"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster50"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster51"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster52"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster53"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster54"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster55"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster56"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster57"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster58"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster59"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster60"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster61"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster62"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster63"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster64"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster65"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster66"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster67"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster68"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster69"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster70"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster71"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster72"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster73"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster74"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster39"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster40"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster41"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster42"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:wavemaster43"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster39"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster40"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster41"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster42"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster43"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster44"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster45"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster46"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster47"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster48"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster49"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster50"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster51"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster52"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster53"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster54"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster55"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster56"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster57"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster58"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster59"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster60"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster61"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster62"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster63"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster64"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster65"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster66"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster67"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster68"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster69"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster70"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster71"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster72"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster73"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster74"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:blademaster75"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm39"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm40"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm41"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm42"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm43"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm44"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm45"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm46"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm47"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm48"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm49"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm50"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm51"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm52"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm53"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm54"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm55"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm56"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm57"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm58"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm59"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm60"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm61"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm62"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm63"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm64"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm65"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm66"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm67"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm68"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm69"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm70"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:longarm71"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade39"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade40"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade41"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade42"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade43"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade44"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade45"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade46"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade47"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade48"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade49"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade50"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade51"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade52"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade53"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyblade54"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:flickreaper1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:flickreaper2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:flickreaper3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:flickreaper4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:flickreaper5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:flickreaper6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:flickreaper7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:flickreaper8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:flickreaper9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:dualswords25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:edgepunisher20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:lordpartizan1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:lordpartizan2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:lordpartizan3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:lordpartizan4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:lordpartizan5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:lordpartizan6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:lordpartizan7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:lordpartizan8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:lordpartizan9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman25"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman26"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman27"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman28"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman29"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman30"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman31"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman32"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman33"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman34"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman35"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman36"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman37"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman38"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman39"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman40"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman41"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman42"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman43"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman44"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman45"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman46"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman47"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman48"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman49"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman50"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman51"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman52"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman53"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman54"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman55"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman56"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman57"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman58"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman59"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman60"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman61"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman62"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman63"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman64"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman65"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman66"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman67"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman68"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman69"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman70"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman71"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman72"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavyaxeman73"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade39"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade40"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade41"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade42"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade43"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade44"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade45"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade46"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade47"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade48"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade49"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade50"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade51"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade52"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade53"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade54"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade55"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade56"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade57"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade58"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade59"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade60"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade61"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade62"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade63"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade64"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade65"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade66"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade67"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade68"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade69"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade70"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade71"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade72"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade73"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade74"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade75"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade76"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade77"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade78"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade79"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade80"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:twinblade81"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:datadrain"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:redwand"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev1"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev2"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev3"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev4"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev5"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev6"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev7"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev8"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev9"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev10"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev11"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev12"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev13"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev14"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev15"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev16"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev17"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev18"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev19"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev20"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev21"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev22"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev23"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev24"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev25"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev26"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev27"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev28"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev29"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev30"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev31"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev32"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev33"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev34"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev35"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev36"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev37"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev38"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev39"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev40"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "dothack:heavybladev41"
+                }
+            ]
+        }
+    ]
+}
