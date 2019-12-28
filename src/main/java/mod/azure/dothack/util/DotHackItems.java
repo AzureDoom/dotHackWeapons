@@ -23,26 +23,12 @@ public class DotHackItems {
 	public static class RegistryEvents {
 		@SubscribeEvent
 		public static void registerItems(final RegistryEvent.Register<Item> event) {
-			for (int i = 1; i <= 8; i++)
+			for (int i = 1; i <= 19; i++)
 				event.getRegistry()
-						.register(new SwordItem(ItemTier.DIAMOND, (3 + i) / 3, -2.4F,
+						.register(bladebrandier = new SwordItem(ItemTier.DIAMOND, (3 + i) / 3, -2.4F,
 								new Item.Properties().group(DotHackTabs.SwordItemGroup).maxDamage(10000))
 										.setRegistryName(location("bladebrandier" + i)));
-			event.getRegistry()
-					.register(bladebrandier = new SwordItem(ItemTier.DIAMOND, 4, -2.4F,
-							new Item.Properties().group(DotHackTabs.SwordItemGroup).maxDamage(10000))
-									.setRegistryName(location("bladebrandier9")));
-			for (int i = 10; i <= 19; i++)
-				event.getRegistry()
-						.register(new SwordItem(ItemTier.DIAMOND, (3 + i) / 3, -2.4F,
-								new Item.Properties().group(DotHackTabs.SwordItemGroup).maxDamage(10000))
-										.setRegistryName(location("bladebrandier" + i)));
-			for (int i = 1; i <= 8; i++)
-				event.getRegistry()
-						.register(new SwordItem(ItemTier.DIAMOND, (2 + i) / 5, -2.4F,
-								new Item.Properties().group(DotHackTabs.SwordItemGroup).maxDamage(10000))
-										.setRegistryName(location("dualswords" + i)));
-			for (int i = 10; i <= 25; i++)
+			for (int i = 1; i <= 24; i++)
 				event.getRegistry()
 						.register(new SwordItem(ItemTier.DIAMOND, (2 + i) / 5, -2.4F,
 								new Item.Properties().group(DotHackTabs.SwordItemGroup).maxDamage(10000))

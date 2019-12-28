@@ -1,7 +1,7 @@
 {
     "parent": "forge:item/default",
 	"loader": "forge:obj",
-	"model": "dothack:models/item/dualswords/dualswordsa6l.obj",
+	"model": "dothack:models/item/dualswords/dualswordsa8l.obj",
 	"display" : {
     	"thirdperson_righthand": {
             	"rotation": [ 0, 188, 0 ],
