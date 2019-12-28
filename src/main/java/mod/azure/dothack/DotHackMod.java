@@ -34,13 +34,12 @@ public class DotHackMod {
 	}
 	
 	private void setup(final FMLCommonSetupEvent event) {
-		MinecraftForge.EVENT_BUS.register(new LootHandler());
+		MinecraftForge.EVENT_BUS.register(LootHandler.class);
     }
 
 	private void enqueueIMC(final InterModProcessEvent event) {
 		if (ModList.get().isLoaded("curios")) {
-			// InterModComms.sendTo("curios", CuriosAPI.IMC.REGISTER_TYPE, () -> new
-			// CurioIMCMessage("bracelet"));
+			//InterModComms.sendTo("curios", CuriosAPI.IMC.REGISTER_TYPE, () -> new CurioIMCMessage("bracelet"));
 		}
 		if (ModList.get().isLoaded("mmorpg") && Config.INSTANCE.USE_COMPATIBILITY_ON_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
