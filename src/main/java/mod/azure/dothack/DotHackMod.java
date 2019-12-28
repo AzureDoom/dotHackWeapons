@@ -34,7 +34,7 @@ public class DotHackMod {
 	}
 
 	private void setup(final FMLCommonSetupEvent event) {
-		MinecraftForge.EVENT_BUS.register(new LootHandler());
+		MinecraftForge.EVENT_BUS.register(LootHandler.class);
 	}
 
 	private void enqueueIMC(final InterModProcessEvent event) {
