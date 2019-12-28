@@ -2,7 +2,7 @@ package mod.azure.dothack;
 
 import mod.azure.dothack.config.Config;
 import mod.azure.dothack.util.LootHandler;
-//import mod.azure.dothack.util.MMORPGHandler;
+import mod.azure.dothack.util.MMORPGHandler;
 import net.minecraftforge.common.MinecraftForge;
 //import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.ModList;
@@ -43,7 +43,7 @@ public class DotHackMod {
 			// CurioIMCMessage("bracelet"));
 		}
 		if (ModList.get().isLoaded("mmorpg") && Config.INSTANCE.USE_COMPATIBILITY_ON_ITEMS.get()) {
-			// MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
+			MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
 		}
 	}
 }
