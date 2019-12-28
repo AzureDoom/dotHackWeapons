@@ -5,12 +5,12 @@
 	"display" : {
     	"thirdperson_righthand": {
             	"rotation": [ 0, 188, 0 ],
-            	"translation": [ -8.60, -9.0, -5.7 ],
+            	"translation": [ -8.60, -13.40, -5.70 ],
             	"scale": [ 1.00, 1.00, 1.00 ]
         	},
         	"thirdperson_lefthand": {
         		"rotation": [ 0, 188, 0 ],
-        		"translation": [ 6.30, -9.0, -7.7 ],
+        		"translation": [ 6.30, -13.40, -7.70 ],
             	"scale": [ 1.00, 1.00, 1.00 ]
         	},
         	"firstperson_righthand": {

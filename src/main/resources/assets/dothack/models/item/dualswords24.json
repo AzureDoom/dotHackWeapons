@@ -1,16 +1,16 @@
 {
     "parent": "forge:item/default",
 	"loader": "forge:obj",
-	"model": "dothack:models/item/dualswords/dualswords01l.obj",
+	"model": "dothack:models/item/dualswords/dualswordsa7l.obj",
 	"display" : {
     	"thirdperson_righthand": {
-            	"rotation": [ 0, 188, 0 ],
-            	"translation": [ -8.60, 7.0, -5.7 ],
+            	"rotation": [ 0, 180, 0 ],
+            	"translation": [ -8.60, 4.0, -6.7 ],
             	"scale": [ 1.00, 1.00, 1.00 ]
         	},
         	"thirdperson_lefthand": {
-        		"rotation": [ 0, 188, 0 ],
-        		"translation": [ 6.30, 7.0, -7.7 ],
+        		"rotation": [ 0, 180, 0 ],
+        		"translation": [ 7.90, 4.0, -7.7 ],
         		"scale": [ 1.00, 1.00, 1.00 ]
         	},
         	"firstperson_righthand": {
@@ -25,7 +25,7 @@
         	},
         	"gui": {
         		"rotation": [ 96, 50, 216 ],
-        		"translation": [ 12.10, -3.00, 0.00 ],
+        		"translation": [ 5.10, -5.00, 0.00 ],
         		"scale": [ 1.50, 1.50, 1.50 ]
         	},
         	"head": {
