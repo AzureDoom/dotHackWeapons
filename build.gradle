@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = "1.0.0"
+version = "1.0.2"
 group = "mod.azure.dothackweapons"
 archivesBaseName = "dotHack-Weapons-1.15.1"
 
@@ -55,10 +55,21 @@ minecraft {
     }
 }
 
+repositories {
+    jcenter()
+
+    maven {
+        name = "jitpack"
+        url "https://jitpack.io"
+    }
+
+    maven { url = "https://maven.theillusivec4.top/" }
+
+}
+
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.15.1-30.0.16'
-    
-	//compile fg.deobf(files("libs/curios-FORGE-1.14.4-1.0.2-deobf.jar"))
+    minecraft 'net.minecraftforge:forge:1.15.1-30.0.19'
+    compile fg.deobf("top.theillusivec4.curios:curios:FORGE-1.15.1-2.0-beta")
 	//compile fg.deobf(files("libs/Mine+and+Slash-1.14.4-2.9.4-deobf.jar"))
 }
 
@@ -67,10 +78,10 @@ jar {
         attributes([
             "Specification-Title": "dotHack Weapons",
             "Specification-Vendor": "AzureDoomC",
-            "Specification-Version": "1", // We are version 1 of ourselves
-            "Implementation-Title": project.name,
-            "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"examplemodsareus",
+            "Specification-Version": "1.0.2", // We are version 1 of ourselves
+            "Implementation-Title": "dotHack Weapons",
+            "Implementation-Version": "1.0.2",
+            "Implementation-Vendor" : "AzureDoomC",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
