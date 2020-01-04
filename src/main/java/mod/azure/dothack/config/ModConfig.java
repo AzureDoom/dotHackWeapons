@@ -11,18 +11,18 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Config.LangKey("rcraft.config.title")
 public class ModConfig {
 
-	@Config.Name("Default Mine and Slash Stats")
-	@Config.Comment("Auto Compat with Mine and Slash")
-	public static boolean USE_COMPATIBILITY_ITEMS = true;
+    @Config.Name("Default Mine and Slash Stats")
+    @Config.Comment("Auto Compat with Mine and Slash")
+    public static boolean USE_COMPATIBILITY_ITEMS = true;
 
-	@Mod.EventBusSubscriber(modid = DotHackMod.MODID)
-	private static class EventHandler {
+    @Mod.EventBusSubscriber(modid = DotHackMod.MODID)
+    private static class EventHandler {
 
-		@SubscribeEvent
-		public static void onConfigChanged(final ConfigChangedEvent.OnConfigChangedEvent event) {
-			if (event.getModID().equals(DotHackMod.MODID)) {
-				ConfigManager.sync(DotHackMod.MODID, Config.Type.INSTANCE);
-			}
-		}
-	}
+        @SubscribeEvent
+        public static void onConfigChanged(final ConfigChangedEvent.OnConfigChangedEvent event) {
+            if (event.getModID().equals(DotHackMod.MODID)) {
+                ConfigManager.sync(DotHackMod.MODID, Config.Type.INSTANCE);
+            }
+        }
+    }
 }
