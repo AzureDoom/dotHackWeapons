@@ -1,4 +1,4 @@
-package mod.azure.dothack.items.mineandslash;
+package mod.azure.dothack.items;
 
 import com.robertx22.items.gearitems.weapons.ItemStaff;
 
