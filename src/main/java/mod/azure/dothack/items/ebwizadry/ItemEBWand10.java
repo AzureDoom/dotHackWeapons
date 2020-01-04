@@ -38,7 +38,7 @@ public class ItemEBWand10 extends ItemWand {
 					|| WandHelper.getProgression(centre.getStack()) >= tier.progression)
 					&& tier.ordinal() - 1 == this.tier.ordinal()) {
 				WandHelper.setProgression(centre.getStack(), 0);
-				ItemStack newWand = new ItemStack(WandMap.get1Wand(tier, this.element));
+				ItemStack newWand = new ItemStack(WandMap.get10Wand(tier, this.element));
 				newWand.setTagCompound(centre.getStack().getTagCompound());
 				((IManaStoringItem) newWand.getItem()).setMana(newWand, this.getMana(centre.getStack()));
 				centre.putStack(newWand);
