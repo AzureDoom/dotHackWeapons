@@ -11,3 +11,9 @@ authors="AzureZhen"
 description='''
 Adds dotHack Weapons into Minecraft
 '''
+[[dependencies.dothack]]
+    modId="forge"
+    mandatory=true
+    versionRange="[28.1.6,)"
+    ordering="NONE"
+    side="BOTH"
