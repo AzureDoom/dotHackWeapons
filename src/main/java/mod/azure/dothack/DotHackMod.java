@@ -32,10 +32,10 @@ public class DotHackMod {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
 	}
-	
+
 	private void setup(final FMLCommonSetupEvent event) {
 		MinecraftForge.EVENT_BUS.register(LootHandler.class);
-    }
+	}
 
 	private void enqueueIMC(final InterModProcessEvent event) {
 		if (ModList.get().isLoaded("curios")) {

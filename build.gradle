@@ -68,7 +68,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.15.1-30.0.19'
+    minecraft 'net.minecraftforge:forge:1.15.1-30.0.30'
     compile fg.deobf("top.theillusivec4.curios:curios:FORGE-1.15.1-2.0-beta")
 	//compile fg.deobf(files("libs/Mine+and+Slash-1.14.4-2.9.4-deobf.jar"))
 }
