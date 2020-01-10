@@ -1,21 +1,24 @@
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
+        maven { url  = 'https://plugins.gradle.org/m2/' }
         jcenter()
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath "com.wynprice.cursemaven:CurseMaven:2.1.1"
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
+apply plugin: "com.wynprice.cursemaven"
 
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 
-version = "0.1.0"
+version = "0.1.1"
 group = "mod.azure.dothackweapons"
 archivesBaseName = "dotHack-Weapons-1.14.4"
 
@@ -60,7 +63,7 @@ minecraft {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.14.4-28.1.113-model-system-rework'
     compile fg.deobf("top.theillusivec4.curios:curios:FORGE-1.14.4-1.0.6")
-	compile fg.deobf(files("libs/Mine+and+Slash-1.14.4-2.9.4-deobf.jar"))
+    compile fg.deobf("curse.maven:MaS:2844167")
 }
 repositories {
     mavenLocal()
