@@ -2,6 +2,7 @@ buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
         maven { url  = 'https://plugins.gradle.org/m2/' }
+        maven { url "https://maven.tterrag.com/" }
         jcenter()
         mavenCentral()
     }
@@ -15,14 +16,14 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: "com.wynprice.cursemaven"
 
-version = "1.0.3"
+version = "1.0.0"
 group = "mod.azure.dothackweapons"
-archivesBaseName = "dotHack-Weapons-1.15.1"
+archivesBaseName = "dotHack-Weapons-1.15.2"
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 minecraft {
-    mappings channel: 'snapshot', version: '20190719-1.14.3'
+    mappings channel: 'snapshot', version: '20200110-mixed-1.15.1'
     runs {
         client {
             workingDirectory project.file('run')
@@ -67,13 +68,15 @@ repositories {
     }
 
     maven { url = "https://maven.theillusivec4.top/" }
+    
+    maven { url "https://maven.tterrag.com/" }
 
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.15.1-30.0.36'
-    compile fg.deobf("top.theillusivec4.curios:curios:FORGE-1.15.1-2.0-beta")
-	//compile fg.deobf("curse.maven:MaS:2844167")
+    minecraft 'net.minecraftforge:forge:1.15.2-31.1.14'
+    compile fg.deobf("top.theillusivec4.curios:curios:FORGE-1.15.2-2.0-beta2")
+	compile fg.deobf("curse.maven:MaS:2879156")
 }
 
 jar {
@@ -81,9 +84,9 @@ jar {
         attributes([
             "Specification-Title": "dotHack Weapons",
             "Specification-Vendor": "AzureDoomC",
-            "Specification-Version": "1.0.2", // We are version 1 of ourselves
+            "Specification-Version": "1.0.0", // We are version 1 of ourselves
             "Implementation-Title": "dotHack Weapons",
-            "Implementation-Version": "1.0.2",
+            "Implementation-Version": "1.0.0",
             "Implementation-Vendor" : "AzureDoomC",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])

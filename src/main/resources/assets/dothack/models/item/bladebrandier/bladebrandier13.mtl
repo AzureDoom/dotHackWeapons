@@ -2,22 +2,36 @@
 # Material Count: 7
 
 newmtl MDL_w21kt13_bld01_TEX_w21kt13_1
+Kd 1.000000 1.000000 1.000000
+d 1.000000
 map_Kd dothack:items/w21kt13_1
 
 newmtl MDL_w21kt13_bld02_TEX_w21kt13_1
+Kd 1.000000 1.000000 1.000000
+d 1.000000
 map_Kd dothack:items/w21kt13_1
 
 newmtl MDL_w21kt13_bld03_TEX_w21kt13_1
+Kd 1.000000 1.000000 1.000000
+d 1.000000
 map_Kd dothack:items/w21kt13_1
 
 newmtl MDL_w21kt13_bld04_TEX_w21kt13_1
+Kd 1.000000 1.000000 1.000000
+d 1.000000
 map_Kd dothack:items/w21kt13_1
 
 newmtl MDL_w21kt13_bld05_TEX_w21kt13_1
+Kd 1.000000 1.000000 1.000000
+d 1.000000
 map_Kd dothack:items/w21kt13_1
 
 newmtl MDL_w21kt13_bld06_TEX_w21kt13_1
+Kd 1.000000 1.000000 1.000000
+d 1.000000
 map_Kd dothack:items/w21kt13_1
 
 newmtl MDL_w21kt13_bod00_TEX_w21kt13
+Kd 1.000000 1.000000 1.000000
+d 1.000000
 map_Kd dothack:items/w21kt13

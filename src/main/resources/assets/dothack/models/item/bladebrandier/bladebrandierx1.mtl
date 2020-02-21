@@ -2,7 +2,11 @@
 # Material Count: 2
 
 newmtl MDL_w21ktx1_bod00_TEX_w21ktx1
+Kd 1.000000 1.000000 1.000000
+d 1.000000
 map_Kd dothack:items/w21ktx1
 
 newmtl MDL_w21ktx1_bod01_TEX_w21ktx1_1
+Kd 1.000000 1.000000 1.000000
+d 1.000000
 map_Kd dothack:items/w21ktx1_1
