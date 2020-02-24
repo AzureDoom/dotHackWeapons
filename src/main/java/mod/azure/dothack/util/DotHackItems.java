@@ -2,6 +2,7 @@ package mod.azure.dothack.util;
 
 import mod.azure.dothack.DotHackMod;
 import mod.azure.dothack.items.StaffItem;
+import mod.azure.dothack.items.WandItem;
 import net.minecraft.item.BowItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemTier;
@@ -112,6 +113,13 @@ public class DotHackItems {
 						.register(redwand = new StaffItem(
 								new Item.Properties().maxDamage(10000).group(DotHackTabs.MagicItemGroup), 0)
 										.setRegistryName(location("redwand")));
+				// event.getRegistry().register(
+				// new StaffItem(new
+				// Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000), 0)
+				// .setRegistryName(location("skeithscythe")));
+				event.getRegistry().register(
+						new WandItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000), 0)
+								.setRegistryName(location("hermitsstick")));
 			} else {
 				for (int i = 1; i <= 10; i++)
 					event.getRegistry().register(
@@ -132,6 +140,13 @@ public class DotHackItems {
 				event.getRegistry().register(
 						redwand = new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
 								.setRegistryName(location("redwand")));
+				// event.getRegistry()
+				// .register(new BowItem(new
+				// Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
+				// .setRegistryName(location("skeithscythe")));
+				event.getRegistry()
+						.register(new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(10000))
+								.setRegistryName(location("hermitsstick")));
 			}
 			event.getRegistry().register(datadrain = new Item(
 					new Item.Properties().group(DotHackTabs.AccessoriesItemGroup).maxStackSize(1).maxDamage(10000))
