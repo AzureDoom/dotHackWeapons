@@ -9,6 +9,7 @@ import com.electronwill.nightconfig.core.io.WritingMode;
 
 import mod.azure.dothack.DotHackMod;
 import net.minecraftforge.common.ForgeConfigSpec;
+import net.minecraftforge.common.ForgeConfigSpec.BooleanValue;
 
 public class Config {
 
@@ -22,11 +23,17 @@ public class Config {
 	}
 
 	public static class ServerConfig {
-		public final ForgeConfigSpec.BooleanValue USE_COMPATIBILITY_ON_ITEMS;
+		public final BooleanValue USE_COMPATIBILITY_ON_ITEMS;
+		public final BooleanValue USE_CHESTLOOTSYSTEM;
+		public final BooleanValue USE_MINESLASHLOOTSYSTEM;
 
 		ServerConfig(ForgeConfigSpec.Builder builder) {
-			builder.comment("Compatibility Settings").push("Mine and Slash Compatibility");
+			builder.comment("Mine and Slash Compatibility").push("Mine and Slash Compatibility");
 			USE_COMPATIBILITY_ON_ITEMS = builder.define("Enable", true);
+			builder.comment("Chest Loot Setting").push("Chest Loot Setting");
+			USE_CHESTLOOTSYSTEM = builder.define("Enable", true);
+			builder.comment("Mine and Slash Loot Setting").push("Mine and Slash Loot Setting");
+			USE_MINESLASHLOOTSYSTEM = builder.define("Enable", true);
 			builder.pop();
 		}
 	}

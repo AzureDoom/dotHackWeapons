@@ -13,7 +13,6 @@ import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -34,13 +33,15 @@ public class DotHackMod {
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		modEventBus.addListener(this::setup);
 		modEventBus.addListener(this::enqueueIMC);
-		modEventBus.addListener(this::clientSetup);
 		modLoadingContext.registerConfig(ModConfig.Type.SERVER, Config.SERVER_SPEC, "dothackweapons-config.toml");
-		Config.loadConfig(Config.SERVER_SPEC, FMLPaths.CONFIGDIR.get().resolve("dothackweapons-config.toml").toString());
+		Config.loadConfig(Config.SERVER_SPEC,
+				FMLPaths.CONFIGDIR.get().resolve("dothackweapons-config.toml").toString());
 	}
 
 	private void setup(final FMLCommonSetupEvent event) {
-		MinecraftForge.EVENT_BUS.register(LootHandler.class);
+		if (Config.SERVER.USE_CHESTLOOTSYSTEM.get()) {
+			MinecraftForge.EVENT_BUS.register(new LootHandler());
+		}
 	}
 
 	private void enqueueIMC(final InterModProcessEvent event) {
@@ -50,9 +51,5 @@ public class DotHackMod {
 		if (ModList.get().isLoaded("mmorpg") && Config.SERVER.USE_COMPATIBILITY_ON_ITEMS.get()) {
 			MinecraftForge.EVENT_BUS.register(new MMORPGHandler());
 		}
-	}
-
-	public void clientSetup(FMLClientSetupEvent event) {
-		
 	}
 }
