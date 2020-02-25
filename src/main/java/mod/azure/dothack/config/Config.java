@@ -24,9 +24,9 @@ public class Config {
 	}
 
 	public static class ServerConfig {
-		public final BooleanValue USE_COMPATIBILITY_ON_ITEMS;
-		public final BooleanValue USE_CHESTLOOTSYSTEM;
-		public final BooleanValue USE_MINESLASHLOOTSYSTEM;
+		public BooleanValue USE_COMPATIBILITY_ON_ITEMS;
+		public BooleanValue USE_CHESTLOOTSYSTEM;
+		public BooleanValue USE_MINESLASHLOOTSYSTEM;
 		public ConfigValue<Integer> ACCESSORY_MAXDAMAGE;
 		public ConfigValue<Integer> AXE_MAXDAMAGE;
 		public ConfigValue<Integer> STAFF_MAXDAMAGE;
@@ -38,53 +38,36 @@ public class Config {
 		public ConfigValue<Integer> SCYTHE_MAXDAMAGE;
 
 		ServerConfig(ForgeConfigSpec.Builder builder) {
-			builder.comment("Mine and Slash Compatibility").push("Mine and Slash Compatibility")
-					.translation("dothack.config.use_compatibility_on_items");
-			USE_COMPATIBILITY_ON_ITEMS = builder.define("Enable", true);
+			builder.push("general");
+			USE_COMPATIBILITY_ON_ITEMS = builder.comment("Mine and Slash Compatibility")
+					.translation(DotHackMod.MODID + ".config.use_compatibility_on_items")
+					.define("USE_COMPATIBILITY_ON_ITEMS", true);
+			USE_CHESTLOOTSYSTEM = builder.comment("Add loot to Chest loot system")
+					.translation(DotHackMod.MODID + ".config.use_chestlootsystem").define("USE_CHESTLOOTSYSTEM", true);
+			USE_MINESLASHLOOTSYSTEM = builder.comment("Add loot to Mine and Slash Loot System")
+					.translation(DotHackMod.MODID + ".config.use_mineslashlootsystem")
+					.define("USE_MINESLASHLOOTSYSTEM", true);
 			builder.pop();
-			builder.comment("Chest Loot Setting").push("Chest Loot Setting")
-					.translation("dothack.config.use_chestlootsystem");
-			USE_CHESTLOOTSYSTEM = builder.define("Enable", true);
-			builder.pop();
-			builder.comment("Mine and Slash Loot Setting").push("Mine and Slash Loot Setting")
-					.translation("dothack.config.use_mineslashlootsystem");
-			USE_MINESLASHLOOTSYSTEM = builder.define("Enable", true);
-			builder.pop();
-			builder.comment("Sets the max duriabily of Accessories").push("Sets the max duriabily of Accessories.")
-					.translation("dothack.config.accessory_maxdamage");
-			ACCESSORY_MAXDAMAGE = builder.define("ACCESSORY_MAXDAMAGE", 1000);
-			builder.pop();
-			builder.comment("Sets the max duriabily of Axes.").push("Sets the max duriabily of Axes.")
-					.translation("dothack.config.axe_maxdamage");
-			AXE_MAXDAMAGE = builder.define("AXE_MAXDAMAGE", 1000);
-			builder.pop();
-			builder.comment("Sets the max duriabily of Staffs.").push("Sets the max duriabily of Staffs.")
-					.translation("dothack.config.staff_maxdamage");
-			STAFF_MAXDAMAGE = builder.define("STAFF_MAXDAMAGE", 1000);
-			builder.pop();
-			builder.comment("Sets the max duriabily of Swords.").push("Sets the max duriabily of Swords.")
-					.translation("dothack.config.sword_maxdamage");
-			SWORD_MAXDAMAGE = builder.define("SWORD_MAXDAMAGE", 1000);
-			builder.pop();
-			builder.comment("Sets the max duriabily of Bows.").push("Sets the max duriabily of Bows.")
-					.translation("dothack.config.bow_maxdamage");
-			BOW_MAXDAMAGE = builder.define("BOW_MAXDAMAGE", 1000);
-			builder.pop();
-			builder.comment("Sets the max duriabily of Lances.").push("Sets the max duriabily of Lances.")
-					.translation("dothack.config.lance_maxdamage");
-			LANCE_MAXDAMAGE = builder.define("LANCE_MAXDAMAGE", 1000);
-			builder.pop();
-			builder.comment("Sets the max duriabily of Staffs.").push("Sets the max duriabily of Broad Swords.")
-					.translation("dothack.config.broad_maxdamage");
-			BROAD_MAXDAMAGE = builder.define("BROAD_MAXDAMAGE", 1000);
-			builder.pop();
-			builder.comment("Sets the max duriabily of Hand Weapons.").push("Sets the max duriabily of Hand Weapons.")
-					.translation("dothack.config.handweapon_maxdamage");
-			HANDWEAPON_MAXDAMAGE = builder.define("HANDWEAPON_MAXDAMAGE", 1000);
-			builder.pop();
-			builder.comment("Sets the max duriabily of Scythe Weapons.")
-					.push("Sets the max duriabily of Scythe Weapons.").translation("dothack.config.scythe_maxdamage");
-			SCYTHE_MAXDAMAGE = builder.define("SCYTHE_MAXDAMAGE", 1000);
+			builder.push("gear");
+			ACCESSORY_MAXDAMAGE = builder.comment("Accessory Max Damage")
+					.translation(DotHackMod.MODID + ".config.accessory_maxdamage").define("ACCESSORY_MAXDAMAGE", 1000);
+			AXE_MAXDAMAGE = builder.comment("Axe Max Damage").translation(DotHackMod.MODID + ".config.axe_maxdamage")
+					.define("AXE_MAXDAMAGE", 1000);
+			STAFF_MAXDAMAGE = builder.comment("Staff Max Damage")
+					.translation(DotHackMod.MODID + ".config.staff_maxdamage").define("STAFF_MAXDAMAGE", 1000);
+			SWORD_MAXDAMAGE = builder.comment("Sword Max Damage")
+					.translation(DotHackMod.MODID + ".config.sword_maxdamage").define("SWORD_MAXDAMAGE", 1000);
+			BOW_MAXDAMAGE = builder.comment("Bow Max Damage").translation(DotHackMod.MODID + ".config.bow_maxdamage")
+					.define("BOW_MAXDAMAGE", 1000);
+			LANCE_MAXDAMAGE = builder.comment("Lance Max Damage")
+					.translation(DotHackMod.MODID + ".config.lance_maxdamage").define("LANCE_MAXDAMAGE", 1000);
+			BROAD_MAXDAMAGE = builder.comment("Broad Max Damage")
+					.translation(DotHackMod.MODID + ".config.broad_maxdamage").define("BROAD_MAXDAMAGE", 1000);
+			HANDWEAPON_MAXDAMAGE = builder.comment("Hand Weapons Max Damage")
+					.translation(DotHackMod.MODID + ".config.handweapon_maxdamage")
+					.define("HANDWEAPON_MAXDAMAGE", 1000);
+			SCYTHE_MAXDAMAGE = builder.comment("Scythe Max Damage")
+					.translation(DotHackMod.MODID + ".config.scythe_maxdamage").define("SCYTHE_MAXDAMAGE", 1000);
 			builder.pop();
 		}
 	}
