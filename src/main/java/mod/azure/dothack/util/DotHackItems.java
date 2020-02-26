@@ -52,52 +52,28 @@ public final class DotHackItems {
     public static void registerItems(final RegistryEvent.Register<Item> event) {
 
         for (int i = 1; i <= 19; i++)
-            event.getRegistry()
-                    .register(bladebrandier = new ItemBaseSword("bladebrandier" + i, (3 + i) / 3)
-                            .setCreativeTab(DotHackTabs.SWORDS).setRegistryName(location("bladebrandier" + i))
-                            .setTranslationKey("bladebrandier" + i));
+            event.getRegistry().register(bladebrandier = new ItemBaseSword("bladebrandier" + i, (3 + i) / 3));
         for (int i = 1; i <= 25; i++)
-            event.getRegistry()
-                    .register(new ItemBaseSword("dualswords" + i, (2 + i) / 5).setCreativeTab(DotHackTabs.SWORDS)
-                            .setRegistryName(location("dualswords" + i)).setTranslationKey("dualswords" + i));
+            event.getRegistry().register(new ItemBaseSword("dualswords" + i, (2 + i) / 5));
         for (int i = 1; i <= 20; i++)
-            event.getRegistry()
-                    .register(new ItemBaseSword("edgepunisher" + i, (3 + i) / 3).setCreativeTab(DotHackTabs.SWORDS)
-                            .setRegistryName(location("edgepunisher" + i)).setTranslationKey("edgepunisher" + i));
+            event.getRegistry().register(new ItemBaseSword("edgepunisher" + i, (3 + i) / 3));
         for (int i = 1; i <= 9; i++)
-            event.getRegistry().registerAll(
-                    new ItemBaseSword("flickreaper" + i, (20 + i) / 3).setCreativeTab(DotHackTabs.SWORDS)
-                            .setRegistryName(location("flickreaper" + i)).setTranslationKey("flickreaper" + i),
-                    new ItemBaseSword("lordpartizan" + i, (16 + i) / 2).setCreativeTab(DotHackTabs.SWORDS)
-                            .setRegistryName(location("lordpartizan" + i)).setTranslationKey("lordpartizan" + i));
+            event.getRegistry().registerAll(new ItemBaseSword("flickreaper" + i, (20 + i) / 3),
+                    new ItemBaseSword("lordpartizan" + i, (16 + i) / 2));
         for (int i = 1; i <= 11; i++)
-            event.getRegistry()
-                    .register(new ItemBaseSword("tribalgrappler" + i, (20 + i) / 5).setCreativeTab(DotHackTabs.SWORDS)
-                            .setRegistryName(location("tribalgrappler" + i)).setTranslationKey("tribalgrappler" + i));
+            event.getRegistry().register(new ItemBaseSword("tribalgrappler" + i, (20 + i) / 5));
         for (int i = 1; i <= 75; i++)
-            event.getRegistry()
-                    .register(new ItemBaseSword("blademaster" + i, (3 + i) / 10).setCreativeTab(DotHackTabs.SWORDS)
-                            .setRegistryName(location("blademaster" + i)).setTranslationKey("blademaster" + i));
+            event.getRegistry().register(new ItemBaseSword("blademaster" + i, (3 + i) / 10));
         for (int i = 1; i <= 73; i++)
-            event.getRegistry()
-                    .register(new ItemBaseSword("heavyaxeman" + i, (11 + i) / 7).setCreativeTab(DotHackTabs.SWORDS)
-                            .setRegistryName(location("heavyaxeman" + i)).setTranslationKey("heavyaxeman" + i));
+            event.getRegistry().register(new ItemBaseSword("heavyaxeman" + i, (11 + i) / 7));
         for (int i = 1; i <= 54; i++)
-            event.getRegistry()
-                    .register(new ItemBaseSword("heavyblade" + i, (81 + i) / 15).setCreativeTab(DotHackTabs.SWORDS)
-                            .setRegistryName(location("heavyblade" + i)).setTranslationKey("heavyblade" + i));
+            event.getRegistry().register(new ItemBaseSword("heavyblade" + i, (81 + i) / 15));
         for (int i = 1; i <= 41; i++)
-            event.getRegistry()
-                    .register(new ItemBaseSword("heavybladev" + i, (94 + i) / 15).setCreativeTab(DotHackTabs.SWORDS)
-                            .setRegistryName(location("heavybladev" + i)).setTranslationKey("heavybladev" + i));
+            event.getRegistry().register(new ItemBaseSword("heavybladev" + i, (94 + i) / 15));
         for (int i = 1; i <= 71; i++)
-            event.getRegistry()
-                    .register(new ItemBaseSword("longarm" + i, (4 + i) / 9).setCreativeTab(DotHackTabs.SWORDS)
-                            .setRegistryName(location("longarm" + i)).setTranslationKey("longarm" + i));
+            event.getRegistry().register(new ItemBaseSword("longarm" + i, (4 + i) / 9));
         for (int i = 1; i <= 81; i++)
-            event.getRegistry()
-                    .register(new ItemBaseSword("twinblade" + i, (2 + i) / 15).setCreativeTab(DotHackTabs.SWORDS)
-                            .setRegistryName(location("twinblade" + i)).setTranslationKey("twinblade" + i));
+            event.getRegistry().register(new ItemBaseSword("twinblade" + i, (2 + i) / 15));
         for (int i = 1; i <= 4; i++)
             event.getRegistry().register(dualgunner = new ItemBow().setCreativeTab(DotHackTabs.GUNS)
                     .setRegistryName(location("dualgunner" + i)).setTranslationKey("dualgunner" + i));

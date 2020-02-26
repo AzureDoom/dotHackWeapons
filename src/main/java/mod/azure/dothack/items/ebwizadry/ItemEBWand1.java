@@ -21,6 +21,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class ItemEBWand1 extends ItemWand {
 
+    public ItemStack Wand = new ItemStack(WandMap.get1Wand(tier, this.element));
+
 	public ItemEBWand1(Tier tier, Element element) {
 		super(tier, element);
 		this.tier = tier;
@@ -28,7 +30,8 @@ public class ItemEBWand1 extends ItemWand {
 
 	}
 
-	@SubscribeEvent
+	@Override
+    @SubscribeEvent
 	public boolean onApplyButtonPressed(EntityPlayer player, Slot centre, Slot crystals, Slot upgrade,
 			Slot[] spellBooks) {
 		boolean changed = false;

@@ -19,40 +19,38 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = DotHackMod.MODID)
 public class DotHackMod {
 
-	public static final String MODID = "rcraft";
-	public static final String MODNAME = "dotHack Weapons";
-	public static final Logger LOGGER = LogManager.getLogger();
+    public static final String MODID = "rcraft";
+    public static final String MODNAME = "dotHack Weapons";
+    public static final Logger LOGGER = LogManager.getLogger();
 
-	@SidedProxy(clientSide = "mod.azure.dothack.proxy.ClientProxy", serverSide = "mod.azure.dothack.proxy.ServerProxy")
-	public static IProxy proxy;
+    @SidedProxy(clientSide = "mod.azure.dothack.proxy.ClientProxy", serverSide = "mod.azure.dothack.proxy.ServerProxy")
+    public static IProxy proxy;
 
-	@Mod.Instance
-	public static DotHackMod instance;
+    @Mod.Instance
+    public static DotHackMod instance;
 
-	@Mod.EventHandler
-	public void preInit(FMLPreInitializationEvent e) {
-		proxy.preInit();
-		LOGGER.info("Loading Data Drain...");
-	}
+    @Mod.EventHandler
+    public void preInit(FMLPreInitializationEvent e) {
+        proxy.preInit();
+        LOGGER.info("Loading Data Drain...");
+    }
 
-	@Mod.EventHandler
-	public void init(FMLInitializationEvent e) {
-		proxy.init();
-		LOGGER.info("Firing Data Drain...");
-		if (Loader.isModLoaded("ebwizardry")) {
-			WandMap.populateWandMap();
-		}
-		MinecraftForge.EVENT_BUS.register(new LootHandler());
-	}
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent e) {
+        proxy.init();
+        LOGGER.info("Firing Data Drain...");
+        if (Loader.isModLoaded("ebwizardry")) {
+            WandMap.populateWandMap();
+        }
+        MinecraftForge.EVENT_BUS.register(new LootHandler());
+    }
 
-	@Mod.EventHandler
-	public void postInit(FMLPostInitializationEvent e) {
-		proxy.postInit();
-		LOGGER.info("No Data Bugs Found");
-		if (ModConfig.USE_COMPATIBILITY_ITEMS) {
-			if (Loader.isModLoaded("mmorpg")) {
-				MinecraftForge.EVENT_BUS.register(new MineSlashHandler());
-			}
-		}
-	}
+    @Mod.EventHandler
+    public void postInit(FMLPostInitializationEvent e) {
+        proxy.postInit();
+        LOGGER.info("No Data Bugs Found");
+        if (Loader.isModLoaded("mmorpg") && ModConfig.USE_COMPATIBILITY_ITEMS) {
+            MinecraftForge.EVENT_BUS.register(new MineSlashHandler());
+        }
+    }
 }
