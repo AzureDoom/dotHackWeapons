@@ -14,6 +14,6 @@ Adds dotHack Weapons into Minecraft
 [[dependencies.dothack]]
     modId="forge"
     mandatory=true
-    versionRange="[28.1.6,)"
+    versionRange="[28.2.2,)"
     ordering="NONE"
     side="BOTH"
