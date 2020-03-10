@@ -15,7 +15,6 @@ import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Sword;
 import com.robertx22.mine_and_slash.database.gearitemslots.weapons.Wand;
 import com.robertx22.mine_and_slash.onevent.data_gen.providers.SlashDataProvider;
 
-import mod.azure.dothack.config.Config;
 import net.minecraft.data.DataGenerator;
 
 public class MMORPGHandler {
@@ -38,8 +37,7 @@ public class MMORPGHandler {
 				case 1:
 					for (int bownumber = 1; bownumber <= 4; bownumber++) {
 						OldConfigItem bowconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0).setMaxRarity(5)
-								.setMinRarity(0).setSalvagable(true).setType(Bow.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setMinRarity(0).setSalvagable(true).setType(Bow.INSTANCE).setdropsAsLoot(true);
 
 						String id1 = "dothack:dualgunner" + bownumber;
 
@@ -52,8 +50,7 @@ public class MMORPGHandler {
 				case 2:
 					for (int bownumber = 1; bownumber <= 18; bownumber++) {
 						OldConfigItem bowconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0).setMaxRarity(5)
-								.setMinRarity(0).setSalvagable(true).setType(Bow.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setMinRarity(0).setSalvagable(true).setType(Bow.INSTANCE).setdropsAsLoot(true);
 
 						String id2 = "dothack:steamgunner" + bownumber;
 
@@ -67,7 +64,7 @@ public class MMORPGHandler {
 					for (int staffnumber = 1; staffnumber <= 10; staffnumber++) {
 						OldConfigItem staffconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Staff.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id3 = "dothack:harvestcleric" + staffnumber;
 
@@ -81,7 +78,7 @@ public class MMORPGHandler {
 					for (int staffnumber = 1; staffnumber <= 5; staffnumber++) {
 						OldConfigItem staffconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Staff.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id4 = "dothack:macabredancer" + staffnumber;
 
@@ -94,8 +91,7 @@ public class MMORPGHandler {
 				case 5:
 					for (int axenumber = 1; axenumber <= 73; axenumber++) {
 						OldConfigItem bowconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0).setMaxRarity(5)
-								.setMinRarity(0).setSalvagable(true).setType(Axe.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setMinRarity(0).setSalvagable(true).setType(Axe.INSTANCE).setdropsAsLoot(true);
 
 						String id5 = "dothack:heavyaxeman" + axenumber;
 
@@ -108,7 +104,7 @@ public class MMORPGHandler {
 				case 6:
 					OldConfigItem necklaceconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 							.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Necklace.INSTANCE)
-							.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+							.setdropsAsLoot(true);
 
 					String id6 = "dothack:datadrain";
 
@@ -119,8 +115,7 @@ public class MMORPGHandler {
 					items.add(necklaces);
 				case 7:
 					OldConfigItem wandconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0).setMaxRarity(5)
-							.setMinRarity(0).setSalvagable(true).setType(Wand.INSTANCE)
-							.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+							.setMinRarity(0).setSalvagable(true).setType(Wand.INSTANCE).setdropsAsLoot(true);
 
 					String id7 = "dothack:hermitsstick";
 
@@ -133,7 +128,7 @@ public class MMORPGHandler {
 					for (int hammernumber = 1; hammernumber <= 71; hammernumber++) {
 						OldConfigItem hammerconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Hammer.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id8 = "dothack:longarm" + hammernumber;
 
@@ -147,7 +142,7 @@ public class MMORPGHandler {
 					for (int hammernumber = 1; hammernumber <= 54; hammernumber++) {
 						OldConfigItem hammerconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Hammer.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id9 = "dothack:heavyblade" + hammernumber;
 
@@ -161,7 +156,7 @@ public class MMORPGHandler {
 					for (int hammernumber = 1; hammernumber <= 41; hammernumber++) {
 						OldConfigItem hammerconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Hammer.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id10 = "dothack:heavybladev" + hammernumber;
 
@@ -175,7 +170,7 @@ public class MMORPGHandler {
 					for (int hammernumber = 1; hammernumber <= 9; hammernumber++) {
 						OldConfigItem hammerconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Hammer.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id11 = "dothack:lordpartizan" + hammernumber;
 
@@ -189,7 +184,7 @@ public class MMORPGHandler {
 					for (int hammernumber = 1; hammernumber <= 9; hammernumber++) {
 						OldConfigItem hammerconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Hammer.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id12 = "dothack:flickreaper" + hammernumber;
 
@@ -203,7 +198,7 @@ public class MMORPGHandler {
 					for (int hammernumber = 1; hammernumber <= 20; hammernumber++) {
 						OldConfigItem hammerconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Hammer.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id13 = "dothack:edgepunisher" + hammernumber;
 
@@ -217,7 +212,7 @@ public class MMORPGHandler {
 					for (int staffnumber = 1; staffnumber <= 14; staffnumber++) {
 						OldConfigItem staffconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Staff.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id14 = "dothack:shadowwarlock" + staffnumber;
 
@@ -231,7 +226,7 @@ public class MMORPGHandler {
 					for (int staffnumber = 1; staffnumber <= 74; staffnumber++) {
 						OldConfigItem staffconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Staff.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id15 = "dothack:wavemaster" + staffnumber;
 
@@ -243,8 +238,7 @@ public class MMORPGHandler {
 					}
 				case 16:
 					OldConfigItem staffconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0).setMaxRarity(5)
-							.setMinRarity(0).setSalvagable(true).setType(Staff.INSTANCE)
-							.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+							.setMinRarity(0).setSalvagable(true).setType(Staff.INSTANCE).setdropsAsLoot(true);
 
 					String id16 = "dothack:redwand";
 
@@ -257,7 +251,7 @@ public class MMORPGHandler {
 					for (int swordnumber = 1; swordnumber <= 81; swordnumber++) {
 						OldConfigItem swordconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Sword.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id17 = "dothack:twinblade" + swordnumber;
 
@@ -271,7 +265,7 @@ public class MMORPGHandler {
 					for (int swordnumber = 1; swordnumber <= 25; swordnumber++) {
 						OldConfigItem swordconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Sword.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id18 = "dothack:dualswords" + swordnumber;
 
@@ -285,7 +279,7 @@ public class MMORPGHandler {
 					for (int swordnumber = 1; swordnumber <= 75; swordnumber++) {
 						OldConfigItem swordconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Sword.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id19 = "dothack:blademaster" + swordnumber;
 
@@ -299,7 +293,7 @@ public class MMORPGHandler {
 					for (int swordnumber = 1; swordnumber <= 19; swordnumber++) {
 						OldConfigItem swordconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Sword.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id20 = "dothack:bladebrandier" + swordnumber;
 
@@ -313,7 +307,7 @@ public class MMORPGHandler {
 					for (int swordnumber = 1; swordnumber <= 11; swordnumber++) {
 						OldConfigItem swordconfig = new OldConfigItem().setGenerationWeights(1000, 200, 0)
 								.setMaxRarity(5).setMinRarity(0).setSalvagable(true).setType(Sword.INSTANCE)
-								.setdropsAsLoot(Config.SERVER.USE_MINESLASHLOOTSYSTEM.get());
+								.setdropsAsLoot(true);
 
 						String id21 = "dothack:tribalgrappler" + swordnumber;
 

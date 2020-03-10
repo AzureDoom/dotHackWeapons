@@ -52,16 +52,14 @@ public class DotHackMod {
 			InterModComms.sendTo("curios", CuriosAPI.IMC.REGISTER_TYPE, () -> new CurioIMCMessage("bracelet"));
 		}
 	}
-	
+
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	public static class GatherDataSubscriber {
 		@SubscribeEvent
 		public static void gatherData(GatherDataEvent event) {
 			DataGenerator gen = event.getGenerator();
 			if (event.includeServer()) {
-				if (ModList.get().isLoaded("mmorpg") && Config.SERVER.USE_COMPATIBILITY_ON_ITEMS.get()) {
-					gen.addProvider(new MMORPGHandler().getDataPackCreator(gen));
-				}
+				gen.addProvider(new MMORPGHandler().getDataPackCreator(gen));
 			}
 		}
 	}
