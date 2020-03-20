@@ -19,14 +19,12 @@ import net.minecraft.data.DataGenerator;
 
 public class MMORPGHandler {
 
-	public static String ID = "compatible_items";
-
 	public MMORPGHandler() {
 	}
 
 	@SuppressWarnings("rawtypes")
 	public SlashDataProvider getDataPackCreator(DataGenerator gen) {
-		return new CompatibleItemProvider(gen, getList(), ID);
+		return new CompatibleItemProvider(gen, getList(), "compatible_items");
 	}
 
 	public static List<CompatibleItem> getList() {

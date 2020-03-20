@@ -1,0 +1,6 @@
+{
+    "parent": "forge:item/default",
+	"loader": "forge:obj",
+	"model": "dothack:models/item/food/xgfood04.obj",
+	"display" : {}
+}

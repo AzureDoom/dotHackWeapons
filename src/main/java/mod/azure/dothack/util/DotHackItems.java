@@ -2,10 +2,10 @@ package mod.azure.dothack.util;
 
 import mod.azure.dothack.DotHackMod;
 import mod.azure.dothack.config.Config;
-import mod.azure.dothack.items.StaffItem;
-import mod.azure.dothack.items.WandItem;
 import net.minecraft.item.BowItem;
+import net.minecraft.item.Food;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemTier;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.ResourceLocation;
@@ -25,6 +25,10 @@ public class DotHackItems {
 	public static class RegistryEvents {
 		@SubscribeEvent
 		public static void registerItems(final RegistryEvent.Register<Item> event) {
+			event.getRegistry()
+					.registerAll(new Item(new Item.Properties().group(ItemGroup.FOOD)
+							.food(new Food.Builder().setAlwaysEdible().saturation(1.2F).hunger(6).build()))
+									.setRegistryName(location("ohnomelon")));
 			for (int i = 1; i <= 19; i++)
 				event.getRegistry()
 						.register(bladebrandier = new SwordItem(ItemTier.DIAMOND, (3 + i) / 3, -2.4F,
@@ -68,8 +72,9 @@ public class DotHackItems {
 			for (int i = 1; i <= 73; i++)
 				event.getRegistry()
 						.register(new SwordItem(ItemTier.DIAMOND, (11 + i) / 7, -2.4F,
-								new Item.Properties().group(DotHackTabs.SwordItemGroup).maxDamage(Config.SERVER.AXE_MAXDAMAGE.get()))
-										.setRegistryName(location("heavyaxeman" + i)));
+								new Item.Properties().group(DotHackTabs.SwordItemGroup)
+										.maxDamage(Config.SERVER.AXE_MAXDAMAGE.get()))
+												.setRegistryName(location("heavyaxeman" + i)));
 			for (int i = 1; i <= 54; i++)
 				event.getRegistry()
 						.register(new SwordItem(ItemTier.DIAMOND, (81 + i) / 15, -2.4F,
@@ -104,39 +109,34 @@ public class DotHackItems {
 						.register(new BowItem(new Item.Properties().group(DotHackTabs.GunsItemGroup)
 								.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get()))
 										.setRegistryName(location("steamgunner" + i)));
+			event.getRegistry()
+					.register(datadrain = new Item(new Item.Properties().group(DotHackTabs.AccessoriesItemGroup)
+							.maxStackSize(1).maxDamage(Config.SERVER.ACCESSORY_MAXDAMAGE.get()))
+									.setRegistryName(location("datadrain")));
 
 			if (ModList.get().isLoaded("mmorpg")) {
 				for (int i = 1; i <= 10; i++)
 					event.getRegistry()
-							.register(new StaffItem(new Item.Properties().maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get())
-									.group(DotHackTabs.MagicItemGroup), 0)
-											.setRegistryName(location("harvestcleric" + i)));
+							.register(new Item(new Item.Properties().maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get())
+									.group(DotHackTabs.MagicItemGroup)).setRegistryName(location("harvestcleric" + i)));
 				for (int i = 1; i <= 5; i++)
 					event.getRegistry()
-							.register(new StaffItem(new Item.Properties().maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get())
-									.group(DotHackTabs.MagicItemGroup), 0)
-											.setRegistryName(location("macabredancer" + i)));
+							.register(new Item(new Item.Properties().maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get())
+									.group(DotHackTabs.MagicItemGroup)).setRegistryName(location("macabredancer" + i)));
 				for (int i = 1; i <= 14; i++)
 					event.getRegistry()
-							.register(new StaffItem(new Item.Properties().maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get())
-									.group(DotHackTabs.MagicItemGroup), 0)
-											.setRegistryName(location("shadowwarlock" + i)));
+							.register(new Item(new Item.Properties().maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get())
+									.group(DotHackTabs.MagicItemGroup)).setRegistryName(location("shadowwarlock" + i)));
 				for (int i = 1; i <= 74; i++)
 					event.getRegistry()
-							.register(new StaffItem(new Item.Properties().maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get())
-									.group(DotHackTabs.MagicItemGroup), 0).setRegistryName(location("wavemaster" + i)));
+							.register(new Item(new Item.Properties().maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get())
+									.group(DotHackTabs.MagicItemGroup)).setRegistryName(location("wavemaster" + i)));
+				event.getRegistry().register(
+						redwand = new Item(new Item.Properties().maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get())
+								.group(DotHackTabs.MagicItemGroup)).setRegistryName(location("redwand")));
 				event.getRegistry()
-						.register(redwand = new StaffItem(new Item.Properties()
-								.maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get()).group(DotHackTabs.MagicItemGroup), 0)
-										.setRegistryName(location("redwand")));
-				// event.getRegistry().register(
-				// new StaffItem(new
-				// Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get()),
-				// 0)
-				// .setRegistryName(location("skeithscythe")));
-				event.getRegistry()
-						.register(new WandItem(new Item.Properties().group(DotHackTabs.MagicItemGroup)
-								.maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get()), 0)
+						.register(new Item(new Item.Properties().group(DotHackTabs.MagicItemGroup)
+								.maxDamage(Config.SERVER.STAFF_MAXDAMAGE.get()))
 										.setRegistryName(location("hermitsstick")));
 			} else {
 				for (int i = 1; i <= 10; i++)
@@ -162,19 +162,11 @@ public class DotHackItems {
 				event.getRegistry()
 						.register(redwand = new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup)
 								.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get())).setRegistryName(location("redwand")));
-				// event.getRegistry()
-				// .register(new BowItem(new
-				// Item.Properties().group(DotHackTabs.MagicItemGroup).maxDamage(Config.SERVER.BOW_MAXDAMAGE.get()))
-				// .setRegistryName(location("skeithscythe")));
 				event.getRegistry()
 						.register(new BowItem(new Item.Properties().group(DotHackTabs.MagicItemGroup)
 								.maxDamage(Config.SERVER.BOW_MAXDAMAGE.get()))
 										.setRegistryName(location("hermitsstick")));
 			}
-			event.getRegistry()
-					.register(datadrain = new Item(new Item.Properties().group(DotHackTabs.AccessoriesItemGroup)
-							.maxStackSize(1).maxDamage(Config.SERVER.ACCESSORY_MAXDAMAGE.get()))
-									.setRegistryName(location("datadrain")));
 		}
 
 		public static ResourceLocation location(String name) {
