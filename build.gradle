@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 
-version = "2.1.5"
+version = "2.1.6"
 group = "mod.azure.dothack"
 archivesBaseName = "dotHack Weapons"
 

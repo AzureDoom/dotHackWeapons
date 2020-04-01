@@ -50,7 +50,6 @@ public final class DotHackItems {
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
-
         for (int i = 1; i <= 19; i++)
             event.getRegistry().register(bladebrandier = new ItemBaseSword("bladebrandier" + i, (3 + i) / 3));
         for (int i = 1; i <= 25; i++)
@@ -942,7 +941,7 @@ public final class DotHackItems {
                     .setRegistryName(location("redwand1")));
             DotHackMod.LOGGER.info("Registered with M&S");
         } else {
-            for (int i = 1; i <= 9; i++)
+            for (int i = 1; i <= 10; i++)
                 event.getRegistry().register(
                         new ItemBow().setCreativeTab(DotHackTabs.MAGIC).setRegistryName(location("harvestcleric" + i)));
             for (int i = 1; i <= 5; i++)
