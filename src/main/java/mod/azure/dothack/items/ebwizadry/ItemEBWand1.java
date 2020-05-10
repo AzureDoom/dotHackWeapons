@@ -12,23 +12,33 @@ import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.Spell;
 import electroblob.wizardry.util.SpellProperties;
 import electroblob.wizardry.util.WandHelper;
+import mod.azure.dothack.DotHackMod;
+import mod.azure.dothack.util.DotHackTabs;
 import mod.azure.dothack.util.WandMap;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class ItemEBWand1 extends ItemWand {
 
     public ItemStack Wand = new ItemStack(WandMap.get1Wand(tier, this.element));
 
-	public ItemEBWand1(Tier tier, Element element) {
+	public ItemEBWand1(Tier tier, Element element, String name) {
 		super(tier, element);
 		this.tier = tier;
 		this.element = element;
+        this.setTranslationKey(name);
+        this.setRegistryName(new ResourceLocation(DotHackMod.MODID, name));
+        this.setCreativeTab(DotHackTabs.SWORDS);
+    }
 
-	}
+    @Override
+    public String getTranslationKey(ItemStack stack) {
+        return super.getTranslationKey();
+    }
 
 	@Override
     @SubscribeEvent

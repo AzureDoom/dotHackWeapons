@@ -15,7 +15,7 @@ apply plugin: "com.wynprice.cursemaven"
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 
-version = "2.1.7"
+version = "2.1.8"
 group = "mod.azure.dothack"
 archivesBaseName = "dotHack Weapons"
 

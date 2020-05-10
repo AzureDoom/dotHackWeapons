@@ -12,23 +12,34 @@ import electroblob.wizardry.registry.WizardryItems;
 import electroblob.wizardry.spell.Spell;
 import electroblob.wizardry.util.SpellProperties;
 import electroblob.wizardry.util.WandHelper;
+import mod.azure.dothack.DotHackMod;
+import mod.azure.dothack.util.DotHackTabs;
 import mod.azure.dothack.util.WandMap;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class ItemEBWand24 extends ItemWand {
 
-	public ItemEBWand24(Tier tier, Element element) {
-		super(tier, element);
-		this.tier = tier;
-		this.element = element;
+	public ItemEBWand24(Tier tier, Element element, String name) {
+        super(tier, element);
+        this.tier = tier;
+        this.element = element;
+        this.setTranslationKey(name);
+        this.setRegistryName(new ResourceLocation(DotHackMod.MODID, name));
+        this.setCreativeTab(DotHackTabs.SWORDS);
+    }
 
-	}
+    @Override
+    public String getTranslationKey(ItemStack stack) {
+        return super.getTranslationKey();
+    }
 
-	@SubscribeEvent
+	@Override
+    @SubscribeEvent
 	public boolean onApplyButtonPressed(EntityPlayer player, Slot centre, Slot crystals, Slot upgrade,
 			Slot[] spellBooks) {
 		boolean changed = false;
