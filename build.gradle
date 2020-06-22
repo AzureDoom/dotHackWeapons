@@ -26,7 +26,7 @@ archivesBaseName = "dotHack-Weapons-1.15.2"
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 minecraft {
-    mappings channel: 'snapshot', version: '20200219-1.15.1'
+    mappings channel: 'snapshot', version: '20200615-1.15.1'
     runs {
         client {
             workingDirectory project.file('run')
@@ -77,9 +77,9 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.15.2-31.1.14'
+    minecraft 'net.minecraftforge:forge:1.15.2-31.2.20'
     compile fg.deobf("top.theillusivec4.curios:curios:FORGE-1.15.2-2.0-beta2")
-	compile fg.deobf("curse.maven:MaS:2897618")
+	compile fg.deobf("curse.maven:MaS:2941071")
 }
 
 jar {
