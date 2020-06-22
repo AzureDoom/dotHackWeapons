@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "dothack:mana"
+  },
+  "type": "minecraft:crafting_shaped",
+   "pattern": [
+        "   ",
+        " $ ",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "$": {
+            "item": "minecraft:coal"
+        }
+    }
+}

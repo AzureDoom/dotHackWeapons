@@ -647,5 +647,9 @@
   "itemGroup.sword": ".Hack Swords",
   "itemGroup.magic": ".Hack Magic",
   "itemGroup.guns": ".Hack Guns",
-  "itemGroup.accessories": ".Hack Accessories"
+  "itemGroup.accessories": ".Hack Accessories",
+	"item.dothack.bullets": "Bullets",
+	"entity.dothack.bullets": "Bullets",
+	"item.dothack.mana": "Mana",
+	"entity.dothack.mana": "Mana"
 }
