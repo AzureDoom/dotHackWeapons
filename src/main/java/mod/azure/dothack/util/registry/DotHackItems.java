@@ -15,8 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class DotHackItems {
 
-	@SuppressWarnings("deprecation")
-	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, DotHackMod.MODID);
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DotHackMod.MODID);
 
 	public static final RegistryObject<Item> BULLET = ITEMS.register("bullets",
 			() -> new BulletAmmo(1.0F));
